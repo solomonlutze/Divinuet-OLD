@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe8883c4e804a4aedb12a21c5434e4d7, type: 3}
+  m_Name: The Fool
+  m_EditorClassIdentifier: 
+  cardName: The Fool
+  order: 0
+  suit: 0
+  cardPicture: {fileID: 2800000, guid: 6a093e7f38ed546e5819580fa3240a1f, type: 3}
+  cardPicture2x: {fileID: 21300000, guid: d4ce4edb035d64d04914e07a749db6cc, type: 3}
+  cardTextMain: 'The Fool: beginnings, eagerness, naivete.'
+  cardTextUpright: Expressing joy and youthful vigor.^ Being open-minded.^ Taking
+    a leap of faith.^ Being eager or curious.^ Exploring your potential.^ But also,
+    maybe being gullible and naive.
+  cardTextReversed: 
+  readingMusicEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 48740e0c94a28d44ba4721eea989948b,
+      type: 2}
+  cardKeyArray:
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 97a6425e3d2946d4a85d53148c6cba95,
+      type: 2}
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 1edd987310b39a74a805e1f5f16eec14,
+      type: 2}
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 84abc170f6546bc4ba306c25844e5b6f,
+      type: 2}
+  clipDuration: 36
+  thematicGroup: 5
+  cardAndGroupClips:
+  - {fileID: 32900000, guid: dcd220b9df9120f448424cd076c70e96, type: 3}
+  - {fileID: 32900000, guid: 1633e8fa86340f54899a6a0bb4c6b124, type: 3}
+  - {fileID: 32900000, guid: dcd220b9df9120f448424cd076c70e96, type: 3}
+  - {fileID: 32900000, guid: 275eb34d53b489b47bac71274e73c26b, type: 3}
+  - {fileID: 32900000, guid: dcd220b9df9120f448424cd076c70e96, type: 3}
+  - {fileID: 32900000, guid: 18c7a7a9a9922bb489531b6f0dbdadd7, type: 3}

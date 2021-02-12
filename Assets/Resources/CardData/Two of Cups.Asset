@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe8883c4e804a4aedb12a21c5434e4d7, type: 3}
+  m_Name: Two of Cups
+  m_EditorClassIdentifier: 
+  cardName: Two of Cups
+  order: 37
+  suit: 1
+  cardPicture: {fileID: 2800000, guid: f4d266868dc956948be22b7dcf2ebe51, type: 3}
+  cardPicture2x: {fileID: 21300000, guid: f4d266868dc956948be22b7dcf2ebe51, type: 3}
+  cardTextMain: 'Two of Cups: connections, relationships, new beginnings.'
+  cardTextUpright: Being drawn to someone.^ Longing for someone or something.^ Acting
+    on your desires.^ Discovering a feeling is mutual.^ Doing what makes you feel
+    good.^ Merging.^ Healing broken ties.
+  cardTextReversed: 
+  readingMusicEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 76a7f81f7d79ba74f82195d2c2285ef4,
+      type: 2}
+  cardKeyArray:
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 97a6425e3d2946d4a85d53148c6cba95,
+      type: 2}
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 1edd987310b39a74a805e1f5f16eec14,
+      type: 2}
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 84abc170f6546bc4ba306c25844e5b6f,
+      type: 2}
+  clipDuration: 38
+  thematicGroup: 4
+  cardAndGroupClips:
+  - {fileID: 32900000, guid: 8622adb3266cab841860c9f0e086048e, type: 3}
+  - {fileID: 32900000, guid: da4bd96f242b5b745a65e3784b7102f9, type: 3}
+  - {fileID: 32900000, guid: e15c5fc2fe54aee46800a771df4c8ca3, type: 3}
+  - {fileID: 32900000, guid: 52574833a824bde4ebb1fa06a6987123, type: 3}
+  - {fileID: 32900000, guid: 8190e0d597259d943b5746bc3209bafc, type: 3}
+  - {fileID: 32900000, guid: 44bb4cc0e805d394a8a7b14ecd0ce31c, type: 3}
