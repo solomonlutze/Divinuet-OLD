@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe8883c4e804a4aedb12a21c5434e4d7, type: 3}
+  m_Name: The High Priestess
+  m_EditorClassIdentifier: 
+  cardName: The High Priestess
+  order: 2
+  suit: 0
+  cardPicture: {fileID: 2800000, guid: c44d3ed3917d54566994c5c23932dcd0, type: 3}
+  cardPicture2x: {fileID: 21300000, guid: 955857dcc711d4b7ca36e609ea1a998e, type: 3}
+  cardTextMain: 'The High Priestess: intuition, spirituality, mystery.'
+  cardTextUpright: Listening to your feelings and intuitions.^ Exploring unconventional
+    spirituality.^ Being receptive.^ Reflecting instead of acting.^ Perhaps refusing
+    to become involved,^ even when involvement is appropriate.
+  cardTextReversed: 
+  readingMusicEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 79eddc0c0d7c36d4492cc28c574a892a,
+      type: 2}
+  cardKeyArray:
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 5a707d8302c576f4b9b8071d36f2455d,
+      type: 2}
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 526f0f3af1678914d833782fed7bb805,
+      type: 2}
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: fe5b9147ae30f3c489fd37c727a7042e,
+      type: 2}
+  clipDuration: 43
+  thematicGroup: 9
+  cardAndGroupClips:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}

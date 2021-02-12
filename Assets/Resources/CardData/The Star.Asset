@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe8883c4e804a4aedb12a21c5434e4d7, type: 3}
+  m_Name: The Star
+  m_EditorClassIdentifier: 
+  cardName: The Star
+  order: 17
+  suit: 0
+  cardPicture: {fileID: 2800000, guid: 5ebb512aba63847efa5fcfee789c50a2, type: 3}
+  cardPicture2x: {fileID: 21300000, guid: 5ebb512aba63847efa5fcfee789c50a2, type: 3}
+  cardTextMain: The Star- hope, renewal, faith.
+  cardTextUpright: This is where the star text will go.^ Isn't that neato burrito?^
+    I certainly think so.^ It'll be so great.^ Can't wait to read it.
+  cardTextReversed: 
+  readingMusicEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: ed392f218f5998a4eb4ca6d40425cc5e,
+      type: 2}
+  cardSuitArray:
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 7ffea89d4af3bfb479e09a60420e668e,
+      type: 2}
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 2ec7b1dc93c58a04d91e87272a5b30c6,
+      type: 2}
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 5197e265c1321714a8d91c9bc0908fd0,
+      type: 2}
+  cardGroupArray:
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 61f913236eb43e04cb1a70701586593a,
+      type: 2}
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: b554bb6d762e4c64d863ebd505f1300c,
+      type: 2}
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 41d1366f44313174d902dbbba66808fd,
+      type: 2}
+  cardKeyArray:
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 97a6425e3d2946d4a85d53148c6cba95,
+      type: 2}
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 1edd987310b39a74a805e1f5f16eec14,
+      type: 2}
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 84abc170f6546bc4ba306c25844e5b6f,
+      type: 2}
+  clipDuration: 46
+  thematicGroup: 2

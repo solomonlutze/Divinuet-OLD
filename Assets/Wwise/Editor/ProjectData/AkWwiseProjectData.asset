@@ -1,0 +1,2727 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 36d8103e295bac946917794a75ffaac8, type: 3}
+  m_Name: AkWwiseProjectData
+  m_EditorClassIdentifier: 
+  AcousticTextureWwu:
+  - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 9917d16de675f74794ac9e98d7a7828d
+    GuidInternal: 
+    m_lastTime: -8586382908239572184
+    List: []
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 870bb64d137dba43a70f1f01c364f688
+    GuidInternal: 
+    m_lastTime: -8586212680324764723
+    List: []
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 316b02227919fc49a4528be3c11e0f41
+    GuidInternal: 
+    m_lastTime: -8585935323177806578
+    List:
+    - name: Soundbank
+      guid: 8d5e51ee7b34f042a6bee5955537fe07
+      id: 1661994096
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Soundbank
+        ObjectType: 7
+      Path: Default Work Unit\Soundbank
+  EventWwu:
+  - PhysicalPath: Events\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: bc617d844702964e9e3475116383ce13
+    GuidInternal: 
+    m_lastTime: -8585935311350321648
+    List:
+    - name: AccompanimentCups
+      guid: 3e9aa257f8dcda44ab5bc5d1fd033e9f
+      id: 3691358005
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeAccompaniment
+        ObjectType: 4
+      - ElementName: AccompanimentCups
+        ObjectType: 3
+      Path: Default Work Unit\GenerativeAccompaniment\AccompanimentCups
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: AccompanimentMajorArcana
+      guid: efed386d1143014bb3da835b9c29818c
+      id: 802427635
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeAccompaniment
+        ObjectType: 4
+      - ElementName: AccompanimentMajorArcana
+        ObjectType: 3
+      Path: Default Work Unit\GenerativeAccompaniment\AccompanimentMajorArcana
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: AceOfCups
+      guid: ecb099b89aab174885b82101efbf50cb
+      id: 2478979318
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: CardEvents
+        ObjectType: 4
+      - ElementName: Cups
+        ObjectType: 4
+      - ElementName: AceOfCups
+        ObjectType: 3
+      Path: Default Work Unit\CardEvents\Cups\AceOfCups
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Card1Cups
+      guid: 9fd8dcc6f01ff84c8bfac8d040fc9c56
+      id: 1213864503
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeCardSuits
+        ObjectType: 4
+      - ElementName: Card1
+        ObjectType: 4
+      - ElementName: Card1Cups
+        ObjectType: 3
+      Path: Default Work Unit\GenerativeCardSuits\Card1\Card1Cups
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Card1Dorian
+      guid: 9aa8ca4344e79042ba5d4ace7dba7763
+      id: 3649626589
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeKeys
+        ObjectType: 4
+      - ElementName: Card1
+        ObjectType: 4
+      - ElementName: Card1Dorian
+        ObjectType: 3
+      Path: Default Work Unit\GenerativeKeys\Card1\Card1Dorian
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Card1Group1
+      guid: 01338f31ba216346b40f9cccbda97272
+      id: 701895722
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeCardGroups
+        ObjectType: 4
+      - ElementName: Group1
+        ObjectType: 4
+      - ElementName: Card1Group1
+        ObjectType: 3
+      Path: Default Work Unit\GenerativeCardGroups\Group1\Card1Group1
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Card1Group10
+      guid: 5b7fed7784ad8549a379de43c09882d7
+      id: 100777518
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeCardGroups
+        ObjectType: 4
+      - ElementName: Group10
+        ObjectType: 4
+      - ElementName: Card1Group10
+        ObjectType: 3
+      Path: Default Work Unit\GenerativeCardGroups\Group10\Card1Group10
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Card1Group11
+      guid: aae566bec965a144a45ea48f60441c85
+      id: 100777519
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeCardGroups
+        ObjectType: 4
+      - ElementName: Group11
+        ObjectType: 4
+      - ElementName: Card1Group11
+        ObjectType: 3
+      Path: Default Work Unit\GenerativeCardGroups\Group11\Card1Group11
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Card1Group12
+      guid: 5351b902f9245c409d6b0169b48df688
+      id: 100777516
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeCardGroups
+        ObjectType: 4
+      - ElementName: Group12
+        ObjectType: 4
+      - ElementName: Card1Group12
+        ObjectType: 3
+      Path: Default Work Unit\GenerativeCardGroups\Group12\Card1Group12
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Card1Group13
+      guid: ae90e6059acf864486d8582df605f503
+      id: 100777517
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeCardGroups
+        ObjectType: 4
+      - ElementName: Group13
+        ObjectType: 4
+      - ElementName: Card1Group13
+        ObjectType: 3
+      Path: Default Work Unit\GenerativeCardGroups\Group13\Card1Group13
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Card1Group2
+      guid: 4c9707def236ec4895b9e8f24e3bd18f
+      id: 701895721
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeCardGroups
+        ObjectType: 4
+      - ElementName: Group2
+        ObjectType: 4
+      - ElementName: Card1Group2
+        ObjectType: 3
+      Path: Default Work Unit\GenerativeCardGroups\Group2\Card1Group2
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Card1Group3
+      guid: 890dd5ec3e4b104a85d53a7c7691a920
+      id: 701895720
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeCardGroups
+        ObjectType: 4
+      - ElementName: Group3
+        ObjectType: 4
+      - ElementName: Card1Group3
+        ObjectType: 3
+      Path: Default Work Unit\GenerativeCardGroups\Group3\Card1Group3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Card1Group4
+      guid: 2ca1c432aa4a9f439f80f507342a03bb
+      id: 701895727
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeCardGroups
+        ObjectType: 4
+      - ElementName: Group4
+        ObjectType: 4
+      - ElementName: Card1Group4
+        ObjectType: 3
+      Path: Default Work Unit\GenerativeCardGroups\Group4\Card1Group4
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Card1Group5
+      guid: e905910d1c4a5d4eb1bb66cc990e9443
+      id: 701895726
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeCardGroups
+        ObjectType: 4
+      - ElementName: Group5
+        ObjectType: 4
+      - ElementName: Card1Group5
+        ObjectType: 3
+      Path: Default Work Unit\GenerativeCardGroups\Group5\Card1Group5
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Card1Group6
+      guid: 072c35ce91c5d2489584336ed0ec3c48
+      id: 701895725
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeCardGroups
+        ObjectType: 4
+      - ElementName: Group6
+        ObjectType: 4
+      - ElementName: Card1Group6
+        ObjectType: 3
+      Path: Default Work Unit\GenerativeCardGroups\Group6\Card1Group6
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Card1Group7
+      guid: e748516b0ba1dc42bc15fd7346442d85
+      id: 701895724
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeCardGroups
+        ObjectType: 4
+      - ElementName: Group7
+        ObjectType: 4
+      - ElementName: Card1Group7
+        ObjectType: 3
+      Path: Default Work Unit\GenerativeCardGroups\Group7\Card1Group7
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Card1Group8
+      guid: 524a29f1acf7f54985bea685bbdbb561
+      id: 701895715
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeCardGroups
+        ObjectType: 4
+      - ElementName: Group8
+        ObjectType: 4
+      - ElementName: Card1Group8
+        ObjectType: 3
+      Path: Default Work Unit\GenerativeCardGroups\Group8\Card1Group8
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Card1Group9
+      guid: eaf89a5f5c8fc64d9b27dabf781f6ef3
+      id: 701895714
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeCardGroups
+        ObjectType: 4
+      - ElementName: Group9
+        ObjectType: 4
+      - ElementName: Card1Group9
+        ObjectType: 3
+      Path: Default Work Unit\GenerativeCardGroups\Group9\Card1Group9
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Card1Major1
+      guid: e9f9c45533f68a43925b4eae44bbd110
+      id: 1265574636
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeKeys
+        ObjectType: 4
+      - ElementName: Card1
+        ObjectType: 4
+      - ElementName: Card1Major1
+        ObjectType: 3
+      Path: Default Work Unit\GenerativeKeys\Card1\Card1Major1
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Card1Major2
+      guid: aa73641b70f9b744a6aa5e3c6a86c5e0
+      id: 1265574639
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeKeys
+        ObjectType: 4
+      - ElementName: Card1
+        ObjectType: 4
+      - ElementName: Card1Major2
+        ObjectType: 3
+      Path: Default Work Unit\GenerativeKeys\Card1\Card1Major2
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Card1MajorArcana
+      guid: a19a53e284a62c4497280e3a26ab64a8
+      id: 2351915865
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeCardSuits
+        ObjectType: 4
+      - ElementName: Card1
+        ObjectType: 4
+      - ElementName: Card1MajorArcana
+        ObjectType: 3
+      Path: Default Work Unit\GenerativeCardSuits\Card1\Card1MajorArcana
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Card1Minor
+      guid: 11e8b6f19b7ae3448925dd9e647906cc
+      id: 3939640691
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeKeys
+        ObjectType: 4
+      - ElementName: Card1
+        ObjectType: 4
+      - ElementName: Card1Minor
+        ObjectType: 3
+      Path: Default Work Unit\GenerativeKeys\Card1\Card1Minor
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Card1Pentacles
+      guid: 0550d5d5f6924c46a9c6ae41e7e4e86d
+      id: 741549657
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeCardSuits
+        ObjectType: 4
+      - ElementName: Card1
+        ObjectType: 4
+      - ElementName: Card1Pentacles
+        ObjectType: 3
+      Path: Default Work Unit\GenerativeCardSuits\Card1\Card1Pentacles
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Card1Swords
+      guid: a016b43fa69b0c419ab3192e19f06e24
+      id: 905849762
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeCardSuits
+        ObjectType: 4
+      - ElementName: Card1
+        ObjectType: 4
+      - ElementName: Card1Swords
+        ObjectType: 3
+      Path: Default Work Unit\GenerativeCardSuits\Card1\Card1Swords
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Card1Wands
+      guid: 163a9ba42acee84c821cf3132c6bf1b9
+      id: 3713380301
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeCardSuits
+        ObjectType: 4
+      - ElementName: Card1
+        ObjectType: 4
+      - ElementName: Card1Wands
+        ObjectType: 3
+      Path: Default Work Unit\GenerativeCardSuits\Card1\Card1Wands
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Card2Cups
+      guid: 8f01a6090e32f94193498871da990d48
+      id: 593127736
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeCardSuits
+        ObjectType: 4
+      - ElementName: Card2
+        ObjectType: 4
+      - ElementName: Card2Cups
+        ObjectType: 3
+      Path: Default Work Unit\GenerativeCardSuits\Card2\Card2Cups
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Card2Dorian
+      guid: f3c748c0fc1d094bbc1d51222e98ac0c
+      id: 2358895370
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeKeys
+        ObjectType: 4
+      - ElementName: Card2
+        ObjectType: 4
+      - ElementName: Card2Dorian
+        ObjectType: 3
+      Path: Default Work Unit\GenerativeKeys\Card2\Card2Dorian
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Card2Group1
+      guid: 7fc1f88faf57e342a103489f437d97db
+      id: 2297393465
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeCardGroups
+        ObjectType: 4
+      - ElementName: Group1
+        ObjectType: 4
+      - ElementName: Card2Group1
+        ObjectType: 3
+      Path: Default Work Unit\GenerativeCardGroups\Group1\Card2Group1
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Card2Group10
+      guid: 280516f719981144a50cdc8b9058d0e4
+      id: 3387899019
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeCardGroups
+        ObjectType: 4
+      - ElementName: Group10
+        ObjectType: 4
+      - ElementName: Card2Group10
+        ObjectType: 3
+      Path: Default Work Unit\GenerativeCardGroups\Group10\Card2Group10
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Card2Group11
+      guid: dedc445f7cde4b42b34e13c106b86908
+      id: 3387899018
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeCardGroups
+        ObjectType: 4
+      - ElementName: Group11
+        ObjectType: 4
+      - ElementName: Card2Group11
+        ObjectType: 3
+      Path: Default Work Unit\GenerativeCardGroups\Group11\Card2Group11
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Card2Group12
+      guid: 40246c7616f6f44881b9929dca79f78d
+      id: 3387899017
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeCardGroups
+        ObjectType: 4
+      - ElementName: Group12
+        ObjectType: 4
+      - ElementName: Card2Group12
+        ObjectType: 3
+      Path: Default Work Unit\GenerativeCardGroups\Group12\Card2Group12
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Card2Group13
+      guid: 3ca5b269820aff4ebb3f7ec643acc790
+      id: 3387899016
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeCardGroups
+        ObjectType: 4
+      - ElementName: Group13
+        ObjectType: 4
+      - ElementName: Card2Group13
+        ObjectType: 3
+      Path: Default Work Unit\GenerativeCardGroups\Group13\Card2Group13
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Card2Group2
+      guid: e97b115c20f7c84d8d1c6177693d3840
+      id: 2297393466
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeCardGroups
+        ObjectType: 4
+      - ElementName: Group2
+        ObjectType: 4
+      - ElementName: Card2Group2
+        ObjectType: 3
+      Path: Default Work Unit\GenerativeCardGroups\Group2\Card2Group2
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Card2Group3
+      guid: 0642fa43f25b00449310c5c6a3cd5860
+      id: 2297393467
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeCardGroups
+        ObjectType: 4
+      - ElementName: Group3
+        ObjectType: 4
+      - ElementName: Card2Group3
+        ObjectType: 3
+      Path: Default Work Unit\GenerativeCardGroups\Group3\Card2Group3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Card2Group4
+      guid: b089b237c9cf6f418d78e3a186bb6216
+      id: 2297393468
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeCardGroups
+        ObjectType: 4
+      - ElementName: Group4
+        ObjectType: 4
+      - ElementName: Card2Group4
+        ObjectType: 3
+      Path: Default Work Unit\GenerativeCardGroups\Group4\Card2Group4
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Card2Group5
+      guid: c05a1efc7d72c843a081408bd8aac3c5
+      id: 2297393469
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeCardGroups
+        ObjectType: 4
+      - ElementName: Group5
+        ObjectType: 4
+      - ElementName: Card2Group5
+        ObjectType: 3
+      Path: Default Work Unit\GenerativeCardGroups\Group5\Card2Group5
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Card2Group6
+      guid: ab545b2a939cb34fabae3a6c04ab0920
+      id: 2297393470
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeCardGroups
+        ObjectType: 4
+      - ElementName: Group6
+        ObjectType: 4
+      - ElementName: Card2Group6
+        ObjectType: 3
+      Path: Default Work Unit\GenerativeCardGroups\Group6\Card2Group6
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Card2Group7
+      guid: 956ef7b488ab134b9a7b70b0e2372d0b
+      id: 2297393471
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeCardGroups
+        ObjectType: 4
+      - ElementName: Group7
+        ObjectType: 4
+      - ElementName: Card2Group7
+        ObjectType: 3
+      Path: Default Work Unit\GenerativeCardGroups\Group7\Card2Group7
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Card2Group8
+      guid: 1e68d8b81827e3439de76015da81e693
+      id: 2297393456
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeCardGroups
+        ObjectType: 4
+      - ElementName: Group8
+        ObjectType: 4
+      - ElementName: Card2Group8
+        ObjectType: 3
+      Path: Default Work Unit\GenerativeCardGroups\Group8\Card2Group8
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Card2Group9
+      guid: f4b560da7997414180e8babfd9a54f7e
+      id: 2297393457
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeCardGroups
+        ObjectType: 4
+      - ElementName: Group9
+        ObjectType: 4
+      - ElementName: Card2Group9
+        ObjectType: 3
+      Path: Default Work Unit\GenerativeCardGroups\Group9\Card2Group9
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Card2Major1
+      guid: dc111c79b20733419a7065fd36d55859
+      id: 1064961335
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeKeys
+        ObjectType: 4
+      - ElementName: Card2
+        ObjectType: 4
+      - ElementName: Card2Major1
+        ObjectType: 3
+      Path: Default Work Unit\GenerativeKeys\Card2\Card2Major1
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Card2Major2
+      guid: 3e344b241b8a94438649253fe33ca68d
+      id: 1064961332
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeKeys
+        ObjectType: 4
+      - ElementName: Card2
+        ObjectType: 4
+      - ElementName: Card2Major2
+        ObjectType: 3
+      Path: Default Work Unit\GenerativeKeys\Card2\Card2Major2
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Card2MajorArcana
+      guid: 0f30eb3062d34645b2c16c63e896796f
+      id: 3069944916
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeCardSuits
+        ObjectType: 4
+      - ElementName: Card2
+        ObjectType: 4
+      - ElementName: Card2MajorArcana
+        ObjectType: 3
+      Path: Default Work Unit\GenerativeCardSuits\Card2\Card2MajorArcana
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Card2Minor
+      guid: cea895538c29e44b88d2571028efa071
+      id: 1821600798
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeKeys
+        ObjectType: 4
+      - ElementName: Card2
+        ObjectType: 4
+      - ElementName: Card2Minor
+        ObjectType: 3
+      Path: Default Work Unit\GenerativeKeys\Card2\Card2Minor
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Card2Pentacles
+      guid: 05315764335c28468c488a7314582025
+      id: 231901376
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeCardSuits
+        ObjectType: 4
+      - ElementName: Card2
+        ObjectType: 4
+      - ElementName: Card2Pentacles
+        ObjectType: 3
+      Path: Default Work Unit\GenerativeCardSuits\Card2\Card2Pentacles
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Card2Swords
+      guid: f629337dd62a484183fb7d992e32718a
+      id: 2252698273
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeCardSuits
+        ObjectType: 4
+      - ElementName: Card2
+        ObjectType: 4
+      - ElementName: Card2Swords
+        ObjectType: 3
+      Path: Default Work Unit\GenerativeCardSuits\Card2\Card2Swords
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Card2Wands
+      guid: cdf47fa9e9fb5b47ab39ebd734959bdb
+      id: 1323396928
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeCardSuits
+        ObjectType: 4
+      - ElementName: Card2
+        ObjectType: 4
+      - ElementName: Card2Wands
+        ObjectType: 3
+      Path: Default Work Unit\GenerativeCardSuits\Card2\Card2Wands
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Card3Cups
+      guid: f2700d8ea7d35748ad730963f0a123f0
+      id: 3298030721
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeCardSuits
+        ObjectType: 4
+      - ElementName: Card3
+        ObjectType: 4
+      - ElementName: Card3Cups
+        ObjectType: 3
+      Path: Default Work Unit\GenerativeCardSuits\Card3\Card3Cups
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Card3Dorian
+      guid: 48226ef7f534fa449a6a2254780d3ed2
+      id: 3108369491
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeKeys
+        ObjectType: 4
+      - ElementName: Card3
+        ObjectType: 4
+      - ElementName: Card3Dorian
+        ObjectType: 3
+      Path: Default Work Unit\GenerativeKeys\Card3\Card3Dorian
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Card3Group1
+      guid: 0825f463e4378649839b607e15d06d9f
+      id: 848040992
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeCardGroups
+        ObjectType: 4
+      - ElementName: Group1
+        ObjectType: 4
+      - ElementName: Card3Group1
+        ObjectType: 3
+      Path: Default Work Unit\GenerativeCardGroups\Group1\Card3Group1
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Card3Group10
+      guid: 4947c3bae289c4408507036471451419
+      id: 2994974288
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeCardGroups
+        ObjectType: 4
+      - ElementName: Group10
+        ObjectType: 4
+      - ElementName: Card3Group10
+        ObjectType: 3
+      Path: Default Work Unit\GenerativeCardGroups\Group10\Card3Group10
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Card3Group11
+      guid: bf351c813d5de44cb55896ba964a44b7
+      id: 2994974289
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeCardGroups
+        ObjectType: 4
+      - ElementName: Group11
+        ObjectType: 4
+      - ElementName: Card3Group11
+        ObjectType: 3
+      Path: Default Work Unit\GenerativeCardGroups\Group11\Card3Group11
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Card3Group12
+      guid: 7edde9e120ce5a4f8ada227a92409545
+      id: 2994974290
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeCardGroups
+        ObjectType: 4
+      - ElementName: Group12
+        ObjectType: 4
+      - ElementName: Card3Group12
+        ObjectType: 3
+      Path: Default Work Unit\GenerativeCardGroups\Group12\Card3Group12
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Card3Group13
+      guid: d91de0e022a2ed45a38310164863b3c4
+      id: 2994974291
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeCardGroups
+        ObjectType: 4
+      - ElementName: Group13
+        ObjectType: 4
+      - ElementName: Card3Group13
+        ObjectType: 3
+      Path: Default Work Unit\GenerativeCardGroups\Group13\Card3Group13
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Card3Group2
+      guid: d4ed0fcfe2ce2f4588c8154489d3b60c
+      id: 848040995
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeCardGroups
+        ObjectType: 4
+      - ElementName: Group2
+        ObjectType: 4
+      - ElementName: Card3Group2
+        ObjectType: 3
+      Path: Default Work Unit\GenerativeCardGroups\Group2\Card3Group2
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Card3Group3
+      guid: fb370f19c12e964ba9f0ec788d3e9770
+      id: 848040994
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeCardGroups
+        ObjectType: 4
+      - ElementName: Group3
+        ObjectType: 4
+      - ElementName: Card3Group3
+        ObjectType: 3
+      Path: Default Work Unit\GenerativeCardGroups\Group3\Card3Group3
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Card3Group4
+      guid: 14d8920f049fe34e9ca5e7264feaf31f
+      id: 848040997
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeCardGroups
+        ObjectType: 4
+      - ElementName: Group4
+        ObjectType: 4
+      - ElementName: Card3Group4
+        ObjectType: 3
+      Path: Default Work Unit\GenerativeCardGroups\Group4\Card3Group4
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Card3Group5
+      guid: 9f538dac2ea71d4590a8ecddf7755491
+      id: 848040996
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeCardGroups
+        ObjectType: 4
+      - ElementName: Group5
+        ObjectType: 4
+      - ElementName: Card3Group5
+        ObjectType: 3
+      Path: Default Work Unit\GenerativeCardGroups\Group5\Card3Group5
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Card3Group6
+      guid: 0cf23fe95603964fa812d0ff8f2ade30
+      id: 848040999
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeCardGroups
+        ObjectType: 4
+      - ElementName: Group6
+        ObjectType: 4
+      - ElementName: Card3Group6
+        ObjectType: 3
+      Path: Default Work Unit\GenerativeCardGroups\Group6\Card3Group6
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Card3Group7
+      guid: 72fe531847e05044a88e3e2944dfb790
+      id: 848040998
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeCardGroups
+        ObjectType: 4
+      - ElementName: Group7
+        ObjectType: 4
+      - ElementName: Card3Group7
+        ObjectType: 3
+      Path: Default Work Unit\GenerativeCardGroups\Group7\Card3Group7
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Card3Group8
+      guid: 8bda7f1d13e96e4fadca7df61930c3aa
+      id: 848041001
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeCardGroups
+        ObjectType: 4
+      - ElementName: Group8
+        ObjectType: 4
+      - ElementName: Card3Group8
+        ObjectType: 3
+      Path: Default Work Unit\GenerativeCardGroups\Group8\Card3Group8
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Card3Group9
+      guid: 84415ed824b39c488e73e399b4c9c3da
+      id: 848041000
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeCardGroups
+        ObjectType: 4
+      - ElementName: Group9
+        ObjectType: 4
+      - ElementName: Card3Group9
+        ObjectType: 3
+      Path: Default Work Unit\GenerativeCardGroups\Group9\Card3Group9
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Card3Major1
+      guid: f68492872a41d24692f8db36b02db37f
+      id: 2471410010
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeKeys
+        ObjectType: 4
+      - ElementName: Card3
+        ObjectType: 4
+      - ElementName: Card3Major1
+        ObjectType: 3
+      Path: Default Work Unit\GenerativeKeys\Card3\Card3Major1
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Card3Major2
+      guid: 2daf8ea4479670479795ab86fcfdab63
+      id: 2471410009
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeKeys
+        ObjectType: 4
+      - ElementName: Card3
+        ObjectType: 4
+      - ElementName: Card3Major2
+        ObjectType: 3
+      Path: Default Work Unit\GenerativeKeys\Card3\Card3Major2
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Card3MajorArcana
+      guid: 571d8fe6558a3843ac33e5688ff67ebd
+      id: 2809334151
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeCardSuits
+        ObjectType: 4
+      - ElementName: Card3
+        ObjectType: 4
+      - ElementName: Card3MajorArcana
+        ObjectType: 3
+      Path: Default Work Unit\GenerativeCardSuits\Card3\Card3MajorArcana
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Card3Minor
+      guid: 0197f1710f7a8b498a2968fe3698bb0c
+      id: 3072025101
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeKeys
+        ObjectType: 4
+      - ElementName: Card3
+        ObjectType: 4
+      - ElementName: Card3Minor
+        ObjectType: 3
+      Path: Default Work Unit\GenerativeKeys\Card3\Card3Minor
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Card3Pentacles
+      guid: 566bf3b2f74b944a8bff50a2c18a2487
+      id: 3909883483
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeCardSuits
+        ObjectType: 4
+      - ElementName: Card3
+        ObjectType: 4
+      - ElementName: Card3Pentacles
+        ObjectType: 3
+      Path: Default Work Unit\GenerativeCardSuits\Card3\Card3Pentacles
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Card3Swords
+      guid: cc1dc61ddeeea54fb9a624f82a37290f
+      id: 3113582184
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeCardSuits
+        ObjectType: 4
+      - ElementName: Card3
+        ObjectType: 4
+      - ElementName: Card3Swords
+        ObjectType: 3
+      Path: Default Work Unit\GenerativeCardSuits\Card3\Card3Swords
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Card3Wands
+      guid: 5403368ccaea1748b0b1523b01256e21
+      id: 1632202991
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeCardSuits
+        ObjectType: 4
+      - ElementName: Card3
+        ObjectType: 4
+      - ElementName: Card3Wands
+        ObjectType: 3
+      Path: Default Work Unit\GenerativeCardSuits\Card3\Card3Wands
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: CardSlide
+      guid: d9a05c558c42184597a2209fcb6a446d
+      id: 4145272430
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFXEvents
+        ObjectType: 4
+      - ElementName: CardSlide
+        ObjectType: 3
+      Path: Default Work Unit\SFXEvents\CardSlide
+      maxAttenuation: 0
+      maxDuration: 0.930333
+      minDuration: 0.593776
+    - name: Cups
+      guid: 07065a3d498c9c42a6b5a3e0c6845097
+      id: 3817145194
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeStates
+        ObjectType: 4
+      - ElementName: Bass
+        ObjectType: 4
+      - ElementName: Cups
+        ObjectType: 3
+      Path: Default Work Unit\GenerativeStates\Bass\Cups
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Death
+      guid: 4e7e59514a8fa14dbcceff9fd3042933
+      id: 779278001
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: CardEvents
+        ObjectType: 4
+      - ElementName: Major Arcana
+        ObjectType: 4
+      - ElementName: Death
+        ObjectType: 3
+      Path: Default Work Unit\CardEvents\Major Arcana\Death
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: EightOfPentacles
+      guid: 0f9648fe337f154989fa58b38be6e9ab
+      id: 3555933294
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: CardEvents
+        ObjectType: 4
+      - ElementName: Pentacles
+        ObjectType: 4
+      - ElementName: EightOfPentacles
+        ObjectType: 3
+      Path: Default Work Unit\CardEvents\Pentacles\EightOfPentacles
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: FiveOfCups
+      guid: 0a2e042d23859f4c80bec0901c051ad3
+      id: 679328597
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: CardEvents
+        ObjectType: 4
+      - ElementName: Cups
+        ObjectType: 4
+      - ElementName: FiveOfCups
+        ObjectType: 3
+      Path: Default Work Unit\CardEvents\Cups\FiveOfCups
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: FourOfSwords
+      guid: 737bc4004aef55429dcf8760cae0a599
+      id: 112666488
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: CardEvents
+        ObjectType: 4
+      - ElementName: Swords
+        ObjectType: 4
+      - ElementName: FourOfSwords
+        ObjectType: 3
+      Path: Default Work Unit\CardEvents\Swords\FourOfSwords
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: KingOfCups
+      guid: f6ecb83f545f964ea2dcffc99e8fefbe
+      id: 87267876
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: CardEvents
+        ObjectType: 4
+      - ElementName: Cups
+        ObjectType: 4
+      - ElementName: KingOfCups
+        ObjectType: 3
+      Path: Default Work Unit\CardEvents\Cups\KingOfCups
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: KingOfPentacles
+      guid: 822e37382c846e488c562c5b58bd6930
+      id: 1715977140
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: CardEvents
+        ObjectType: 4
+      - ElementName: Pentacles
+        ObjectType: 4
+      - ElementName: KingOfPentacles
+        ObjectType: 3
+      Path: Default Work Unit\CardEvents\Pentacles\KingOfPentacles
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Main
+      guid: c97319cf81f0fb46bd534203c312f9f1
+      id: 3161908922
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativePart
+        ObjectType: 4
+      - ElementName: Main
+        ObjectType: 3
+      Path: Default Work Unit\GenerativePart\Main
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: MajorArcana
+      guid: 4c0e99bb238c564aa09bafdd3461f8f4
+      id: 798166914
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeStates
+        ObjectType: 4
+      - ElementName: Bass
+        ObjectType: 4
+      - ElementName: MajorArcana
+        ObjectType: 3
+      Path: Default Work Unit\GenerativeStates\Bass\MajorArcana
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: MenuAmbienceStart
+      guid: a6574e7ddce6c942a520c2b32df18cd1
+      id: 3653149380
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFXEvents
+        ObjectType: 4
+      - ElementName: MenuAmbienceStart
+        ObjectType: 3
+      Path: Default Work Unit\SFXEvents\MenuAmbienceStart
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: MenuAmbienceStop
+      guid: 2e29d6f919d6624794e1dd417b2c23ba
+      id: 249775224
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: SFXEvents
+        ObjectType: 4
+      - ElementName: MenuAmbienceStop
+        ObjectType: 3
+      Path: Default Work Unit\SFXEvents\MenuAmbienceStop
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: NineOfPentacles
+      guid: 18d1f7489fe75441a343a49de1c19cf1
+      id: 1963057671
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: CardEvents
+        ObjectType: 4
+      - ElementName: Pentacles
+        ObjectType: 4
+      - ElementName: NineOfPentacles
+        ObjectType: 3
+      Path: Default Work Unit\CardEvents\Pentacles\NineOfPentacles
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Null
+      guid: da0c662a651c184da146bdffa54c8987
+      id: 784127654
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeStates
+        ObjectType: 4
+      - ElementName: Bass
+        ObjectType: 4
+      - ElementName: Null
+        ObjectType: 3
+      Path: Default Work Unit\GenerativeStates\Bass\Null
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Pentacles
+      guid: 2eb0c9f5be6f2846a780a24ae658f656
+      id: 495557850
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeStates
+        ObjectType: 4
+      - ElementName: Bass
+        ObjectType: 4
+      - ElementName: Pentacles
+        ObjectType: 3
+      Path: Default Work Unit\GenerativeStates\Bass\Pentacles
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: ReadingStart
+      guid: 27ac1771b1cf6c42a20368ade09bd2b3
+      id: 1965947029
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: ReadingNonCard
+        ObjectType: 4
+      - ElementName: ReadingStart
+        ObjectType: 3
+      Path: Default Work Unit\ReadingNonCard\ReadingStart
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: SevenOfCups
+      guid: bb8d5488ec1ff3439558c2585fcf8921
+      id: 884571752
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: CardEvents
+        ObjectType: 4
+      - ElementName: Cups
+        ObjectType: 4
+      - ElementName: SevenOfCups
+        ObjectType: 3
+      Path: Default Work Unit\CardEvents\Cups\SevenOfCups
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: SevenOfPentacles
+      guid: 5ab656a73fc8e8438a3db9402e88d878
+      id: 4205938704
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: CardEvents
+        ObjectType: 4
+      - ElementName: Pentacles
+        ObjectType: 4
+      - ElementName: SevenOfPentacles
+        ObjectType: 3
+      Path: Default Work Unit\CardEvents\Pentacles\SevenOfPentacles
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: SevenOfSwords
+      guid: 5471faedc7f1c14bb08d7ac9baaffda8
+      id: 587937073
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: CardEvents
+        ObjectType: 4
+      - ElementName: Swords
+        ObjectType: 4
+      - ElementName: SevenOfSwords
+        ObjectType: 3
+      Path: Default Work Unit\CardEvents\Swords\SevenOfSwords
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: SixOfPentacles
+      guid: 2f662af09cfe6940bb46e8de6dd65e60
+      id: 2491223249
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: CardEvents
+        ObjectType: 4
+      - ElementName: Pentacles
+        ObjectType: 4
+      - ElementName: SixOfPentacles
+        ObjectType: 3
+      Path: Default Work Unit\CardEvents\Pentacles\SixOfPentacles
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: SixOfSwords
+      guid: b4e07bcda9396e41b4f4d49e7b0592e8
+      id: 3436307834
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: CardEvents
+        ObjectType: 4
+      - ElementName: Swords
+        ObjectType: 4
+      - ElementName: SixOfSwords
+        ObjectType: 3
+      Path: Default Work Unit\CardEvents\Swords\SixOfSwords
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: State_Generative
+      guid: a1dbf4af2b041d4e9460b20a2f08d328
+      id: 3535269221
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: State_Generative
+        ObjectType: 3
+      Path: Default Work Unit\State_Generative
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: State_MakingSong
+      guid: 567e8ca9502e13439542d5b2e61701e2
+      id: 1929173219
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: State_MakingSong
+        ObjectType: 3
+      Path: Default Work Unit\State_MakingSong
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: State_Reading
+      guid: 8ed5f467f84f864cb1bc1ef1c7d50f1f
+      id: 1701015953
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: State_Reading
+        ObjectType: 3
+      Path: Default Work Unit\State_Reading
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Strength
+      guid: e7537fc0eb5e214ba7660e0a88992aaa
+      id: 1008270286
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: CardEvents
+        ObjectType: 4
+      - ElementName: Major Arcana
+        ObjectType: 4
+      - ElementName: Strength
+        ObjectType: 3
+      Path: Default Work Unit\CardEvents\Major Arcana\Strength
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Swords
+      guid: 2e7f1f3d48666e41bfd03e26f7139f59
+      id: 361241855
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeStates
+        ObjectType: 4
+      - ElementName: Bass
+        ObjectType: 4
+      - ElementName: Swords
+        ObjectType: 3
+      Path: Default Work Unit\GenerativeStates\Bass\Swords
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: SwordsFlip
+      guid: b7ed3ead674cd74a81623a6d2148ae9a
+      id: 4085194074
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: FlippingEvents
+        ObjectType: 4
+      - ElementName: SwordsFlip
+        ObjectType: 3
+      Path: Default Work Unit\FlippingEvents\SwordsFlip
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Temperance
+      guid: 9aee8a31e1eab3429a7a239007bd74d6
+      id: 1462743847
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: CardEvents
+        ObjectType: 4
+      - ElementName: Major Arcana
+        ObjectType: 4
+      - ElementName: Temperance
+        ObjectType: 3
+      Path: Default Work Unit\CardEvents\Major Arcana\Temperance
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: TenOfCups
+      guid: b909e51de4044d45bcc874765df380de
+      id: 2461612130
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: CardEvents
+        ObjectType: 4
+      - ElementName: Cups
+        ObjectType: 4
+      - ElementName: TenOfCups
+        ObjectType: 3
+      Path: Default Work Unit\CardEvents\Cups\TenOfCups
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: TenOfSwords
+      guid: 9739a37c9655c1498e7ba0477b402cd8
+      id: 2185129511
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: CardEvents
+        ObjectType: 4
+      - ElementName: Swords
+        ObjectType: 4
+      - ElementName: TenOfSwords
+        ObjectType: 3
+      Path: Default Work Unit\CardEvents\Swords\TenOfSwords
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: TheEmpress
+      guid: 298babd4c6bcc5449d786c7553c64490
+      id: 4181689965
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: CardEvents
+        ObjectType: 4
+      - ElementName: Major Arcana
+        ObjectType: 4
+      - ElementName: TheEmpress
+        ObjectType: 3
+      Path: Default Work Unit\CardEvents\Major Arcana\TheEmpress
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: TheFool
+      guid: 53097a9f43f3634babb5ab5743473d62
+      id: 2631758982
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: CardEvents
+        ObjectType: 4
+      - ElementName: Major Arcana
+        ObjectType: 4
+      - ElementName: TheFool
+        ObjectType: 3
+      Path: Default Work Unit\CardEvents\Major Arcana\TheFool
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: TheHighPriestess
+      guid: 29e6c4daf05c644f92e33f69a9afb076
+      id: 3676275462
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: CardEvents
+        ObjectType: 4
+      - ElementName: Major Arcana
+        ObjectType: 4
+      - ElementName: TheHighPriestess
+        ObjectType: 3
+      Path: Default Work Unit\CardEvents\Major Arcana\TheHighPriestess
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: TheMagician
+      guid: 797cd9ed6ce7864f8b5d294634c52758
+      id: 1726594133
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: CardEvents
+        ObjectType: 4
+      - ElementName: Major Arcana
+        ObjectType: 4
+      - ElementName: TheMagician
+        ObjectType: 3
+      Path: Default Work Unit\CardEvents\Major Arcana\TheMagician
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: TheMoon
+      guid: 0fd300d9749a2f4bbcc8a36302bb1e6e
+      id: 2075671581
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: CardEvents
+        ObjectType: 4
+      - ElementName: Major Arcana
+        ObjectType: 4
+      - ElementName: TheMoon
+        ObjectType: 3
+      Path: Default Work Unit\CardEvents\Major Arcana\TheMoon
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: TheStar
+      guid: 0b666d4abdb67543b62ba86be9c2b8b8
+      id: 2436895318
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: CardEvents
+        ObjectType: 4
+      - ElementName: Major Arcana
+        ObjectType: 4
+      - ElementName: TheStar
+        ObjectType: 3
+      Path: Default Work Unit\CardEvents\Major Arcana\TheStar
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: TwoOfCups
+      guid: d9aac2e442ccd44e86293c5bf7c6b906
+      id: 1765113981
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: CardEvents
+        ObjectType: 4
+      - ElementName: Cups
+        ObjectType: 4
+      - ElementName: TwoOfCups
+        ObjectType: 3
+      Path: Default Work Unit\CardEvents\Cups\TwoOfCups
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: TwoOfWands
+      guid: cc30f8cef76d2741b69db33a880c232b
+      id: 28325139
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: CardEvents
+        ObjectType: 4
+      - ElementName: Wands
+        ObjectType: 4
+      - ElementName: TwoOfWands
+        ObjectType: 3
+      Path: Default Work Unit\CardEvents\Wands\TwoOfWands
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Vamp
+      guid: cf27f7a69a289442a832345e0f1b014f
+      id: 3908339577
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativePart
+        ObjectType: 4
+      - ElementName: Vamp
+        ObjectType: 3
+      Path: Default Work Unit\GenerativePart\Vamp
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Wands
+      guid: 29f23a246b31d4459608aa9970f4f992
+      id: 2202738146
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeStates
+        ObjectType: 4
+      - ElementName: Bass
+        ObjectType: 4
+      - ElementName: Wands
+        ObjectType: 3
+      Path: Default Work Unit\GenerativeStates\Bass\Wands
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: WheelOfFortune
+      guid: eebd683f6620c044a4e35c20999ff864
+      id: 3929082740
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: CardEvents
+        ObjectType: 4
+      - ElementName: Major Arcana
+        ObjectType: 4
+      - ElementName: WheelOfFortune
+        ObjectType: 3
+      Path: Default Work Unit\CardEvents\Major Arcana\WheelOfFortune
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+  RtpcWwu:
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 2df36369ce6ed547be70d52a82c04066
+    GuidInternal: 
+    m_lastTime: -8586382908239113382
+    List: []
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 46c6d260267ae44a8030202cff271f3f
+    GuidInternal: 
+    m_lastTime: -8586029594002546742
+    List:
+    - name: Card1Group
+      guid: 637394fcc359c3459dcde70b789220f5
+      id: 157898841
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeCardGroups
+        ObjectType: 4
+      - ElementName: Card1Group
+        ObjectType: 9
+      Path: Default Work Unit\GenerativeCardGroups\Card1Group
+      values:
+      - name: Card1Group1
+        guid: 7dae1d1af7555b41ace7ec8aaa6e48a4
+        id: 701895722
+        PathAndIcons:
+        - ElementName: Card1Group1
+          ObjectType: 8
+      - name: Card1Group10
+        guid: d337d5fba49d6b439768dc8f0b58b158
+        id: 100777518
+        PathAndIcons:
+        - ElementName: Card1Group10
+          ObjectType: 8
+      - name: Card1Group11
+        guid: 7da82a5847b5364eab5401441ca4dc70
+        id: 100777519
+        PathAndIcons:
+        - ElementName: Card1Group11
+          ObjectType: 8
+      - name: Card1Group12
+        guid: 8d1dfe2693fa1e45a3d58c0ba76dcf28
+        id: 100777516
+        PathAndIcons:
+        - ElementName: Card1Group12
+          ObjectType: 8
+      - name: Card1Group13
+        guid: c1478f66a06a8d4faae264a3f2b4a4c9
+        id: 100777517
+        PathAndIcons:
+        - ElementName: Card1Group13
+          ObjectType: 8
+      - name: Card1Group2
+        guid: f4f3fd5643bcc043bc03bf122399909a
+        id: 701895721
+        PathAndIcons:
+        - ElementName: Card1Group2
+          ObjectType: 8
+      - name: Card1Group3
+        guid: 5dc4e2e1d429ce44b635f538d821a02e
+        id: 701895720
+        PathAndIcons:
+        - ElementName: Card1Group3
+          ObjectType: 8
+      - name: Card1Group4
+        guid: 8d2f0e592156d74eb2ab0b9ea3f00839
+        id: 701895727
+        PathAndIcons:
+        - ElementName: Card1Group4
+          ObjectType: 8
+      - name: Card1Group5
+        guid: 1e0750ea262827429ecb4915c1899359
+        id: 701895726
+        PathAndIcons:
+        - ElementName: Card1Group5
+          ObjectType: 8
+      - name: Card1Group6
+        guid: 839017327051354c82b52a913960eca9
+        id: 701895725
+        PathAndIcons:
+        - ElementName: Card1Group6
+          ObjectType: 8
+      - name: Card1Group7
+        guid: cf36d6f0727f6342a4fab2d31c58d920
+        id: 701895724
+        PathAndIcons:
+        - ElementName: Card1Group7
+          ObjectType: 8
+      - name: Card1Group8
+        guid: 146599b62e43764a905d025c1345d90e
+        id: 701895715
+        PathAndIcons:
+        - ElementName: Card1Group8
+          ObjectType: 8
+      - name: Card1Group9
+        guid: 04a93ce6eeb6c343a69a78970db30663
+        id: 701895714
+        PathAndIcons:
+        - ElementName: Card1Group9
+          ObjectType: 8
+      - name: None
+        guid: f63291b864d2f042a09ed2bc8c5fe048
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Card1Suit
+      guid: 0d6992738a35bf42bd6997df85036085
+      id: 1675392555
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeCardSuits
+        ObjectType: 4
+      - ElementName: Card1Suit
+        ObjectType: 9
+      Path: Default Work Unit\GenerativeCardSuits\Card1Suit
+      values:
+      - name: Card1Cups
+        guid: 860f863466396d4b855ebc880370c881
+        id: 1213864503
+        PathAndIcons:
+        - ElementName: Card1Cups
+          ObjectType: 8
+      - name: Card1MajorArcana
+        guid: 446f3ee1c97b3b4c9363fc2cdccc3580
+        id: 2351915865
+        PathAndIcons:
+        - ElementName: Card1MajorArcana
+          ObjectType: 8
+      - name: Card1Pentacles
+        guid: 42dd7f060f21c343ac2ec74480b49940
+        id: 741549657
+        PathAndIcons:
+        - ElementName: Card1Pentacles
+          ObjectType: 8
+      - name: Card1Swords
+        guid: 63f49d6ec2aea244b1935e60d608ea9e
+        id: 905849762
+        PathAndIcons:
+        - ElementName: Card1Swords
+          ObjectType: 8
+      - name: Card1Wands
+        guid: a91d5e9b05cfba4b9642d7a46c038ed9
+        id: 3713380301
+        PathAndIcons:
+        - ElementName: Card1Wands
+          ObjectType: 8
+      - name: None
+        guid: 8b907bff1dafad459d55b66b482ac140
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Card2Group
+      guid: a7c8b6bae355cb4b934f0b26c2fbdfe1
+      id: 199200728
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeCardGroups
+        ObjectType: 4
+      - ElementName: Card2Group
+        ObjectType: 9
+      Path: Default Work Unit\GenerativeCardGroups\Card2Group
+      values:
+      - name: Card2Group1
+        guid: 1a7b000deddc59478822e81e4cae25ef
+        id: 2297393465
+        PathAndIcons:
+        - ElementName: Card2Group1
+          ObjectType: 8
+      - name: Card2Group10
+        guid: 38689b5405816f4087768be2437cafd4
+        id: 3387899019
+        PathAndIcons:
+        - ElementName: Card2Group10
+          ObjectType: 8
+      - name: Card2Group11
+        guid: b9e016bf0be1a94c95225e925530edd0
+        id: 3387899018
+        PathAndIcons:
+        - ElementName: Card2Group11
+          ObjectType: 8
+      - name: Card2Group12
+        guid: b02715fed02b2b47837c12d75bdcb0e5
+        id: 3387899017
+        PathAndIcons:
+        - ElementName: Card2Group12
+          ObjectType: 8
+      - name: Card2Group13
+        guid: b0153a2d4a225043949c4803985ab70f
+        id: 3387899016
+        PathAndIcons:
+        - ElementName: Card2Group13
+          ObjectType: 8
+      - name: Card2Group2
+        guid: 98fc07e93212fc488aade13d2736b8c9
+        id: 2297393466
+        PathAndIcons:
+        - ElementName: Card2Group2
+          ObjectType: 8
+      - name: Card2Group3
+        guid: bcf62c527c64fe4abac24523cd16b5c4
+        id: 2297393467
+        PathAndIcons:
+        - ElementName: Card2Group3
+          ObjectType: 8
+      - name: Card2Group4
+        guid: 5049f9e458aeb9478be1618e193bdffa
+        id: 2297393468
+        PathAndIcons:
+        - ElementName: Card2Group4
+          ObjectType: 8
+      - name: Card2Group5
+        guid: cdf5a2077a0f6d41bc7bd2660d83e06f
+        id: 2297393469
+        PathAndIcons:
+        - ElementName: Card2Group5
+          ObjectType: 8
+      - name: Card2Group6
+        guid: 16c04c8f3c4c2a4a87b18ed533044769
+        id: 2297393470
+        PathAndIcons:
+        - ElementName: Card2Group6
+          ObjectType: 8
+      - name: Card2Group7
+        guid: f238686c8b31984b824f759e5b866b95
+        id: 2297393471
+        PathAndIcons:
+        - ElementName: Card2Group7
+          ObjectType: 8
+      - name: Card2Group8
+        guid: 57bf2e29514a2d4898d57824d217486e
+        id: 2297393456
+        PathAndIcons:
+        - ElementName: Card2Group8
+          ObjectType: 8
+      - name: Card2Group9
+        guid: baf1113b6b940347a76fb9ec897b6fc9
+        id: 2297393457
+        PathAndIcons:
+        - ElementName: Card2Group9
+          ObjectType: 8
+      - name: None
+        guid: 92c26df485aa7e47b211c2ce4638f62c
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Card2Suit
+      guid: 47f73eea897ced4082868d22f5e05f42
+      id: 1021100596
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeCardSuits
+        ObjectType: 4
+      - ElementName: Card2Suit
+        ObjectType: 9
+      Path: Default Work Unit\GenerativeCardSuits\Card2Suit
+      values:
+      - name: Card2Cups
+        guid: 9985aa76c4d53646870c36e299522f64
+        id: 593127736
+        PathAndIcons:
+        - ElementName: Card2Cups
+          ObjectType: 8
+      - name: Card2MajorArcana
+        guid: 0c350bf0d5e36e49b3937c6619abac36
+        id: 3069944916
+        PathAndIcons:
+        - ElementName: Card2MajorArcana
+          ObjectType: 8
+      - name: Card2Pentacles
+        guid: 86d4ef037e606e43ac1a4dfabfbaf157
+        id: 231901376
+        PathAndIcons:
+        - ElementName: Card2Pentacles
+          ObjectType: 8
+      - name: Card2Swords
+        guid: fa250ac33591ac4593f76661278e5056
+        id: 2252698273
+        PathAndIcons:
+        - ElementName: Card2Swords
+          ObjectType: 8
+      - name: Card2Wands
+        guid: e06945b5c968c84cbdc34c6cba6c80d2
+        id: 1323396928
+        PathAndIcons:
+        - ElementName: Card2Wands
+          ObjectType: 8
+      - name: None
+        guid: 75c32b7a7cc76f4fbdf1be42d6e47270
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Card3Group
+      guid: bbb063db6f62fd40ab706be29fe8b9b2
+      id: 2407574091
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeCardGroups
+        ObjectType: 4
+      - ElementName: Card3Group
+        ObjectType: 9
+      Path: Default Work Unit\GenerativeCardGroups\Card3Group
+      values:
+      - name: Card3Group1
+        guid: 9960a1b20cf18340bc4aa8b4273a291c
+        id: 848040992
+        PathAndIcons:
+        - ElementName: Card3Group1
+          ObjectType: 8
+      - name: Card3Group10
+        guid: 55074264d9ec7f40b27fc8ca7c326a28
+        id: 2994974288
+        PathAndIcons:
+        - ElementName: Card3Group10
+          ObjectType: 8
+      - name: Card3Group11
+        guid: 4d0db674e012a546b9ec926e9c71b760
+        id: 2994974289
+        PathAndIcons:
+        - ElementName: Card3Group11
+          ObjectType: 8
+      - name: Card3Group12
+        guid: a56cca828fef664eaf507b72f4ae127e
+        id: 2994974290
+        PathAndIcons:
+        - ElementName: Card3Group12
+          ObjectType: 8
+      - name: Card3Group13
+        guid: a76b9a8944545a4392f7e4e14194484f
+        id: 2994974291
+        PathAndIcons:
+        - ElementName: Card3Group13
+          ObjectType: 8
+      - name: Card3Group2
+        guid: 543db781e8775145a5baf5c856140086
+        id: 848040995
+        PathAndIcons:
+        - ElementName: Card3Group2
+          ObjectType: 8
+      - name: Card3Group3
+        guid: 7c2b9d09ff040241b99a0e09d32f98e5
+        id: 848040994
+        PathAndIcons:
+        - ElementName: Card3Group3
+          ObjectType: 8
+      - name: Card3Group4
+        guid: 83c46af2eae9c646a3a1761c178683d6
+        id: 848040997
+        PathAndIcons:
+        - ElementName: Card3Group4
+          ObjectType: 8
+      - name: Card3Group5
+        guid: ed03ce145f2693419d2c19d49806360b
+        id: 848040996
+        PathAndIcons:
+        - ElementName: Card3Group5
+          ObjectType: 8
+      - name: Card3Group6
+        guid: 356eb651f692a243bec987752f7df736
+        id: 848040999
+        PathAndIcons:
+        - ElementName: Card3Group6
+          ObjectType: 8
+      - name: Card3Group7
+        guid: cd6353eaa17e714d819977d36df2dfbe
+        id: 848040998
+        PathAndIcons:
+        - ElementName: Card3Group7
+          ObjectType: 8
+      - name: Card3Group8
+        guid: cb91cf1d0a62e94f9789620462846140
+        id: 848041001
+        PathAndIcons:
+        - ElementName: Card3Group8
+          ObjectType: 8
+      - name: Card3Group9
+        guid: fccc8faee76b064b8c07a2614783c52a
+        id: 848041000
+        PathAndIcons:
+        - ElementName: Card3Group9
+          ObjectType: 8
+      - name: None
+        guid: 2f4a57a01c8fa74c9ff4cb7926efb76b
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: Card3Suit
+      guid: e933952590c4214fa9000edc9cc486f5
+      id: 3986527305
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeCardSuits
+        ObjectType: 4
+      - ElementName: Card3Suit
+        ObjectType: 9
+      Path: Default Work Unit\GenerativeCardSuits\Card3Suit
+      values:
+      - name: Card3Cups
+        guid: e60c3ca99f10004681e4955f2f0b45e7
+        id: 3298030721
+        PathAndIcons:
+        - ElementName: Card3Cups
+          ObjectType: 8
+      - name: Card3MajorArcana
+        guid: 73d6f95ce0b63d44a0a38ceb862ca69b
+        id: 2809334151
+        PathAndIcons:
+        - ElementName: Card3MajorArcana
+          ObjectType: 8
+      - name: Card3Pentacles
+        guid: d9a1763cd914374ab58d89700bef0be4
+        id: 3909883483
+        PathAndIcons:
+        - ElementName: Card3Pentacles
+          ObjectType: 8
+      - name: Card3Swords
+        guid: 97fece172a2cc449a4e5ced8fac73354
+        id: 3113582184
+        PathAndIcons:
+        - ElementName: Card3Swords
+          ObjectType: 8
+      - name: Card3Wands
+        guid: 8f1fa14911a8074d9d35a500fb1b32c6
+        id: 1632202991
+        PathAndIcons:
+        - ElementName: Card3Wands
+          ObjectType: 8
+      - name: None
+        guid: 920a2747461825418d21ba3467ff19a8
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: CardFlipping
+      guid: 5f1c96a3d9e9a04aba7a27011a604bea
+      id: 311318854
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: CardFlipping
+        ObjectType: 9
+      Path: Default Work Unit\CardFlipping
+      values:
+      - name: Cups
+        guid: 6156ce93ece06c478304538dfc0f64d9
+        id: 3817145194
+        PathAndIcons:
+        - ElementName: Cups
+          ObjectType: 8
+      - name: None
+        guid: 40c35b02a210a64bb324ddbb393ce0aa
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: Swords
+        guid: df5b49d2bcae44498d0ec25a60da4463
+        id: 361241855
+        PathAndIcons:
+        - ElementName: Swords
+          ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: DuringReading
+      guid: e159ce0e1e70de4f97d5abf8e953a03d
+      id: 953994230
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: DuringReading
+        ObjectType: 9
+      Path: Default Work Unit\DuringReading
+      values:
+      - name: AceOfCups
+        guid: e9aed5963f19e340b497a99128d4132a
+        id: 2478979318
+        PathAndIcons:
+        - ElementName: AceOfCups
+          ObjectType: 8
+      - name: Death
+        guid: 5bc695eb74070443b5a99287f01694ce
+        id: 779278001
+        PathAndIcons:
+        - ElementName: Death
+          ObjectType: 8
+      - name: EightOfPentacles
+        guid: 6be34cd926291f4190af978d2121727a
+        id: 3555933294
+        PathAndIcons:
+        - ElementName: EightOfPentacles
+          ObjectType: 8
+      - name: FiveOfCups
+        guid: d0dc40ad7e296349a3beb12aad7395ee
+        id: 679328597
+        PathAndIcons:
+        - ElementName: FiveOfCups
+          ObjectType: 8
+      - name: FourOfSwords
+        guid: 9ae8da05a278c94fabf5509339f1b589
+        id: 112666488
+        PathAndIcons:
+        - ElementName: FourOfSwords
+          ObjectType: 8
+      - name: Interlude
+        guid: 80d99086ef51fd45b29a5ee7c1a34fd0
+        id: 1770673853
+        PathAndIcons:
+        - ElementName: Interlude
+          ObjectType: 8
+      - name: KingOfCups
+        guid: e2e1b7f792329940b687f0e310ba4e56
+        id: 87267876
+        PathAndIcons:
+        - ElementName: KingOfCups
+          ObjectType: 8
+      - name: KingOfPentacles
+        guid: 1ef4cdcbbcfb1d459cd4625c9c118dc7
+        id: 1715977140
+        PathAndIcons:
+        - ElementName: KingOfPentacles
+          ObjectType: 8
+      - name: NineOfPentacles
+        guid: 9d9d772323c6864693cd4d43debaae2a
+        id: 1963057671
+        PathAndIcons:
+        - ElementName: NineOfPentacles
+          ObjectType: 8
+      - name: None
+        guid: 56ee51727ab2554a91e9730e5ca558bd
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: SevenOfCups
+        guid: 6687d1071fda7340a619d039a87c6e5b
+        id: 884571752
+        PathAndIcons:
+        - ElementName: SevenOfCups
+          ObjectType: 8
+      - name: SevenOfPentacles
+        guid: 8529d3f733009d4c8fa5f71b02733ea1
+        id: 4205938704
+        PathAndIcons:
+        - ElementName: SevenOfPentacles
+          ObjectType: 8
+      - name: SevenOfSwords
+        guid: 5fb049c2327f3c4aa50c66d6996c80eb
+        id: 587937073
+        PathAndIcons:
+        - ElementName: SevenOfSwords
+          ObjectType: 8
+      - name: SixOfPentacles
+        guid: 02afc7a2b7d696458e65c40d67eb20ad
+        id: 2491223249
+        PathAndIcons:
+        - ElementName: SixOfPentacles
+          ObjectType: 8
+      - name: SixOfSwords
+        guid: 39dcb5ee351a874d9faa6f45f9c9bc0d
+        id: 3436307834
+        PathAndIcons:
+        - ElementName: SixOfSwords
+          ObjectType: 8
+      - name: Strength
+        guid: fd8517ccc105e04ba9439a41a5d2e3c8
+        id: 1008270286
+        PathAndIcons:
+        - ElementName: Strength
+          ObjectType: 8
+      - name: Temperance
+        guid: d71c494ca6e4bb44b81af0338d7ab65e
+        id: 1462743847
+        PathAndIcons:
+        - ElementName: Temperance
+          ObjectType: 8
+      - name: TenOfCups
+        guid: 735c3073b3d2104cb8969c910965f7ac
+        id: 2461612130
+        PathAndIcons:
+        - ElementName: TenOfCups
+          ObjectType: 8
+      - name: TenOfSwords
+        guid: 32ae3ce447494648a48f67f8c7a27c5c
+        id: 2185129511
+        PathAndIcons:
+        - ElementName: TenOfSwords
+          ObjectType: 8
+      - name: TheEmpress
+        guid: 65db3088eee302439b527db7b0610c01
+        id: 4181689965
+        PathAndIcons:
+        - ElementName: TheEmpress
+          ObjectType: 8
+      - name: TheFool
+        guid: 6875fd2d83e447408f191187966eb61e
+        id: 2631758982
+        PathAndIcons:
+        - ElementName: TheFool
+          ObjectType: 8
+      - name: TheHighPriestess
+        guid: 6603a89bb773a24a811bc495f23e2d1b
+        id: 3676275462
+        PathAndIcons:
+        - ElementName: TheHighPriestess
+          ObjectType: 8
+      - name: TheMagician
+        guid: 2b602df614a6d84fbc22e5f9a1a7cd5a
+        id: 1726594133
+        PathAndIcons:
+        - ElementName: TheMagician
+          ObjectType: 8
+      - name: TheMoon
+        guid: ab0d025f3607024ca62c614c01f40d74
+        id: 2075671581
+        PathAndIcons:
+        - ElementName: TheMoon
+          ObjectType: 8
+      - name: TheStar
+        guid: 59b19101083d1843b2b56f6e27270fa4
+        id: 2436895318
+        PathAndIcons:
+        - ElementName: TheStar
+          ObjectType: 8
+      - name: TwoOfCups
+        guid: 9b9e8cd0073a4e4da7433d06314a1d83
+        id: 1765113981
+        PathAndIcons:
+        - ElementName: TwoOfCups
+          ObjectType: 8
+      - name: TwoOfWands
+        guid: 1d45735dcc0d734ab6e5814edff0b950
+        id: 28325139
+        PathAndIcons:
+        - ElementName: TwoOfWands
+          ObjectType: 8
+      - name: WheelOfFortune
+        guid: cec7ab3d26ee374e894c4ef0470fe4be
+        id: 3929082740
+        PathAndIcons:
+        - ElementName: WheelOfFortune
+          ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: GameStage
+      guid: 95118f7cb92f1549ad9de66f0e0b7af3
+      id: 3839992303
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GameStage
+        ObjectType: 9
+      Path: Default Work Unit\GameStage
+      values:
+      - name: Generative
+        guid: 0203096638c48b448a5e6d1d40bd8bf4
+        id: 3430716699
+        PathAndIcons:
+        - ElementName: Generative
+          ObjectType: 8
+      - name: MakingSong
+        guid: e34c8039d5c3574d9308d38f2dd3044f
+        id: 410658637
+        PathAndIcons:
+        - ElementName: MakingSong
+          ObjectType: 8
+      - name: None
+        guid: b6b3e17b3707664ea71503b87f30b573
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: Reading
+        guid: fdf7a864d8a23f4d89551daeedfa8a10
+        id: 2208414071
+        PathAndIcons:
+        - ElementName: Reading
+          ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: GenerativeAccompanment
+      guid: 288bd2d8c3df9a46872f781095508fcc
+      id: 2010693851
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeAccompanment
+        ObjectType: 9
+      Path: Default Work Unit\GenerativeAccompanment
+      values:
+      - name: Cups
+        guid: 9191e1661e1e7e45ae5cbdd757cd0d87
+        id: 3817145194
+        PathAndIcons:
+        - ElementName: Cups
+          ObjectType: 8
+      - name: MajorArcana
+        guid: 7edf2afec1ce514090a36df54edb0308
+        id: 798166914
+        PathAndIcons:
+        - ElementName: MajorArcana
+          ObjectType: 8
+      - name: None
+        guid: 216b8b32ce3e1d4699e164b3e5e103bf
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: Null
+        guid: 6221a4ed5332da4bbcb74456e7d4847a
+        id: 784127654
+        PathAndIcons:
+        - ElementName: Null
+          ObjectType: 8
+      - name: Pentacles
+        guid: 823535abf03d9a4c8d1c5e73281a26bd
+        id: 495557850
+        PathAndIcons:
+        - ElementName: Pentacles
+          ObjectType: 8
+      - name: Swords
+        guid: 8611fdea1446f343828e7b7ea01b9a37
+        id: 361241855
+        PathAndIcons:
+        - ElementName: Swords
+          ObjectType: 8
+      - name: Wands
+        guid: cada4020e215534e9ee1a79b33deb3b9
+        id: 2202738146
+        PathAndIcons:
+        - ElementName: Wands
+          ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: GenerativeKey1
+      guid: db1abc9b75987b49a8a10065c44bdc79
+      id: 2665735801
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeKey1
+        ObjectType: 9
+      Path: Default Work Unit\GenerativeKey1
+      values:
+      - name: Dorian
+        guid: 87fd891427cf6b4bb545656fadddfb74
+        id: 610372824
+        PathAndIcons:
+        - ElementName: Dorian
+          ObjectType: 8
+      - name: Major1
+        guid: 33b3fd889c41614194192dffb9344181
+        id: 2247382893
+        PathAndIcons:
+        - ElementName: Major1
+          ObjectType: 8
+      - name: Major2
+        guid: 7eaa147df4771949a6df2df147e04984
+        id: 2247382894
+        PathAndIcons:
+        - ElementName: Major2
+          ObjectType: 8
+      - name: Minor
+        guid: 8ed28e5de5bf6f4a8353d4aa0827013d
+        id: 3499807024
+        PathAndIcons:
+        - ElementName: Minor
+          ObjectType: 8
+      - name: None
+        guid: 06bd258a39779049bcfc2191afa6a62d
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: GenerativeKey2
+      guid: bf49fb680d85c843ab3146304a68d0a4
+      id: 2665735802
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeKey2
+        ObjectType: 9
+      Path: Default Work Unit\GenerativeKey2
+      values:
+      - name: Dorian
+        guid: f2f156c5fec5ed409d38901313c35f05
+        id: 610372824
+        PathAndIcons:
+        - ElementName: Dorian
+          ObjectType: 8
+      - name: Major1
+        guid: 980c3aff97d63149b6a037b9f541386b
+        id: 2247382893
+        PathAndIcons:
+        - ElementName: Major1
+          ObjectType: 8
+      - name: Major2
+        guid: efd60902e04d5e47b252a4d80883e460
+        id: 2247382894
+        PathAndIcons:
+        - ElementName: Major2
+          ObjectType: 8
+      - name: Minor
+        guid: 02c4ca84b1d1c14799c6e4b44c1f589a
+        id: 3499807024
+        PathAndIcons:
+        - ElementName: Minor
+          ObjectType: 8
+      - name: None
+        guid: 8605405869a58846beee64d85b4b5d02
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: GenerativeKey3
+      guid: 502b76e90cf98249bb254e3d5a8aea31
+      id: 2665735803
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativeKey3
+        ObjectType: 9
+      Path: Default Work Unit\GenerativeKey3
+      values:
+      - name: Dorian
+        guid: effdca5f3a65894799a2d7782ef4d1d6
+        id: 610372824
+        PathAndIcons:
+        - ElementName: Dorian
+          ObjectType: 8
+      - name: Major1
+        guid: 9f232fe1191cb442a6e8c2c1e79e282f
+        id: 2247382893
+        PathAndIcons:
+        - ElementName: Major1
+          ObjectType: 8
+      - name: Major2
+        guid: 4b450e5f96190145b27b1285a0afc21f
+        id: 2247382894
+        PathAndIcons:
+        - ElementName: Major2
+          ObjectType: 8
+      - name: Minor
+        guid: 2f9fe027bcd9334cbec6d9a0df94562e
+        id: 3499807024
+        PathAndIcons:
+        - ElementName: Minor
+          ObjectType: 8
+      - name: None
+        guid: 0ac43e565288a34588e9248d5aab043f
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+    - name: GenerativePart
+      guid: acf70eaa2ce6224897c5aa19a395d9fe
+      id: 2576999240
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: GenerativePart
+        ObjectType: 9
+      Path: Default Work Unit\GenerativePart
+      values:
+      - name: Main
+        guid: 9dc271439ae70d448c7f47a5f7ea84f6
+        id: 3161908922
+        PathAndIcons:
+        - ElementName: Main
+          ObjectType: 8
+      - name: None
+        guid: b96adfeceec7214aadf255695b9d8b40
+        id: 748895195
+        PathAndIcons:
+        - ElementName: None
+          ObjectType: 8
+      - name: Vamp
+        guid: a16d6f2028f59a41b172386af1d38ee3
+        id: 3908339577
+        PathAndIcons:
+        - ElementName: Vamp
+          ObjectType: 8
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 4ea545e166750141b62c179dda34df71
+    GuidInternal: 
+    m_lastTime: -8586204646622609098
+    List: []
+  TriggerWwu:
+  - PhysicalPath: Triggers\Default Work Unit.wwu
+    ParentPhysicalPath: 
+    guid: 86ae67b1e2fac240bd934fbfb6332120
+    GuidInternal: 
+    m_lastTime: -8586382908239732034
+    List: []
+  ExpandedItems:
+  - /Divinuet
+  autoPopulateEnabled: 1
+  CurrentPluginConfig: Profile

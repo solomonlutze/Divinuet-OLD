@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe8883c4e804a4aedb12a21c5434e4d7, type: 3}
+  m_Name: Temperance
+  m_EditorClassIdentifier: 
+  cardName: Temperance
+  order: 14
+  suit: 0
+  cardPicture: {fileID: 2800000, guid: c35860d4d80db44d5aea02ee10dfcad7, type: 3}
+  cardPicture2x: {fileID: 21300000, guid: c35860d4d80db44d5aea02ee10dfcad7, type: 3}
+  cardTextMain: temperance
+  cardTextUpright: temp text for temp-er-ance
+  cardTextReversed: 
+  readingMusicEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: f1deeadd23e68154cba61dcd0b568861,
+      type: 2}
+  cardSuitArray:
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 7ffea89d4af3bfb479e09a60420e668e,
+      type: 2}
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 2ec7b1dc93c58a04d91e87272a5b30c6,
+      type: 2}
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 5197e265c1321714a8d91c9bc0908fd0,
+      type: 2}
+  cardGroupArray:
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 178adb8c80c7ef84eb4ba7b7d1f267db,
+      type: 2}
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: b2db802ef146b4b4e8d23951cbf2cd3b,
+      type: 2}
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 1218139dc4487e0408739f175552a6e6,
+      type: 2}
+  cardKeyArray:
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 5a707d8302c576f4b9b8071d36f2455d,
+      type: 2}
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 526f0f3af1678914d833782fed7bb805,
+      type: 2}
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: fe5b9147ae30f3c489fd37c727a7042e,
+      type: 2}
+  clipDuration: 45
+  thematicGroup: 9

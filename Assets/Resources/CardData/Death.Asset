@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe8883c4e804a4aedb12a21c5434e4d7, type: 3}
+  m_Name: Death
+  m_EditorClassIdentifier: 
+  cardName: Death
+  order: 13
+  suit: 0
+  cardPicture: {fileID: 2800000, guid: 1c7816ec9609d4db4b030684d14fefbf, type: 3}
+  cardPicture2x: {fileID: 21300000, guid: 1c7816ec9609d4db4b030684d14fefbf, type: 3}
+  cardTextMain: 'Death: endings, closure, transformation.'
+  cardTextUpright: "Bringing a phase of life to an end.^ Recognizing and celebrating
+    the conclusion of something.^ Putting bad habits to rest.^ Becoming a new person.^
+    Leaving one person, place, or thing for another.^ Letting go.\r"
+  cardTextReversed: 
+  readingMusicEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 83cbf6834ea35e844a9bbb86077a0ae2,
+      type: 2}
+  cardSuitArray:
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 7ffea89d4af3bfb479e09a60420e668e,
+      type: 2}
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 2ec7b1dc93c58a04d91e87272a5b30c6,
+      type: 2}
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 5197e265c1321714a8d91c9bc0908fd0,
+      type: 2}
+  cardGroupArray:
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 8483e8c16a0abde4a8aaf488fee92691,
+      type: 2}
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: ef477439f2cb0674387fd988ab511d48,
+      type: 2}
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 12ba6c07724362346912c7ba0428ae34,
+      type: 2}
+  cardKeyArray:
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: a006d9066b8ad1041bbfc75beec29115,
+      type: 2}
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 24b9fceb5cdd3cb4585749c7c9f19cd7,
+      type: 2}
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 4538619b0cb3c6742b22506fa5b2cffc,
+      type: 2}
+  clipDuration: 45
+  thematicGroup: 1
