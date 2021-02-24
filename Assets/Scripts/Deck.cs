@@ -39,7 +39,7 @@ public enum GameMode
     ViewPreviousReadings
 }
 
-// This is Sol's comment!
+// sol best comment
 public class Deck : MonoBehaviour
 {
     public bool DEBUG_skipReading;
