@@ -39,6 +39,7 @@ public enum GameMode
     ViewPreviousReadings
 }
 
+// This is Sol's comment!
 public class Deck : MonoBehaviour
 {
     public bool DEBUG_skipReading;
@@ -317,41 +318,41 @@ public class Deck : MonoBehaviour
 
         else if (gameState == GameState.GenerativePhase || gameState == GameState.ShowingEndInstructions)
         {
-                string[] videoClipConsole = {
+            string[] videoClipConsole = {
                 "The cards present... reading meaning (e.g. Past, Present, Future)", "Suit majority video clip",
                 "Card 1 title card", "Split screen 1- meaning/card video clip", "Thematic group video clip 1",
                 "Card 2 title card", "Split screen 2- meaning/card video clip", "Thematic group video clip 2",
                 "Card 3 title card", "Split screen 3- meaning/card video clip", "Thematic group video clip 3",
-                }; 
-                
-            
-                if (new int[] {0, 2, 5, 8}.Contains(generativeSection))
-                {
-                    videoCanvas.gameObject.SetActive(false);
-                    videoPlayer.clip = videoClips[playingClipNumber];
-                    videoPlayer.Stop();
-                    videoPlayer.targetTexture.Release();
-                    Debug.Log(videoClipConsole[generativeSection]);
-                    generativeSection++;
-                }
-                else if (generativeSection >= 11)
-                {
-                    gameState = GameState.GenerativePhaseDone;
-                    playingClipNumber = 0;
-                    videoPlayer.clip = videoClips[playingClipNumber];
-                    videoPlayer.Play();
-                    videoCanvas.gameObject.SetActive(true);
-                }
+                };
 
-                else
-                {
-                    videoPlayer.clip = videoClips[playingClipNumber];
-                    videoPlayer.Play();
-                    videoCanvas.gameObject.SetActive(true);
-                    Debug.Log(videoClipConsole[generativeSection]);
-                    playingClipNumber++;
-                    generativeSection++;
-                }
+
+            if (new int[] { 0, 2, 5, 8 }.Contains(generativeSection))
+            {
+                videoCanvas.gameObject.SetActive(false);
+                videoPlayer.clip = videoClips[playingClipNumber];
+                videoPlayer.Stop();
+                videoPlayer.targetTexture.Release();
+                Debug.Log(videoClipConsole[generativeSection]);
+                generativeSection++;
+            }
+            else if (generativeSection >= 11)
+            {
+                gameState = GameState.GenerativePhaseDone;
+                playingClipNumber = 0;
+                videoPlayer.clip = videoClips[playingClipNumber];
+                videoPlayer.Play();
+                videoCanvas.gameObject.SetActive(true);
+            }
+
+            else
+            {
+                videoPlayer.clip = videoClips[playingClipNumber];
+                videoPlayer.Play();
+                videoCanvas.gameObject.SetActive(true);
+                Debug.Log(videoClipConsole[generativeSection]);
+                playingClipNumber++;
+                generativeSection++;
+            }
         }
     }
 
@@ -422,7 +423,7 @@ public class Deck : MonoBehaviour
                 cardSuitMelodyEvents[numberCardsAlreadyDealt] = card1SuitEvents[s];
             }
 
-            else if(numberCardsAlreadyDealt == 1)
+            else if (numberCardsAlreadyDealt == 1)
             {
                 groupMelodyEvents[1] = card2MelodyEvents[card.cardData.thematicGroup - 1];
                 int s = (int)card.cardData.suit;
@@ -627,7 +628,7 @@ public class Deck : MonoBehaviour
         foreach (TarotCard card in dealtCards)
         {
             StartCoroutine(card.FadeOut());
-            
+
             foreach (ParticleSystem ps in sparks)
             {
                 float GetColorFromCardOrder(int order)
@@ -645,9 +646,9 @@ public class Deck : MonoBehaviour
             }
         }
 
-       
+
         {
-            
+
         }
         makingSongState.Post(gameObject);
         Cursor.SetCursor(waitCursor, Vector2.zero, CursorMode.Auto);
