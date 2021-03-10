@@ -12,11 +12,8 @@ public enum GameState
   DefineSpread,
   ViewPreviousReadings,
   ChoosingCards,
-  FadingInDeck,
-  ReadyToDeal,
-  Dealing,
-  DealingDone,
   FlippingCard,
+  ReadyToFadeInCard,
   FadingCardInDone,
   PreReading,
   ReadingCard,
@@ -42,9 +39,9 @@ public enum GameMode
 // sol best comment
 public class Deck : MonoBehaviour
 {
-    public bool DEBUG_skipReading;
-    [Tooltip("Save reading when cards fade in, vs after reading")]
-    public bool DEBUG_SaveReadingImmediately;
+  public bool DEBUG_skipReading;
+  [Tooltip("Save reading when cards fade in, vs after reading")]
+  public bool DEBUG_SaveReadingImmediately;
   [Tooltip("Allows you to generate max saved readings from the previous readings screen")]
   public bool DEBUG_EnableReadingGeneration;
 
@@ -139,7 +136,7 @@ public class Deck : MonoBehaviour
   public List<int> cardsSelectedToDeal;
   // Individual card data for cards chosen to be flipped. Attached to a physical gameObject
   // that looks like a material card.
-  private List<TarotCard> dealtCards;
+  private List<TarotCardData> selectedCardData;
   public int numberCardsAlreadyDealt = 0;
   // Keeps track of how many cards have been read so far in this reading
   private int numCardsAlreadyRead = 0;
@@ -159,7 +156,7 @@ public class Deck : MonoBehaviour
     cardSelectionUI = cardSelectionCanvas.GetComponent<CardSelectionUI>();
     savedReadingsUI = savedReadingsCanvas.GetComponent<SavedReadingsUI>();
     cardsSelectedToDeal = new List<int>();
-    dealtCards = new List<TarotCard>();
+    selectedCardData = new List<TarotCardData>();
     cardsInDeck = new DeckCard[numberOfCardsInDeck];
     enableButton = false;
     majorArcanaTotal = 0;
@@ -181,16 +178,6 @@ public class Deck : MonoBehaviour
   void ClearGameState()
   {
     StopAllCoroutines();
-    foreach (TarotCard tcard in dealtCards)
-    {
-      tcard.StopAllCoroutines();
-      Destroy(tcard.gameObject);
-    }
-    foreach (DeckCard dcard in cardsInDeck)
-    {
-      dcard.StopAllCoroutines();
-      Destroy(dcard.gameObject);
-    }
     numCardsAlreadyRead = 0;
     readingUI.StopAllCoroutines();
     StartCoroutine(readingUI.FadeOut());
@@ -202,7 +189,7 @@ public class Deck : MonoBehaviour
   public void ResetGameState()
   {
     cardsSelectedToDeal = new List<int>();
-    dealtCards = new List<TarotCard>();
+    selectedCardData = new List<TarotCardData>();
     cardsInDeck = new DeckCard[numberOfCardsInDeck];
     enableButton = false;
     majorArcanaTotal = 0;
@@ -238,13 +225,7 @@ public class Deck : MonoBehaviour
       {
         case GameState.ChoosingCards:
           break;
-        case GameState.ReadyToDeal:
-
-          gameState = GameState.Dealing; // start dealing
-          DealCard();
-
-          break;
-        case GameState.DealingDone:
+        case GameState.ReadyToFadeInCard:
           if (DEBUG_skipReading)
           {
             gameState = GameState.ShowingGenerativeUI;
@@ -364,8 +345,6 @@ public class Deck : MonoBehaviour
     }
   }
 
-
-
   public void ChooseCard(TarotCardData card)
   {
     cardsSelectedToDeal.Add(card.order);
@@ -373,8 +352,12 @@ public class Deck : MonoBehaviour
 
   public void StartChooseCardGame()
   {
-    gameState = GameState.FadingInDeck;
-    StartCoroutine(FadeInDeck());
+    foreach (int cardOrder in cardsSelectedToDeal)
+    {
+      AddCardData(cardOrder);
+    }
+    gameState = GameState.ReadyToFadeInCard;
+    PrepForReading();
     AkSoundEngine.PostEvent("MenuAmbienceStop", this.gameObject);
     readingStart.Post(gameObject, (uint)AkCallbackType.AK_MusicSyncUserCue, CallbackFunction);
     cardSelectionCanvas.enabled = false;
@@ -399,6 +382,7 @@ public class Deck : MonoBehaviour
         randomCardOrderNum = GameMaster.Instance.cardsData[Random.Range(0, GameMaster.Instance.cardsData.Length)].order;
       }
       cardsSelectedToDeal.Add(randomCardOrderNum);
+      AddCardData(randomCardOrderNum);
     }
   }
   // instantiate card
@@ -407,84 +391,72 @@ public class Deck : MonoBehaviour
   {
     return System.Array.Find(GameMaster.Instance.cardsData, delegate (TarotCardData cd) { return cd.order == cardOrder; });
   }
-  void DealCard()
+  void AddCardData(int cardOrder)
   {
-    TarotCard card = Instantiate(tarotCardPrefab).GetComponent<TarotCard>();
-    dealtCards.Add(card);
-    if (numberCardsAlreadyDealt < cardsSelectedToDeal.Count)
+    TarotCardData cardData = GetCardData(cardOrder);
+    selectedCardData.Add(cardData);
+    videoClips[setClipNumber] = cardData.cardAndGroupClips[setClipNumber - 1];
+    videoClips[setClipNumber] = cardData.cardAndGroupClips[setClipNumber - 1];
+    Debug.Log("Card Clip " + setClipNumber + " chosen.");
+    setClipNumber++;
+    videoClips[setClipNumber] = cardData.cardAndGroupClips[setClipNumber - 1];
+    Debug.Log("Group Clip " + setClipNumber + " chosen.");
+    setClipNumber++;
+
+
+    if (numberCardsAlreadyDealt == 0)
     {
-      int cardOrder = cardsSelectedToDeal[numberCardsAlreadyDealt];
-      TarotCardData cardData = GetCardData(cardOrder);
-      card.Init(cardData, false);
-      videoClips[setClipNumber] = cardData.cardAndGroupClips[setClipNumber - 1];
-      videoClips[setClipNumber] = cardData.cardAndGroupClips[setClipNumber - 1];
-      Debug.Log("Card Clip " + setClipNumber + " chosen.");
-      setClipNumber++;
-      videoClips[setClipNumber] = cardData.cardAndGroupClips[setClipNumber - 1];
-      Debug.Log("Group Clip " + setClipNumber + " chosen.");
-      setClipNumber++;
-
-
-      if (numberCardsAlreadyDealt == 0)
-      {
-        groupMelodyEvents[0] = card1MelodyEvents[card.cardData.thematicGroup - 1];
-        int s = (int)card.cardData.suit;
-        cardSuitMelodyEvents[numberCardsAlreadyDealt] = card1SuitEvents[s];
-      }
-
-      else if (numberCardsAlreadyDealt == 1)
-      {
-        groupMelodyEvents[1] = card2MelodyEvents[card.cardData.thematicGroup - 1];
-        int s = (int)card.cardData.suit;
-        cardSuitMelodyEvents[numberCardsAlreadyDealt] = card2SuitEvents[s];
-
-      }
-      else if (numberCardsAlreadyDealt == 2)
-      {
-        groupMelodyEvents[2] = card3MelodyEvents[card.cardData.thematicGroup - 1];
-        int s = (int)card.cardData.suit;
-        cardSuitMelodyEvents[numberCardsAlreadyDealt] = card3SuitEvents[s];
-
-        foreach (AK.Wwise.Event e in groupMelodyEvents)
-        {
-          e.Post(gameObject);
-        }
-
-        foreach (AK.Wwise.Event e in cardSuitMelodyEvents)
-        {
-          e.Post(gameObject);
-          Debug.Log(cardSuitMelodyEvents[0] + " " + cardSuitMelodyEvents[1] + " " + cardSuitMelodyEvents[2]);
-        }
-
-        setClipNumber = 1;
-
-      }
-      numberCardsAlreadyDealt++;
-      StartCoroutine(DoCardDealingMovement(card));
-      cardSlideSFX.Post(gameObject);
+      groupMelodyEvents[0] = card1MelodyEvents[cardData.thematicGroup - 1];
+      int s = (int)cardData.suit;
+      cardSuitMelodyEvents[numberCardsAlreadyDealt] = card1SuitEvents[s];
     }
-    else
+
+    else if (numberCardsAlreadyDealt == 1)
     {
-      Debug.LogError("More cards dealt than exist in data set. This shouldn't ever happen.");
+      groupMelodyEvents[1] = card2MelodyEvents[cardData.thematicGroup - 1];
+      int s = (int)cardData.suit;
+      cardSuitMelodyEvents[numberCardsAlreadyDealt] = card2SuitEvents[s];
+
     }
-    if (card.cardData.suit == CardSuit.MajorArcana)
+    else if (numberCardsAlreadyDealt == 2)
+    {
+      groupMelodyEvents[2] = card3MelodyEvents[cardData.thematicGroup - 1];
+      int s = (int)cardData.suit;
+      cardSuitMelodyEvents[numberCardsAlreadyDealt] = card3SuitEvents[s];
+
+      foreach (AK.Wwise.Event e in groupMelodyEvents)
+      {
+        e.Post(gameObject);
+      }
+
+      foreach (AK.Wwise.Event e in cardSuitMelodyEvents)
+      {
+        e.Post(gameObject);
+        Debug.Log(cardSuitMelodyEvents[0] + " " + cardSuitMelodyEvents[1] + " " + cardSuitMelodyEvents[2]);
+      }
+
+      setClipNumber = 1;
+
+    }
+    numberCardsAlreadyDealt++;
+    if (cardData.suit == CardSuit.MajorArcana)
     {
       majorArcanaTotal++;
     }
-    else if (card.cardData.suit == CardSuit.Cups)
+    else if (cardData.suit == CardSuit.Cups)
     {
       cupsTotal++;
     }
-    else if (card.cardData.suit == CardSuit.Wands)
+    else if (cardData.suit == CardSuit.Wands)
     {
       wandsTotal++;
     }
-    else if (card.cardData.suit == CardSuit.Swords)
+    else if (cardData.suit == CardSuit.Swords)
     {
       swordsTotal++;
     }
 
-    else if (card.cardData.suit == CardSuit.Pentacles)
+    else if (cardData.suit == CardSuit.Pentacles)
     {
       pentaclesTotal++;
     }
@@ -497,8 +469,7 @@ public class Deck : MonoBehaviour
     demoInstructionsCanvas.enabled = true;
   }
 
-  IEnumerator FadeInDeck()
-  //this shouldn't work but it does
+  void PrepForReading()
   {
     if (gameMode != GameMode.ViewPreviousReadings && DEBUG_SaveReadingImmediately)
     {
@@ -509,14 +480,6 @@ public class Deck : MonoBehaviour
         false
         ));
     }
-    Cursor.SetCursor(waitCursor, Vector2.zero, CursorMode.Auto);
-    Coroutine lastCardFadeInCoroutine = null; // this is stupid
-    foreach (DeckCard card in cardsInDeck)
-    {
-      lastCardFadeInCoroutine = StartCoroutine(card.FadeIn());
-      gameState = GameState.ReadyToDeal;
-    }
-    yield return lastCardFadeInCoroutine; // thiS ISS TUPID
     enableButton = true;
     Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
     gameUICanvas.enabled = true;
@@ -531,32 +494,13 @@ public class Deck : MonoBehaviour
     }
   }
 
-  IEnumerator DoCardDealingMovement(TarotCard dealtCard)
-  {
-    float t = 0;
-    while (t < 1)
-    {
-      t += Time.deltaTime / cardDealSpeed;
-      dealtCard.transform.position = Vector3.Slerp(
-          transform.position,         // location of deck
-          dealtCardLocations[dealtCards.Count - 1].position,  // next card deal location
-          t
-      );
-      yield return null;
-    }
-    gameState = GameState.ReadyToDeal;
-    if (dealtCards.Count == dealtCardLocations.Length)
-    {
-      gameState = GameState.DealingDone;
-    }
-  }
 
   IEnumerator FadeInCard()
   {
     float t = 0;
-    TarotCard card = dealtCards[numCardsAlreadyRead];
-    cardImages[numCardsAlreadyRead].sprite = card.cardData.cardPicture2x;
-    int groupNumber = card.cardData.thematicGroup;
+    TarotCardData cardData = selectedCardData[numCardsAlreadyRead];
+    cardImages[numCardsAlreadyRead].sprite = cardData.cardPicture2x;
+    int groupNumber = cardData.thematicGroup;
     Color sparkColor = groupSparkColors[groupNumber - 1];
     Debug.Log(groupNumber + " " + sparkColor);
     ParticleSystem.MainModule ma = sparks[numCardsAlreadyRead].main;
@@ -577,9 +521,9 @@ public class Deck : MonoBehaviour
   IEnumerator ReadCard()
   {
     gameState = GameState.ReadingCard;
-    TarotCard card = dealtCards[numCardsAlreadyRead];
-    card.cardData.readingMusicEvent.Post(gameObject);
-    readingUI.Init(dealtCards[numCardsAlreadyRead]);
+    TarotCardData cardData = selectedCardData[numCardsAlreadyRead];
+    cardData.readingMusicEvent.Post(gameObject);
+    readingUI.Init(selectedCardData[numCardsAlreadyRead]);
     yield return StartCoroutine(readingUI.FadeIn());
     yield return StartCoroutine(readingUI.ReadCard());
     while (readingUI.reading)
@@ -597,7 +541,7 @@ public class Deck : MonoBehaviour
     CardReadingUI readingUI = readingCanvas.GetComponent<CardReadingUI>();
     yield return StartCoroutine(readingUI.FadeOut());
     enableButton = true;
-    if (numCardsAlreadyRead < dealtCards.Count)
+    if (numCardsAlreadyRead < selectedCardData.Count)
     {
       gameState = GameState.FadingOutCardDone;
     }
@@ -620,10 +564,12 @@ public class Deck : MonoBehaviour
         ));
     }
 
-    foreach (TarotCard card in dealtCards)
+    foreach (Image cardImage in cardImages)
     {
-      StartCoroutine(card.FadeOut());
-
+      // uhhhh fade out card somehow
+    }
+    foreach (TarotCardData card in selectedCardData)
+    {
       foreach (ParticleSystem ps in sparks)
       {
         float GetColorFromCardOrder(int order)
@@ -631,9 +577,9 @@ public class Deck : MonoBehaviour
           return (order < 7 ? ((order + 78) * 3) / 255f : (order * 3) / 255f);
         }
         Color particleColor = new Color32();
-        particleColor.r = GetColorFromCardOrder(dealtCards[0].cardData.order);
-        particleColor.g = GetColorFromCardOrder(dealtCards[1].cardData.order);
-        particleColor.b = GetColorFromCardOrder(dealtCards[2].cardData.order);
+        particleColor.r = GetColorFromCardOrder(selectedCardData[0].order);
+        particleColor.g = GetColorFromCardOrder(selectedCardData[1].order);
+        particleColor.b = GetColorFromCardOrder(selectedCardData[2].order);
         particleColor.a = 255;
         ParticleSystem.MainModule ma = ps.main;
         ma.startColor = particleColor;
@@ -641,10 +587,6 @@ public class Deck : MonoBehaviour
       }
     }
 
-
-    {
-
-    }
     makingSongState.Post(gameObject);
     Cursor.SetCursor(waitCursor, Vector2.zero, CursorMode.Auto);
     yield return StartCoroutine(generativeUI.FadeIn());
@@ -661,11 +603,11 @@ public class Deck : MonoBehaviour
     generativeState.Post(gameObject);
     for (int i = 0; i < 3; i++)
     {
-      AK.Wwise.Event keyEvent = (dealtCards[i].cardData.cardKeyArray[i]);
+      AK.Wwise.Event keyEvent = (selectedCardData[i].cardKeyArray[i]);
       keyEvent.Post(gameObject);
       Debug.Log(i + " " + keyEvent);
     }
-    StartCoroutine(generativeUI.DoGeneration(dealtCards));
+    StartCoroutine(generativeUI.DoGeneration(selectedCardData));
     demoEndCanvas.enabled = true;
   }
 
@@ -728,7 +670,7 @@ public class Deck : MonoBehaviour
     switch (gameMode)
     {
       case GameMode.Random:
-        gameState = GameState.FadingInDeck;
+        gameState = GameState.ReadyToFadeInCard;
         AkSoundEngine.PostEvent("MenuAmbienceStop", this.gameObject);
         readingStart.Post(gameObject, (uint)AkCallbackType.AK_MusicSyncUserCue, CallbackFunction);
         generativeCanvas.enabled = true;
@@ -738,17 +680,17 @@ public class Deck : MonoBehaviour
         defineSpreadCanvas.enabled = false;
         ResetGameState();
         ChooseAllCardsRandomly();
-        StartCoroutine(FadeInDeck());
+        PrepForReading();
         break;
       case GameMode.ViewPreviousReadings:
-        gameState = GameState.FadingInDeck;
+        gameState = GameState.ReadyToFadeInCard;
         AkSoundEngine.PostEvent("MenuAmbienceStop", this.gameObject);
         readingStart.Post(gameObject, (uint)AkCallbackType.AK_MusicSyncUserCue, CallbackFunction);
         generativeCanvas.enabled = true;
         readingCanvas.enabled = true;
         gameUICanvas.enabled = true;
         defineSpreadCanvas.enabled = false;
-        StartCoroutine(FadeInDeck());
+        PrepForReading();
         break;
       case GameMode.Choose:
       default:
@@ -777,7 +719,7 @@ public class Deck : MonoBehaviour
   public void StartOver()
   {
     readingState.Post(gameObject);
-    gameState = GameState.FadingInDeck;
+    gameState = GameState.ReadyToFadeInCard;
     ClearGameState();
     ResetGameState();
   }
