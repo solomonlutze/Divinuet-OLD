@@ -25,25 +25,25 @@ public class CardReadingUI : BaseUICanvas
   }
 
 
-  public void Init(TarotCard card)
+  public void Init(TarotCardData cardData)
   {
-    cardImage.sprite = card.cardData.cardPicture2x;
+    cardImage.sprite = cardData.cardPicture2x;
     ReadingUtils.HideAllCharacters(cardText);
-    totalReadingTime = DEBUG_gottaGoFast ? 2f : (card.cardData.clipDuration - 2);
-    cardText.text = card.cardData.cardTextMain.ToString() + ReadingUtils.readingBreakCharacter + "\n\n";
-    if (card.cardData.suit == CardSuit.Cups)
+    totalReadingTime = DEBUG_gottaGoFast ? 2f : (cardData.clipDuration - 2);
+    cardText.text = cardData.cardTextMain.ToString() + ReadingUtils.readingBreakCharacter + "\n\n";
+    if (cardData.suit == CardSuit.Cups)
     {
       backgroundColor.color = cupsBGColor;
     }
-    else if (card.cardData.suit == CardSuit.Wands)
+    else if (cardData.suit == CardSuit.Wands)
     {
       backgroundColor.color = wandsBGColor;
     }
-    else if (card.cardData.suit == CardSuit.Swords)
+    else if (cardData.suit == CardSuit.Swords)
     {
       backgroundColor.color = swordsBGColor;
     }
-    else if (card.cardData.suit == CardSuit.Pentacles)
+    else if (cardData.suit == CardSuit.Pentacles)
     {
       backgroundColor.color = pentaclesBGColor;
     }
@@ -51,18 +51,8 @@ public class CardReadingUI : BaseUICanvas
     {
       backgroundColor.color = majorArcanaBGColor;
     }
+    cardText.text += cardData.cardTextUpright.ToString();
 
-
-    if (card.isReversed)
-    {
-      cardImage.transform.eulerAngles = new Vector3(0, 0, 180f);
-      cardText.text += card.cardData.cardTextReversed.ToString();
-    }
-    else
-    {
-      cardImage.transform.eulerAngles = new Vector3(0, 0, 0);
-      cardText.text += card.cardData.cardTextUpright.ToString();
-    }
   }
 
   public IEnumerator ReadCard()
