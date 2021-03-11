@@ -16,7 +16,7 @@ MonoBehaviour:
   order: 10
   suit: 0
   cardPicture: {fileID: 2800000, guid: 6ccaf223fd1934b5ca54f74d29147ae8, type: 3}
-  cardPicture2x: {fileID: 21300000, guid: 6ccaf223fd1934b5ca54f74d29147ae8, type: 3}
+  cardPicture2x: {fileID: 21300000, guid: c05dcae61df5656488492a3f6df28f73, type: 3}
   cardTextMain: Wheel of Fortune
   cardTextUpright: the tarot card^ not the game show^ ha ha ha^
   cardTextReversed: 
@@ -24,32 +24,6 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: b212e740b6a112140b671c5dc8735ff9,
-      type: 2}
-  cardSuitArray:
-  - idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 7ffea89d4af3bfb479e09a60420e668e,
-      type: 2}
-  - idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 2ec7b1dc93c58a04d91e87272a5b30c6,
-      type: 2}
-  - idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 5197e265c1321714a8d91c9bc0908fd0,
-      type: 2}
-  cardGroupArray:
-  - idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 61f913236eb43e04cb1a70701586593a,
-      type: 2}
-  - idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: b554bb6d762e4c64d863ebd505f1300c,
-      type: 2}
-  - idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 41d1366f44313174d902dbbba66808fd,
       type: 2}
   cardKeyArray:
   - idInternal: 0
@@ -66,3 +40,10 @@ MonoBehaviour:
       type: 2}
   clipDuration: 45
   thematicGroup: 2
+  cardAndGroupClips:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}

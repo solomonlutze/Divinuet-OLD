@@ -16,7 +16,7 @@ MonoBehaviour:
   order: 0
   suit: 0
   cardPicture: {fileID: 2800000, guid: 6a093e7f38ed546e5819580fa3240a1f, type: 3}
-  cardPicture2x: {fileID: 21300000, guid: d4ce4edb035d64d04914e07a749db6cc, type: 3}
+  cardPicture2x: {fileID: 21300000, guid: cfa4d899d828c3544bbb9b37e1fcc3f0, type: 3}
   cardTextMain: 'The Fool: beginnings, eagerness, naivete.'
   cardTextUpright: Expressing joy and youthful vigor.^ Being open-minded.^ Taking
     a leap of faith.^ Being eager or curious.^ Exploring your potential.^ But also,

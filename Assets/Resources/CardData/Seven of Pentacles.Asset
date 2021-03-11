@@ -16,7 +16,7 @@ MonoBehaviour:
   order: 70
   suit: 3
   cardPicture: {fileID: 2800000, guid: 24750c1def188384cae877e4c7a7daaa, type: 3}
-  cardPicture2x: {fileID: 21300000, guid: 24750c1def188384cae877e4c7a7daaa, type: 3}
+  cardPicture2x: {fileID: 21300000, guid: 6da15938c449f7a4587419fd3debe99b, type: 3}
   cardTextMain: Seven of Pentacles- patience, cultivation, commitment.
   cardTextUpright: It's the seven of pentacles text.^ Imagine that.^ Text.^ For seven.^
     Of pentacles.^ Incredible.
@@ -25,32 +25,6 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 50f759a9230336b40a406e080d5c77c8,
-      type: 2}
-  cardSuitArray:
-  - idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: b69aa45e1bfb7f745aceb2674a3c363c,
-      type: 2}
-  - idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 3c07efb4ec577f648a93c1b9df2b56f5,
-      type: 2}
-  - idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 9b30d3e933d785243a4b2c953844d897,
-      type: 2}
-  cardGroupArray:
-  - idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 178adb8c80c7ef84eb4ba7b7d1f267db,
-      type: 2}
-  - idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: b2db802ef146b4b4e8d23951cbf2cd3b,
-      type: 2}
-  - idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 1218139dc4487e0408739f175552a6e6,
       type: 2}
   cardKeyArray:
   - idInternal: 0
@@ -67,3 +41,10 @@ MonoBehaviour:
       type: 2}
   clipDuration: 45
   thematicGroup: 9
+  cardAndGroupClips:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}

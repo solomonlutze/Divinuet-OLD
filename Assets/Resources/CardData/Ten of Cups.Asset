@@ -16,7 +16,7 @@ MonoBehaviour:
   order: 45
   suit: 1
   cardPicture: {fileID: 2800000, guid: be9a3ef9229119a44b4d9b1986fbcc73, type: 3}
-  cardPicture2x: {fileID: 21300000, guid: be9a3ef9229119a44b4d9b1986fbcc73, type: 3}
+  cardPicture2x: {fileID: 21300000, guid: fcca0ed6e9bedcc43b82f33fdeb47b94, type: 3}
   cardTextMain: ten of cups
   cardTextUpright: temporary^ ten^ of^ cups^ text^
   cardTextReversed: 
@@ -24,32 +24,6 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 4df3165b1cd44eb4389561c491a98539,
-      type: 2}
-  cardSuitArray:
-  - idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: b93c1edb88c71f74a819e54355e69a08,
-      type: 2}
-  - idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 5bccc80ae68457a46b4bc12818911b24,
-      type: 2}
-  - idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 0fc338bc7dfb5164c98e3f910713f601,
-      type: 2}
-  cardGroupArray:
-  - idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 0c784a0e244356b43bae53eac86758e3,
-      type: 2}
-  - idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 4ae5a03358c9b4340bf89da93f3b1006,
-      type: 2}
-  - idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 098a0ecacbb4940439fc5c3e35dd3848,
       type: 2}
   cardKeyArray:
   - idInternal: 0
@@ -66,3 +40,10 @@ MonoBehaviour:
       type: 2}
   clipDuration: 45
   thematicGroup: 4
+  cardAndGroupClips:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
