@@ -16,7 +16,7 @@ MonoBehaviour:
   order: 3
   suit: 0
   cardPicture: {fileID: 2800000, guid: 192df349b05344381b8176cef03e1652, type: 3}
-  cardPicture2x: {fileID: 21300000, guid: 192df349b05344381b8176cef03e1652, type: 3}
+  cardPicture2x: {fileID: 21300000, guid: 4ebd391d9593aa340829d8ab99c5bc54, type: 3}
   cardTextMain: 'The Empress: nurturing, nature, creation.'
   cardTextUpright: "Nurturing yourself and others.^ Bearing fruit.^ Celebrating your
     body.^ Bearing (literal or figurative) children.^ Reveling in luxury.^ Mothering
@@ -27,32 +27,6 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: c3835b0d7cd7e964895da920d9629a0f,
-      type: 2}
-  cardSuitArray:
-  - idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 7ffea89d4af3bfb479e09a60420e668e,
-      type: 2}
-  - idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 2ec7b1dc93c58a04d91e87272a5b30c6,
-      type: 2}
-  - idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 5197e265c1321714a8d91c9bc0908fd0,
-      type: 2}
-  cardGroupArray:
-  - idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 0c784a0e244356b43bae53eac86758e3,
-      type: 2}
-  - idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 4ae5a03358c9b4340bf89da93f3b1006,
-      type: 2}
-  - idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 098a0ecacbb4940439fc5c3e35dd3848,
       type: 2}
   cardKeyArray:
   - idInternal: 0
@@ -69,3 +43,10 @@ MonoBehaviour:
       type: 2}
   clipDuration: 40
   thematicGroup: 4
+  cardAndGroupClips:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
