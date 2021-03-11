@@ -16,7 +16,7 @@ MonoBehaviour:
   order: 25
   suit: 2
   cardPicture: {fileID: 2800000, guid: 1e9bdd798a3f4644eba63df8b773a977, type: 3}
-  cardPicture2x: {fileID: 21300000, guid: 1e9bdd798a3f4644eba63df8b773a977, type: 3}
+  cardPicture2x: {fileID: 21300000, guid: e90d084cff703b244af9429fa649abb0, type: 3}
   cardTextMain: "Four of Swords: rest, contemplation, stillness.\t"
   cardTextUpright: Thinking over your plans before putting them into action.^ Pausing
     to meditate or clear your mind.^ Taking time to understand someone or something
@@ -27,32 +27,6 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 0048b1405a2d84c4491a4d22dab72a1c,
-      type: 2}
-  cardSuitArray:
-  - idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 2f80219018137444696cab498c27f034,
-      type: 2}
-  - idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: f45bf7f4d9f383f4d8562d35fe6a9b1b,
-      type: 2}
-  - idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 3466f5cdd0b3c2e489b2447004bb447d,
-      type: 2}
-  cardGroupArray:
-  - idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 178adb8c80c7ef84eb4ba7b7d1f267db,
-      type: 2}
-  - idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: b2db802ef146b4b4e8d23951cbf2cd3b,
-      type: 2}
-  - idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 1218139dc4487e0408739f175552a6e6,
       type: 2}
   cardKeyArray:
   - idInternal: 0
@@ -69,3 +43,10 @@ MonoBehaviour:
       type: 2}
   clipDuration: 45
   thematicGroup: 9
+  cardAndGroupClips:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}

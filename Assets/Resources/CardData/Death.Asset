@@ -15,8 +15,8 @@ MonoBehaviour:
   cardName: Death
   order: 13
   suit: 0
-  cardPicture: {fileID: 2800000, guid: 1c7816ec9609d4db4b030684d14fefbf, type: 3}
-  cardPicture2x: {fileID: 21300000, guid: 1c7816ec9609d4db4b030684d14fefbf, type: 3}
+  cardPicture: {fileID: 0}
+  cardPicture2x: {fileID: 21300000, guid: 8d1aefbbf8fd3b243be18fea6892a268, type: 3}
   cardTextMain: 'Death: endings, closure, transformation.'
   cardTextUpright: "Bringing a phase of life to an end.^ Recognizing and celebrating
     the conclusion of something.^ Putting bad habits to rest.^ Becoming a new person.^
@@ -26,32 +26,6 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 83cbf6834ea35e844a9bbb86077a0ae2,
-      type: 2}
-  cardSuitArray:
-  - idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 7ffea89d4af3bfb479e09a60420e668e,
-      type: 2}
-  - idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 2ec7b1dc93c58a04d91e87272a5b30c6,
-      type: 2}
-  - idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 5197e265c1321714a8d91c9bc0908fd0,
-      type: 2}
-  cardGroupArray:
-  - idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 8483e8c16a0abde4a8aaf488fee92691,
-      type: 2}
-  - idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: ef477439f2cb0674387fd988ab511d48,
-      type: 2}
-  - idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 12ba6c07724362346912c7ba0428ae34,
       type: 2}
   cardKeyArray:
   - idInternal: 0
@@ -68,3 +42,10 @@ MonoBehaviour:
       type: 2}
   clipDuration: 45
   thematicGroup: 1
+  cardAndGroupClips:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
