@@ -16,7 +16,7 @@ MonoBehaviour:
   order: 66
   suit: 3
   cardPicture: {fileID: 2800000, guid: abaa84a591fcb264d867f4782fafec36, type: 3}
-  cardPicture2x: {fileID: 21300000, guid: abaa84a591fcb264d867f4782fafec36, type: 3}
+  cardPicture2x: {fileID: 21300000, guid: ca6a1d00ae40589419dd480fd583b4ad, type: 3}
   cardTextMain: 'Three of Pentacles: collaboration.'
   cardTextUpright: This is the learning and collaboration card.^ Isn't that neato
     burrito?^ I think it is.^ Replace this text, Megan.^ If it makes it into the game
@@ -26,32 +26,6 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: ec21c6ae2187c4d4a92db21e16ac5a75,
-      type: 2}
-  cardSuitArray:
-  - idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: b69aa45e1bfb7f745aceb2674a3c363c,
-      type: 2}
-  - idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 3c07efb4ec577f648a93c1b9df2b56f5,
-      type: 2}
-  - idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 9b30d3e933d785243a4b2c953844d897,
-      type: 2}
-  cardGroupArray:
-  - idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 8853f5d126f3c4644829a3a835dd9ae1,
-      type: 2}
-  - idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 536da5943f0ea31429b5022167004870,
-      type: 2}
-  - idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: b4a8faaf4f439244ab2e8b4219ba9cc0,
       type: 2}
   cardKeyArray:
   - idInternal: 0
@@ -68,3 +42,10 @@ MonoBehaviour:
       type: 2}
   clipDuration: 44
   thematicGroup: 7
+  cardAndGroupClips:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}

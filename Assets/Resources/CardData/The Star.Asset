@@ -16,7 +16,7 @@ MonoBehaviour:
   order: 17
   suit: 0
   cardPicture: {fileID: 2800000, guid: 5ebb512aba63847efa5fcfee789c50a2, type: 3}
-  cardPicture2x: {fileID: 21300000, guid: 5ebb512aba63847efa5fcfee789c50a2, type: 3}
+  cardPicture2x: {fileID: 21300000, guid: f9360a32ef3f83544831fe951b9dbf8e, type: 3}
   cardTextMain: The Star- hope, renewal, faith.
   cardTextUpright: This is where the star text will go.^ Isn't that neato burrito?^
     I certainly think so.^ It'll be so great.^ Can't wait to read it.
@@ -25,32 +25,6 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: ed392f218f5998a4eb4ca6d40425cc5e,
-      type: 2}
-  cardSuitArray:
-  - idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 7ffea89d4af3bfb479e09a60420e668e,
-      type: 2}
-  - idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 2ec7b1dc93c58a04d91e87272a5b30c6,
-      type: 2}
-  - idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 5197e265c1321714a8d91c9bc0908fd0,
-      type: 2}
-  cardGroupArray:
-  - idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 61f913236eb43e04cb1a70701586593a,
-      type: 2}
-  - idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: b554bb6d762e4c64d863ebd505f1300c,
-      type: 2}
-  - idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 41d1366f44313174d902dbbba66808fd,
       type: 2}
   cardKeyArray:
   - idInternal: 0
@@ -67,3 +41,10 @@ MonoBehaviour:
       type: 2}
   clipDuration: 46
   thematicGroup: 2
+  cardAndGroupClips:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
