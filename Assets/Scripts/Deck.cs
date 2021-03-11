@@ -67,7 +67,7 @@ public class Deck : MonoBehaviour
 
   // In-game location to which cards should be dealt. Set in editor.
   public Transform[] dealtCardLocations;
-  public Image[] cardImages;
+  public CardReadingSpot[] cardReadingSpots;
 
   public Canvas readingCanvas;
   public Canvas generativeCanvas;
@@ -199,9 +199,9 @@ public class Deck : MonoBehaviour
     swordsTotal = 0;
     buttonHover = false;
     generativeSection = 0;
-    foreach (Image cardImage in cardImages)
+    foreach (CardReadingSpot cardReadingSpot in cardReadingSpots)
     {
-      cardImage.color = Color.clear;
+      cardReadingSpot.canvasGroup.alpha = 0;
     }
     for (int i = 0; i < numberOfCardsInDeck; i++)
     {
@@ -396,7 +396,6 @@ public class Deck : MonoBehaviour
     TarotCardData cardData = GetCardData(cardOrder);
     selectedCardData.Add(cardData);
     videoClips[setClipNumber] = cardData.cardAndGroupClips[setClipNumber - 1];
-    videoClips[setClipNumber] = cardData.cardAndGroupClips[setClipNumber - 1];
     Debug.Log("Card Clip " + setClipNumber + " chosen.");
     setClipNumber++;
     videoClips[setClipNumber] = cardData.cardAndGroupClips[setClipNumber - 1];
@@ -494,24 +493,21 @@ public class Deck : MonoBehaviour
     }
   }
 
-
   IEnumerator FadeInCard()
   {
     float t = 0;
     TarotCardData cardData = selectedCardData[numCardsAlreadyRead];
-    cardImages[numCardsAlreadyRead].sprite = cardData.cardPicture2x;
+    cardReadingSpots[numCardsAlreadyRead].Init(cardData, cardMeanings[numCardsAlreadyRead]);
     int groupNumber = cardData.thematicGroup;
     Color sparkColor = groupSparkColors[groupNumber - 1];
     Debug.Log(groupNumber + " " + sparkColor);
     ParticleSystem.MainModule ma = sparks[numCardsAlreadyRead].main;
     ma.startColor = sparkColor;
     sparks[numCardsAlreadyRead].gameObject.SetActive(true);
-    Color currentColor = Color.white;
     while (t < 1)
     {
       t += Time.deltaTime / cardFlipSpeed;
-      currentColor.a = t;
-      cardImages[numCardsAlreadyRead].color = currentColor;
+      cardReadingSpots[numCardsAlreadyRead].canvasGroup.alpha = t;
       yield return null;
     }
 
@@ -564,9 +560,18 @@ public class Deck : MonoBehaviour
         ));
     }
 
-    foreach (Image cardImage in cardImages)
+    Debug.Log("Fade out called");
+    float t = 0;
+    CanvasGroup readingGroup = readingCanvas.GetComponent<CanvasGroup>();
+    if (readingGroup != null)
     {
-      // uhhhh fade out card somehow
+
+      while (t < 1.0)
+      {
+        t += Time.deltaTime / cardFlipSpeed;
+        readingGroup.alpha = 1 - t;
+        yield return null;
+      }
     }
     foreach (TarotCardData card in selectedCardData)
     {
