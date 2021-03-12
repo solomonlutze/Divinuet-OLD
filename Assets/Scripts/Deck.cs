@@ -78,6 +78,9 @@ public class Deck : MonoBehaviour
   public Canvas gameUICanvas;
   public Canvas demoEndCanvas;
   public Canvas spreadCanvas;
+  public Canvas pauseCanvas;
+  public Canvas settingsCanvas;
+  public bool paused;
 
   public string[] cardMeanings;
   public GameObject card1InputField;
@@ -173,6 +176,8 @@ public class Deck : MonoBehaviour
     cardSelectionCanvas.enabled = false;
     defineSpreadCanvas.enabled = false;
     spreadCanvas.enabled = false;
+    pauseCanvas.enabled = false;
+    settingsCanvas.enabled = false;
   }
 
   void ClearGameState()
@@ -294,7 +299,40 @@ public class Deck : MonoBehaviour
         accompanimentNull.Post(gameObject);
         videoClips[0] = suitMajorityClips[5];
       }
+    }
+    else if (Input.GetButtonDown("Pause"))
+    {
+      TogglePause();
+    }
+  }
 
+  public void TogglePause()
+  {
+    if (paused)
+    {
+      paused = false;
+      pauseCanvas.enabled = false;
+      Time.timeScale = 1;
+    }
+    else
+    {
+      paused = true;
+      pauseCanvas.enabled = true;
+      Time.timeScale = 0;
+    }
+  }
+
+  public void ToggleSettingsMenu()
+  {
+    if (settingsCanvas.enabled)
+    {
+      pauseCanvas.enabled = true;
+      settingsCanvas.enabled = false;
+    }
+    else
+    {
+      pauseCanvas.enabled = false;
+      settingsCanvas.enabled = true;
     }
   }
 
