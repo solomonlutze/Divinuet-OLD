@@ -11,7 +11,7 @@ public class PauseMenuUI : BaseUICanvas
   ConfirmLeaveReadingOption currentLeaveReadingOption;
 
   public enum ConfirmLeaveReadingOption { NewReading, MainMenu, QuitGame }
-  public Deck gameRunner;
+  public GameRunner gameRunner;
 
   void OnEnable()
   {
