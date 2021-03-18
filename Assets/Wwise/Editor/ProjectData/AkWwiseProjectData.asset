@@ -44,14 +44,11 @@ MonoBehaviour:
       Path: Default Work Unit\Soundbank
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
-<<<<<<< HEAD
     PathAndIcons:
     - ElementName: Default Work Unit
       ObjectType: 12
     ParentPath: Default Work Unit
-=======
     ParentPhysicalPath: 
->>>>>>> parent of 2b93c01... Connected Wwise to project
     guid: bc617d844702964e9e3475116383ce13
     GuidInternal: 
     m_lastTime: -8585874081258293816
