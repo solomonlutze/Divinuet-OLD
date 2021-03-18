@@ -38,7 +38,7 @@ public enum GameMode
 }
 
 // sol best comment
-public class Deck : MonoBehaviour
+public class GameRunner : MonoBehaviour
 {
   public bool DEBUG_skipReading;
   [Tooltip("Save reading when cards fade in, vs after reading")]
@@ -83,6 +83,7 @@ public class Deck : MonoBehaviour
   public Canvas settingsCanvas;
   public Canvas mainMenuCanvas;
   public Canvas howToPlayCanvas;
+  public List<Canvas> canvases;
   public bool paused;
 
   public string[] cardMeanings;
@@ -155,7 +156,6 @@ public class Deck : MonoBehaviour
   // Start is called before the first frame update
   void Start()
   {
-    gameState = GameState.MainMenu;
     AkSoundEngine.PostEvent("MenuAmbienceStart", this.gameObject);
     readingUI = readingCanvas.GetComponent<CardReadingUI>();
     generativeUI = generativeCanvas.GetComponent<GenerativeUI>();
@@ -171,19 +171,36 @@ public class Deck : MonoBehaviour
     pentaclesTotal = 0;
     swordsTotal = 0;
     buttonHover = false;
-    mainMenuCanvas.gameObject.SetActive(true);
-    demoInstructionsCanvas.gameObject.SetActive(false);
-    demoEndCanvas.gameObject.SetActive(false);
-    generativeCanvas.gameObject.SetActive(false);
-    readingCanvas.gameObject.SetActive(false);
-    savedReadingsCanvas.gameObject.SetActive(false);
-    gameUICanvas.gameObject.SetActive(false);
-    cardSelectionCanvas.gameObject.SetActive(false);
-    defineSpreadCanvas.gameObject.SetActive(false);
-    spreadCanvas.gameObject.SetActive(false);
-    pauseCanvas.gameObject.SetActive(false);
-    settingsCanvas.gameObject.SetActive(false);
-    howToPlayCanvas.gameObject.SetActive(false);
+    canvases = new List<Canvas> {
+      mainMenuCanvas,
+      demoInstructionsCanvas,
+      demoEndCanvas,
+      generativeCanvas,
+      readingCanvas,
+      savedReadingsCanvas,
+      gameUICanvas,
+      cardSelectionCanvas,
+      defineSpreadCanvas,
+      spreadCanvas,
+      pauseCanvas,
+      settingsCanvas,
+      howToPlayCanvas
+    // add any new canvases here!
+    };
+    SetGameState(GameState.MainMenu);
+    // mainMenuCanvas.gameObject.SetActive(true);
+    // demoInstructionsCanvas.gameObject.SetActive(false);
+    // demoEndCanvas.gameObject.SetActive(false);
+    // generativeCanvas.gameObject.SetActive(false);
+    // readingCanvas.gameObject.SetActive(false);
+    // savedReadingsCanvas.gameObject.SetActive(false);
+    // gameUICanvas.gameObject.SetActive(false);
+    // cardSelectionCanvas.gameObject.SetActive(false);
+    // defineSpreadCanvas.gameObject.SetActive(false);
+    // spreadCanvas.gameObject.SetActive(false);
+    // pauseCanvas.gameObject.SetActive(false);
+    // settingsCanvas.gameObject.SetActive(false);
+    // howToPlayCanvas.gameObject.SetActive(false);
   }
 
   void ClearGameState()
@@ -244,27 +261,20 @@ public class Deck : MonoBehaviour
           }
           else
           {
-            gameState = GameState.FlippingCard;
-            StartCoroutine(FadeInCard());
+            SetGameState(GameState.FlippingCard);
           }
           break;
         case GameState.FadingOutCardDone:
-          gameState = GameState.FlippingCard;
-          StartCoroutine(FadeInCard());
+          SetGameState(GameState.FlippingCard);
           break;
         case GameState.FadingCardInDone:
-          gameState = GameState.PreReading;
-          enableButton = false;
-          Cursor.SetCursor(waitCursor, Vector2.zero, CursorMode.Auto);
+          SetGameState(GameState.PreReading);
           break;
         case GameState.ReadingCardDone:
-          gameState = GameState.FadingOutCard;
-          StartCoroutine(FadeOutReading());
+          SetGameState(GameState.FadingOutCard);
           break;
         case GameState.ShowingGenerativeUIDone:
-          gameState = GameState.ShowingEndInstructions;
-          gameUICanvas.gameObject.SetActive(false);
-          DoGenerativePhase();
+          SetGameState(GameState.ShowingEndInstructions);
           break;
         default:
           break;
@@ -389,11 +399,7 @@ public class Deck : MonoBehaviour
       }
       else if (generativeSection >= 11)
       {
-        gameState = GameState.GenerativePhaseDone;
-        playingClipNumber = 0;
-        videoPlayer.clip = videoClips[playingClipNumber];
-        videoPlayer.Play();
-        videoCanvas.gameObject.SetActive(true);
+        SetGameState(GameState.GenerativePhaseDone);
       }
 
       else
@@ -419,16 +425,7 @@ public class Deck : MonoBehaviour
     {
       AddCardData(cardOrder);
     }
-    gameState = GameState.ReadyToFadeInCard;
-    PrepForReading();
-    AkSoundEngine.PostEvent("MenuAmbienceStop", this.gameObject);
-    readingStart.Post(gameObject, (uint)AkCallbackType.AK_MusicSyncUserCue, CallbackFunction);
-    cardSelectionCanvas.gameObject.SetActive(false);
-    defineSpreadCanvas.gameObject.SetActive(false);
-    generativeCanvas.gameObject.SetActive(true);
-    readingCanvas.gameObject.SetActive(true);
-    gameUICanvas.gameObject.SetActive(true);
-    spreadCanvas.gameObject.SetActive(true);
+    SetGameState(GameState.ReadyToFadeInCard);
   }
 
   public void RemoveChosenCard(TarotCardData card)
@@ -527,9 +524,7 @@ public class Deck : MonoBehaviour
 
   public void ChooseGameMode()
   {
-    gameState = GameState.ChooseGameMode;
-    mainMenuCanvas.gameObject.SetActive(false);
-    demoInstructionsCanvas.gameObject.SetActive(true);
+    SetGameState(GameState.ChooseGameMode);
   }
 
   void PrepForReading()
@@ -682,27 +677,25 @@ public class Deck : MonoBehaviour
 
   public void AfterInstructions_RandomReading()
   {
+    SetGameState(GameState.DefineSpread);
     gameMode = GameMode.Random;
-    gameState = GameState.DefineSpread;
-    demoInstructionsCanvas.gameObject.SetActive(false);
-    defineSpreadCanvas.gameObject.SetActive(true);
+    DisableAllCanvases();
+    SetCanvasActive(defineSpreadCanvas, true);
   }
 
   public void AfterInstructions_ChooseCards()
   {
     gameMode = GameMode.Choose;
-    gameState = GameState.DefineSpread;
-    demoInstructionsCanvas.gameObject.SetActive(false);
-    defineSpreadCanvas.gameObject.SetActive(true);
+    DisableAllCanvases();
+    SetCanvasActive(defineSpreadCanvas, true);
   }
 
 
   public void AfterInstructions_ViewPreviousReadingss()
   {
-    gameState = GameState.DefineSpread;
-    demoInstructionsCanvas.gameObject.SetActive(false);
-    savedReadingsCanvas.gameObject.SetActive(true);
-    Debug.Log("initing");
+    SetGameState(GameState.DefineSpread);
+    DisableAllCanvases();
+    SetCanvasActive(savedReadingsCanvas, true);
     savedReadingsUI.Init(this);
   }
 
@@ -739,7 +732,7 @@ public class Deck : MonoBehaviour
     switch (gameMode)
     {
       case GameMode.Random:
-        gameState = GameState.ReadyToFadeInCard;
+        SetGameState(GameState.ReadyToFadeInCard);
         AkSoundEngine.PostEvent("MenuAmbienceStop", this.gameObject);
         readingStart.Post(gameObject, (uint)AkCallbackType.AK_MusicSyncUserCue, CallbackFunction);
         generativeCanvas.gameObject.SetActive(true);
@@ -752,7 +745,7 @@ public class Deck : MonoBehaviour
         PrepForReading();
         break;
       case GameMode.ViewPreviousReadings:
-        gameState = GameState.ReadyToFadeInCard;
+        SetGameState(GameState.ReadyToFadeInCard);
         AkSoundEngine.PostEvent("MenuAmbienceStop", this.gameObject);
         readingStart.Post(gameObject, (uint)AkCallbackType.AK_MusicSyncUserCue, CallbackFunction);
         generativeCanvas.gameObject.SetActive(true);
@@ -763,7 +756,7 @@ public class Deck : MonoBehaviour
         break;
       case GameMode.Choose:
       default:
-        gameState = GameState.ChoosingCards;
+        SetGameState(GameState.ChoosingCards);
         cardSelectionCanvas.gameObject.SetActive(true);
         cardSelectionUI.Init(GameMaster.Instance.cardsData, this);
         demoInstructionsCanvas.gameObject.SetActive(false);
@@ -782,11 +775,7 @@ public class Deck : MonoBehaviour
 
   public void QuitToMainMenu()
   {
-    // quit all the music?
-    gameState = GameState.MainMenu;
-    gameUICanvas.gameObject.SetActive(false);
-    pauseCanvas.gameObject.SetActive(false);
-    mainMenuCanvas.gameObject.SetActive(true);
+    SetGameState(GameState.MainMenu);
   }
 
   public void QuitGame()
@@ -798,9 +787,9 @@ public class Deck : MonoBehaviour
   public void StartOver()
   {
     readingState.Post(gameObject);
-    gameState = GameState.ReadyToFadeInCard;
     ClearGameState();
     ResetGameState();
+    SetGameState(GameState.ReadyToFadeInCard);
   }
 
   public void ButtonHoverOn()
@@ -814,4 +803,63 @@ public class Deck : MonoBehaviour
   }
 
 
+  public void DisableAllCanvases()
+  {
+    foreach (Canvas c in canvases)
+    {
+      SetCanvasActive(c, false);
+    }
+  }
+  public void SetCanvasActive(Canvas c, bool active)
+  {
+    UnityEngine.Debug.Log("setting " + c + " active: " + active);
+    c.gameObject.SetActive(active);
+  }
+  public void SetGameState(GameState newState)
+  {
+    gameState = newState;
+    switch (newState)
+    {
+      case (GameState.MainMenu):
+        DisableAllCanvases();
+        SetCanvasActive(mainMenuCanvas, true);
+        break;
+      case (GameState.FlippingCard):
+        StartCoroutine(FadeInCard());
+        break;
+      case (GameState.PreReading):
+        enableButton = false;
+        Cursor.SetCursor(waitCursor, Vector2.zero, CursorMode.Auto);
+        break;
+      case (GameState.FadingOutCard):
+        StartCoroutine(FadeOutReading());
+        break;
+      case (GameState.ShowingEndInstructions):
+        gameUICanvas.gameObject.SetActive(false);
+        DoGenerativePhase();
+        break;
+      case (GameState.GenerativePhaseDone):
+        playingClipNumber = 0;
+        videoPlayer.clip = videoClips[playingClipNumber];
+        videoPlayer.Play();
+        videoCanvas.gameObject.SetActive(true);
+        break;
+      case (GameState.ReadyToFadeInCard):
+        PrepForReading();
+        AkSoundEngine.PostEvent("MenuAmbienceStop", this.gameObject);
+        readingStart.Post(gameObject, (uint)AkCallbackType.AK_MusicSyncUserCue, CallbackFunction);
+        DisableAllCanvases();
+        SetCanvasActive(generativeCanvas, true);
+        SetCanvasActive(readingCanvas, true);
+        SetCanvasActive(gameUICanvas, true);
+        SetCanvasActive(spreadCanvas, true);
+        break;
+      case (GameState.ChooseGameMode):
+        mainMenuCanvas.gameObject.SetActive(false);
+        demoInstructionsCanvas.gameObject.SetActive(true);
+        break;
+      default:
+        break;
+    }
+  }
 }
