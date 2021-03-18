@@ -57,7 +57,7 @@ public class CardReadingUI : BaseUICanvas
 
   public IEnumerator ReadCard()
   {
-    Deck.enableButton = false;
+    GameRunner.enableButton = false;
     reading = true;
     yield return ReadingUtils.ReadText(cardText, totalReadingTime);
     reading = false;
