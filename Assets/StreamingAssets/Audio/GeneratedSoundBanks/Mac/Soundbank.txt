@@ -9,6 +9,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	231901376	Card2Pentacles			\Default Work Unit\GenerativeCardSuits\Card2\Card2Pentacles	
 	249775224	MenuAmbienceStop			\Default Work Unit\SFXEvents\MenuAmbienceStop	
 	361241855	Swords			\Default Work Unit\GenerativeStates\Bass\Swords	
+	452547817	Stop_All			\Default Work Unit\Stop_All	
 	495557850	Pentacles			\Default Work Unit\GenerativeStates\Bass\Pentacles	
 	587937073	SevenOfSwords			\Default Work Unit\CardEvents\Swords\SevenOfSwords	
 	593127736	Card2Cups			\Default Work Unit\GenerativeCardSuits\Card2\Card2Cups	
@@ -86,6 +87,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3072025101	Card3Minor			\Default Work Unit\GenerativeKeys\Card3\Card3Minor	
 	3108369491	Card3Dorian			\Default Work Unit\GenerativeKeys\Card3\Card3Dorian	
 	3113582184	Card3Swords			\Default Work Unit\GenerativeCardSuits\Card3\Card3Swords	
+	3157003241	TEST			\Default Work Unit\TEST	
 	3161908922	Main			\Default Work Unit\GenerativePart\Main	
 	3298030721	Card3Cups			\Default Work Unit\GenerativeCardSuits\Card3\Card3Cups	
 	3387899016	Card2Group13			\Default Work Unit\GenerativeCardGroups\Group13\Card2Group13	
@@ -357,6 +359,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	919870225	AceOfCups	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\AceOfCups_9B96ECC7.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Reading\Cups\AceOfCups\AceOfCups\AceOfCups		829716
 	933716518	Accompaniment	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativeCups_Part3_Dorian_9B96ECC7.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups3\Accompaniment		628497
 	989684067	Divinuet_AMB_Forest_1	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\Divinuet_AMB_Forest_1_9B96ECC7.wem		\Actor-Mixer Hierarchy\Default Work Unit\Menu Background\Ambience\Divinuet_AMB_Forest_1		4545507
+	994438389	brassdemo	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\brassdemo_9B96ECC7.wem		\Interactive Music Hierarchy\Default Work Unit\TEST\brassdemo		195077
 	1013527528	KingOfPentacles	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\KingOfPentacles_9B96ECC7.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Reading\Pentacles\KingOfPentacles\KingOfPentacles\KingOfPentacles		953437
 	1019898338	Accompaniment	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativeMajorArcana_Part2_Major2_9B96ECC7.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\MajorArcana\MajorArcana2\Accompaniment		642879
 	1029646848	EightOfPentacles	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\ThreeOfPentacles_9B96ECC7.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Reading\Pentacles\EightOfPentacles\EightOfPentacles\EightOfPentacles		793784
