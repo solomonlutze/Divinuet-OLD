@@ -63,5 +63,8 @@ public class CardReadingUI : BaseUICanvas
     reading = false;
   }
 
+  // public void RereadCard() {
+
+  // }
 
 }
