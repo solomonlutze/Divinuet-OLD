@@ -114,12 +114,14 @@
 				<Event Id="3535269221" Name="State_Generative" ObjectPath="\Events\Default Work Unit\State_Generative" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="1929173219" Name="State_MakingSong" ObjectPath="\Events\Default Work Unit\State_MakingSong" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="1701015953" Name="State_Reading" ObjectPath="\Events\Default Work Unit\State_Reading" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="452547817" Name="Stop_All" ObjectPath="\Events\Default Work Unit\Stop_All" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="1008270286" Name="Strength" ObjectPath="\Events\Default Work Unit\CardEvents\Major Arcana\Strength" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="361241855" Name="Swords" ObjectPath="\Events\Default Work Unit\GenerativeStates\Bass\Swords" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="4085194074" Name="SwordsFlip" ObjectPath="\Events\Default Work Unit\FlippingEvents\SwordsFlip" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="1462743847" Name="Temperance" ObjectPath="\Events\Default Work Unit\CardEvents\Major Arcana\Temperance" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="2461612130" Name="TenOfCups" ObjectPath="\Events\Default Work Unit\CardEvents\Cups\TenOfCups" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="2185129511" Name="TenOfSwords" ObjectPath="\Events\Default Work Unit\CardEvents\Swords\TenOfSwords" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="3157003241" Name="TEST" ObjectPath="\Events\Default Work Unit\TEST" DurationType="OneShot" DurationMin="13.125000" DurationMax="13.125000"/>
 				<Event Id="4181689965" Name="TheEmpress" ObjectPath="\Events\Default Work Unit\CardEvents\Major Arcana\TheEmpress" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="2631758982" Name="TheFool" ObjectPath="\Events\Default Work Unit\CardEvents\Major Arcana\TheFool" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="3676275462" Name="TheHighPriestess" ObjectPath="\Events\Default Work Unit\CardEvents\Major Arcana\TheHighPriestess" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
@@ -584,6 +586,10 @@
 				<File Id="989684067" Language="SFX">
 					<ShortName>Divinuet_AMB_Forest_1.wav</ShortName>
 					<Path>SFX\Divinuet_AMB_Forest_1_9B96ECC7.wem</Path>
+				</File>
+				<File Id="994438389" Language="SFX">
+					<ShortName>brassdemo.wav</ShortName>
+					<Path>SFX\brassdemo_9B96ECC7.wem</Path>
 				</File>
 				<File Id="1013527528" Language="SFX">
 					<ShortName>KingOfPentacles.wav</ShortName>
