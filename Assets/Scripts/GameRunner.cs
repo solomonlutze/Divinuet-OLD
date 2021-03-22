@@ -41,6 +41,7 @@ public enum GameMode
 // sol best comment
 public class GameRunner : MonoBehaviour
 {
+  [Tooltip("Can click to skip through a reading")]
   public bool DEBUG_skipReading;
   [Tooltip("Save reading when cards fade in, vs after reading")]
   public bool DEBUG_SaveReadingImmediately;
@@ -240,18 +241,25 @@ public class GameRunner : MonoBehaviour
         case GameState.ChoosingCards:
           break;
         case GameState.ReadyToFadeInCard:
-          if (DEBUG_skipReading)
-          {
-            gameState = GameState.ShowingGenerativeUI;
-            DoGenerativePhase();
-          }
-          else
-          {
-            SetGameState(GameState.FlippingCard);
-          }
+          // if (DEBUG_skipReading)
+          // {
+          //   gameState = GameState.ShowingGenerativeUI;
+          //   DoGenerativePhase();
+          // }
+          // else
+          // {
+          SetGameState(GameState.FlippingCard);
+          // }
           break;
         case GameState.FadingOutCardDone:
           SetGameState(GameState.FlippingCard);
+          break;
+        case GameState.ReadingCard:
+          if (DEBUG_skipReading)
+          {
+            Debug.Log("skipping reading?");
+            readingUI.reading = false; // megan don't set variables directly on other objects like this ok, this is bad programming
+          }
           break;
         case GameState.FadingCardInDone:
           SetGameState(GameState.PreReading);
@@ -567,10 +575,14 @@ public class GameRunner : MonoBehaviour
     readingUI.Init(selectedCardData[numCardsAlreadyRead]);
     cardReadingSpots[numCardsAlreadyRead].EnableButton(true);
     yield return StartCoroutine(readingUI.FadeIn());
-    yield return StartCoroutine(readingUI.ReadCard());
+    Coroutine readingCoroutine = StartCoroutine(readingUI.ReadCard());
     while (readingUI.reading)
     {
       yield return null;
+    }
+    if (readingCoroutine != null)
+    {
+      StopCoroutine(readingCoroutine);
     }
     numCardsAlreadyRead++;
     Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
@@ -584,12 +596,6 @@ public class GameRunner : MonoBehaviour
     cardData.readingMusicEvent.Post(gameObject);
     readingUI.Init(selectedCardData[numCardsAlreadyRead]);
     yield return StartCoroutine(readingUI.FadeIn());
-    // yield return StartCoroutine(readingUI.ReadCard());
-    // while (readingUI.reading)
-    // {
-    //   yield return null;
-    // }
-    // numCardsAlreadyRead++;
     Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
     gameState = GameState.ReadingCardDone;
   }

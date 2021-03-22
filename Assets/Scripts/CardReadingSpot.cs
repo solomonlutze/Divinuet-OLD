@@ -29,7 +29,10 @@ public class CardReadingSpot : MonoBehaviour
   public void OnClickReread()
   {
     Debug.Log("OnClickReread");
-    StartCoroutine(gameRunner.RereadCard(readingOrder));
+    if (gameRunner.gameState == GameState.PreReading)
+    {
+      StartCoroutine(gameRunner.RereadCard(readingOrder));
+    }
   }
 
   public void EnableButton(bool enable)

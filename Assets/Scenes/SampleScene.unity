@@ -449,7 +449,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20b4078588a7c4d4886cd8446f1c8737, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DEBUG_skipReading: 0
+  DEBUG_skipReading: 1
   DEBUG_SaveReadingImmediately: 0
   DEBUG_EnableReadingGeneration: 0
   deckCardPrefab: {fileID: 4088565087975016767, guid: f17d95d6ec51d44d68dc02e5f2e3cb99,
@@ -2139,7 +2139,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 45.3
+  m_fontSize: 45.15
   m_fontSizeBase: 18
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -21340,7 +21340,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 39.3
+  m_fontSize: 39.1
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -29899,7 +29899,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1970772354}
   m_HandleRect: {fileID: 1970772353}
   m_Direction: 2
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
