@@ -18,11 +18,11 @@ public class Buttons : MonoBehaviour
 
     if (GameRunner.enableButton == false)
     {
-      anotherReading.SetActive(false);
+      // anotherReading.SetActive(false);
     }
     if (GameRunner.enableButton == true)
     {
-      anotherReading.SetActive(true);
+      // anotherReading.SetActive(true);
     }
   }
 }
