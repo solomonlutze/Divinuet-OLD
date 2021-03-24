@@ -573,7 +573,6 @@ public class GameRunner : MonoBehaviour
     TarotCardData cardData = selectedCardData[numCardsAlreadyRead];
     cardData.readingMusicEvent.Post(gameObject);
     readingUI.Init(selectedCardData[numCardsAlreadyRead]);
-    cardReadingSpots[numCardsAlreadyRead].EnableButton(true);
     yield return StartCoroutine(readingUI.FadeIn());
     Coroutine readingCoroutine = StartCoroutine(readingUI.ReadCard());
     while (readingUI.reading)
@@ -584,6 +583,7 @@ public class GameRunner : MonoBehaviour
     {
       StopCoroutine(readingCoroutine);
     }
+    cardReadingSpots[numCardsAlreadyRead].EnableButton(true);
     numCardsAlreadyRead++;
     Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
     gameState = GameState.ReadingCardDone;
@@ -591,10 +591,10 @@ public class GameRunner : MonoBehaviour
 
   public IEnumerator RereadCard(int cardToReread)
   {
+    Debug.Log("rereading card " + cardToReread);
     SetGameState(GameState.RereadingCard);
     TarotCardData cardData = selectedCardData[cardToReread];
-    cardData.readingMusicEvent.Post(gameObject);
-    readingUI.Init(selectedCardData[numCardsAlreadyRead]);
+    readingUI.Init(selectedCardData[cardToReread], true);
     yield return StartCoroutine(readingUI.FadeIn());
     Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
     gameState = GameState.ReadingCardDone;
