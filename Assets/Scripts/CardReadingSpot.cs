@@ -24,15 +24,16 @@ public class CardReadingSpot : MonoBehaviour
     cardMeaningText.text = cardMeaning;
     cardData = cd;
     cardFront.sprite = cardData.cardPicture2x;
+    EnableButton(false);
   }
 
   public void OnClickReread()
   {
     Debug.Log("OnClickReread");
-    if (gameRunner.gameState == GameState.PreReading)
-    {
-      StartCoroutine(gameRunner.RereadCard(readingOrder));
-    }
+    // if (gameRunner.gameState == GameState.PreReading)
+    // {
+    StartCoroutine(gameRunner.RereadCard(readingOrder));
+    // }
   }
 
   public void EnableButton(bool enable)
@@ -43,6 +44,9 @@ public class CardReadingSpot : MonoBehaviour
   public void OnHover(bool hover)
   {
     Debug.Log("OnHover");
-    gameRunner.buttonHover = hover;
+    if (gameRunner != null && rereadButton.gameObject.activeSelf)
+    {
+      gameRunner.buttonHover = hover;
+    }
   }
 }

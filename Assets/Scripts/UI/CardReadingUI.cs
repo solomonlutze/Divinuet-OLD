@@ -25,12 +25,13 @@ public class CardReadingUI : BaseUICanvas
   }
 
 
-  public void Init(TarotCardData cardData)
+  public void Init(TarotCardData cardData, bool isReread = false)
   {
     cardImage.sprite = cardData.cardPicture2x;
-    ReadingUtils.HideAllCharacters(cardText);
+
     totalReadingTime = DEBUG_gottaGoFast ? 2f : (cardData.clipDuration - 2);
     cardText.text = cardData.cardTextMain.ToString() + ReadingUtils.readingBreakCharacter + "\n\n";
+
     if (cardData.suit == CardSuit.Cups)
     {
       backgroundColor.color = cupsBGColor;
@@ -52,7 +53,14 @@ public class CardReadingUI : BaseUICanvas
       backgroundColor.color = majorArcanaBGColor;
     }
     cardText.text += cardData.cardTextUpright.ToString();
-
+    if (isReread)
+    {
+      ReadingUtils.ShowAllCharacters(cardText);
+    }
+    else
+    {
+      ReadingUtils.HideAllCharacters(cardText);
+    }
   }
 
   public IEnumerator ReadCard()
