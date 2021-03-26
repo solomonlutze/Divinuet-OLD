@@ -31,6 +31,7 @@ public enum GameState
   Done
 }
 
+
 public enum GameMode
 {
   Random,
@@ -153,7 +154,16 @@ public class GameRunner : MonoBehaviour
   public Color32[] groupSparkColors;
   public ParticleSystem[] sparks;
 
-
+  public static bool InReadingGameState(GameState state)
+  {
+    return (
+      state == GameState.ReadingCard
+      || state == GameState.RereadingCard
+      || state == GameState.ReadingCardDone
+      || state == GameState.FadingOutCard
+      || state == GameState.FlippingCard
+    );
+  }
   // Start is called before the first frame update
   void Start()
   {
@@ -563,8 +573,7 @@ public class GameRunner : MonoBehaviour
       cardReadingSpots[numCardsAlreadyRead].canvasGroup.alpha = t;
       yield return null;
     }
-
-    gameState = GameState.FadingCardInDone;
+    SetGameState(GameState.FadingCardInDone);
   }
 
   IEnumerator ReadCard()
@@ -586,10 +595,21 @@ public class GameRunner : MonoBehaviour
     cardReadingSpots[numCardsAlreadyRead].EnableButton(true);
     numCardsAlreadyRead++;
     Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
-    gameState = GameState.ReadingCardDone;
+    SetGameState(GameState.ReadingCardDone);
   }
 
-  public IEnumerator RereadCard(int cardToReread)
+
+  public bool RereadCard(int cardToReread)
+  {
+    if (!InReadingGameState(gameState))
+    {
+      StartCoroutine(DoRereadCard(cardToReread));
+      return true;
+    }
+    return false;
+  }
+
+  public IEnumerator DoRereadCard(int cardToReread)
   {
     Debug.Log("rereading card " + cardToReread);
     SetGameState(GameState.RereadingCard);
@@ -597,7 +617,7 @@ public class GameRunner : MonoBehaviour
     readingUI.Init(selectedCardData[cardToReread], true);
     yield return StartCoroutine(readingUI.FadeIn());
     Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
-    gameState = GameState.ReadingCardDone;
+    SetGameState(GameState.ReadingCardDone);
   }
 
   IEnumerator FadeOutReading()
@@ -608,11 +628,11 @@ public class GameRunner : MonoBehaviour
     enableButton = true;
     if (numCardsAlreadyRead < selectedCardData.Count)
     {
-      gameState = GameState.FadingOutCardDone;
+      SetGameState(GameState.FadingOutCardDone);
     }
     else
     {
-      gameState = GameState.BeginGenerativeUI;
+      SetGameState(GameState.BeginGenerativeUI);
       yield return StartCoroutine(BeginGenerativePhase());
     }
   }
@@ -666,7 +686,7 @@ public class GameRunner : MonoBehaviour
     yield return StartCoroutine(generativeUI.FadeIn());
     yield return StartCoroutine(generativeUI.ReadText());
     Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
-    gameState = GameState.ShowingGenerativeUIDone;
+    SetGameState(GameState.ShowingGenerativeUIDone);
   }
 
   void DoGenerativePhase()
@@ -774,7 +794,7 @@ public class GameRunner : MonoBehaviour
 
   public void DisableEndCanvas()
   {
-    gameState = GameState.GenerativePhase;
+    SetGameState(GameState.GenerativePhase);
     demoEndCanvas.gameObject.SetActive(false);
   }
 
@@ -817,12 +837,16 @@ public class GameRunner : MonoBehaviour
   }
   public void SetCanvasActive(Canvas c, bool active)
   {
-    UnityEngine.Debug.Log("setting " + c + " active: " + active);
     c.gameObject.SetActive(active);
   }
+
   public void SetGameState(GameState newState)
   {
     gameState = newState;
+    foreach (CardReadingSpot spot in cardReadingSpots)
+    {
+      spot.OnGameStateChange(gameState);
+    }
     switch (newState)
     {
       case (GameState.MainMenu):
@@ -830,7 +854,14 @@ public class GameRunner : MonoBehaviour
         SetCanvasActive(mainMenuCanvas, true);
         break;
       case (GameState.FlippingCard):
-        StartCoroutine(FadeInCard());
+        if (cardReadingSpots[numCardsAlreadyRead].canvasGroup.alpha < 1)
+        {
+          StartCoroutine(FadeInCard());
+        }
+        else
+        {
+          SetGameState(GameState.PreReading);
+        }
         break;
       case (GameState.PreReading):
         enableButton = false;
