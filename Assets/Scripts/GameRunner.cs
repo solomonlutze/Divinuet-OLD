@@ -8,6 +8,7 @@ using AK;
 //hello this is megan
 public enum GameState
 {
+  MainMenu,
   ChooseGameMode,
   DefineSpread,
   ViewPreviousReadings,
@@ -17,6 +18,7 @@ public enum GameState
   FadingCardInDone,
   PreReading,
   ReadingCard,
+  RereadingCard,
   ReadingCardDone,
   FadingOutCard,
   FadingOutCardDone,
@@ -29,6 +31,7 @@ public enum GameState
   Done
 }
 
+
 public enum GameMode
 {
   Random,
@@ -37,8 +40,9 @@ public enum GameMode
 }
 
 // sol best comment
-public class Deck : MonoBehaviour
+public class GameRunner : MonoBehaviour
 {
+  [Tooltip("Can click to skip through a reading")]
   public bool DEBUG_skipReading;
   [Tooltip("Save reading when cards fade in, vs after reading")]
   public bool DEBUG_SaveReadingImmediately;
@@ -75,9 +79,14 @@ public class Deck : MonoBehaviour
   public Canvas demoInstructionsCanvas;
   public Canvas cardSelectionCanvas;
   public Canvas savedReadingsCanvas;
-  public Canvas gameUICanvas;
   public Canvas demoEndCanvas;
   public Canvas spreadCanvas;
+  public Canvas pauseCanvas;
+  public Canvas settingsCanvas;
+  public Canvas mainMenuCanvas;
+  public Canvas howToPlayCanvas;
+  public List<Canvas> canvases;
+  public bool paused;
 
   public string[] cardMeanings;
   public GameObject card1InputField;
@@ -145,11 +154,19 @@ public class Deck : MonoBehaviour
   public Color32[] groupSparkColors;
   public ParticleSystem[] sparks;
 
-
+  public static bool InReadingGameState(GameState state)
+  {
+    return (
+      state == GameState.ReadingCard
+      || state == GameState.RereadingCard
+      || state == GameState.ReadingCardDone
+      || state == GameState.FadingOutCard
+      || state == GameState.FlippingCard
+    );
+  }
   // Start is called before the first frame update
   void Start()
   {
-    gameState = GameState.ChooseGameMode;
     AkSoundEngine.PostEvent("MenuAmbienceStart", this.gameObject);
     readingUI = readingCanvas.GetComponent<CardReadingUI>();
     generativeUI = generativeCanvas.GetComponent<GenerativeUI>();
@@ -165,14 +182,22 @@ public class Deck : MonoBehaviour
     pentaclesTotal = 0;
     swordsTotal = 0;
     buttonHover = false;
-    demoEndCanvas.enabled = false;
-    generativeCanvas.enabled = false;
-    readingCanvas.enabled = false;
-    savedReadingsCanvas.enabled = false;
-    gameUICanvas.enabled = false;
-    cardSelectionCanvas.enabled = false;
-    defineSpreadCanvas.enabled = false;
-    spreadCanvas.enabled = false;
+    canvases = new List<Canvas> {
+      mainMenuCanvas,
+      demoInstructionsCanvas,
+      demoEndCanvas,
+      generativeCanvas,
+      readingCanvas,
+      savedReadingsCanvas,
+      cardSelectionCanvas,
+      defineSpreadCanvas,
+      spreadCanvas,
+      pauseCanvas,
+      settingsCanvas,
+      howToPlayCanvas
+    // add any new canvases here!
+    };
+    SetGameState(GameState.MainMenu);
   }
 
   void ClearGameState()
@@ -226,34 +251,34 @@ public class Deck : MonoBehaviour
         case GameState.ChoosingCards:
           break;
         case GameState.ReadyToFadeInCard:
-          if (DEBUG_skipReading)
-          {
-            gameState = GameState.ShowingGenerativeUI;
-            DoGenerativePhase();
-          }
-          else
-          {
-            gameState = GameState.FlippingCard;
-            StartCoroutine(FadeInCard());
-          }
+          // if (DEBUG_skipReading)
+          // {
+          //   gameState = GameState.ShowingGenerativeUI;
+          //   DoGenerativePhase();
+          // }
+          // else
+          // {
+          SetGameState(GameState.FlippingCard);
+          // }
           break;
         case GameState.FadingOutCardDone:
-          gameState = GameState.FlippingCard;
-          StartCoroutine(FadeInCard());
+          SetGameState(GameState.FlippingCard);
+          break;
+        case GameState.ReadingCard:
+          if (DEBUG_skipReading)
+          {
+            Debug.Log("skipping reading?");
+            readingUI.reading = false; // megan don't set variables directly on other objects like this ok, this is bad programming
+          }
           break;
         case GameState.FadingCardInDone:
-          gameState = GameState.PreReading;
-          enableButton = false;
-          Cursor.SetCursor(waitCursor, Vector2.zero, CursorMode.Auto);
+          SetGameState(GameState.PreReading);
           break;
         case GameState.ReadingCardDone:
-          gameState = GameState.FadingOutCard;
-          StartCoroutine(FadeOutReading());
+          SetGameState(GameState.FadingOutCard);
           break;
         case GameState.ShowingGenerativeUIDone:
-          gameState = GameState.ShowingEndInstructions;
-          gameUICanvas.enabled = false;
-          DoGenerativePhase();
+          SetGameState(GameState.ShowingEndInstructions);
           break;
         default:
           break;
@@ -294,8 +319,60 @@ public class Deck : MonoBehaviour
         accompanimentNull.Post(gameObject);
         videoClips[0] = suitMajorityClips[5];
       }
-
     }
+    else if (Input.GetButtonDown("Pause"))
+    {
+      TogglePause();
+    }
+  }
+
+  public void TogglePause()
+  {
+    if (paused)
+    {
+      paused = false;
+      pauseCanvas.gameObject.SetActive(false);
+      Time.timeScale = 1;
+    }
+    else
+    {
+      paused = true;
+      pauseCanvas.gameObject.SetActive(true);
+      Time.timeScale = 0;
+    }
+  }
+
+  public void ToggleSettingsMenu()
+  {
+    if (settingsCanvas.gameObject.activeSelf)
+    {
+      if (gameState == GameState.MainMenu)
+      {
+        mainMenuCanvas.gameObject.SetActive(true);
+      }
+      else if (paused)
+      {
+        pauseCanvas.gameObject.SetActive(true);
+      }
+      else
+      {
+        Debug.LogError("toggling settings menu but neither paused nor in main menu");
+      }
+      settingsCanvas.gameObject.SetActive(false);
+    }
+    else
+    {
+      mainMenuCanvas.gameObject.SetActive(false);
+      pauseCanvas.gameObject.SetActive(false);
+      settingsCanvas.gameObject.SetActive(true);
+    }
+  }
+
+
+  public void ToggleHowToPlayMenu()
+  {
+    mainMenuCanvas.gameObject.SetActive(!mainMenuCanvas.gameObject.activeSelf);
+    howToPlayCanvas.gameObject.SetActive(!howToPlayCanvas.gameObject.activeSelf);
   }
 
   void CallbackFunction(object in_cookie, AkCallbackType in_type, object in_info)
@@ -326,11 +403,7 @@ public class Deck : MonoBehaviour
       }
       else if (generativeSection >= 11)
       {
-        gameState = GameState.GenerativePhaseDone;
-        playingClipNumber = 0;
-        videoPlayer.clip = videoClips[playingClipNumber];
-        videoPlayer.Play();
-        videoCanvas.gameObject.SetActive(true);
+        SetGameState(GameState.GenerativePhaseDone);
       }
 
       else
@@ -356,16 +429,8 @@ public class Deck : MonoBehaviour
     {
       AddCardData(cardOrder);
     }
-    gameState = GameState.ReadyToFadeInCard;
-    PrepForReading();
-    AkSoundEngine.PostEvent("MenuAmbienceStop", this.gameObject);
-    readingStart.Post(gameObject, (uint)AkCallbackType.AK_MusicSyncUserCue, CallbackFunction);
-    cardSelectionCanvas.enabled = false;
-    defineSpreadCanvas.enabled = false;
-    generativeCanvas.enabled = true;
-    readingCanvas.enabled = true;
-    gameUICanvas.enabled = true;
-    spreadCanvas.enabled = true;
+    SetCanvasActive(spreadCanvas, true);
+    SetGameState(GameState.ReadyToFadeInCard);
   }
 
   public void RemoveChosenCard(TarotCardData card)
@@ -464,8 +529,7 @@ public class Deck : MonoBehaviour
 
   public void ChooseGameMode()
   {
-    gameState = GameState.ChooseGameMode;
-    demoInstructionsCanvas.enabled = true;
+    SetGameState(GameState.ChooseGameMode);
   }
 
   void PrepForReading()
@@ -481,7 +545,6 @@ public class Deck : MonoBehaviour
     }
     enableButton = true;
     Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
-    gameUICanvas.enabled = true;
     setClipNumber = 1;
   }
 
@@ -497,7 +560,7 @@ public class Deck : MonoBehaviour
   {
     float t = 0;
     TarotCardData cardData = selectedCardData[numCardsAlreadyRead];
-    cardReadingSpots[numCardsAlreadyRead].Init(cardData, cardMeanings[numCardsAlreadyRead]);
+    cardReadingSpots[numCardsAlreadyRead].Init(cardData, cardMeanings[numCardsAlreadyRead], numCardsAlreadyRead, this);
     int groupNumber = cardData.thematicGroup;
     Color sparkColor = groupSparkColors[groupNumber - 1];
     Debug.Log(groupNumber + " " + sparkColor);
@@ -510,25 +573,51 @@ public class Deck : MonoBehaviour
       cardReadingSpots[numCardsAlreadyRead].canvasGroup.alpha = t;
       yield return null;
     }
-
-    gameState = GameState.FadingCardInDone;
+    SetGameState(GameState.FadingCardInDone);
   }
 
   IEnumerator ReadCard()
   {
-    gameState = GameState.ReadingCard;
+    SetGameState(GameState.ReadingCard);
     TarotCardData cardData = selectedCardData[numCardsAlreadyRead];
     cardData.readingMusicEvent.Post(gameObject);
     readingUI.Init(selectedCardData[numCardsAlreadyRead]);
     yield return StartCoroutine(readingUI.FadeIn());
-    yield return StartCoroutine(readingUI.ReadCard());
+    Coroutine readingCoroutine = StartCoroutine(readingUI.ReadCard());
     while (readingUI.reading)
     {
       yield return null;
     }
+    if (readingCoroutine != null)
+    {
+      StopCoroutine(readingCoroutine);
+    }
+    cardReadingSpots[numCardsAlreadyRead].EnableButton(true);
     numCardsAlreadyRead++;
     Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
-    gameState = GameState.ReadingCardDone;
+    SetGameState(GameState.ReadingCardDone);
+  }
+
+
+  public bool RereadCard(int cardToReread)
+  {
+    if (!InReadingGameState(gameState))
+    {
+      StartCoroutine(DoRereadCard(cardToReread));
+      return true;
+    }
+    return false;
+  }
+
+  public IEnumerator DoRereadCard(int cardToReread)
+  {
+    Debug.Log("rereading card " + cardToReread);
+    SetGameState(GameState.RereadingCard);
+    TarotCardData cardData = selectedCardData[cardToReread];
+    readingUI.Init(selectedCardData[cardToReread], true);
+    yield return StartCoroutine(readingUI.FadeIn());
+    Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
+    SetGameState(GameState.ReadingCardDone);
   }
 
   IEnumerator FadeOutReading()
@@ -539,11 +628,11 @@ public class Deck : MonoBehaviour
     enableButton = true;
     if (numCardsAlreadyRead < selectedCardData.Count)
     {
-      gameState = GameState.FadingOutCardDone;
+      SetGameState(GameState.FadingOutCardDone);
     }
     else
     {
-      gameState = GameState.BeginGenerativeUI;
+      SetGameState(GameState.BeginGenerativeUI);
       yield return StartCoroutine(BeginGenerativePhase());
     }
   }
@@ -597,7 +686,7 @@ public class Deck : MonoBehaviour
     yield return StartCoroutine(generativeUI.FadeIn());
     yield return StartCoroutine(generativeUI.ReadText());
     Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
-    gameState = GameState.ShowingGenerativeUIDone;
+    SetGameState(GameState.ShowingGenerativeUIDone);
   }
 
   void DoGenerativePhase()
@@ -613,40 +702,38 @@ public class Deck : MonoBehaviour
       Debug.Log(i + " " + keyEvent);
     }
     StartCoroutine(generativeUI.DoGeneration(selectedCardData));
-    demoEndCanvas.enabled = true;
+    demoEndCanvas.gameObject.SetActive(true);
   }
 
   public void AfterInstructions_RandomReading()
   {
+    SetGameState(GameState.DefineSpread);
     gameMode = GameMode.Random;
-    gameState = GameState.DefineSpread;
-    demoInstructionsCanvas.enabled = false;
-    defineSpreadCanvas.enabled = true;
+    DisableAllCanvases();
+    SetCanvasActive(defineSpreadCanvas, true);
   }
 
   public void AfterInstructions_ChooseCards()
   {
     gameMode = GameMode.Choose;
-    gameState = GameState.DefineSpread;
-    demoInstructionsCanvas.enabled = false;
-    defineSpreadCanvas.enabled = true;
+    DisableAllCanvases();
+    SetCanvasActive(defineSpreadCanvas, true);
   }
 
 
   public void AfterInstructions_ViewPreviousReadingss()
   {
-    gameState = GameState.DefineSpread;
-    demoInstructionsCanvas.enabled = false;
-    savedReadingsCanvas.enabled = true;
-    Debug.Log("initing");
+    SetGameState(GameState.DefineSpread);
+    DisableAllCanvases();
+    SetCanvasActive(savedReadingsCanvas, true);
     savedReadingsUI.Init(this);
   }
 
 
   public void CloseViewPreviousReadings()
   {
-    demoInstructionsCanvas.enabled = true;
-    savedReadingsCanvas.enabled = false;
+    mainMenuCanvas.gameObject.SetActive(true);
+    savedReadingsCanvas.gameObject.SetActive(false);
   }
 
   public void RevisitSavedReading(SavedReading reading)
@@ -654,7 +741,7 @@ public class Deck : MonoBehaviour
     Debug.Log("revisiting saved readings");
     gameMode = GameMode.ViewPreviousReadings;
     ResetGameState();
-    savedReadingsCanvas.enabled = false;
+    savedReadingsCanvas.gameObject.SetActive(false);
     cardMeanings = reading.cardMeanings;
     cardsSelectedToDeal = new List<int>(reading.cards);
     StartGame();
@@ -675,44 +762,45 @@ public class Deck : MonoBehaviour
     switch (gameMode)
     {
       case GameMode.Random:
-        gameState = GameState.ReadyToFadeInCard;
+        SetGameState(GameState.ReadyToFadeInCard);
         AkSoundEngine.PostEvent("MenuAmbienceStop", this.gameObject);
         readingStart.Post(gameObject, (uint)AkCallbackType.AK_MusicSyncUserCue, CallbackFunction);
-        generativeCanvas.enabled = true;
-        readingCanvas.enabled = true;
-        gameUICanvas.enabled = true;
-        spreadCanvas.enabled = true;
-        defineSpreadCanvas.enabled = false;
+        DisableAllCanvases();
+        SetCanvasActive(generativeCanvas, true);
+        SetCanvasActive(readingCanvas, true);
+        SetCanvasActive(spreadCanvas, true);
         ResetGameState();
         ChooseAllCardsRandomly();
         PrepForReading();
         break;
       case GameMode.ViewPreviousReadings:
-        gameState = GameState.ReadyToFadeInCard;
+        SetGameState(GameState.ReadyToFadeInCard);
         AkSoundEngine.PostEvent("MenuAmbienceStop", this.gameObject);
         readingStart.Post(gameObject, (uint)AkCallbackType.AK_MusicSyncUserCue, CallbackFunction);
-        generativeCanvas.enabled = true;
-        readingCanvas.enabled = true;
-        gameUICanvas.enabled = true;
-        defineSpreadCanvas.enabled = false;
+        SetCanvasActive(generativeCanvas, true);
+        SetCanvasActive(readingCanvas, true);
         PrepForReading();
         break;
       case GameMode.Choose:
       default:
-        gameState = GameState.ChoosingCards;
-        cardSelectionCanvas.enabled = true;
+        SetGameState(GameState.ChoosingCards);
+        DisableAllCanvases();
+        SetCanvasActive(cardSelectionCanvas, true);
         cardSelectionUI.Init(GameMaster.Instance.cardsData, this);
-        demoInstructionsCanvas.enabled = false;
-        defineSpreadCanvas.enabled = false;
         ResetGameState();
         break;
     }
   }
+
   public void DisableEndCanvas()
   {
-    gameState = GameState.GenerativePhase;
-    gameUICanvas.enabled = true;
-    demoEndCanvas.enabled = false;
+    SetGameState(GameState.GenerativePhase);
+    demoEndCanvas.gameObject.SetActive(false);
+  }
+
+  public void QuitToMainMenu()
+  {
+    SetGameState(GameState.MainMenu);
   }
 
   public void QuitGame()
@@ -724,9 +812,9 @@ public class Deck : MonoBehaviour
   public void StartOver()
   {
     readingState.Post(gameObject);
-    gameState = GameState.ReadyToFadeInCard;
     ClearGameState();
     ResetGameState();
+    SetGameState(GameState.ReadyToFadeInCard);
   }
 
   public void ButtonHoverOn()
@@ -740,4 +828,72 @@ public class Deck : MonoBehaviour
   }
 
 
+  public void DisableAllCanvases()
+  {
+    foreach (Canvas c in canvases)
+    {
+      SetCanvasActive(c, false);
+    }
+  }
+  public void SetCanvasActive(Canvas c, bool active)
+  {
+    c.gameObject.SetActive(active);
+  }
+
+  public void SetGameState(GameState newState)
+  {
+    gameState = newState;
+    foreach (CardReadingSpot spot in cardReadingSpots)
+    {
+      spot.OnGameStateChange(gameState);
+    }
+    switch (newState)
+    {
+      case (GameState.MainMenu):
+        DisableAllCanvases();
+        SetCanvasActive(mainMenuCanvas, true);
+        break;
+      case (GameState.FlippingCard):
+        if (cardReadingSpots[numCardsAlreadyRead].canvasGroup.alpha < 1)
+        {
+          StartCoroutine(FadeInCard());
+        }
+        else
+        {
+          SetGameState(GameState.PreReading);
+        }
+        break;
+      case (GameState.PreReading):
+        enableButton = false;
+        Cursor.SetCursor(waitCursor, Vector2.zero, CursorMode.Auto);
+        break;
+      case (GameState.FadingOutCard):
+        StartCoroutine(FadeOutReading());
+        break;
+      case (GameState.ShowingEndInstructions):
+        DoGenerativePhase();
+        break;
+      case (GameState.GenerativePhaseDone):
+        playingClipNumber = 0;
+        videoPlayer.clip = videoClips[playingClipNumber];
+        videoPlayer.Play();
+        videoCanvas.gameObject.SetActive(true);
+        break;
+      case (GameState.ReadyToFadeInCard):
+        PrepForReading();
+        AkSoundEngine.PostEvent("MenuAmbienceStop", this.gameObject);
+        readingStart.Post(gameObject, (uint)AkCallbackType.AK_MusicSyncUserCue, CallbackFunction);
+        DisableAllCanvases();
+        SetCanvasActive(generativeCanvas, true);
+        SetCanvasActive(readingCanvas, true);
+        SetCanvasActive(spreadCanvas, true);
+        break;
+      case (GameState.ChooseGameMode):
+        mainMenuCanvas.gameObject.SetActive(false);
+        demoInstructionsCanvas.gameObject.SetActive(true);
+        break;
+      default:
+        break;
+    }
+  }
 }
