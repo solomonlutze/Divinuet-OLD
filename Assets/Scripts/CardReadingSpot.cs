@@ -29,11 +29,7 @@ public class CardReadingSpot : MonoBehaviour
 
   public void OnClickReread()
   {
-    Debug.Log("OnClickReread");
-    // if (gameRunner.gameState == GameState.PreReading)
-    // {
-    StartCoroutine(gameRunner.RereadCard(readingOrder));
-    // }
+    gameRunner.RereadCard(readingOrder);
   }
 
   public void EnableButton(bool enable)
@@ -41,6 +37,17 @@ public class CardReadingSpot : MonoBehaviour
     rereadButton.gameObject.SetActive(enable);
   }
 
+  public void OnGameStateChange(GameState newState)
+  {
+    if (GameRunner.InReadingGameState(newState))
+    {
+      canvasGroup.interactable = false;
+    }
+    else
+    {
+      canvasGroup.interactable = true;
+    }
+  }
   public void OnHover(bool hover)
   {
     Debug.Log("OnHover");
