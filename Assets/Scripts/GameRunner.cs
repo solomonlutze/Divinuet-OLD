@@ -167,7 +167,6 @@ public class GameRunner : MonoBehaviour
   // Start is called before the first frame update
   void Start()
   {
-    AkSoundEngine.PostEvent("MenuAmbienceStart", this.gameObject);
     readingUI = readingCanvas.GetComponent<CardReadingUI>();
     generativeUI = generativeCanvas.GetComponent<GenerativeUI>();
     cardSelectionUI = cardSelectionCanvas.GetComponent<CardSelectionUI>();
@@ -203,6 +202,11 @@ public class GameRunner : MonoBehaviour
   void ClearGameState()
   {
     StopAllCoroutines();
+    foreach (ParticleSystem spark in sparks)
+    {
+      sparks[numCardsAlreadyRead].Stop();
+      sparks[numCardsAlreadyRead].Clear();
+    }
     numCardsAlreadyRead = 0;
     readingUI.StopAllCoroutines();
     StartCoroutine(readingUI.FadeOut());
@@ -223,6 +227,7 @@ public class GameRunner : MonoBehaviour
     pentaclesTotal = 0;
     swordsTotal = 0;
     buttonHover = false;
+    Unpause();
     generativeSection = 0;
     foreach (CardReadingSpot cardReadingSpot in cardReadingSpots)
     {
@@ -326,16 +331,25 @@ public class GameRunner : MonoBehaviour
     }
   }
 
+  public void Unpause()
+  {
+    paused = false;
+    pauseCanvas.gameObject.SetActive(false);
+    Time.timeScale = 1;
+    if (gameState == GameState.PreReading)
+    {
+      Cursor.SetCursor(waitCursor, Vector2.zero, CursorMode.Auto);
+    }
+  }
   public void TogglePause()
   {
     if (paused)
     {
-      paused = false;
-      pauseCanvas.gameObject.SetActive(false);
-      Time.timeScale = 1;
+      Unpause();
     }
     else
     {
+      Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
       paused = true;
       pauseCanvas.gameObject.SetActive(true);
       Time.timeScale = 0;
@@ -372,6 +386,7 @@ public class GameRunner : MonoBehaviour
   public void ToggleHowToPlayMenu()
   {
     mainMenuCanvas.gameObject.SetActive(!mainMenuCanvas.gameObject.activeSelf);
+    pauseCanvas.gameObject.SetActive(!pauseCanvas.gameObject.activeSelf);
     howToPlayCanvas.gameObject.SetActive(!howToPlayCanvas.gameObject.activeSelf);
   }
 
@@ -566,7 +581,7 @@ public class GameRunner : MonoBehaviour
     Debug.Log(groupNumber + " " + sparkColor);
     ParticleSystem.MainModule ma = sparks[numCardsAlreadyRead].main;
     ma.startColor = sparkColor;
-    sparks[numCardsAlreadyRead].gameObject.SetActive(true);
+    sparks[numCardsAlreadyRead].Play();
     while (t < 1)
     {
       t += Time.deltaTime / cardFlipSpeed;
@@ -651,7 +666,7 @@ public class GameRunner : MonoBehaviour
 
     Debug.Log("Fade out called");
     float t = 0;
-    CanvasGroup readingGroup = readingCanvas.GetComponent<CanvasGroup>();
+    CanvasGroup readingGroup = readingUI.canvasGroup;
     if (readingGroup != null)
     {
 
@@ -851,6 +866,7 @@ public class GameRunner : MonoBehaviour
     {
       case (GameState.MainMenu):
         DisableAllCanvases();
+        AkSoundEngine.PostEvent("MenuAmbienceStart", this.gameObject);
         SetCanvasActive(mainMenuCanvas, true);
         break;
       case (GameState.FlippingCard):
@@ -889,7 +905,10 @@ public class GameRunner : MonoBehaviour
         SetCanvasActive(spreadCanvas, true);
         break;
       case (GameState.ChooseGameMode):
-        mainMenuCanvas.gameObject.SetActive(false);
+        readingUI.canvasGroup.alpha = 0;
+        ClearGameState();
+        ResetGameState();
+        DisableAllCanvases();
         demoInstructionsCanvas.gameObject.SetActive(true);
         break;
       default:

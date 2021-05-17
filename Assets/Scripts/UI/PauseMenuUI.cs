@@ -67,9 +67,12 @@ public class PauseMenuUI : BaseUICanvas
     }
   }
 
+  // TODO: probably shouldn't be handling sound from here
   void NewReading()
   {
-    gameRunner.ToggleHowToPlayMenu();
+    AkSoundEngine.PostEvent("Stop_All", gameRunner.gameObject);
+    AkSoundEngine.PostEvent("MenuAmbienceStart", gameRunner.gameObject);
+    gameRunner.ChooseGameMode();
   }
 
   void MainMenu()
