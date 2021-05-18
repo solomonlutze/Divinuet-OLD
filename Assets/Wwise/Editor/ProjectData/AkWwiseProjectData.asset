@@ -31,7 +31,7 @@ MonoBehaviour:
     ParentPhysicalPath: 
     guid: 316b02227919fc49a4528be3c11e0f41
     GuidInternal: 
-    m_lastTime: -8585935323177806578
+    m_lastTime: -8585802452835647303
     List:
     - name: Soundbank
       guid: 8d5e51ee7b34f042a6bee5955537fe07
@@ -44,14 +44,10 @@ MonoBehaviour:
       Path: Default Work Unit\Soundbank
   EventWwu:
   - PhysicalPath: Events\Default Work Unit.wwu
-    PathAndIcons:
-    - ElementName: Default Work Unit
-      ObjectType: 12
-    ParentPath: Default Work Unit
     ParentPhysicalPath: 
     guid: bc617d844702964e9e3475116383ce13
     GuidInternal: 
-    m_lastTime: -8585874081258293816
+    m_lastTime: -8585802453303781073
     List:
     - name: AccompanimentCups
       guid: 3e9aa257f8dcda44ab5bc5d1fd033e9f
@@ -97,48 +93,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
-    - name: Bass
-      guid: a576878bf960ac4c88deba5cb1096f2e
-      id: 1291433344
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: GenerativeStates
-        ObjectType: 4
-      - ElementName: Bass
-        ObjectType: 4
-      Path: Default Work Unit\GenerativeStates\Bass
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Card1
-      guid: 9729ddca4af296458b38fa7bde665762
-      id: 4256484200
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: GenerativeCardSuits
-        ObjectType: 4
-      - ElementName: Card1
-        ObjectType: 4
-      Path: Default Work Unit\GenerativeCardSuits\Card1
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Card1
-      guid: 3b499bba8442254c8b7a0094deaa354d
-      id: 4256484200
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: GenerativeKeys
-        ObjectType: 4
-      - ElementName: Card1
-        ObjectType: 4
-      Path: Default Work Unit\GenerativeKeys\Card1
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
     - name: Card1Cups
       guid: 9fd8dcc6f01ff84c8bfac8d040fc9c56
       id: 1213864503
@@ -491,34 +445,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
-    - name: Card2
-      guid: c4deca9493a1494fad03e4becc94d350
-      id: 4256484203
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: GenerativeKeys
-        ObjectType: 4
-      - ElementName: Card2
-        ObjectType: 4
-      Path: Default Work Unit\GenerativeKeys\Card2
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Card2
-      guid: f1c4f2cfce4b0c4f9ecd3bb11e3ff261
-      id: 4256484203
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: GenerativeCardSuits
-        ObjectType: 4
-      - ElementName: Card2
-        ObjectType: 4
-      Path: Default Work Unit\GenerativeCardSuits\Card2
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
     - name: Card2Cups
       guid: 8f01a6090e32f94193498871da990d48
       id: 593127736
@@ -871,34 +797,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
-    - name: Card3
-      guid: df8109c6d28aa246be2d41a190f30aa0
-      id: 4256484202
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: GenerativeCardSuits
-        ObjectType: 4
-      - ElementName: Card3
-        ObjectType: 4
-      Path: Default Work Unit\GenerativeCardSuits\Card3
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Card3
-      guid: 274b8ebafd6e8249bac85a5eb1e0cdc0
-      id: 4256484202
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: GenerativeKeys
-        ObjectType: 4
-      - ElementName: Card3
-        ObjectType: 4
-      Path: Default Work Unit\GenerativeKeys\Card3
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
     - name: Card3Cups
       guid: f2700d8ea7d35748ad730963f0a123f0
       id: 3298030721
@@ -1251,18 +1149,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
-    - name: CardEvents
-      guid: b096310945b4bd4391e804c065b54e38
-      id: 1286857504
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: CardEvents
-        ObjectType: 4
-      Path: Default Work Unit\CardEvents
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
     - name: CardSlide
       guid: d9a05c558c42184597a2209fcb6a446d
       id: 4145272430
@@ -1293,20 +1179,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
-    - name: Cups
-      guid: 89fa276ee9fc2c4bb193e58a0ee62f2b
-      id: 3817145194
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: CardEvents
-        ObjectType: 4
-      - ElementName: Cups
-        ObjectType: 4
-      Path: Default Work Unit\CardEvents\Cups
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
     - name: Death
       guid: 4e7e59514a8fa14dbcceff9fd3042933
       id: 779278001
@@ -1355,18 +1227,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
-    - name: FlippingEvents
-      guid: b0c83e75a68de44facd5014884239ef7
-      id: 2073700751
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: FlippingEvents
-        ObjectType: 4
-      Path: Default Work Unit\FlippingEvents
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
     - name: FourOfSwords
       guid: 737bc4004aef55429dcf8760cae0a599
       id: 112666488
@@ -1383,260 +1243,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
-    - name: GenerativeAccompaniment
-      guid: 15448e73a4997f4f8940c1fce70ecea9
-      id: 3673895660
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: GenerativeAccompaniment
-        ObjectType: 4
-      Path: Default Work Unit\GenerativeAccompaniment
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: GenerativeCardGroups
-      guid: b9fa81558526934182410c1b2620384d
-      id: 2412115561
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: GenerativeCardGroups
-        ObjectType: 4
-      Path: Default Work Unit\GenerativeCardGroups
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: GenerativeCardSuits
-      guid: 28593f14e9aa074aa5606fa20980a26e
-      id: 2292589009
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: GenerativeCardSuits
-        ObjectType: 4
-      Path: Default Work Unit\GenerativeCardSuits
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: GenerativeKeys
-      guid: 98e48b21f1625147b8a796b13abd3b53
-      id: 2665735739
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: GenerativeKeys
-        ObjectType: 4
-      Path: Default Work Unit\GenerativeKeys
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: GenerativePart
-      guid: edc0affc5aab18438ffda95368a598f0
-      id: 2576999240
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: GenerativePart
-        ObjectType: 4
-      Path: Default Work Unit\GenerativePart
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: GenerativeStates
-      guid: 1b1b2e4335fedf4fa4e69d22e69c6873
-      id: 1364652353
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: GenerativeStates
-        ObjectType: 4
-      Path: Default Work Unit\GenerativeStates
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Group1
-      guid: 66bc23f8e8935648ab964bd836790ce5
-      id: 2092440183
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: GenerativeCardGroups
-        ObjectType: 4
-      - ElementName: Group1
-        ObjectType: 4
-      Path: Default Work Unit\GenerativeCardGroups\Group1
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Group10
-      guid: 444a0d8b9647534085ab647e1849b042
-      id: 3436292453
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: GenerativeCardGroups
-        ObjectType: 4
-      - ElementName: Group10
-        ObjectType: 4
-      Path: Default Work Unit\GenerativeCardGroups\Group10
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Group11
-      guid: 88a1d97b4bb02b4a9b745eafc006aacd
-      id: 3436292452
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: GenerativeCardGroups
-        ObjectType: 4
-      - ElementName: Group11
-        ObjectType: 4
-      Path: Default Work Unit\GenerativeCardGroups\Group11
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Group12
-      guid: 8ab3b42faea11044bb40d38cb1990262
-      id: 3436292455
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: GenerativeCardGroups
-        ObjectType: 4
-      - ElementName: Group12
-        ObjectType: 4
-      Path: Default Work Unit\GenerativeCardGroups\Group12
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Group13
-      guid: 13c7ddbe46d7be4e9f205298f5ad09ad
-      id: 3436292454
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: GenerativeCardGroups
-        ObjectType: 4
-      - ElementName: Group13
-        ObjectType: 4
-      Path: Default Work Unit\GenerativeCardGroups\Group13
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Group2
-      guid: 5042b26dd068b847af4c1fdd7c9ba2fc
-      id: 2092440180
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: GenerativeCardGroups
-        ObjectType: 4
-      - ElementName: Group2
-        ObjectType: 4
-      Path: Default Work Unit\GenerativeCardGroups\Group2
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Group3
-      guid: 7b834650553a9544956976a7242649af
-      id: 2092440181
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: GenerativeCardGroups
-        ObjectType: 4
-      - ElementName: Group3
-        ObjectType: 4
-      Path: Default Work Unit\GenerativeCardGroups\Group3
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Group4
-      guid: 08a505510ac95a47b8f338ea10813827
-      id: 2092440178
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: GenerativeCardGroups
-        ObjectType: 4
-      - ElementName: Group4
-        ObjectType: 4
-      Path: Default Work Unit\GenerativeCardGroups\Group4
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Group5
-      guid: 13f3c11fc01c0d44b7480d0fe315f2dc
-      id: 2092440179
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: GenerativeCardGroups
-        ObjectType: 4
-      - ElementName: Group5
-        ObjectType: 4
-      Path: Default Work Unit\GenerativeCardGroups\Group5
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Group6
-      guid: ac00da88277a0546930939656586d628
-      id: 2092440176
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: GenerativeCardGroups
-        ObjectType: 4
-      - ElementName: Group6
-        ObjectType: 4
-      Path: Default Work Unit\GenerativeCardGroups\Group6
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Group7
-      guid: 450a364dc476a14b86f48df73266de45
-      id: 2092440177
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: GenerativeCardGroups
-        ObjectType: 4
-      - ElementName: Group7
-        ObjectType: 4
-      Path: Default Work Unit\GenerativeCardGroups\Group7
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Group8
-      guid: 42966aec929db2448325f8e5617ba6fb
-      id: 2092440190
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: GenerativeCardGroups
-        ObjectType: 4
-      - ElementName: Group8
-        ObjectType: 4
-      Path: Default Work Unit\GenerativeCardGroups\Group8
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Group9
-      guid: 6ca7da9418b097418e48f3ad56b9ada8
-      id: 2092440191
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: GenerativeCardGroups
-        ObjectType: 4
-      - ElementName: Group9
-        ObjectType: 4
-      Path: Default Work Unit\GenerativeCardGroups\Group9
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
     - name: KingOfCups
       guid: f6ecb83f545f964ea2dcffc99e8fefbe
       id: 87267876
@@ -1683,20 +1289,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
-    - name: Major Arcana
-      guid: a2e9e99eca116444b7330e5afd69dafe
-      id: 9743802
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: CardEvents
-        ObjectType: 4
-      - ElementName: Major Arcana
-        ObjectType: 4
-      Path: Default Work Unit\CardEvents\Major Arcana
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
     - name: MajorArcana
       guid: 4c0e99bb238c564aa09bafdd3461f8f4
       id: 798166914
@@ -1774,20 +1366,6 @@ MonoBehaviour:
       maxDuration: 0
       minDuration: 0
     - name: Pentacles
-      guid: 6f1b01cffc19674390830b8827f196bc
-      id: 495557850
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: CardEvents
-        ObjectType: 4
-      - ElementName: Pentacles
-        ObjectType: 4
-      Path: Default Work Unit\CardEvents\Pentacles
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
-    - name: Pentacles
       guid: 2eb0c9f5be6f2846a780a24ae658f656
       id: 495557850
       PathAndIcons:
@@ -1801,17 +1379,17 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\GenerativeStates\Bass\Pentacles
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: ReadingNonCard
-      guid: 98f0d3b7cfddaa479c9516d21d6ae64e
-      id: 3899505494
+      maxDuration: 0
+      minDuration: 0
+    - name: Play_Music
+      guid: a47fd06268b53f458db1e25ee5ea53ab
+      id: 2932040671
       PathAndIcons:
       - ElementName: Default Work Unit
         ObjectType: 12
-      - ElementName: ReadingNonCard
-        ObjectType: 4
-      Path: Default Work Unit\ReadingNonCard
+      - ElementName: Play_Music
+        ObjectType: 3
+      Path: Default Work Unit\Play_Music
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -1877,18 +1455,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
-    - name: SFXEvents
-      guid: ac80d1710b783e4dbaa645daee19bfb9
-      id: 668699621
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: SFXEvents
-        ObjectType: 4
-      Path: Default Work Unit\SFXEvents
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
     - name: SixOfPentacles
       guid: 2f662af09cfe6940bb46e8de6dd65e60
       id: 2491223249
@@ -1921,6 +1487,20 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: SkipReadingMusic
+      guid: 8bdc3801c18d1f41ae2773c71a990d1b
+      id: 368896769
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: DEBUG
+        ObjectType: 4
+      - ElementName: SkipReadingMusic
+        ObjectType: 3
+      Path: Default Work Unit\DEBUG\SkipReadingMusic
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: State_Generative
       guid: a1dbf4af2b041d4e9460b20a2f08d328
       id: 3535269221
@@ -1957,6 +1537,18 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: Stop_All
+      guid: 9a514a384d50ae4ca3b832fcfefc4a97
+      id: 452547817
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Stop_All
+        ObjectType: 3
+      Path: Default Work Unit\Stop_All
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Strength
       guid: e7537fc0eb5e214ba7660e0a88992aaa
       id: 1008270286
@@ -1974,20 +1566,6 @@ MonoBehaviour:
       maxDuration: 0
       minDuration: 0
     - name: Swords
-      guid: da81536e6c60f743a6d382fe22d7b869
-      id: 361241855
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: CardEvents
-        ObjectType: 4
-      - ElementName: Swords
-        ObjectType: 4
-      Path: Default Work Unit\CardEvents\Swords
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
-    - name: Swords
       guid: 2e7f1f3d48666e41bfd03e26f7139f59
       id: 361241855
       PathAndIcons:
@@ -2001,8 +1579,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\GenerativeStates\Bass\Swords
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: SwordsFlip
       guid: b7ed3ead674cd74a81623a6d2148ae9a
       id: 4085194074
@@ -2065,18 +1643,6 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
-    - name: TEST
-      guid: 81c1b095933f3e4ba3154b9739355bcd
-      id: 3157003241
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: TEST
-        ObjectType: 3
-      Path: Default Work Unit\TEST
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
     - name: TheEmpress
       guid: 298babd4c6bcc5449d786c7553c64490
       id: 4181689965
@@ -2220,20 +1786,6 @@ MonoBehaviour:
       maxDuration: 0
       minDuration: 0
     - name: Wands
-      guid: 18e910e317c4a04c8c04b0c8086b2110
-      id: 2202738146
-      PathAndIcons:
-      - ElementName: Default Work Unit
-        ObjectType: 12
-      - ElementName: CardEvents
-        ObjectType: 4
-      - ElementName: Wands
-        ObjectType: 4
-      Path: Default Work Unit\CardEvents\Wands
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
-    - name: Wands
       guid: 29f23a246b31d4459608aa9970f4f992
       id: 2202738146
       PathAndIcons:
@@ -2247,8 +1799,8 @@ MonoBehaviour:
         ObjectType: 3
       Path: Default Work Unit\GenerativeStates\Bass\Wands
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: WheelOfFortune
       guid: eebd683f6620c044a4e35c20999ff864
       id: 3929082740
@@ -3209,5 +2761,9 @@ MonoBehaviour:
     List: []
   ExpandedItems:
   - /Divinuet
+  - /Divinuet/Events
+  - /Divinuet/Events/Default Work Unit
+  - /Divinuet/Events/Default Work Unit/DEBUG
+  - /Divinuet/SoundBanks
   autoPopulateEnabled: 1
   CurrentPluginConfig: Profile
