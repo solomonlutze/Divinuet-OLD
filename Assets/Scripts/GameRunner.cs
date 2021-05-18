@@ -44,6 +44,8 @@ public class GameRunner : MonoBehaviour
 {
   [Tooltip("Can click to skip through a reading")]
   public bool DEBUG_skipReading;
+  [Tooltip("Can click to skip through all readings")]
+  public bool DEBUG_skipAllReadings;
   [Tooltip("Save reading when cards fade in, vs after reading")]
   public bool DEBUG_SaveReadingImmediately;
   [Tooltip("Allows you to generate max saved readings from the previous readings screen")]
@@ -256,15 +258,15 @@ public class GameRunner : MonoBehaviour
         case GameState.ChoosingCards:
           break;
         case GameState.ReadyToFadeInCard:
-          // if (DEBUG_skipReading)
-          // {
-          //   gameState = GameState.ShowingGenerativeUI;
-          //   DoGenerativePhase();
-          // }
-          // else
-          // {
-          SetGameState(GameState.FlippingCard);
-          // }
+          if (DEBUG_skipAllReadings)
+          {
+            gameState = GameState.ShowingGenerativeUI;
+            DoGenerativePhase();
+          }
+          else
+          {
+            SetGameState(GameState.FlippingCard);
+          }
           break;
         case GameState.FadingOutCardDone:
           SetGameState(GameState.FlippingCard);
