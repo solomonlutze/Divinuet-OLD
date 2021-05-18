@@ -105,12 +105,14 @@
 				<Event Id="1963057671" Name="NineOfPentacles" ObjectPath="\Events\Default Work Unit\CardEvents\Pentacles\NineOfPentacles" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="784127654" Name="Null" ObjectPath="\Events\Default Work Unit\GenerativeStates\Bass\Null" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="495557850" Name="Pentacles" ObjectPath="\Events\Default Work Unit\GenerativeStates\Bass\Pentacles" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="2932040671" Name="Play_Music" ObjectPath="\Events\Default Work Unit\Play_Music" DurationType="Infinite"/>
 				<Event Id="1965947029" Name="ReadingStart" ObjectPath="\Events\Default Work Unit\ReadingNonCard\ReadingStart" DurationType="Infinite"/>
 				<Event Id="884571752" Name="SevenOfCups" ObjectPath="\Events\Default Work Unit\CardEvents\Cups\SevenOfCups" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="4205938704" Name="SevenOfPentacles" ObjectPath="\Events\Default Work Unit\CardEvents\Pentacles\SevenOfPentacles" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="587937073" Name="SevenOfSwords" ObjectPath="\Events\Default Work Unit\CardEvents\Swords\SevenOfSwords" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="2491223249" Name="SixOfPentacles" ObjectPath="\Events\Default Work Unit\CardEvents\Pentacles\SixOfPentacles" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="3436307834" Name="SixOfSwords" ObjectPath="\Events\Default Work Unit\CardEvents\Swords\SixOfSwords" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
+				<Event Id="368896769" Name="SkipReadingMusic" ObjectPath="\Events\Default Work Unit\DEBUG\SkipReadingMusic" DurationType="Infinite"/>
 				<Event Id="3535269221" Name="State_Generative" ObjectPath="\Events\Default Work Unit\State_Generative" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="1929173219" Name="State_MakingSong" ObjectPath="\Events\Default Work Unit\State_MakingSong" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="1701015953" Name="State_Reading" ObjectPath="\Events\Default Work Unit\State_Reading" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
@@ -121,7 +123,6 @@
 				<Event Id="1462743847" Name="Temperance" ObjectPath="\Events\Default Work Unit\CardEvents\Major Arcana\Temperance" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="2461612130" Name="TenOfCups" ObjectPath="\Events\Default Work Unit\CardEvents\Cups\TenOfCups" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="2185129511" Name="TenOfSwords" ObjectPath="\Events\Default Work Unit\CardEvents\Swords\TenOfSwords" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="3157003241" Name="TEST" ObjectPath="\Events\Default Work Unit\TEST" DurationType="OneShot" DurationMin="13.125000" DurationMax="13.125000"/>
 				<Event Id="4181689965" Name="TheEmpress" ObjectPath="\Events\Default Work Unit\CardEvents\Major Arcana\TheEmpress" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="2631758982" Name="TheFool" ObjectPath="\Events\Default Work Unit\CardEvents\Major Arcana\TheFool" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="3676275462" Name="TheHighPriestess" ObjectPath="\Events\Default Work Unit\CardEvents\Major Arcana\TheHighPriestess" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
@@ -171,6 +172,10 @@
 					<ShortName>GenerativeMajorArcana_Part1_Dorian.wav</ShortName>
 					<Path>SFX\GenerativeMajorArcana_Part1_Dorian_9B96ECC7.wem</Path>
 				</File>
+				<File Id="71147250" Language="SFX">
+					<ShortName>Viola_Phrase2_Group8.wav</ShortName>
+					<Path>SFX\Viola_Phrase2_Group8_9B96ECC7.wem</Path>
+				</File>
 				<File Id="79879626" Language="SFX">
 					<ShortName>GenerativeMajorArcana_Intro.wav</ShortName>
 					<Path>SFX\GenerativeMajorArcana_Intro_9B96ECC7.wem</Path>
@@ -199,9 +204,9 @@
 					<ShortName>WheelOfFortune_roughmix.wav</ShortName>
 					<Path>SFX\WheelOfFortune_roughmix_9B96ECC7.wem</Path>
 				</File>
-				<File Id="125624303" Language="SFX">
-					<ShortName>GenerativeCups_Part2_Dorian.wav</ShortName>
-					<Path>SFX\GenerativeCups_Part2_Dorian_9B96ECC7.wem</Path>
+				<File Id="129425396" Language="SFX">
+					<ShortName>Viola_Phrase3_Group2.wav</ShortName>
+					<Path>SFX\Viola_Phrase3_Group2_9B96ECC7.wem</Path>
 				</File>
 				<File Id="132458670" Language="SFX">
 					<ShortName>TwoOfCups.wav</ShortName>
@@ -283,6 +288,18 @@
 					<ShortName>DT_LowPiano.wav</ShortName>
 					<Path>SFX\DT_LowPiano_9B96ECC7.wem</Path>
 				</File>
+				<File Id="236872454" Language="SFX">
+					<ShortName>CupsPiano_Phrase1_Group11.wav</ShortName>
+					<Path>SFX\CupsPiano_Phrase1_Group11_9B96ECC7.wem</Path>
+				</File>
+				<File Id="242181906" Language="SFX">
+					<ShortName>SwordsWurli_Phrase2_Group8.wav</ShortName>
+					<Path>SFX\SwordsWurli_Phrase2_Group8_9B96ECC7.wem</Path>
+				</File>
+				<File Id="274876220" Language="SFX">
+					<ShortName>Viola_Phrase3_Group8.wav</ShortName>
+					<Path>SFX\Viola_Phrase3_Group8_9B96ECC7.wem</Path>
+				</File>
 				<File Id="279666286" Language="SFX">
 					<ShortName>DT_LowHarp.wav</ShortName>
 					<Path>SFX\DT_LowHarp_9B96ECC7.wem</Path>
@@ -290,6 +307,10 @@
 				<File Id="281105246" Language="SFX">
 					<ShortName>ReadingToMakingSongTransition.wav</ShortName>
 					<Path>SFX\ReadingToMakingSongTransition_9B96ECC7.wem</Path>
+				</File>
+				<File Id="281964190" Language="SFX">
+					<ShortName>GenerativeCups_Part2_Minor.wav</ShortName>
+					<Path>SFX\GenerativeCups_Part2_Minor_9B96ECC7.wem</Path>
 				</File>
 				<File Id="284438833" Language="SFX">
 					<ShortName>GenerativeSwords_Part3_Major2.wav</ShortName>
@@ -431,10 +452,6 @@
 					<ShortName>GenerativeMajorArcana_Part2_Minor.wav</ShortName>
 					<Path>SFX\GenerativeMajorArcana_Part2_Minor_9B96ECC7.wem</Path>
 				</File>
-				<File Id="580619794" Language="SFX">
-					<ShortName>GenerativeCups_Part2_Major2.wav</ShortName>
-					<Path>SFX\GenerativeCups_Part2_Major2_9B96ECC7.wem</Path>
-				</File>
 				<File Id="590887813" Language="SFX">
 					<ShortName>NineOfPentacles.wav</ShortName>
 					<Path>SFX\NineOfPentacles_9B96ECC7.wem</Path>
@@ -455,9 +472,21 @@
 					<ShortName>MakingSongToGenerativeTransition.wav</ShortName>
 					<Path>SFX\MakingSongToGenerativeTransition_9B96ECC7.wem</Path>
 				</File>
+				<File Id="627831526" Language="SFX">
+					<ShortName>MajorArcanaHarp_Phrase1_Group11.wav</ShortName>
+					<Path>SFX\MajorArcanaHarp_Phrase1_Group11_9B96ECC7.wem</Path>
+				</File>
 				<File Id="634844833" Language="SFX">
 					<ShortName>Divinuet_SFX_Slide_3.wav</ShortName>
 					<Path>SFX\Divinuet_SFX_Slide_3_6296B0F9.wem</Path>
+				</File>
+				<File Id="635107510" Language="SFX">
+					<ShortName>Viola_Phrase1_Group11.wav</ShortName>
+					<Path>SFX\Viola_Phrase1_Group11_9B96ECC7.wem</Path>
+				</File>
+				<File Id="645141868" Language="SFX">
+					<ShortName>MajorArcanaHarp_Phrase2_Group1.wav</ShortName>
+					<Path>SFX\MajorArcanaHarp_Phrase2_Group1_9B96ECC7.wem</Path>
 				</File>
 				<File Id="650436423" Language="SFX">
 					<ShortName>GenerativeMajorArcana_Part2_Dorian.wav</ShortName>
@@ -467,6 +496,10 @@
 					<ShortName>Temperance.wav</ShortName>
 					<Path>SFX\Temperance_9B96ECC7.wem</Path>
 				</File>
+				<File Id="657871922" Language="SFX">
+					<ShortName>Viola_Phrase2_Group1.wav</ShortName>
+					<Path>SFX\Viola_Phrase2_Group1_9B96ECC7.wem</Path>
+				</File>
 				<File Id="663437979" Language="SFX">
 					<ShortName>Divinuet_SFX_Bird_11.wav</ShortName>
 					<Path>SFX\Divinuet_SFX_Bird_11_6296B0F9.wem</Path>
@@ -474,10 +507,6 @@
 				<File Id="676918644" Language="SFX">
 					<ShortName>GenerativeSwords_Part3_Major1.wav</ShortName>
 					<Path>SFX\GenerativeSwords_Part3_Major1_9B96ECC7.wem</Path>
-				</File>
-				<File Id="699930136" Language="SFX">
-					<ShortName>GenerativeCups_Part2_Minor.wav</ShortName>
-					<Path>SFX\GenerativeCups_Part2_Minor_9B96ECC7.wem</Path>
 				</File>
 				<File Id="720383636" Language="SFX">
 					<ShortName>DT_MidPiano2.wav</ShortName>
@@ -511,13 +540,13 @@
 					<ShortName>Divinuet_SFX_Branch_11.wav</ShortName>
 					<Path>SFX\Divinuet_SFX_Branch_11_6296B0F9.wem</Path>
 				</File>
-				<File Id="763448765" Language="SFX">
-					<ShortName>GenerativeCups_Part2_Major1.wav</ShortName>
-					<Path>SFX\GenerativeCups_Part2_Major1_9B96ECC7.wem</Path>
-				</File>
 				<File Id="763796510" Language="SFX">
 					<ShortName>MakingSong2.wav</ShortName>
 					<Path>SFX\MakingSong2_9B96ECC7.wem</Path>
+				</File>
+				<File Id="769702877" Language="SFX">
+					<ShortName>SwordsWurli_Phrase3_Group8.wav</ShortName>
+					<Path>SFX\SwordsWurli_Phrase3_Group8_9B96ECC7.wem</Path>
 				</File>
 				<File Id="805419185" Language="SFX">
 					<ShortName>Death.wav</ShortName>
@@ -555,6 +584,10 @@
 					<ShortName>Divinuet_SFX_Slide_4.wav</ShortName>
 					<Path>SFX\Divinuet_SFX_Slide_4_6296B0F9.wem</Path>
 				</File>
+				<File Id="866630420" Language="SFX">
+					<ShortName>CupsPiano_Phrase3_Group2.wav</ShortName>
+					<Path>SFX\CupsPiano_Phrase3_Group2_9B96ECC7.wem</Path>
+				</File>
 				<File Id="904885129" Language="SFX">
 					<ShortName>GenerativeSwords_Part2_Major2.wav</ShortName>
 					<Path>SFX\GenerativeSwords_Part2_Major2_9B96ECC7.wem</Path>
@@ -587,9 +620,9 @@
 					<ShortName>Divinuet_AMB_Forest_1.wav</ShortName>
 					<Path>SFX\Divinuet_AMB_Forest_1_9B96ECC7.wem</Path>
 				</File>
-				<File Id="994438389" Language="SFX">
-					<ShortName>brassdemo.wav</ShortName>
-					<Path>SFX\brassdemo_9B96ECC7.wem</Path>
+				<File Id="1005469300" Language="SFX">
+					<ShortName>GenerativeCups_Part2_Major1.wav</ShortName>
+					<Path>SFX\GenerativeCups_Part2_Major1_9B96ECC7.wem</Path>
 				</File>
 				<File Id="1013527528" Language="SFX">
 					<ShortName>KingOfPentacles.wav</ShortName>
@@ -598,6 +631,10 @@
 				<File Id="1019898338" Language="SFX">
 					<ShortName>GenerativeMajorArcana_Part2_Major2.wav</ShortName>
 					<Path>SFX\GenerativeMajorArcana_Part2_Major2_9B96ECC7.wem</Path>
+				</File>
+				<File Id="1024868010" Language="SFX">
+					<ShortName>GenerativeCups_Part2_Major2.wav</ShortName>
+					<Path>SFX\GenerativeCups_Part2_Major2_9B96ECC7.wem</Path>
 				</File>
 				<File Id="1029646848" Language="SFX">
 					<ShortName>ThreeOfPentacles.wav</ShortName>
@@ -634,6 +671,10 @@
 				<File Id="1070101579" Language="SFX">
 					<ShortName>GenerativeMajorArcana_Part2_Major1.wav</ShortName>
 					<Path>SFX\GenerativeMajorArcana_Part2_Major1_9B96ECC7.wem</Path>
+				</File>
+				<File Id="1070576366" Language="SFX">
+					<ShortName>GenerativeCups_Part2_Dorian.wav</ShortName>
+					<Path>SFX\GenerativeCups_Part2_Dorian_9B96ECC7.wem</Path>
 				</File>
 			</IncludedMemoryFiles>
 		</SoundBank>
