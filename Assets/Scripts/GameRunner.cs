@@ -275,6 +275,8 @@ public class GameRunner : MonoBehaviour
           if (DEBUG_skipReading)
           {
             Debug.Log("skipping reading?");
+            
+            AkSoundEngine.PostEvent("SkipReadingMusic", gameObject);
             readingUI.reading = false; // megan don't set variables directly on other objects like this ok, this is bad programming
           }
           break;
