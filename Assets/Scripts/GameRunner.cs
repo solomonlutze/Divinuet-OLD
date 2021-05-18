@@ -277,6 +277,7 @@ public class GameRunner : MonoBehaviour
             Debug.Log("skipping reading?");
             
             AkSoundEngine.PostEvent("SkipReadingMusic", gameObject);
+        readingStart.Post(gameObject, (uint)AkCallbackType.AK_MusicSyncUserCue, CallbackFunction);
             readingUI.reading = false; // megan don't set variables directly on other objects like this ok, this is bad programming
           }
           break;
