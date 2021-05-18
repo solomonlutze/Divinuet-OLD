@@ -81,7 +81,6 @@ public class GameRunner : MonoBehaviour
   public Canvas demoInstructionsCanvas;
   public Canvas cardSelectionCanvas;
   public Canvas savedReadingsCanvas;
-  public Canvas demoEndCanvas;
   public Canvas spreadCanvas;
   public Canvas pauseCanvas;
   public Canvas settingsCanvas;
@@ -186,7 +185,6 @@ public class GameRunner : MonoBehaviour
     canvases = new List<Canvas> {
       mainMenuCanvas,
       demoInstructionsCanvas,
-      demoEndCanvas,
       generativeCanvas,
       readingCanvas,
       savedReadingsCanvas,
@@ -722,7 +720,7 @@ public class GameRunner : MonoBehaviour
       Debug.Log(i + " " + keyEvent);
     }
     StartCoroutine(generativeUI.DoGeneration(selectedCardData));
-    demoEndCanvas.gameObject.SetActive(true);
+
   }
 
   public void AfterInstructions_RandomReading()
@@ -784,7 +782,7 @@ public class GameRunner : MonoBehaviour
       case GameMode.Random:
         SetGameState(GameState.ReadyToFadeInCard);
         AkSoundEngine.PostEvent("MenuAmbienceStop", this.gameObject);
-        readingStart.Post(gameObject, (uint)AkCallbackType.AK_MusicSyncUserCue, CallbackFunction);
+        //readingStart.Post(gameObject, (uint)AkCallbackType.AK_MusicSyncUserCue, CallbackFunction);
         DisableAllCanvases();
         SetCanvasActive(generativeCanvas, true);
         SetCanvasActive(readingCanvas, true);
@@ -796,7 +794,7 @@ public class GameRunner : MonoBehaviour
       case GameMode.ViewPreviousReadings:
         SetGameState(GameState.ReadyToFadeInCard);
         AkSoundEngine.PostEvent("MenuAmbienceStop", this.gameObject);
-        readingStart.Post(gameObject, (uint)AkCallbackType.AK_MusicSyncUserCue, CallbackFunction);
+        //readingStart.Post(gameObject, (uint)AkCallbackType.AK_MusicSyncUserCue, CallbackFunction);
         SetCanvasActive(generativeCanvas, true);
         SetCanvasActive(readingCanvas, true);
         PrepForReading();
@@ -815,7 +813,6 @@ public class GameRunner : MonoBehaviour
   public void DisableEndCanvas()
   {
     SetGameState(GameState.GenerativePhase);
-    demoEndCanvas.gameObject.SetActive(false);
   }
 
   public void QuitToMainMenu()
