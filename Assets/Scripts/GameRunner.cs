@@ -260,8 +260,8 @@ public class GameRunner : MonoBehaviour
         case GameState.ReadyToFadeInCard:
           if (DEBUG_skipAllReadings)
           {
-            gameState = GameState.ShowingGenerativeUI;
-            DoGenerativePhase();
+            SetGameState(GameState.BeginGenerativeUI);
+            StartCoroutine(BeginGenerativePhase());
           }
           else
           {
@@ -275,9 +275,9 @@ public class GameRunner : MonoBehaviour
           if (DEBUG_skipReading)
           {
             Debug.Log("skipping reading?");
-            
+
             AkSoundEngine.PostEvent("SkipReadingMusic", gameObject);
-        readingStart.Post(gameObject, (uint)AkCallbackType.AK_MusicSyncUserCue, CallbackFunction);
+            readingStart.Post(gameObject, (uint)AkCallbackType.AK_MusicSyncUserCue, CallbackFunction);
             readingUI.reading = false; // megan don't set variables directly on other objects like this ok, this is bad programming
           }
           break;
@@ -671,7 +671,7 @@ public class GameRunner : MonoBehaviour
 
     Debug.Log("Fade out called");
     float t = 0;
-    CanvasGroup readingGroup = readingUI.canvasGroup;
+    CanvasGroup readingGroup = spreadCanvas.GetComponent<CanvasGroup>();
     if (readingGroup != null)
     {
 
