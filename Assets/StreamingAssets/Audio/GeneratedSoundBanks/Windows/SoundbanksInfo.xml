@@ -112,7 +112,7 @@
 				<Event Id="587937073" Name="SevenOfSwords" ObjectPath="\Events\Default Work Unit\CardEvents\Swords\SevenOfSwords" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="2491223249" Name="SixOfPentacles" ObjectPath="\Events\Default Work Unit\CardEvents\Pentacles\SixOfPentacles" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="3436307834" Name="SixOfSwords" ObjectPath="\Events\Default Work Unit\CardEvents\Swords\SixOfSwords" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
-				<Event Id="368896769" Name="SkipReadingMusic" ObjectPath="\Events\Default Work Unit\DEBUG\SkipReadingMusic" DurationType="Infinite"/>
+				<Event Id="368896769" Name="SkipReadingMusic" ObjectPath="\Events\Default Work Unit\DEBUG\SkipReadingMusic" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="3535269221" Name="State_Generative" ObjectPath="\Events\Default Work Unit\State_Generative" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="1929173219" Name="State_MakingSong" ObjectPath="\Events\Default Work Unit\State_MakingSong" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="1701015953" Name="State_Reading" ObjectPath="\Events\Default Work Unit\State_Reading" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
