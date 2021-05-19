@@ -148,6 +148,14 @@
 					<ShortName>DT_HighPizzViolin.wav</ShortName>
 					<Path>SFX\DT_HighPizzViolin_9B96ECC7.wem</Path>
 				</File>
+				<File Id="12159181" Language="SFX">
+					<ShortName>Viola_Phrase3_Group11.wav</ShortName>
+					<Path>SFX\Viola_Phrase3_Group11_9B96ECC7.wem</Path>
+				</File>
+				<File Id="17730444" Language="SFX">
+					<ShortName>WandsKalimba_Phrase3_Group8.wav</ShortName>
+					<Path>SFX\WandsKalimba_Phrase3_Group8_9B96ECC7.wem</Path>
+				</File>
 				<File Id="31391632" Language="SFX">
 					<ShortName>TenOfSwords.wav</ShortName>
 					<Path>SFX\TenOfSwords_9B96ECC7.wem</Path>
@@ -159,6 +167,10 @@
 				<File Id="44127159" Language="SFX">
 					<ShortName>Divinuet_SFX_Bird_2.wav</ShortName>
 					<Path>SFX\Divinuet_SFX_Bird_2_6296B0F9.wem</Path>
+				</File>
+				<File Id="46766814" Language="SFX">
+					<ShortName>WandsKalimba_Phrase1_Group8.wav</ShortName>
+					<Path>SFX\WandsKalimba_Phrase1_Group8_9B96ECC7.wem</Path>
 				</File>
 				<File Id="52782747" Language="SFX">
 					<ShortName>GenerativeSwords_Part1_Dorian.wav</ShortName>
@@ -211,6 +223,10 @@
 				<File Id="132458670" Language="SFX">
 					<ShortName>TwoOfCups.wav</ShortName>
 					<Path>SFX\TwoOfCups_9B96ECC7.wem</Path>
+				</File>
+				<File Id="136069082" Language="SFX">
+					<ShortName>Viola_Phrase2_Group11.wav</ShortName>
+					<Path>SFX\Viola_Phrase2_Group11_9B96ECC7.wem</Path>
 				</File>
 				<File Id="145620752" Language="SFX">
 					<ShortName>GenerativeMajorArcana_Part1_Major1.wav</ShortName>
@@ -295,6 +311,10 @@
 				<File Id="242181906" Language="SFX">
 					<ShortName>SwordsWurli_Phrase2_Group8.wav</ShortName>
 					<Path>SFX\SwordsWurli_Phrase2_Group8_9B96ECC7.wem</Path>
+				</File>
+				<File Id="252905170" Language="SFX">
+					<ShortName>SwordsWurli_Phrase1_Group8.wav</ShortName>
+					<Path>SFX\SwordsWurli_Phrase1_Group8_9B96ECC7.wem</Path>
 				</File>
 				<File Id="274876220" Language="SFX">
 					<ShortName>Viola_Phrase3_Group8.wav</ShortName>
@@ -444,6 +464,10 @@
 					<ShortName>Divinuet_SFX_Branch_8.wav</ShortName>
 					<Path>SFX\Divinuet_SFX_Branch_8_6296B0F9.wem</Path>
 				</File>
+				<File Id="551223743" Language="SFX">
+					<ShortName>Viola_Phrase1_Group8.wav</ShortName>
+					<Path>SFX\Viola_Phrase1_Group8_9B96ECC7.wem</Path>
+				</File>
 				<File Id="576684077" Language="SFX">
 					<ShortName>KingOfCups.wav</ShortName>
 					<Path>SFX\KingOfCups_9B96ECC7.wem</Path>
@@ -451,6 +475,10 @@
 				<File Id="577515572" Language="SFX">
 					<ShortName>GenerativeMajorArcana_Part2_Minor.wav</ShortName>
 					<Path>SFX\GenerativeMajorArcana_Part2_Minor_9B96ECC7.wem</Path>
+				</File>
+				<File Id="590389761" Language="SFX">
+					<ShortName>CupsPiano_Phrase3_Group11.wav</ShortName>
+					<Path>SFX\CupsPiano_Phrase3_Group11_9B96ECC7.wem</Path>
 				</File>
 				<File Id="590887813" Language="SFX">
 					<ShortName>NineOfPentacles.wav</ShortName>
@@ -508,6 +536,14 @@
 					<ShortName>GenerativeSwords_Part3_Major1.wav</ShortName>
 					<Path>SFX\GenerativeSwords_Part3_Major1_9B96ECC7.wem</Path>
 				</File>
+				<File Id="684459571" Language="SFX">
+					<ShortName>CupsPiano_Phrase2_Group11.wav</ShortName>
+					<Path>SFX\CupsPiano_Phrase2_Group11_9B96ECC7.wem</Path>
+				</File>
+				<File Id="696998161" Language="SFX">
+					<ShortName>WandsKalimba_Phrase2_Group8.wav</ShortName>
+					<Path>SFX\WandsKalimba_Phrase2_Group8_9B96ECC7.wem</Path>
+				</File>
 				<File Id="720383636" Language="SFX">
 					<ShortName>DT_MidPiano2.wav</ShortName>
 					<Path>SFX\DT_MidPiano2_9B96ECC7.wem</Path>
@@ -547,6 +583,14 @@
 				<File Id="769702877" Language="SFX">
 					<ShortName>SwordsWurli_Phrase3_Group8.wav</ShortName>
 					<Path>SFX\SwordsWurli_Phrase3_Group8_9B96ECC7.wem</Path>
+				</File>
+				<File Id="776924037" Language="SFX">
+					<ShortName>MajorArcanaHarp_Phrase2_Group8.wav</ShortName>
+					<Path>SFX\MajorArcanaHarp_Phrase2_Group8_9B96ECC7.wem</Path>
+				</File>
+				<File Id="801173061" Language="SFX">
+					<ShortName>MajorArcanaHarp_Phrase1_Group8.wav</ShortName>
+					<Path>SFX\MajorArcanaHarp_Phrase1_Group8_9B96ECC7.wem</Path>
 				</File>
 				<File Id="805419185" Language="SFX">
 					<ShortName>Death.wav</ShortName>
@@ -616,6 +660,14 @@
 					<ShortName>GenerativeCups_Part3_Dorian.wav</ShortName>
 					<Path>SFX\GenerativeCups_Part3_Dorian_9B96ECC7.wem</Path>
 				</File>
+				<File Id="933849671" Language="SFX">
+					<ShortName>MajorArcanaHarp_Phrase2_Group11.wav</ShortName>
+					<Path>SFX\MajorArcanaHarp_Phrase2_Group11_9B96ECC7.wem</Path>
+				</File>
+				<File Id="976564632" Language="SFX">
+					<ShortName>MajorArcanaHarp_Phrase3_Group8.wav</ShortName>
+					<Path>SFX\MajorArcanaHarp_Phrase3_Group8_9B96ECC7.wem</Path>
+				</File>
 				<File Id="989684067" Language="SFX">
 					<ShortName>Divinuet_AMB_Forest_1.wav</ShortName>
 					<Path>SFX\Divinuet_AMB_Forest_1_9B96ECC7.wem</Path>
@@ -643,6 +695,10 @@
 				<File Id="1034214283" Language="SFX">
 					<ShortName>Divinuet_SFX_Bird_14.wav</ShortName>
 					<Path>SFX\Divinuet_SFX_Bird_14_6296B0F9.wem</Path>
+				</File>
+				<File Id="1035521087" Language="SFX">
+					<ShortName>MajorArcanaHarp_Phrase3_Group11.wav</ShortName>
+					<Path>SFX\MajorArcanaHarp_Phrase3_Group11_9B96ECC7.wem</Path>
 				</File>
 				<File Id="1040825332" Language="SFX">
 					<ShortName>Divinuet_SFX_Slide_1.wav</ShortName>
