@@ -42,9 +42,9 @@ MonoBehaviour:
   clipDuration: 46
   thematicGroup: 2
   cardAndGroupClips:
+  - {fileID: 32900000, guid: 6bf94d25caf273545b9c70059654ea1a, type: 3}
   - {fileID: 0}
+  - {fileID: 32900000, guid: 6bf94d25caf273545b9c70059654ea1a, type: 3}
   - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 32900000, guid: 6bf94d25caf273545b9c70059654ea1a, type: 3}
   - {fileID: 0}

@@ -794,7 +794,7 @@ MonoBehaviour:
     WwiseObjectReference: {fileID: 0}
   suitMajorityClips:
   - {fileID: 0}
-  - {fileID: 32900000, guid: 076cd1f5f8dc4374d946d38319fad650, type: 3}
+  - {fileID: 32900000, guid: 813542892165b6b4bb3a5f6cfe2bb82a, type: 3}
   - {fileID: 0}
   - {fileID: 32900000, guid: 2819e2222c2891a46838ffcca74470d5, type: 3}
   - {fileID: 0}
