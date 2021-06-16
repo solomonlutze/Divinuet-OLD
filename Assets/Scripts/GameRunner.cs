@@ -68,7 +68,7 @@ public class GameRunner : MonoBehaviour
   public GameState gameState;
   public GameMode gameMode;
   public int playingClipNumber;
-  public UnityEngine.Video.VideoPlayer videoPlayer;
+  public UnityEngine.Video.VideoPlayer videoPlayer; 
   public Canvas videoCanvas;
 
   // In-game location to which cards should be dealt. Set in editor.
@@ -193,7 +193,8 @@ public class GameRunner : MonoBehaviour
       spreadCanvas,
       pauseCanvas,
       settingsCanvas,
-      howToPlayCanvas
+      howToPlayCanvas,
+      videoCanvas
     // add any new canvases here!
     };
     SetGameState(GameState.MainMenu);
