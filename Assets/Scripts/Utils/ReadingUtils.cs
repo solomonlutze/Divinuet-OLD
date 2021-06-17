@@ -33,6 +33,7 @@ public static class ReadingUtils
   {
     int currentSegment = 0;
     string[] textSegments = text.text.Split(readingBreakCharacter);
+    Debug.Log("textSegments count " + textSegments.Length);
     text.text = string.Join("", textSegments);
     int count = textSegments[currentSegment].Length;
     float fadeInStepTime = alphaStep / 255;
@@ -48,6 +49,7 @@ public static class ReadingUtils
       // it's allowed tho
       while (currentAlpha < 255)
       {
+        Debug.Log("currentAlpha: " + currentAlpha);
         for (int i = prevCount; i < count; i++)
         {
           int materialIndex = text.textInfo.characterInfo[i].materialReferenceIndex;

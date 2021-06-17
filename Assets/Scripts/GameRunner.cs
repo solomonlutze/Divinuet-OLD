@@ -68,7 +68,7 @@ public class GameRunner : MonoBehaviour
   public GameState gameState;
   public GameMode gameMode;
   public int playingClipNumber;
-  public UnityEngine.Video.VideoPlayer videoPlayer; 
+  public UnityEngine.Video.VideoPlayer videoPlayer;
   public Canvas videoCanvas;
 
   // In-game location to which cards should be dealt. Set in editor.
@@ -702,8 +702,11 @@ public class GameRunner : MonoBehaviour
 
     makingSongState.Post(gameObject);
     Cursor.SetCursor(waitCursor, Vector2.zero, CursorMode.Auto);
+    Debug.Log("fading in generative ui");
     yield return StartCoroutine(generativeUI.FadeIn());
+    Debug.Log("reading text");
     yield return StartCoroutine(generativeUI.ReadText());
+    Debug.Log("done reading text");
     Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
     SetGameState(GameState.ShowingGenerativeUIDone);
   }

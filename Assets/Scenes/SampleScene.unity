@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.42615026, g: 0.458722, b: 0.48513806, a: 1}
+  m_IndirectSpecularColor: {r: 0.42615023, g: 0.45872217, b: 0.48513824, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -449,7 +449,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20b4078588a7c4d4886cd8446f1c8737, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DEBUG_skipReading: 1
+  DEBUG_skipReading: 0
   DEBUG_skipAllReadings: 1
   DEBUG_SaveReadingImmediately: 0
   DEBUG_EnableReadingGeneration: 0
@@ -2789,7 +2789,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 4
+  m_firstOverflowCharacterIndex: -1
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -2817,7 +2817,7 @@ MonoBehaviour:
     spaceCount: 1
     wordCount: 2
     linkCount: 0
-    lineCount: 2
+    lineCount: 1
     pageCount: 1
     materialCount: 1
   m_havePropertiesChanged: 0
@@ -8709,7 +8709,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 354449031}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
@@ -12643,10 +12643,10 @@ RectTransform:
   m_Father: {fileID: 354449032}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000022888184, y: -171}
-  m_SizeDelta: {x: 403.4, y: 625.7}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -171}
+  m_SizeDelta: {x: 0, y: 625.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &806947276
 MonoBehaviour:
@@ -12661,7 +12661,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -12669,7 +12669,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: ad7e922138b3fb94c88246ffa05bffa4, type: 3}
     m_FontSize: 36
     m_FontStyle: 0
     m_BestFit: 0
@@ -18879,7 +18879,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1502.8564, y: 0}
+  m_SizeDelta: {x: 1460, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1090861046
 MonoBehaviour:
@@ -20155,7 +20155,6 @@ GameObject:
   - component: {fileID: 1349510122}
   - component: {fileID: 1349510121}
   - component: {fileID: 1349510120}
-  - component: {fileID: 1349510119}
   - component: {fileID: 1349510118}
   - component: {fileID: 1349510117}
   m_Layer: 5
@@ -20180,7 +20179,7 @@ MonoBehaviour:
   fading: 0
   fadeSpeed: 0.5
   canvasGroup: {fileID: 1349510118}
-  textCanvasGroup: {fileID: 1698840586}
+  textCanvasGroup: {fileID: 0}
   text: {fileID: 159349403}
   reading: 0
   totalReadingTime: 5
@@ -20197,42 +20196,6 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
---- !u!114 &1349510119
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1349510116}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e8b38840b88f34831a37a1a09c9f827a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fading: 0
-  fadeSpeed: 0.5
-  canvasGroup: {fileID: 1349510118}
-  cardImage: {fileID: 0}
-  backgroundColor: {fileID: 0}
-  cardText: {fileID: 159349403}
-  reading: 1
-  totalReadingTime: 45
-  cupsBGColor:
-    serializedVersion: 2
-    rgba: 0
-  swordsBGColor:
-    serializedVersion: 2
-    rgba: 0
-  wandsBGColor:
-    serializedVersion: 2
-    rgba: 0
-  pentaclesBGColor:
-    serializedVersion: 2
-    rgba: 0
-  majorArcanaBGColor:
-    serializedVersion: 2
-    rgba: 0
-  DEBUG_gottaGoFast: 0
 --- !u!114 &1349510120
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20704,10 +20667,10 @@ RectTransform:
   m_Father: {fileID: 354449032}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 1, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 303}
-  m_SizeDelta: {x: 403.4, y: 169.4}
+  m_SizeDelta: {x: 0, y: 169.40002}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1415924047
 MonoBehaviour:
@@ -20722,7 +20685,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -20730,7 +20693,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: ad7e922138b3fb94c88246ffa05bffa4, type: 3}
     m_FontSize: 48
     m_FontStyle: 0
     m_BestFit: 0
@@ -21525,7 +21488,7 @@ MonoBehaviour:
     spaceCount: 1
     wordCount: 2
     linkCount: 0
-    lineCount: 2
+    lineCount: 1
     pageCount: 1
     materialCount: 1
   m_havePropertiesChanged: 0
@@ -21800,7 +21763,7 @@ MonoBehaviour:
   m_outlineColor:
     serializedVersion: 2
     rgba: 4278190080
-  m_fontSize: 37.2
+  m_fontSize: 40.25
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -21846,7 +21809,7 @@ MonoBehaviour:
     spaceCount: 96
     wordCount: 96
     linkCount: 0
-    lineCount: 13
+    lineCount: 16
     pageCount: 1
     materialCount: 1
   m_havePropertiesChanged: 0
@@ -22366,7 +22329,6 @@ GameObject:
   - component: {fileID: 1698840583}
   - component: {fileID: 1698840585}
   - component: {fileID: 1698840584}
-  - component: {fileID: 1698840586}
   m_Layer: 5
   m_Name: TransitionTextPanel
   m_TagString: Untagged
@@ -22431,18 +22393,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1698840582}
   m_CullTransparentMesh: 0
---- !u!225 &1698840586
-CanvasGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1698840582}
-  m_Enabled: 1
-  m_Alpha: 1
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
-  m_IgnoreParentGroups: 0
 --- !u!1 &1699593968
 GameObject:
   m_ObjectHideFlags: 0
@@ -30442,7 +30392,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 7
+  m_firstOverflowCharacterIndex: -1
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -30470,7 +30420,7 @@ MonoBehaviour:
     spaceCount: 2
     wordCount: 3
     linkCount: 0
-    lineCount: 2
+    lineCount: 1
     pageCount: 1
     materialCount: 1
   m_havePropertiesChanged: 0
@@ -30580,7 +30530,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1970772354}
   m_HandleRect: {fileID: 1970772353}
   m_Direction: 2
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -31258,7 +31208,7 @@ MonoBehaviour:
   m_enableWordWrapping: 1
   m_wordWrappingRatios: 0.4
   m_overflowMode: 0
-  m_firstOverflowCharacterIndex: 6
+  m_firstOverflowCharacterIndex: -1
   m_linkedTextComponent: {fileID: 0}
   m_isLinkedTextComponent: 0
   m_isTextTruncated: 0
@@ -31286,7 +31236,7 @@ MonoBehaviour:
     spaceCount: 1
     wordCount: 2
     linkCount: 0
-    lineCount: 2
+    lineCount: 1
     pageCount: 1
     materialCount: 1
   m_havePropertiesChanged: 0
