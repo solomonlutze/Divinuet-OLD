@@ -15,12 +15,13 @@ public class GenerativeUI : BaseUICanvas
 
   public void Start()
   {
-    ReadingUtils.HideAllCharacters(text);
+    // ReadingUtils.HideAllCharacters(text);
   }
   public IEnumerator ReadText()
   {
     reading = true;
-    yield return ReadingUtils.ReadText(text, totalReadingTime);
+    Debug.Log("total reading time " + totalReadingTime);
+    yield return new WaitForSeconds(1);
     reading = false;
   }
 
@@ -32,6 +33,7 @@ public class GenerativeUI : BaseUICanvas
   public void Reset()
   {
     // textCanvasGroup.alpha = 0;
-    text.maxVisibleCharacters = 0;
+    // text.maxVisibleCharacters = 0;\
+    // ReadingUtils.HideAllCharacters(text);
   }
 }
