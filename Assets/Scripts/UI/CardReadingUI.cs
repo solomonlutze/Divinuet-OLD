@@ -30,7 +30,7 @@ public class CardReadingUI : BaseUICanvas
     cardImage.sprite = cardData.cardPicture2x;
 
     totalReadingTime = DEBUG_gottaGoFast ? 2f : (cardData.clipDuration - 2);
-    cardText.text = cardData.cardTextMain.ToString() + ReadingUtils.readingBreakCharacter + "\n\n";
+    cardText.text = cardData.cardLongDescription.ToString() + ReadingUtils.readingBreakCharacter + "\n\n";
 
     if (cardData.suit == CardSuit.Cups)
     {
@@ -52,7 +52,6 @@ public class CardReadingUI : BaseUICanvas
     {
       backgroundColor.color = majorArcanaBGColor;
     }
-    cardText.text += cardData.cardTextUpright.ToString();
     if (isReread)
     {
       ReadingUtils.ShowAllCharacters(cardText);
