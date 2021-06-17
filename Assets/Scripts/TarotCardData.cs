@@ -23,11 +23,9 @@ public class TarotCardData : ScriptableObject
     public Texture2D cardPicture;
     public Sprite cardPicture2x;
     [TextArea]
-    public string cardTextMain;
+    public string cardLongDescription;
     [TextArea]
-    public string cardTextUpright;
-    [TextArea]
-    public string cardTextReversed;
+    public string cardShortDescription;
     public AK.Wwise.Event readingMusicEvent;
     public AK.Wwise.Event[] cardKeyArray = new AK.Wwise.Event[3];
     public int clipDuration;

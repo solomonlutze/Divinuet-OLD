@@ -6,6 +6,7 @@ using UnityEngine.UI;
 using AK;
 //hi
 //hello this is megan
+//can't wait for this to be in the code at launch
 public enum GameState
 {
   MainMenu,
@@ -268,13 +269,16 @@ public class GameRunner : MonoBehaviour
           }
           break;
         case GameState.FadingOutCardDone:
-          SetGameState(GameState.FlippingCard);
+          if (numCardsAlreadyRead < selectedCardData.Count) {
+            SetGameState(GameState.FlippingCard);
+          } else {
+            SetGameState(GameState.BeginGenerativeUI);
+            StartCoroutine(BeginGenerativePhase());
+          }
           break;
         case GameState.ReadingCard:
           if (DEBUG_skipReading)
           {
-            Debug.Log("skipping reading?");
-
             AkSoundEngine.PostEvent("SkipReadingMusic", gameObject);
             readingStart.Post(gameObject, (uint)AkCallbackType.AK_MusicSyncUserCue, CallbackFunction);
             readingUI.reading = false; // megan don't set variables directly on other objects like this ok, this is bad programming
@@ -644,16 +648,8 @@ public class GameRunner : MonoBehaviour
     enableButton = false;
     CardReadingUI readingUI = readingCanvas.GetComponent<CardReadingUI>();
     yield return StartCoroutine(readingUI.FadeOut());
-    enableButton = true;
-    if (numCardsAlreadyRead < selectedCardData.Count)
-    {
-      SetGameState(GameState.FadingOutCardDone);
-    }
-    else
-    {
-      SetGameState(GameState.BeginGenerativeUI);
-      yield return StartCoroutine(BeginGenerativePhase());
-    }
+    enableButton = true;  
+    SetGameState(GameState.FadingOutCardDone);
   }
 
   IEnumerator BeginGenerativePhase()
