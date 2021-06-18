@@ -25,6 +25,8 @@ public enum GameState
   FadingOutCardDone,
   BeginGenerativeUI,
   ShowingGenerativeUI,
+  ShowingGenerativeUITransitionalText,
+  ShowingGenerativeUITitleCard,
   ShowingGenerativeUIDone,
   ShowingEndInstructions,
   GenerativePhase,
@@ -269,9 +271,12 @@ public class GameRunner : MonoBehaviour
           }
           break;
         case GameState.FadingOutCardDone:
-          if (numCardsAlreadyRead < selectedCardData.Count) {
+          if (numCardsAlreadyRead < selectedCardData.Count)
+          {
             SetGameState(GameState.FlippingCard);
-          } else {
+          }
+          else
+          {
             SetGameState(GameState.BeginGenerativeUI);
             StartCoroutine(BeginGenerativePhase());
           }
@@ -289,6 +294,9 @@ public class GameRunner : MonoBehaviour
           break;
         case GameState.ReadingCardDone:
           SetGameState(GameState.FadingOutCard);
+          break;
+        case GameState.ShowingGenerativeUITransitionalText:
+          SetGameState(GameState.ShowingGenerativeUITitleCard);
           break;
         case GameState.ShowingGenerativeUIDone:
           SetGameState(GameState.ShowingEndInstructions);
@@ -648,7 +656,7 @@ public class GameRunner : MonoBehaviour
     enableButton = false;
     CardReadingUI readingUI = readingCanvas.GetComponent<CardReadingUI>();
     yield return StartCoroutine(readingUI.FadeOut());
-    enableButton = true;  
+    enableButton = true;
     SetGameState(GameState.FadingOutCardDone);
   }
 
@@ -663,8 +671,7 @@ public class GameRunner : MonoBehaviour
         false
         ));
     }
-
-    Debug.Log("Fade out called");
+    generativeUI.SetMeanings(cardMeanings);
     float t = 0;
     CanvasGroup readingGroup = spreadCanvas.GetComponent<CanvasGroup>();
     if (readingGroup != null)
@@ -698,13 +705,10 @@ public class GameRunner : MonoBehaviour
 
     makingSongState.Post(gameObject);
     Cursor.SetCursor(waitCursor, Vector2.zero, CursorMode.Auto);
-    Debug.Log("fading in generative ui");
     yield return StartCoroutine(generativeUI.FadeIn());
-    Debug.Log("reading text");
     yield return StartCoroutine(generativeUI.ReadText());
-    Debug.Log("done reading text");
     Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
-    SetGameState(GameState.ShowingGenerativeUIDone);
+    SetGameState(GameState.ShowingGenerativeUITransitionalText);
   }
 
   void DoGenerativePhase()
@@ -890,6 +894,9 @@ public class GameRunner : MonoBehaviour
         break;
       case (GameState.ShowingEndInstructions):
         DoGenerativePhase();
+        break;
+      case (GameState.ShowingGenerativeUITitleCard):
+        StartCoroutine(generativeUI.ShowTitleCard());
         break;
       case (GameState.GenerativePhaseDone):
         playingClipNumber = 0;

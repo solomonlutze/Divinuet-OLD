@@ -13,14 +13,15 @@ public class GenerativeUI : BaseUICanvas
   public bool reading = false;
   public float totalReadingTime = 5.0f;
   public float backgroundFadeSpeed = 1.0f;
-
+  public float titleCardFadeSpeed = 1.0f;
 
   public void Start()
   {
+    titleTextCanvasGroup.alpha = 0;
     // ReadingUtils.HideAllCharacters(text);
   }
 
-  public void SetCards(string[] meanings)
+  public void SetMeanings(string[] meanings)
   {
     if (meanings.Length != titleMeaningTexts.Length)
     {
@@ -39,14 +40,21 @@ public class GenerativeUI : BaseUICanvas
     reading = false;
   }
 
-  public IEnumerator ShowTransitionText()
-  {
-
-  }
   public IEnumerator ShowTitleCard()
   {
 
+    while (transitionTextCanvasGroup.alpha > 0)
+    {
+      transitionTextCanvasGroup.alpha -= titleCardFadeSpeed * Time.deltaTime;
+      yield return null;
+    }
+    while (titleTextCanvasGroup.alpha < 1)
+    {
+      titleTextCanvasGroup.alpha += titleCardFadeSpeed * Time.deltaTime;
+      yield return null;
+    }
   }
+
   public IEnumerator DoGeneration(List<TarotCardData> cardDatas)
   {
     yield return StartCoroutine(FadeOut());
@@ -54,6 +62,7 @@ public class GenerativeUI : BaseUICanvas
 
   public void Reset()
   {
+    titleTextCanvasGroup.alpha = 0;
     // textCanvasGroup.alpha = 0;
     // text.maxVisibleCharacters = 0;\
     // ReadingUtils.HideAllCharacters(text);
