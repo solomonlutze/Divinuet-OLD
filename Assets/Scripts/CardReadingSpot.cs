@@ -27,6 +27,11 @@ public class CardReadingSpot : MonoBehaviour
     EnableButton(false);
   }
 
+
+  public void SetCardMeaningText(string cardMeaning)
+  {
+    cardMeaningText.text = cardMeaning;
+  }
   public void OnClickReread()
   {
     gameRunner.RereadCard(readingOrder);
