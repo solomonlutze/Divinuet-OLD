@@ -72,7 +72,6 @@ public class GameRunner : MonoBehaviour
   public GameMode gameMode;
   public int playingClipNumber;
   public UnityEngine.Video.VideoPlayer videoPlayer;
-  public Canvas videoCanvas;
 
   // In-game location to which cards should be dealt. Set in editor.
   public Transform[] dealtCardLocations;
@@ -89,6 +88,7 @@ public class GameRunner : MonoBehaviour
   public Canvas settingsCanvas;
   public Canvas mainMenuCanvas;
   public Canvas howToPlayCanvas;
+  public Canvas videoCanvas;
   public List<Canvas> canvases;
   public bool paused;
 
@@ -142,6 +142,7 @@ public class GameRunner : MonoBehaviour
 
   private CardReadingUI readingUI;
   private GenerativeUI generativeUI;
+  private VideoCardUI videoCardUI;
 
   private CardSelectionUI cardSelectionUI;
   private SavedReadingsUI savedReadingsUI;
@@ -173,6 +174,7 @@ public class GameRunner : MonoBehaviour
   {
     readingUI = readingCanvas.GetComponent<CardReadingUI>();
     generativeUI = generativeCanvas.GetComponent<GenerativeUI>();
+    videoCardUI = videoCanvas.GetComponent<VideoCardUI>();
     cardSelectionUI = cardSelectionCanvas.GetComponent<CardSelectionUI>();
     savedReadingsUI = savedReadingsCanvas.GetComponent<SavedReadingsUI>();
     cardsSelectedToDeal = new List<int>();
