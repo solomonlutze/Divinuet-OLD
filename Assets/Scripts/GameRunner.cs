@@ -574,6 +574,10 @@ public class GameRunner : MonoBehaviour
         false
         ));
     }
+    for (int i = 0; i < cardReadingSpots.Length; i++)
+    {
+      cardReadingSpots[i].SetCardMeaningText(cardMeanings[i]);
+    }
     enableButton = true;
     Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
     setClipNumber = 1;
