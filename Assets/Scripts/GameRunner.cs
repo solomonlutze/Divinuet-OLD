@@ -298,6 +298,7 @@ public class GameRunner : MonoBehaviour
           SetGameState(GameState.FadingOutCard);
           break;
         case GameState.ShowingGenerativeUITransitionalText:
+          DoGenerativePhase();
           SetGameState(GameState.ShowingGenerativeUITitleCard);
           break;
         case GameState.ShowingGenerativeUIDone:
@@ -415,7 +416,7 @@ public class GameRunner : MonoBehaviour
       StartCoroutine(ReadCard());
     }
 
-    else if (gameState == GameState.GenerativePhase || gameState == GameState.ShowingEndInstructions)
+    else if (gameState == GameState.GenerativePhase || gameState == GameState.ShowingEndInstructions || gameState == GameState.ShowingGenerativeUITitleCard)
     {
       string[] videoClipConsole = {
                 "The cards present... reading meaning (e.g. Past, Present, Future)", "Suit majority video clip",
@@ -899,7 +900,6 @@ public class GameRunner : MonoBehaviour
         StartCoroutine(FadeOutReading());
         break;
       case (GameState.ShowingEndInstructions):
-        DoGenerativePhase();
         break;
       case (GameState.ShowingGenerativeUITitleCard):
         StartCoroutine(generativeUI.ShowTitleCard());
