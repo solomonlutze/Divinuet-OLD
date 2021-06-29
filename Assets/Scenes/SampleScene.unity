@@ -462,7 +462,7 @@ MonoBehaviour:
   cardDealSpeed: 1
   cardFlipSpeed: 2
   oddsOfReversedCard: 0
-  gameState: 9
+  gameState: 22
   gameMode: 0
   playingClipNumber: 0
   videoPlayer: {fileID: 697399345}
@@ -526,7 +526,8 @@ MonoBehaviour:
   accompanimentWands:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 1554bdac66fda1a4bad91bb91fd7f8cb,
+      type: 2}
   accompanimentPentacles:
     idInternal: 0
     valueGuidInternal: 
@@ -535,7 +536,8 @@ MonoBehaviour:
   accompanimentSwords:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 1554bdac66fda1a4bad91bb91fd7f8cb,
+      type: 2}
   accompanimentMajorArcana:
     idInternal: 0
     valueGuidInternal: 
@@ -544,7 +546,8 @@ MonoBehaviour:
   accompanimentNull:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 0}
+    WwiseObjectReference: {fileID: 11400000, guid: 1554bdac66fda1a4bad91bb91fd7f8cb,
+      type: 2}
   cardSlideSFX:
     idInternal: 0
     valueGuidInternal: 
@@ -795,10 +798,10 @@ MonoBehaviour:
   suitMajorityClips:
   - {fileID: 32900000, guid: 2819e2222c2891a46838ffcca74470d5, type: 3}
   - {fileID: 32900000, guid: 2819e2222c2891a46838ffcca74470d5, type: 3}
-  - {fileID: 0}
   - {fileID: 32900000, guid: 2819e2222c2891a46838ffcca74470d5, type: 3}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 32900000, guid: 2819e2222c2891a46838ffcca74470d5, type: 3}
+  - {fileID: 32900000, guid: 2819e2222c2891a46838ffcca74470d5, type: 3}
+  - {fileID: 32900000, guid: 2819e2222c2891a46838ffcca74470d5, type: 3}
   setClipNumber: 1
   generativeSection: 0
   videoClips:
