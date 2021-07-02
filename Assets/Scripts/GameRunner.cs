@@ -24,9 +24,7 @@ public enum GameState
   FadingOutCard,
   FadingOutCardDone,
   BeginGenerativeUI,
-  ShowingGenerativeUI,
   ShowingGenerativeUITransitionalText,
-  ShowingGenerativeUITitleCard,
   ShowingGenerativeUIDone,
   ShowingEndInstructions,
   GenerativePhase,
@@ -298,8 +296,7 @@ public class GameRunner : MonoBehaviour
           SetGameState(GameState.FadingOutCard);
           break;
         case GameState.ShowingGenerativeUITransitionalText:
-          DoGenerativePhase();
-          SetGameState(GameState.ShowingGenerativeUITitleCard);
+          SetGameState(GameState.GenerativePhase);
           break;
         case GameState.ShowingGenerativeUIDone:
           SetGameState(GameState.ShowingEndInstructions);
@@ -401,7 +398,6 @@ public class GameRunner : MonoBehaviour
     }
   }
 
-
   public void ToggleHowToPlayMenu()
   {
     mainMenuCanvas.gameObject.SetActive(!mainMenuCanvas.gameObject.activeSelf);
@@ -416,7 +412,7 @@ public class GameRunner : MonoBehaviour
       StartCoroutine(ReadCard());
     }
 
-    else if (gameState == GameState.GenerativePhase || gameState == GameState.ShowingEndInstructions || gameState == GameState.ShowingGenerativeUITitleCard)
+    else if (gameState == GameState.GenerativePhase || gameState == GameState.ShowingEndInstructions)
     {
       string[] videoClipConsole = {
                 "The cards present... reading meaning (e.g. Past, Present, Future)", "Suit majority video clip",
@@ -730,8 +726,7 @@ public class GameRunner : MonoBehaviour
       keyEvent.Post(gameObject);
       Debug.Log(i + " " + keyEvent);
     }
-    StartCoroutine(generativeUI.DoGeneration(selectedCardData));
-
+    //StartCoroutine(generativeUI.DoGeneration(selectedCardData));
   }
 
   public void AfterInstructions_RandomReading()
@@ -901,9 +896,6 @@ public class GameRunner : MonoBehaviour
         break;
       case (GameState.ShowingEndInstructions):
         break;
-      case (GameState.ShowingGenerativeUITitleCard):
-        StartCoroutine(generativeUI.ShowTitleCard());
-        break;
       case (GameState.GenerativePhaseDone):
         playingClipNumber = 0;
         videoPlayer.clip = videoClips[playingClipNumber];
@@ -925,6 +917,10 @@ public class GameRunner : MonoBehaviour
         ResetGameState();
         DisableAllCanvases();
         demoInstructionsCanvas.gameObject.SetActive(true);
+        break;
+      case (GameState.GenerativePhase):
+        StartCoroutine(generativeUI.ShowTitleCard());
+        DoGenerativePhase();
         break;
       default:
         break;

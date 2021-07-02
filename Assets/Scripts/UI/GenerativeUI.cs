@@ -8,6 +8,8 @@ public class GenerativeUI : BaseUICanvas
 {
   public CanvasGroup transitionTextCanvasGroup;
   public CanvasGroup titleTextCanvasGroup;
+  public CanvasGroup meaningTextCanvasGroup;
+  public TextMeshProUGUI meaningText;
   public TextMeshProUGUI text;
   public TextMeshProUGUI[] titleMeaningTexts; // probably 3
   public bool reading = false;
@@ -18,6 +20,7 @@ public class GenerativeUI : BaseUICanvas
   public void Start()
   {
     titleTextCanvasGroup.alpha = 0;
+    meaningTextCanvasGroup.alpha = 0;
     // ReadingUtils.HideAllCharacters(text);
   }
 
@@ -48,9 +51,39 @@ public class GenerativeUI : BaseUICanvas
       transitionTextCanvasGroup.alpha -= titleCardFadeSpeed * Time.deltaTime;
       yield return null;
     }
+
     while (titleTextCanvasGroup.alpha < 1)
     {
       titleTextCanvasGroup.alpha += titleCardFadeSpeed * Time.deltaTime;
+      yield return null;
+    }
+  }
+
+  public IEnumerator HideTitleText()
+  {
+
+    while (titleTextCanvasGroup.alpha > 0)
+    {
+      titleTextCanvasGroup.alpha -= titleCardFadeSpeed * Time.deltaTime;
+      yield return null;
+    }
+  }
+
+  public IEnumerator HideMeaningText()
+  {
+    while (meaningTextCanvasGroup.alpha > 0)
+    {
+      meaningTextCanvasGroup.alpha -= titleCardFadeSpeed * Time.deltaTime;
+      yield return null;
+    }
+  }
+
+  public IEnumerator ShowMeaningText(string text)
+  {
+    meaningText.text = text;
+    while (meaningTextCanvasGroup.alpha < 1)
+    {
+      meaningTextCanvasGroup.alpha += titleCardFadeSpeed * Time.deltaTime;
       yield return null;
     }
   }
