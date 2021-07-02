@@ -417,12 +417,6 @@ public class GameRunner : MonoBehaviour
 
     else if (gameState == GameState.GenerativePhase || gameState == GameState.ShowingEndInstructions)
     {
-      string[] videoClipConsole = {
-                "The cards present... reading meaning (e.g. Past, Present, Future)", "Suit majority video clip",
-                "Card 1 title card", "Split screen 1- meaning/card video clip", "Thematic group video clip 1",
-                "Card 2 title card", "Split screen 2- meaning/card video clip", "Thematic group video clip 2",
-                "Card 3 title card", "Split screen 3- meaning/card video clip", "Thematic group video clip 3",
-                };
 
       if (new int[] { 0, 2, 5, 8 }.Contains(generativeSection))
       {
@@ -431,13 +425,11 @@ public class GameRunner : MonoBehaviour
         videoPlayer.clip = videoClips[playingClipNumber];
         videoPlayer.Stop();
         videoPlayer.targetTexture.Release();
-        Debug.Log(videoClipConsole[generativeSection]);
         if (generativeSection != 0)
         {
           if (new int[] { 5, 8 }.Contains(generativeSection))
           {
             currentGenerativeCard++;
-            Debug.Log("Current card is " + currentGenerativeCard);
           }
           StartCoroutine(generativeUI.ShowMeaningText(cardMeanings[currentGenerativeCard]));
         }
@@ -452,6 +444,9 @@ public class GameRunner : MonoBehaviour
       {
         StartCoroutine(generativeUI.HideTitleText());
         StartCoroutine(generativeUI.HideMeaningText());
+        videoPlayer.clip = videoClips[playingClipNumber];
+        videoPlayer.Play();
+        videoCanvas.gameObject.SetActive(true);
         if (new int[] { 3, 6, 9 }.Contains(generativeSection))
         {
           TarotCardData cardData = selectedCardData[currentGenerativeCard];
@@ -462,10 +457,6 @@ public class GameRunner : MonoBehaviour
         {
           videoCardUI.cardDefinitionText.gameObject.SetActive(false);
         }
-        videoPlayer.clip = videoClips[playingClipNumber];
-        videoPlayer.Play();
-        videoCanvas.gameObject.SetActive(true);
-        Debug.Log(videoClipConsole[generativeSection]);
         playingClipNumber++;
         generativeSection++;
       }
