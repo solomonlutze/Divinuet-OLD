@@ -6,12 +6,15 @@ using TMPro;
 
 public class VideoCardUI : BaseUICanvas
 {
+  public LayoutElement cardDefinitionText;
   public TextMeshProUGUI cardTitleText;
   public TextMeshProUGUI cardDescriptionShortText;
+  private GenerativeUI generativeUI;
 
   public void Start()
   {
   }
+
 
   public void SetTextFromCardData(TarotCardData cardData)
   {
