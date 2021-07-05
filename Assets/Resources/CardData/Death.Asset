@@ -17,11 +17,13 @@ MonoBehaviour:
   suit: 0
   cardPicture: {fileID: 0}
   cardPicture2x: {fileID: 21300000, guid: 8d1aefbbf8fd3b243be18fea6892a268, type: 3}
-  cardTextMain: 'Death: endings, closure, transformation.'
-  cardTextUpright: "Bringing a phase of life to an end.^ Recognizing and celebrating
-    the conclusion of something.^ Putting bad habits to rest.^ Becoming a new person.^
-    Leaving one person, place, or thing for another.^ Letting go.\r"
-  cardTextReversed: 
+  cardLongDescription: "Death: an ending, transition, letting go to move forward^\n\r\nDeath
+    usually doesn\u2019t represent a person\u2019s death,^ but the death of a situation,
+    relationship, lifestyle, or belief system instead.^ Often you need to give up
+    something you\u2019ve gotten used to before you can move forward and find something
+    even better.^ It may be painful, but it\u2019s in your best interest in the long
+    run."
+  cardShortDescription: 
   readingMusicEvent:
     idInternal: 0
     valueGuidInternal: 
