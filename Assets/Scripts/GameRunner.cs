@@ -672,6 +672,7 @@ public class GameRunner : MonoBehaviour
   IEnumerator FadeOutReading()
   {
     enableButton = false;
+    AkSoundEngine.PostEvent("Interlude", this.gameObject);
     CardReadingUI readingUI = readingCanvas.GetComponent<CardReadingUI>();
     yield return StartCoroutine(readingUI.FadeOut());
     enableButton = true;
