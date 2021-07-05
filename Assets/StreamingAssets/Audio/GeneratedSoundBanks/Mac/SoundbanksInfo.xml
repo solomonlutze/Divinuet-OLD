@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="1661994096" Language="SFX" Hash="2805528376">
+		<SoundBank Id="1661994096" Language="SFX" Hash="2221460839">
 			<ObjectPath>\SoundBanks\Default Work Unit\Soundbank</ObjectPath>
 			<ShortName>Soundbank</ShortName>
 			<Path>Soundbank.bnk</Path>
@@ -33,7 +33,7 @@
 				</Event>
 				<Event Id="2478979318" Name="AceOfCups" ObjectPath="\Events\Default Work Unit\CardEvents\Cups\AceOfCups" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
 					<ActionSetState>
-						<ActionSetStateEntry Id="1770673853" Name="Interlude" ObjectPath="\States\Default Work Unit\DuringReading\Interlude"/>
+						<ActionSetStateEntry Id="1900785500" Name="AfterReadingBed" ObjectPath="\States\Default Work Unit\DuringReading\AfterReadingBed"/>
 						<ActionSetStateEntry Id="2478979318" Name="AceOfCups" ObjectPath="\States\Default Work Unit\DuringReading\AceOfCups"/>
 					</ActionSetState>
 				</Event>
@@ -419,37 +419,42 @@
 				<Event Id="779278001" Name="Death" ObjectPath="\Events\Default Work Unit\CardEvents\Major Arcana\Death" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
 					<ActionSetState>
 						<ActionSetStateEntry Id="779278001" Name="Death" ObjectPath="\States\Default Work Unit\DuringReading\Death"/>
-						<ActionSetStateEntry Id="1770673853" Name="Interlude" ObjectPath="\States\Default Work Unit\DuringReading\Interlude"/>
+						<ActionSetStateEntry Id="1900785500" Name="AfterReadingBed" ObjectPath="\States\Default Work Unit\DuringReading\AfterReadingBed"/>
 					</ActionSetState>
 				</Event>
 				<Event Id="3555933294" Name="EightOfPentacles" ObjectPath="\Events\Default Work Unit\CardEvents\Pentacles\EightOfPentacles" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
 					<ActionSetState>
-						<ActionSetStateEntry Id="1770673853" Name="Interlude" ObjectPath="\States\Default Work Unit\DuringReading\Interlude"/>
+						<ActionSetStateEntry Id="1900785500" Name="AfterReadingBed" ObjectPath="\States\Default Work Unit\DuringReading\AfterReadingBed"/>
 						<ActionSetStateEntry Id="3555933294" Name="EightOfPentacles" ObjectPath="\States\Default Work Unit\DuringReading\EightOfPentacles"/>
 					</ActionSetState>
 				</Event>
 				<Event Id="679328597" Name="FiveOfCups" ObjectPath="\Events\Default Work Unit\CardEvents\Cups\FiveOfCups" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
 					<ActionSetState>
 						<ActionSetStateEntry Id="679328597" Name="FiveOfCups" ObjectPath="\States\Default Work Unit\DuringReading\FiveOfCups"/>
-						<ActionSetStateEntry Id="1770673853" Name="Interlude" ObjectPath="\States\Default Work Unit\DuringReading\Interlude"/>
+						<ActionSetStateEntry Id="1900785500" Name="AfterReadingBed" ObjectPath="\States\Default Work Unit\DuringReading\AfterReadingBed"/>
 					</ActionSetState>
 				</Event>
 				<Event Id="112666488" Name="FourOfSwords" ObjectPath="\Events\Default Work Unit\CardEvents\Swords\FourOfSwords" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
 					<ActionSetState>
 						<ActionSetStateEntry Id="112666488" Name="FourOfSwords" ObjectPath="\States\Default Work Unit\DuringReading\FourOfSwords"/>
+						<ActionSetStateEntry Id="1900785500" Name="AfterReadingBed" ObjectPath="\States\Default Work Unit\DuringReading\AfterReadingBed"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="1770673853" Name="Interlude" ObjectPath="\Events\Default Work Unit\ReadingNonCard\Interlude" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionSetState>
 						<ActionSetStateEntry Id="1770673853" Name="Interlude" ObjectPath="\States\Default Work Unit\DuringReading\Interlude"/>
 					</ActionSetState>
 				</Event>
 				<Event Id="87267876" Name="KingOfCups" ObjectPath="\Events\Default Work Unit\CardEvents\Cups\KingOfCups" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
 					<ActionSetState>
 						<ActionSetStateEntry Id="87267876" Name="KingOfCups" ObjectPath="\States\Default Work Unit\DuringReading\KingOfCups"/>
-						<ActionSetStateEntry Id="1770673853" Name="Interlude" ObjectPath="\States\Default Work Unit\DuringReading\Interlude"/>
+						<ActionSetStateEntry Id="1900785500" Name="AfterReadingBed" ObjectPath="\States\Default Work Unit\DuringReading\AfterReadingBed"/>
 					</ActionSetState>
 				</Event>
 				<Event Id="1715977140" Name="KingOfPentacles" ObjectPath="\Events\Default Work Unit\CardEvents\Pentacles\KingOfPentacles" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
 					<ActionSetState>
 						<ActionSetStateEntry Id="1715977140" Name="KingOfPentacles" ObjectPath="\States\Default Work Unit\DuringReading\KingOfPentacles"/>
-						<ActionSetStateEntry Id="1770673853" Name="Interlude" ObjectPath="\States\Default Work Unit\DuringReading\Interlude"/>
+						<ActionSetStateEntry Id="1900785500" Name="AfterReadingBed" ObjectPath="\States\Default Work Unit\DuringReading\AfterReadingBed"/>
 					</ActionSetState>
 				</Event>
 				<Event Id="3161908922" Name="Main" ObjectPath="\Events\Default Work Unit\GenerativePart\Main" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
@@ -581,7 +586,7 @@
 				<Event Id="249775224" Name="MenuAmbienceStop" ObjectPath="\Events\Default Work Unit\SFXEvents\MenuAmbienceStop" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000"/>
 				<Event Id="1963057671" Name="NineOfPentacles" ObjectPath="\Events\Default Work Unit\CardEvents\Pentacles\NineOfPentacles" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
 					<ActionSetState>
-						<ActionSetStateEntry Id="1770673853" Name="Interlude" ObjectPath="\States\Default Work Unit\DuringReading\Interlude"/>
+						<ActionSetStateEntry Id="1900785500" Name="AfterReadingBed" ObjectPath="\States\Default Work Unit\DuringReading\AfterReadingBed"/>
 						<ActionSetStateEntry Id="1963057671" Name="NineOfPentacles" ObjectPath="\States\Default Work Unit\DuringReading\NineOfPentacles"/>
 					</ActionSetState>
 				</Event>
@@ -904,6 +909,10 @@
 						<File Id="657871922" Language="SFX">
 							<ShortName>Viola_Phrase2_Group1.wav</ShortName>
 							<Path>SFX\Viola_Phrase2_Group1_9EDFC787.wem</Path>
+						</File>
+						<File Id="660746157" Language="SFX">
+							<ShortName>AfterReadingBed.wav</ShortName>
+							<Path>SFX\AfterReadingBed_9EDFC787.wem</Path>
 						</File>
 						<File Id="676918644" Language="SFX">
 							<ShortName>GenerativeSwords_Part3_Major1.wav</ShortName>
@@ -1401,6 +1410,10 @@
 							<ShortName>Viola_Phrase2_Group1.wav</ShortName>
 							<Path>SFX\Viola_Phrase2_Group1_9EDFC787.wem</Path>
 						</File>
+						<File Id="660746157" Language="SFX">
+							<ShortName>AfterReadingBed.wav</ShortName>
+							<Path>SFX\AfterReadingBed_9EDFC787.wem</Path>
+						</File>
 						<File Id="676918644" Language="SFX">
 							<ShortName>GenerativeSwords_Part3_Major1.wav</ShortName>
 							<Path>SFX\GenerativeSwords_Part3_Major1_9EDFC787.wem</Path>
@@ -1761,6 +1774,11 @@
 										<File Id="1013527528"/>
 									</Media>
 								</SwitchContainer>
+								<SwitchContainer SwitchValue="{BE12A144-EA15-4E5E-82BB-9B15B2D7C663}">
+									<Media>
+										<File Id="660746157"/>
+									</Media>
+								</SwitchContainer>
 							</Children>
 						</SwitchContainer>
 						<SwitchContainer SwitchValue="{66090302-C438-448B-8A5E-6D1D40BD8BF4}">
@@ -1967,30 +1985,30 @@
 				<Event Id="884571752" Name="SevenOfCups" ObjectPath="\Events\Default Work Unit\CardEvents\Cups\SevenOfCups" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
 					<ActionSetState>
 						<ActionSetStateEntry Id="884571752" Name="SevenOfCups" ObjectPath="\States\Default Work Unit\DuringReading\SevenOfCups"/>
-						<ActionSetStateEntry Id="1770673853" Name="Interlude" ObjectPath="\States\Default Work Unit\DuringReading\Interlude"/>
+						<ActionSetStateEntry Id="1900785500" Name="AfterReadingBed" ObjectPath="\States\Default Work Unit\DuringReading\AfterReadingBed"/>
 					</ActionSetState>
 				</Event>
 				<Event Id="4205938704" Name="SevenOfPentacles" ObjectPath="\Events\Default Work Unit\CardEvents\Pentacles\SevenOfPentacles" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
 					<ActionSetState>
-						<ActionSetStateEntry Id="1770673853" Name="Interlude" ObjectPath="\States\Default Work Unit\DuringReading\Interlude"/>
+						<ActionSetStateEntry Id="1900785500" Name="AfterReadingBed" ObjectPath="\States\Default Work Unit\DuringReading\AfterReadingBed"/>
 						<ActionSetStateEntry Id="4205938704" Name="SevenOfPentacles" ObjectPath="\States\Default Work Unit\DuringReading\SevenOfPentacles"/>
 					</ActionSetState>
 				</Event>
 				<Event Id="587937073" Name="SevenOfSwords" ObjectPath="\Events\Default Work Unit\CardEvents\Swords\SevenOfSwords" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
 					<ActionSetState>
 						<ActionSetStateEntry Id="587937073" Name="SevenOfSwords" ObjectPath="\States\Default Work Unit\DuringReading\SevenOfSwords"/>
-						<ActionSetStateEntry Id="1770673853" Name="Interlude" ObjectPath="\States\Default Work Unit\DuringReading\Interlude"/>
+						<ActionSetStateEntry Id="1900785500" Name="AfterReadingBed" ObjectPath="\States\Default Work Unit\DuringReading\AfterReadingBed"/>
 					</ActionSetState>
 				</Event>
 				<Event Id="2491223249" Name="SixOfPentacles" ObjectPath="\Events\Default Work Unit\CardEvents\Pentacles\SixOfPentacles" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
 					<ActionSetState>
-						<ActionSetStateEntry Id="1770673853" Name="Interlude" ObjectPath="\States\Default Work Unit\DuringReading\Interlude"/>
+						<ActionSetStateEntry Id="1900785500" Name="AfterReadingBed" ObjectPath="\States\Default Work Unit\DuringReading\AfterReadingBed"/>
 						<ActionSetStateEntry Id="2491223249" Name="SixOfPentacles" ObjectPath="\States\Default Work Unit\DuringReading\SixOfPentacles"/>
 					</ActionSetState>
 				</Event>
 				<Event Id="3436307834" Name="SixOfSwords" ObjectPath="\Events\Default Work Unit\CardEvents\Swords\SixOfSwords" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
 					<ActionSetState>
-						<ActionSetStateEntry Id="1770673853" Name="Interlude" ObjectPath="\States\Default Work Unit\DuringReading\Interlude"/>
+						<ActionSetStateEntry Id="1900785500" Name="AfterReadingBed" ObjectPath="\States\Default Work Unit\DuringReading\AfterReadingBed"/>
 						<ActionSetStateEntry Id="3436307834" Name="SixOfSwords" ObjectPath="\States\Default Work Unit\DuringReading\SixOfSwords"/>
 					</ActionSetState>
 				</Event>
@@ -2018,7 +2036,7 @@
 				<Event Id="1008270286" Name="Strength" ObjectPath="\Events\Default Work Unit\CardEvents\Major Arcana\Strength" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
 					<ActionSetState>
 						<ActionSetStateEntry Id="1008270286" Name="Strength" ObjectPath="\States\Default Work Unit\DuringReading\Strength"/>
-						<ActionSetStateEntry Id="1770673853" Name="Interlude" ObjectPath="\States\Default Work Unit\DuringReading\Interlude"/>
+						<ActionSetStateEntry Id="1900785500" Name="AfterReadingBed" ObjectPath="\States\Default Work Unit\DuringReading\AfterReadingBed"/>
 					</ActionSetState>
 				</Event>
 				<Event Id="361241855" Name="Swords" ObjectPath="\Events\Default Work Unit\GenerativeStates\Bass\Swords" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
@@ -2026,75 +2044,70 @@
 						<ActionSetStateEntry Id="361241855" Name="Swords" ObjectPath="\States\Default Work Unit\GenerativeAccompanment\Swords"/>
 					</ActionSetState>
 				</Event>
-				<Event Id="4085194074" Name="SwordsFlip" ObjectPath="\Events\Default Work Unit\FlippingEvents\SwordsFlip" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
-					<ActionSetState>
-						<ActionSetStateEntry Id="361241855" Name="Swords" ObjectPath="\States\Default Work Unit\CardFlipping\Swords"/>
-					</ActionSetState>
-				</Event>
 				<Event Id="1462743847" Name="Temperance" ObjectPath="\Events\Default Work Unit\CardEvents\Major Arcana\Temperance" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
 					<ActionSetState>
 						<ActionSetStateEntry Id="1462743847" Name="Temperance" ObjectPath="\States\Default Work Unit\DuringReading\Temperance"/>
-						<ActionSetStateEntry Id="1770673853" Name="Interlude" ObjectPath="\States\Default Work Unit\DuringReading\Interlude"/>
+						<ActionSetStateEntry Id="1900785500" Name="AfterReadingBed" ObjectPath="\States\Default Work Unit\DuringReading\AfterReadingBed"/>
 					</ActionSetState>
 				</Event>
 				<Event Id="2461612130" Name="TenOfCups" ObjectPath="\Events\Default Work Unit\CardEvents\Cups\TenOfCups" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
 					<ActionSetState>
-						<ActionSetStateEntry Id="1770673853" Name="Interlude" ObjectPath="\States\Default Work Unit\DuringReading\Interlude"/>
+						<ActionSetStateEntry Id="1900785500" Name="AfterReadingBed" ObjectPath="\States\Default Work Unit\DuringReading\AfterReadingBed"/>
 						<ActionSetStateEntry Id="2461612130" Name="TenOfCups" ObjectPath="\States\Default Work Unit\DuringReading\TenOfCups"/>
 					</ActionSetState>
 				</Event>
 				<Event Id="2185129511" Name="TenOfSwords" ObjectPath="\Events\Default Work Unit\CardEvents\Swords\TenOfSwords" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
 					<ActionSetState>
-						<ActionSetStateEntry Id="1770673853" Name="Interlude" ObjectPath="\States\Default Work Unit\DuringReading\Interlude"/>
+						<ActionSetStateEntry Id="1900785500" Name="AfterReadingBed" ObjectPath="\States\Default Work Unit\DuringReading\AfterReadingBed"/>
 						<ActionSetStateEntry Id="2185129511" Name="TenOfSwords" ObjectPath="\States\Default Work Unit\DuringReading\TenOfSwords"/>
 					</ActionSetState>
 				</Event>
 				<Event Id="4181689965" Name="TheEmpress" ObjectPath="\Events\Default Work Unit\CardEvents\Major Arcana\TheEmpress" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
 					<ActionSetState>
-						<ActionSetStateEntry Id="1770673853" Name="Interlude" ObjectPath="\States\Default Work Unit\DuringReading\Interlude"/>
+						<ActionSetStateEntry Id="1900785500" Name="AfterReadingBed" ObjectPath="\States\Default Work Unit\DuringReading\AfterReadingBed"/>
 						<ActionSetStateEntry Id="4181689965" Name="TheEmpress" ObjectPath="\States\Default Work Unit\DuringReading\TheEmpress"/>
 					</ActionSetState>
 				</Event>
 				<Event Id="2631758982" Name="TheFool" ObjectPath="\Events\Default Work Unit\CardEvents\Major Arcana\TheFool" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
 					<ActionSetState>
-						<ActionSetStateEntry Id="1770673853" Name="Interlude" ObjectPath="\States\Default Work Unit\DuringReading\Interlude"/>
+						<ActionSetStateEntry Id="1900785500" Name="AfterReadingBed" ObjectPath="\States\Default Work Unit\DuringReading\AfterReadingBed"/>
 						<ActionSetStateEntry Id="2631758982" Name="TheFool" ObjectPath="\States\Default Work Unit\DuringReading\TheFool"/>
 					</ActionSetState>
 				</Event>
 				<Event Id="3676275462" Name="TheHighPriestess" ObjectPath="\Events\Default Work Unit\CardEvents\Major Arcana\TheHighPriestess" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
 					<ActionSetState>
-						<ActionSetStateEntry Id="1770673853" Name="Interlude" ObjectPath="\States\Default Work Unit\DuringReading\Interlude"/>
+						<ActionSetStateEntry Id="1900785500" Name="AfterReadingBed" ObjectPath="\States\Default Work Unit\DuringReading\AfterReadingBed"/>
 						<ActionSetStateEntry Id="3676275462" Name="TheHighPriestess" ObjectPath="\States\Default Work Unit\DuringReading\TheHighPriestess"/>
 					</ActionSetState>
 				</Event>
 				<Event Id="1726594133" Name="TheMagician" ObjectPath="\Events\Default Work Unit\CardEvents\Major Arcana\TheMagician" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
 					<ActionSetState>
 						<ActionSetStateEntry Id="1726594133" Name="TheMagician" ObjectPath="\States\Default Work Unit\DuringReading\TheMagician"/>
-						<ActionSetStateEntry Id="1770673853" Name="Interlude" ObjectPath="\States\Default Work Unit\DuringReading\Interlude"/>
+						<ActionSetStateEntry Id="1900785500" Name="AfterReadingBed" ObjectPath="\States\Default Work Unit\DuringReading\AfterReadingBed"/>
 					</ActionSetState>
 				</Event>
 				<Event Id="2075671581" Name="TheMoon" ObjectPath="\Events\Default Work Unit\CardEvents\Major Arcana\TheMoon" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
 					<ActionSetState>
-						<ActionSetStateEntry Id="1770673853" Name="Interlude" ObjectPath="\States\Default Work Unit\DuringReading\Interlude"/>
+						<ActionSetStateEntry Id="1900785500" Name="AfterReadingBed" ObjectPath="\States\Default Work Unit\DuringReading\AfterReadingBed"/>
 						<ActionSetStateEntry Id="2075671581" Name="TheMoon" ObjectPath="\States\Default Work Unit\DuringReading\TheMoon"/>
 					</ActionSetState>
 				</Event>
 				<Event Id="2436895318" Name="TheStar" ObjectPath="\Events\Default Work Unit\CardEvents\Major Arcana\TheStar" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
 					<ActionSetState>
-						<ActionSetStateEntry Id="1770673853" Name="Interlude" ObjectPath="\States\Default Work Unit\DuringReading\Interlude"/>
+						<ActionSetStateEntry Id="1900785500" Name="AfterReadingBed" ObjectPath="\States\Default Work Unit\DuringReading\AfterReadingBed"/>
 						<ActionSetStateEntry Id="2436895318" Name="TheStar" ObjectPath="\States\Default Work Unit\DuringReading\TheStar"/>
 					</ActionSetState>
 				</Event>
 				<Event Id="1765113981" Name="TwoOfCups" ObjectPath="\Events\Default Work Unit\CardEvents\Cups\TwoOfCups" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
 					<ActionSetState>
 						<ActionSetStateEntry Id="1765113981" Name="TwoOfCups" ObjectPath="\States\Default Work Unit\DuringReading\TwoOfCups"/>
-						<ActionSetStateEntry Id="1770673853" Name="Interlude" ObjectPath="\States\Default Work Unit\DuringReading\Interlude"/>
+						<ActionSetStateEntry Id="1900785500" Name="AfterReadingBed" ObjectPath="\States\Default Work Unit\DuringReading\AfterReadingBed"/>
 					</ActionSetState>
 				</Event>
 				<Event Id="28325139" Name="TwoOfWands" ObjectPath="\Events\Default Work Unit\CardEvents\Wands\TwoOfWands" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
 					<ActionSetState>
 						<ActionSetStateEntry Id="28325139" Name="TwoOfWands" ObjectPath="\States\Default Work Unit\DuringReading\TwoOfWands"/>
-						<ActionSetStateEntry Id="1770673853" Name="Interlude" ObjectPath="\States\Default Work Unit\DuringReading\Interlude"/>
+						<ActionSetStateEntry Id="1900785500" Name="AfterReadingBed" ObjectPath="\States\Default Work Unit\DuringReading\AfterReadingBed"/>
 					</ActionSetState>
 				</Event>
 				<Event Id="3908339577" Name="Vamp" ObjectPath="\Events\Default Work Unit\GenerativePart\Vamp" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
@@ -2109,7 +2122,7 @@
 				</Event>
 				<Event Id="3929082740" Name="WheelOfFortune" ObjectPath="\Events\Default Work Unit\CardEvents\Major Arcana\WheelOfFortune" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
 					<ActionSetState>
-						<ActionSetStateEntry Id="1770673853" Name="Interlude" ObjectPath="\States\Default Work Unit\DuringReading\Interlude"/>
+						<ActionSetStateEntry Id="1900785500" Name="AfterReadingBed" ObjectPath="\States\Default Work Unit\DuringReading\AfterReadingBed"/>
 						<ActionSetStateEntry Id="3929082740" Name="WheelOfFortune" ObjectPath="\States\Default Work Unit\DuringReading\WheelOfFortune"/>
 					</ActionSetState>
 				</Event>
@@ -2298,6 +2311,7 @@
 						<State Id="884571752" Name="SevenOfCups" ObjectPath="\States\Default Work Unit\DuringReading\SevenOfCups"/>
 						<State Id="2491223249" Name="SixOfPentacles" ObjectPath="\States\Default Work Unit\DuringReading\SixOfPentacles"/>
 						<State Id="1715977140" Name="KingOfPentacles" ObjectPath="\States\Default Work Unit\DuringReading\KingOfPentacles"/>
+						<State Id="1900785500" Name="AfterReadingBed" ObjectPath="\States\Default Work Unit\DuringReading\AfterReadingBed"/>
 					</States>
 				</StateGroup>
 				<StateGroup Id="1008270286" Name="Strength" ObjectPath="\States\Default Work Unit\DuringReading\Strength">
@@ -2325,6 +2339,9 @@
 					<States/>
 				</StateGroup>
 				<StateGroup Id="1770673853" Name="Interlude" ObjectPath="\States\Default Work Unit\DuringReading\Interlude">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="1900785500" Name="AfterReadingBed" ObjectPath="\States\Default Work Unit\DuringReading\AfterReadingBed">
 					<States/>
 				</StateGroup>
 				<StateGroup Id="1963057671" Name="NineOfPentacles" ObjectPath="\States\Default Work Unit\DuringReading\NineOfPentacles">

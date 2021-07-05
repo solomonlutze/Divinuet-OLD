@@ -53,6 +53,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	1715977140	KingOfPentacles			\Default Work Unit\CardEvents\Pentacles\KingOfPentacles	
 	1726594133	TheMagician			\Default Work Unit\CardEvents\Major Arcana\TheMagician	
 	1765113981	TwoOfCups			\Default Work Unit\CardEvents\Cups\TwoOfCups	
+	1770673853	Interlude			\Default Work Unit\ReadingNonCard\Interlude	
 	1821600798	Card2Minor			\Default Work Unit\GenerativeKeys\Card2\Card2Minor	
 	1929173219	State_MakingSong			\Default Work Unit\State_MakingSong	
 	1963057671	NineOfPentacles			\Default Work Unit\CardEvents\Pentacles\NineOfPentacles	
@@ -108,7 +109,6 @@ Event	ID	Name			Wwise Object Path	Notes
 	3909883483	Card3Pentacles			\Default Work Unit\GenerativeCardSuits\Card3\Card3Pentacles	
 	3929082740	WheelOfFortune			\Default Work Unit\CardEvents\Major Arcana\WheelOfFortune	
 	3939640691	Card1Minor			\Default Work Unit\GenerativeKeys\Card1\Card1Minor	
-	4085194074	SwordsFlip			\Default Work Unit\FlippingEvents\SwordsFlip	
 	4145272430	CardSlide			\Default Work Unit\SFXEvents\CardSlide	
 	4181689965	TheEmpress			\Default Work Unit\CardEvents\Major Arcana\TheEmpress	
 	4205938704	SevenOfPentacles			\Default Work Unit\CardEvents\Pentacles\SevenOfPentacles	
@@ -137,6 +137,7 @@ State	ID	Name	State Group			Notes
 	1726594133	TheMagician	DuringReading			
 	1765113981	TwoOfCups	DuringReading			
 	1770673853	Interlude	DuringReading			
+	1900785500	AfterReadingBed	DuringReading			
 	1963057671	NineOfPentacles	DuringReading			
 	2075671581	TheMoon	DuringReading			
 	2185129511	TenOfSwords	DuringReading			
@@ -351,6 +352,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	650436423	Accompaniment	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativeMajorArcana_Part2_Dorian_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\MajorArcana\MajorArcana2\Accompaniment		652541
 	656301869	Temperance	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\Temperance_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Reading\Major Arcana\Temperance\Temperance\Temperance		749740
 	657871922	!Viola melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\Viola_Phrase2_Group1_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups2\!Viola melody		274882
+	660746157	AfterReadingBed	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\AfterReadingBed_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Reading\AfterReadingBed\AfterReadingBed\AfterReadingBed		6100587
 	663437979	Divinuet_SFX_Bird_11	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\Divinuet_SFX_Bird_11_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Menu Background\ForestNoises\Divinuet_SFX_Bird_11		19072
 	676918644	Accompaniment	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativeSwords_Part3_Major1_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Swords\Swords3\Accompaniment		639175
 	684459571	Cups melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\CupsPiano_Phrase2_Group11_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups2\Cups melody		612269
