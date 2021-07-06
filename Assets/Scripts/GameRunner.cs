@@ -681,6 +681,7 @@ public class GameRunner : MonoBehaviour
 
   IEnumerator BeginGenerativePhase()
   {
+    makingSongState.Post(gameObject);
     if (gameMode != GameMode.ViewPreviousReadings && !DEBUG_SaveReadingImmediately)
     {
       SaveUtils.SaveReading(new SavedReading(
@@ -721,8 +722,6 @@ public class GameRunner : MonoBehaviour
         ps.Play();
       }
     }
-
-    makingSongState.Post(gameObject);
     Cursor.SetCursor(waitCursor, Vector2.zero, CursorMode.Auto);
     yield return StartCoroutine(generativeUI.FadeIn());
     yield return StartCoroutine(generativeUI.ReadText());
