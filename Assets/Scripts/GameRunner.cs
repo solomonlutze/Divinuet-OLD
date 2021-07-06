@@ -7,6 +7,7 @@ using AK;
 //hi
 //hello this is megan
 //can't wait for this to be in the code at launch
+//same
 public enum GameState
 {
   MainMenu,
@@ -152,6 +153,8 @@ public class GameRunner : MonoBehaviour
   public int numberCardsAlreadyDealt = 0;
   // Keeps track of how many cards have been read so far in this reading
   private int numCardsAlreadyRead = 0;
+  // Keeps track of which card info the generative section is displaying
+  private int currentGenerativeCard = 0;
   public static bool enableButton = true;
   public bool buttonHover = false;
   public Color32[] groupSparkColors;
@@ -414,22 +417,23 @@ public class GameRunner : MonoBehaviour
 
     else if (gameState == GameState.GenerativePhase || gameState == GameState.ShowingEndInstructions)
     {
-      string[] videoClipConsole = {
-                "The cards present... reading meaning (e.g. Past, Present, Future)", "Suit majority video clip",
-                "Card 1 title card", "Split screen 1- meaning/card video clip", "Thematic group video clip 1",
-                "Card 2 title card", "Split screen 2- meaning/card video clip", "Thematic group video clip 2",
-                "Card 3 title card", "Split screen 3- meaning/card video clip", "Thematic group video clip 3",
-                };
-
 
       if (new int[] { 0, 2, 5, 8 }.Contains(generativeSection))
       {
         videoCanvas.gameObject.SetActive(false);
+        videoCardUI.cardDefinitionText.gameObject.SetActive(false);
         videoPlayer.clip = videoClips[playingClipNumber];
         videoPlayer.Stop();
         videoPlayer.targetTexture.Release();
-        Debug.Log(videoClipConsole[generativeSection]);
-        generativeSection++;
+        if (generativeSection != 0)
+        {
+          if (new int[] { 5, 8 }.Contains(generativeSection))
+          {
+            currentGenerativeCard++;
+          }
+          StartCoroutine(generativeUI.ShowMeaningText(cardMeanings[currentGenerativeCard]));
+        }
+          generativeSection++;
       }
       else if (generativeSection >= 11)
       {
@@ -438,10 +442,21 @@ public class GameRunner : MonoBehaviour
 
       else
       {
+        StartCoroutine(generativeUI.HideTitleText());
+        StartCoroutine(generativeUI.HideMeaningText());
         videoPlayer.clip = videoClips[playingClipNumber];
         videoPlayer.Play();
         videoCanvas.gameObject.SetActive(true);
-        Debug.Log(videoClipConsole[generativeSection]);
+        if (new int[] { 3, 6, 9 }.Contains(generativeSection))
+        {
+          TarotCardData cardData = selectedCardData[currentGenerativeCard];
+          videoCardUI.SetTextFromCardData(cardData);
+          videoCardUI.cardDefinitionText.gameObject.SetActive(true);
+        }
+        else
+        {
+          videoCardUI.cardDefinitionText.gameObject.SetActive(false);
+        }
         playingClipNumber++;
         generativeSection++;
       }
@@ -657,6 +672,7 @@ public class GameRunner : MonoBehaviour
   IEnumerator FadeOutReading()
   {
     enableButton = false;
+    AkSoundEngine.PostEvent("Interlude", this.gameObject);
     CardReadingUI readingUI = readingCanvas.GetComponent<CardReadingUI>();
     yield return StartCoroutine(readingUI.FadeOut());
     enableButton = true;
@@ -788,7 +804,6 @@ public class GameRunner : MonoBehaviour
       case GameMode.Random:
         SetGameState(GameState.ReadyToFadeInCard);
         AkSoundEngine.PostEvent("MenuAmbienceStop", this.gameObject);
-        //readingStart.Post(gameObject, (uint)AkCallbackType.AK_MusicSyncUserCue, CallbackFunction);
         DisableAllCanvases();
         SetCanvasActive(generativeCanvas, true);
         SetCanvasActive(readingCanvas, true);
@@ -800,7 +815,6 @@ public class GameRunner : MonoBehaviour
       case GameMode.ViewPreviousReadings:
         SetGameState(GameState.ReadyToFadeInCard);
         AkSoundEngine.PostEvent("MenuAmbienceStop", this.gameObject);
-        //readingStart.Post(gameObject, (uint)AkCallbackType.AK_MusicSyncUserCue, CallbackFunction);
         SetCanvasActive(generativeCanvas, true);
         SetCanvasActive(readingCanvas, true);
         PrepForReading();
