@@ -22,7 +22,7 @@ MonoBehaviour:
     decks this card features someone walking or diving off the edge of a cliff, but
     this isn\x19't prompted by distress or outside circumstances.^ The fool is excitedly
     diving into something new,^ unsure of what\x19's ahead but ready to meet the challenge."
-  cardShortDescription: "new beginnings, naivet\xE9, innocence"
+  cardShortDescription: new beginnings, inexperience, innocence
   readingMusicEvent:
     idInternal: 0
     valueGuidInternal: 
