@@ -17,12 +17,8 @@ MonoBehaviour:
   suit: 2
   cardPicture: {fileID: 2800000, guid: 1e9bdd798a3f4644eba63df8b773a977, type: 3}
   cardPicture2x: {fileID: 21300000, guid: e90d084cff703b244af9429fa649abb0, type: 3}
-  cardTextMain: "Four of Swords: rest, contemplation, stillness.\t"
-  cardTextUpright: Thinking over your plans before putting them into action.^ Pausing
-    to meditate or clear your mind.^ Taking time to understand someone or something
-    before criticizing it.^ Resting, but perhaps using rest as an excuse to procrastinate^
-    or avoid doing something unpleasant but necessary.
-  cardTextReversed: 
+  cardLongDescription: temp long descrip
+  cardShortDescription: temp short descrip
   readingMusicEvent:
     idInternal: 0
     valueGuidInternal: 

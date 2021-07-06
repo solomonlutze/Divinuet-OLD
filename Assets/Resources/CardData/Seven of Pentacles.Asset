@@ -17,10 +17,8 @@ MonoBehaviour:
   suit: 3
   cardPicture: {fileID: 2800000, guid: 24750c1def188384cae877e4c7a7daaa, type: 3}
   cardPicture2x: {fileID: 21300000, guid: 6da15938c449f7a4587419fd3debe99b, type: 3}
-  cardTextMain: Seven of Pentacles- patience, cultivation, commitment.
-  cardTextUpright: It's the seven of pentacles text.^ Imagine that.^ Text.^ For seven.^
-    Of pentacles.^ Incredible.
-  cardTextReversed: 
+  cardLongDescription: temp long descrip
+  cardShortDescription: temp short descrip
   readingMusicEvent:
     idInternal: 0
     valueGuidInternal: 
