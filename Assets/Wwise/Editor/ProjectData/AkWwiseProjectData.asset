@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 316b02227919fc49a4528be3c11e0f41
     GuidInternal: 
-    m_lastTime: -8585760894705349078
+    m_lastTime: -8585759224813566274
     List:
     - name: Soundbank
       guid: 8d5e51ee7b34f042a6bee5955537fe07
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: bc617d844702964e9e3475116383ce13
     GuidInternal: 
-    m_lastTime: -8585760888829066686
+    m_lastTime: -8585759236195210812
     List:
     - name: AccompanimentCups
       guid: 3e9aa257f8dcda44ab5bc5d1fd033e9f
@@ -746,26 +746,6 @@ MonoBehaviour:
       maxDuration: 0
       minDuration: 0
     - name: Card2
-      guid: c4deca9493a1494fad03e4becc94d350
-      id: 4256484203
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: bc617d844702964e9e3475116383ce13
-      - ElementName: GenerativeKeys
-        ObjectType: 4
-        guid: 98e48b21f1625147b8a796b13abd3b53
-      - ElementName: Card2
-        ObjectType: 4
-        guid: c4deca9493a1494fad03e4becc94d350
-      Path: Events\Default Work Unit\GenerativeKeys\Card2
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Card2
       guid: f1c4f2cfce4b0c4f9ecd3bb11e3ff261
       id: 4256484203
       PathAndIcons:
@@ -782,6 +762,26 @@ MonoBehaviour:
         ObjectType: 4
         guid: f1c4f2cfce4b0c4f9ecd3bb11e3ff261
       Path: Events\Default Work Unit\GenerativeCardSuits\Card2
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Card2
+      guid: c4deca9493a1494fad03e4becc94d350
+      id: 4256484203
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: bc617d844702964e9e3475116383ce13
+      - ElementName: GenerativeKeys
+        ObjectType: 4
+        guid: 98e48b21f1625147b8a796b13abd3b53
+      - ElementName: Card2
+        ObjectType: 4
+        guid: c4deca9493a1494fad03e4becc94d350
+      Path: Events\Default Work Unit\GenerativeKeys\Card2
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -3101,6 +3101,29 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: TheHangedMan
+      guid: f69b9dbd90691141b619578c0daeef09
+      id: 3258053151
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: bc617d844702964e9e3475116383ce13
+      - ElementName: CardEvents
+        ObjectType: 4
+        guid: b096310945b4bd4391e804c065b54e38
+      - ElementName: Major Arcana
+        ObjectType: 4
+        guid: a2e9e99eca116444b7330e5afd69dafe
+      - ElementName: TheHangedMan
+        ObjectType: 3
+        guid: f69b9dbd90691141b619578c0daeef09
+      Path: Events\Default Work Unit\CardEvents\Major Arcana\TheHangedMan
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: TheHighPriestess
       guid: 29e6c4daf05c644f92e33f69a9afb076
       id: 3676275462
@@ -3260,6 +3283,26 @@ MonoBehaviour:
       maxDuration: 0
       minDuration: 0
     - name: Wands
+      guid: 18e910e317c4a04c8c04b0c8086b2110
+      id: 2202738146
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: bc617d844702964e9e3475116383ce13
+      - ElementName: CardEvents
+        ObjectType: 4
+        guid: b096310945b4bd4391e804c065b54e38
+      - ElementName: Wands
+        ObjectType: 4
+        guid: 18e910e317c4a04c8c04b0c8086b2110
+      Path: Events\Default Work Unit\CardEvents\Wands
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: Wands
       guid: 29f23a246b31d4459608aa9970f4f992
       id: 2202738146
       PathAndIcons:
@@ -3279,26 +3322,6 @@ MonoBehaviour:
         ObjectType: 3
         guid: 29f23a246b31d4459608aa9970f4f992
       Path: Events\Default Work Unit\GenerativeStates\Bass\Wands
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
-    - name: Wands
-      guid: 18e910e317c4a04c8c04b0c8086b2110
-      id: 2202738146
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: bc617d844702964e9e3475116383ce13
-      - ElementName: CardEvents
-        ObjectType: 4
-        guid: b096310945b4bd4391e804c065b54e38
-      - ElementName: Wands
-        ObjectType: 4
-        guid: 18e910e317c4a04c8c04b0c8086b2110
-      Path: Events\Default Work Unit\CardEvents\Wands
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -3351,7 +3374,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 46c6d260267ae44a8030202cff271f3f
     GuidInternal: 
-    m_lastTime: -8585760899270951271
+    m_lastTime: -8585759236195370371
     List:
     - name: Card1Group
       guid: 637394fcc359c3459dcde70b789220f5
@@ -4619,72 +4642,6 @@ MonoBehaviour:
       ValueGuids: []
       ValueIcons: []
       valuesInternal: []
-    - name: CardFlipping
-      guid: 5f1c96a3d9e9a04aba7a27011a604bea
-      id: 311318854
-      PathAndIcons:
-      - ElementName: States
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: 46c6d260267ae44a8030202cff271f3f
-      - ElementName: CardFlipping
-        ObjectType: 9
-        guid: 5f1c96a3d9e9a04aba7a27011a604bea
-      Path: States\Default Work Unit\CardFlipping
-      values:
-      - name: Cups
-        guid: 6156ce93ece06c478304538dfc0f64d9
-        id: 3817145194
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: 46c6d260267ae44a8030202cff271f3f
-        - ElementName: CardFlipping
-          ObjectType: 9
-          guid: 5f1c96a3d9e9a04aba7a27011a604bea
-        - ElementName: Cups
-          ObjectType: 8
-          guid: 6156ce93ece06c478304538dfc0f64d9
-      - name: None
-        guid: 40c35b02a210a64bb324ddbb393ce0aa
-        id: 748895195
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: 46c6d260267ae44a8030202cff271f3f
-        - ElementName: CardFlipping
-          ObjectType: 9
-          guid: 5f1c96a3d9e9a04aba7a27011a604bea
-        - ElementName: None
-          ObjectType: 8
-          guid: 40c35b02a210a64bb324ddbb393ce0aa
-      - name: Swords
-        guid: df5b49d2bcae44498d0ec25a60da4463
-        id: 361241855
-        PathAndIcons:
-        - ElementName: States
-          ObjectType: 5
-          guid: 00000000000000000000000000000000
-        - ElementName: Default Work Unit
-          ObjectType: 12
-          guid: 46c6d260267ae44a8030202cff271f3f
-        - ElementName: CardFlipping
-          ObjectType: 9
-          guid: 5f1c96a3d9e9a04aba7a27011a604bea
-        - ElementName: Swords
-          ObjectType: 8
-          guid: df5b49d2bcae44498d0ec25a60da4463
-      ValueGuids: []
-      ValueIcons: []
-      valuesInternal: []
     - name: DuringReading
       guid: e159ce0e1e70de4f97d5abf8e953a03d
       id: 953994230
@@ -5052,6 +5009,22 @@ MonoBehaviour:
         - ElementName: TheFool
           ObjectType: 8
           guid: 6875fd2d83e447408f191187966eb61e
+      - name: TheHangedMan
+        guid: 68d4345828f46d4b8eeccc021ba93fc6
+        id: 3258053151
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 46c6d260267ae44a8030202cff271f3f
+        - ElementName: DuringReading
+          ObjectType: 9
+          guid: e159ce0e1e70de4f97d5abf8e953a03d
+        - ElementName: TheHangedMan
+          ObjectType: 8
+          guid: 68d4345828f46d4b8eeccc021ba93fc6
       - name: TheHighPriestess
         guid: 6603a89bb773a24a811bc495f23e2d1b
         id: 3676275462
@@ -5804,7 +5777,7 @@ MonoBehaviour:
     m_lastTime: -8585799860922854706
     List: []
   ExpandedFileSystemItemIds: 
-  ExpandedWaapiItemIds: 0500000006000000070000000a0000000b000000
+  ExpandedWaapiItemIds: 0500000006000000090000000b0000000c0000008f000000950000009f000000b3000000b8000000bd000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1
   currentDataSource: 0

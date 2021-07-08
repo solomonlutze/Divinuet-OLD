@@ -17,8 +17,17 @@ MonoBehaviour:
   suit: 0
   cardPicture: {fileID: 2800000, guid: 5ebb512aba63847efa5fcfee789c50a2, type: 3}
   cardPicture2x: {fileID: 21300000, guid: f9360a32ef3f83544831fe951b9dbf8e, type: 3}
-  cardLongDescription: temp long descrip
-  cardShortDescription: temp short descrip
+  cardLongDescription: "The Star: healing, renewal, hope^\n\nThe Star begins the process
+    of recovery.^ It prompts us to find the light in the darkness, even if it\u2019s
+    small,^ and use it as a guide.^ Finding this light often requires us to embrace
+    the darkness long enough to reflect,^ so while it\u2019s unhelpful to ruminate
+    on a bad event indefinitely,^ immediately pushing it away and keeping yourself
+    distracted is equally problematic."
+  cardShortDescription: 'healing
+
+    renewal
+
+    hope'
   readingMusicEvent:
     idInternal: 0
     valueGuidInternal: 
@@ -27,22 +36,22 @@ MonoBehaviour:
   cardKeyArray:
   - idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 97a6425e3d2946d4a85d53148c6cba95,
+    WwiseObjectReference: {fileID: 11400000, guid: 84c049a710fcae04dbc3b75d2845a91e,
       type: 2}
   - idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 1edd987310b39a74a805e1f5f16eec14,
+    WwiseObjectReference: {fileID: 11400000, guid: 16f3b3538191ed14587294f09d495f34,
       type: 2}
   - idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 84abc170f6546bc4ba306c25844e5b6f,
+    WwiseObjectReference: {fileID: 11400000, guid: d29f1068f70be5a49b0bb46ed68d5506,
       type: 2}
   clipDuration: 46
-  thematicGroup: 2
+  thematicGroup: 11
   cardAndGroupClips:
-  - {fileID: 32900000, guid: 6bf94d25caf273545b9c70059654ea1a, type: 3}
+  - {fileID: 32900000, guid: 078c0af714371a343895f4f30f834b88, type: 3}
   - {fileID: 0}
-  - {fileID: 32900000, guid: 6bf94d25caf273545b9c70059654ea1a, type: 3}
+  - {fileID: 32900000, guid: 078c0af714371a343895f4f30f834b88, type: 3}
   - {fileID: 0}
-  - {fileID: 32900000, guid: 6bf94d25caf273545b9c70059654ea1a, type: 3}
-  - {fileID: 0}
+  - {fileID: 32900000, guid: 078c0af714371a343895f4f30f834b88, type: 3}
+  - {fileID: 32900000, guid: c00f932cde10f2445991bbf98ce24968, type: 3}

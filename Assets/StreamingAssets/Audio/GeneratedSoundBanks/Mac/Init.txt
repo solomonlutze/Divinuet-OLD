@@ -1,7 +1,6 @@
 State Group	ID	Name			Wwise Object Path	Notes
 	157898841	Card1Group			\Default Work Unit\GenerativeCardGroups\Card1Group	
 	199200728	Card2Group			\Default Work Unit\GenerativeCardGroups\Card2Group	
-	311318854	CardFlipping			\Default Work Unit\CardFlipping	
 	953994230	DuringReading			\Default Work Unit\DuringReading	
 	1021100596	Card2Suit			\Default Work Unit\GenerativeCardSuits\Card2Suit	
 	1675392555	Card1Suit			\Default Work Unit\GenerativeCardSuits\Card1Suit	
@@ -43,9 +42,6 @@ State	ID	Name	State Group			Notes
 	3387899017	Card2Group12	Card2Group			
 	3387899018	Card2Group11	Card2Group			
 	3387899019	Card2Group10	Card2Group			
-	361241855	Swords	CardFlipping			
-	748895195	None	CardFlipping			
-	3817145194	Cups	CardFlipping			
 	28325139	TwoOfWands	DuringReading			
 	87267876	KingOfCups	DuringReading			
 	112666488	FourOfSwords	DuringReading			
@@ -60,6 +56,7 @@ State	ID	Name	State Group			Notes
 	1726594133	TheMagician	DuringReading			
 	1765113981	TwoOfCups	DuringReading			
 	1770673853	Interlude	DuringReading			
+	1900785500	AfterReadingBed	DuringReading			
 	1963057671	NineOfPentacles	DuringReading			
 	2075671581	TheMoon	DuringReading			
 	2185129511	TenOfSwords	DuringReading			
@@ -68,6 +65,7 @@ State	ID	Name	State Group			Notes
 	2478979318	AceOfCups	DuringReading			
 	2491223249	SixOfPentacles	DuringReading			
 	2631758982	TheFool	DuringReading			
+	3258053151	TheHangedMan	DuringReading			
 	3436307834	SixOfSwords	DuringReading			
 	3555933294	EightOfPentacles	DuringReading			
 	3676275462	TheHighPriestess	DuringReading			
