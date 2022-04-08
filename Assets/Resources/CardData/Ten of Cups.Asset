@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe8883c4e804a4aedb12a21c5434e4d7, type: 3}
+  m_Name: Ten of Cups
+  m_EditorClassIdentifier: 
+  cardName: Ten of Cups
+  order: 45
+  suit: 1
+  cardPicture: {fileID: 2800000, guid: be9a3ef9229119a44b4d9b1986fbcc73, type: 3}
+  cardPicture2x: {fileID: 21300000, guid: fcca0ed6e9bedcc43b82f33fdeb47b94, type: 3}
+  cardLongDescription: "Ten of Cups: joy in community, fulfillment, being at peace^\n\nIn
+    the Ten of Cups, the figures have found their people, found their roles,^ and
+    are able to fully enjoy enjoy day-to-day life.^ This card signifies the \u201Chappily
+    ever after\u201D feeling,^ though it is not always permanent.^ But each day like
+    this is a gift. "
+  cardShortDescription: 'joy in community
+
+    fulfillment
+
+    being at peace'
+  readingMusicEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 4df3165b1cd44eb4389561c491a98539,
+      type: 2}
+  cardKeyArray:
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 97a6425e3d2946d4a85d53148c6cba95,
+      type: 2}
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 1edd987310b39a74a805e1f5f16eec14,
+      type: 2}
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 84abc170f6546bc4ba306c25844e5b6f,
+      type: 2}
+  clipDuration: 45
+  thematicGroup: 2
+  cardAndGroupClips:
+  - {fileID: 32900000, guid: d4b2720a0c171de448678c1a2ef4476d, type: 3}
+  - {fileID: 32900000, guid: c00f932cde10f2445991bbf98ce24968, type: 3}
+  - {fileID: 32900000, guid: d4b2720a0c171de448678c1a2ef4476d, type: 3}
+  - {fileID: 32900000, guid: c00f932cde10f2445991bbf98ce24968, type: 3}
+  - {fileID: 32900000, guid: d4b2720a0c171de448678c1a2ef4476d, type: 3}
+  - {fileID: 32900000, guid: c00f932cde10f2445991bbf98ce24968, type: 3}

@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe8883c4e804a4aedb12a21c5434e4d7, type: 3}
+  m_Name: King of Pentacles
+  m_EditorClassIdentifier: 
+  cardName: King of Pentacles
+  order: 77
+  suit: 3
+  cardPicture: {fileID: 0}
+  cardPicture2x: {fileID: 21300000, guid: c3932e4724793224f93ea477ff813c37, type: 3}
+  cardLongDescription: "King of Pentacles: leadership in abundance, just leadership,
+    systemic change.^\n\nThe King of Pentacles uses abundance to be a just leader
+    who can make long-term systemic change.^ They control many resources that have
+    a significant impact on the community,^ but they do not act selfishly or for the
+    benefit of only a few.^ This leader can use the abundance they have now to change
+    their community forever,^ even if the tangible things don\u2019t last. "
+  cardShortDescription: 'leadership in abundance
+
+    just leadership
+
+    systemic change'
+  readingMusicEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 647b528ceea38834fa16c4538771a9a7,
+      type: 2}
+  cardKeyArray:
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 84c049a710fcae04dbc3b75d2845a91e,
+      type: 2}
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 16f3b3538191ed14587294f09d495f34,
+      type: 2}
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: d29f1068f70be5a49b0bb46ed68d5506,
+      type: 2}
+  clipDuration: 45
+  thematicGroup: 10
+  cardAndGroupClips:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}

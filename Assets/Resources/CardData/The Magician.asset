@@ -17,8 +17,19 @@ MonoBehaviour:
   suit: 0
   cardPicture: {fileID: 2800000, guid: be909753b0c9a4537a7964939c40a125, type: 3}
   cardPicture2x: {fileID: 21300000, guid: fdbea2d89ca1be54abc928ecdc41bb0a, type: 3}
-  cardLongDescription: temp long descrip
-  cardShortDescription: temp short descrip
+  cardLongDescription: 'The Magician: manifestation, action, individual potential^
+
+
+    The Magician represents discovering your personal power,^ and beginning to test
+    out how you can make things happen with just the things inside of yourself.^ The
+    Magician has the tools for every element as they are in the process of discovering
+    what tools best resonate them,^ and how they can make a difference in the world
+    around them.'
+  cardShortDescription: 'manifestation
+
+    action
+
+    individual potential'
   readingMusicEvent:
     idInternal: 0
     valueGuidInternal: 
@@ -41,8 +52,8 @@ MonoBehaviour:
   thematicGroup: 8
   cardAndGroupClips:
   - {fileID: 32900000, guid: f9a75a02670d41a4f85e0e24106f9e16, type: 3}
-  - {fileID: 32900000, guid: fc896399cfd6501489b7abeb45bf7277, type: 3}
+  - {fileID: 32900000, guid: f3d5dfe0da59b4644809934bc6d80195, type: 3}
   - {fileID: 32900000, guid: f9a75a02670d41a4f85e0e24106f9e16, type: 3}
-  - {fileID: 32900000, guid: 54df4d4944f70e24db3b5031275235a4, type: 3}
-  - {fileID: 32900000, guid: fd2d93356e9c7e44c9a3575a8448b215, type: 3}
+  - {fileID: 32900000, guid: f3d5dfe0da59b4644809934bc6d80195, type: 3}
   - {fileID: 32900000, guid: f9a75a02670d41a4f85e0e24106f9e16, type: 3}
+  - {fileID: 32900000, guid: f3d5dfe0da59b4644809934bc6d80195, type: 3}

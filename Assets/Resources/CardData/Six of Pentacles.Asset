@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe8883c4e804a4aedb12a21c5434e4d7, type: 3}
+  m_Name: Six of Pentacles
+  m_EditorClassIdentifier: 
+  cardName: Six of Pentacles
+  order: 69
+  suit: 0
+  cardPicture: {fileID: 0}
+  cardPicture2x: {fileID: 21300000, guid: f453aec2e6c8b31478c9338015f8d183, type: 3}
+  cardLongDescription: "Six of Pentacles: community services, mutual aid, giving to
+    others.^\n\nThe six of pentacles is focused on giving our excess to those in hand.^
+    The figure in the center holds a scale,^ representing the idea of redistributing
+    resources and wealth in an equitable way.^ This can refer to any tangible resource
+    \u2014 ^such as clothing, technology, or industry connections \u2014^ not just
+    money."
+  cardShortDescription: 'community services
+
+    mutual aid
+
+    giving to others'
+  readingMusicEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: cd9acd4b4accbf4459caadb0a970e835,
+      type: 2}
+  cardKeyArray:
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 84c049a710fcae04dbc3b75d2845a91e,
+      type: 2}
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 16f3b3538191ed14587294f09d495f34,
+      type: 2}
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: d29f1068f70be5a49b0bb46ed68d5506,
+      type: 2}
+  clipDuration: 45
+  thematicGroup: 7
+  cardAndGroupClips:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
