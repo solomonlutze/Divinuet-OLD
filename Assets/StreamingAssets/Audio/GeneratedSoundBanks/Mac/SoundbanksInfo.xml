@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="1661994096" Language="SFX" Hash="1946516897">
+		<SoundBank Id="1661994096" Language="SFX" Hash="2045788824">
 			<ObjectPath>\SoundBanks\Default Work Unit\Soundbank</ObjectPath>
 			<ShortName>Soundbank</ShortName>
 			<Path>Soundbank.bnk</Path>
@@ -946,6 +946,10 @@
 							<ShortName>Viola_Phrase1_Group11.wav</ShortName>
 							<Path>SFX\Viola_Phrase1_Group11_9EDFC787.wem</Path>
 						</File>
+						<File Id="644631396" Language="SFX">
+							<ShortName>SevenofWands.wav</ShortName>
+							<Path>SFX\SevenofWands_9EDFC787.wem</Path>
+						</File>
 						<File Id="645141868" Language="SFX">
 							<ShortName>MajorArcanaHarp_Phrase2_Group1.wav</ShortName>
 							<Path>SFX\MajorArcanaHarp_Phrase2_Group1_9EDFC787.wem</Path>
@@ -1354,6 +1358,10 @@
 							<ShortName>Viola_Phrase1_Group11.wav</ShortName>
 							<Path>SFX\Viola_Phrase1_Group11_9EDFC787.wem</Path>
 						</File>
+						<File Id="644631396" Language="SFX">
+							<ShortName>SevenofWands.wav</ShortName>
+							<Path>SFX\SevenofWands_9EDFC787.wem</Path>
+						</File>
 						<File Id="645141868" Language="SFX">
 							<ShortName>MajorArcanaHarp_Phrase2_Group1.wav</ShortName>
 							<Path>SFX\MajorArcanaHarp_Phrase2_Group1_9EDFC787.wem</Path>
@@ -1716,6 +1724,11 @@
 										<File Id="927714190"/>
 									</Media>
 								</SwitchContainer>
+								<SwitchContainer SwitchValue="{841EA8A2-C9CB-4487-9964-83662CAEE12F}">
+									<Media>
+										<File Id="644631396"/>
+									</Media>
+								</SwitchContainer>
 							</Children>
 						</SwitchContainer>
 						<SwitchContainer SwitchValue="{66090302-C438-448B-8A5E-6D1D40BD8BF4}">
@@ -1871,6 +1884,12 @@
 					<ActionSetState>
 						<ActionSetStateEntry Id="587937073" Name="SevenOfSwords" ObjectPath="\States\Default Work Unit\DuringReading\SevenOfSwords"/>
 						<ActionSetStateEntry Id="1900785500" Name="AfterReadingBed" ObjectPath="\States\Default Work Unit\DuringReading\AfterReadingBed"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="3661391600" Name="SevenOfWands" ObjectPath="\Events\Default Work Unit\CardEvents\Wands\SevenOfWands" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionSetState>
+						<ActionSetStateEntry Id="1900785500" Name="AfterReadingBed" ObjectPath="\States\Default Work Unit\DuringReading\AfterReadingBed"/>
+						<ActionSetStateEntry Id="3661391600" Name="SevenOfWands" ObjectPath="\States\Default Work Unit\DuringReading\SevenOfWands"/>
 					</ActionSetState>
 				</Event>
 				<Event Id="2491223249" Name="SixOfPentacles" ObjectPath="\Events\Default Work Unit\CardEvents\Pentacles\SixOfPentacles" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
@@ -2192,6 +2211,7 @@
 						<State Id="1715977140" Name="KingOfPentacles" ObjectPath="\States\Default Work Unit\DuringReading\KingOfPentacles"/>
 						<State Id="1900785500" Name="AfterReadingBed" ObjectPath="\States\Default Work Unit\DuringReading\AfterReadingBed"/>
 						<State Id="3258053151" Name="TheHangedMan" ObjectPath="\States\Default Work Unit\DuringReading\TheHangedMan"/>
+						<State Id="3661391600" Name="SevenOfWands" ObjectPath="\States\Default Work Unit\DuringReading\SevenOfWands"/>
 					</States>
 				</StateGroup>
 				<StateGroup Id="1008270286" Name="Strength" ObjectPath="\States\Default Work Unit\DuringReading\Strength">
@@ -2408,6 +2428,9 @@
 					<States/>
 				</StateGroup>
 				<StateGroup Id="3555933294" Name="EightOfPentacles" ObjectPath="\States\Default Work Unit\DuringReading\EightOfPentacles">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="3661391600" Name="SevenOfWands" ObjectPath="\States\Default Work Unit\DuringReading\SevenOfWands">
 					<States/>
 				</StateGroup>
 				<StateGroup Id="3676275462" Name="TheHighPriestess" ObjectPath="\States\Default Work Unit\DuringReading\TheHighPriestess">

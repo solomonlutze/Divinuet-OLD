@@ -103,6 +103,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	3555933294	EightOfPentacles			\Default Work Unit\CardEvents\Pentacles\EightOfPentacles	
 	3649626589	Card1Dorian			\Default Work Unit\GenerativeKeys\Card1\Card1Dorian	
 	3653149380	MenuAmbienceStart			\Default Work Unit\SFXEvents\MenuAmbienceStart	
+	3661391600	SevenOfWands			\Default Work Unit\CardEvents\Wands\SevenOfWands	
 	3676275462	TheHighPriestess			\Default Work Unit\CardEvents\Major Arcana\TheHighPriestess	
 	3691358005	AccompanimentCups			\Default Work Unit\GenerativeAccompaniment\AccompanimentCups	
 	3713380301	Card1Wands			\Default Work Unit\GenerativeCardSuits\Card1\Card1Wands	
@@ -151,6 +152,7 @@ State	ID	Name	State Group			Notes
 	3258053151	TheHangedMan	DuringReading			
 	3436307834	SixOfSwords	DuringReading			
 	3555933294	EightOfPentacles	DuringReading			
+	3661391600	SevenOfWands	DuringReading			
 	3676275462	TheHighPriestess	DuringReading			
 	3929082740	WheelOfFortune	DuringReading			
 	4181689965	TheEmpress	DuringReading			
@@ -335,6 +337,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	627831526	Major arcana melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Windows\SFX\MajorArcanaHarp_Phrase1_Group11_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups1\Major arcana melody		667450
 	634844833	Divinuet_SFX_Slide_3	C:\Users\megan\WwiseProjects\Divinuet\.cache\Windows\SFX\Divinuet_SFX_Slide_3_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Card Slides\Divinuet_SFX_Slide_3		12799
 	635107510	!Viola melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Windows\SFX\Viola_Phrase1_Group11_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups1\!Viola melody		321659
+	644631396	SevenofWands	C:\Users\megan\WwiseProjects\Divinuet\.cache\Windows\SFX\SevenofWands_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Reading\Wands\SevenOfWands\SevenofWands\SevenofWands		797251
 	645141868	Major arcana melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Windows\SFX\MajorArcanaHarp_Phrase2_Group1_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups2\Major arcana melody		723823
 	656301869	Temperance	C:\Users\megan\WwiseProjects\Divinuet\.cache\Windows\SFX\Temperance_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Reading\Major Arcana\Temperance\Temperance\Temperance		749740
 	657871922	!Viola melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Windows\SFX\Viola_Phrase2_Group1_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups2\!Viola melody		274882
