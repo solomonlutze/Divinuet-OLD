@@ -17,8 +17,7 @@ MonoBehaviour:
   suit: 4
   cardPicture: {fileID: 0}
   cardPicture2x: {fileID: 21300000, guid: 1890e48c7edfeae46a5bffad9e6225d4, type: 3}
-  cardLongDescription: 'Seven of Wands: protection, challenges, fighting for your
-    beliefs^
+  cardLongDescription: 'Seven of Wands: challenges, fighting for your beliefs, protection^
 
 
     more words will go here'

@@ -87,6 +87,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2994974289	Card3Group11			\Default Work Unit\GenerativeCardGroups\Group11\Card3Group11	
 	2994974290	Card3Group12			\Default Work Unit\GenerativeCardGroups\Group12\Card3Group12	
 	2994974291	Card3Group13			\Default Work Unit\GenerativeCardGroups\Group13\Card3Group13	
+	3022449515	FiveOfWands			\Default Work Unit\CardEvents\Wands\FiveOfWands	
 	3069944916	Card2MajorArcana			\Default Work Unit\GenerativeCardSuits\Card2\Card2MajorArcana	
 	3072025101	Card3Minor			\Default Work Unit\GenerativeKeys\Card3\Card3Minor	
 	3108369491	Card3Dorian			\Default Work Unit\GenerativeKeys\Card3\Card3Dorian	
@@ -149,6 +150,7 @@ State	ID	Name	State Group			Notes
 	2478979318	AceOfCups	DuringReading			
 	2491223249	SixOfPentacles	DuringReading			
 	2631758982	TheFool	DuringReading			
+	3022449515	FiveOfWands	DuringReading			
 	3258053151	TheHangedMan	DuringReading			
 	3436307834	SixOfSwords	DuringReading			
 	3555933294	EightOfPentacles	DuringReading			
@@ -312,6 +314,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	414632439	TheHighPriestess	C:\Users\megan\WwiseProjects\Divinuet\.cache\Windows\SFX\TheHighPriestess_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Reading\Major Arcana\TheHighPriestess\TheHighPriestess\TheHighPriestess		645166
 	421490229	Low	C:\Users\megan\WwiseProjects\Divinuet\.cache\Windows\SFX\DT_LowBassoon_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Reading\Interlude\Interlude\Low		81926
 	457937205	TheStar	C:\Users\megan\WwiseProjects\Divinuet\.cache\Windows\SFX\TheStar_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Reading\Major Arcana\TheStar\TheStar\TheStar		757739
+	460855816	FiveOfWands	C:\Users\megan\WwiseProjects\Divinuet\.cache\Windows\SFX\FiveOfWands_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Reading\Wands\FiveOfWands\FiveOfWands\FiveOfWands		749671
 	461416098	Divinuet_SFX_Bird_10	C:\Users\megan\WwiseProjects\Divinuet\.cache\Windows\SFX\Divinuet_SFX_Bird_10_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Menu Background\ForestNoises\Divinuet_SFX_Bird_10		20770
 	467472294	Divinuet_SFX_Bird_5	C:\Users\megan\WwiseProjects\Divinuet\.cache\Windows\SFX\Divinuet_SFX_Bird_5_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Menu Background\ForestNoises\Divinuet_SFX_Bird_5		5772
 	473595532	!Viola melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Windows\SFX\Viola_Phrase2_Group12_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups2\!Viola melody		282893

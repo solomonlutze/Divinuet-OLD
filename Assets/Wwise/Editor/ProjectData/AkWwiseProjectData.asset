@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 316b02227919fc49a4528be3c11e0f41
     GuidInternal: 
-    m_lastTime: -8585518853053139625
+    m_lastTime: -8585515483416069050
     List:
     - name: Soundbank
       guid: 8d5e51ee7b34f042a6bee5955537fe07
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: bc617d844702964e9e3475116383ce13
     GuidInternal: 
-    m_lastTime: -8585518855556294323
+    m_lastTime: -8585515483416238846
     List:
     - name: AccompanimentCups
       guid: 3e9aa257f8dcda44ab5bc5d1fd033e9f
@@ -200,26 +200,6 @@ MonoBehaviour:
       maxDuration: -1
       minDuration: -1
     - name: Card1
-      guid: 9729ddca4af296458b38fa7bde665762
-      id: 4256484200
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: bc617d844702964e9e3475116383ce13
-      - ElementName: GenerativeCardSuits
-        ObjectType: 4
-        guid: 28593f14e9aa074aa5606fa20980a26e
-      - ElementName: Card1
-        ObjectType: 4
-        guid: 9729ddca4af296458b38fa7bde665762
-      Path: Events\Default Work Unit\GenerativeCardSuits\Card1
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Card1
       guid: 3b499bba8442254c8b7a0094deaa354d
       id: 4256484200
       PathAndIcons:
@@ -236,6 +216,26 @@ MonoBehaviour:
         ObjectType: 4
         guid: 3b499bba8442254c8b7a0094deaa354d
       Path: Events\Default Work Unit\GenerativeKeys\Card1
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Card1
+      guid: 9729ddca4af296458b38fa7bde665762
+      id: 4256484200
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: bc617d844702964e9e3475116383ce13
+      - ElementName: GenerativeCardSuits
+        ObjectType: 4
+        guid: 28593f14e9aa074aa5606fa20980a26e
+      - ElementName: Card1
+        ObjectType: 4
+        guid: 9729ddca4af296458b38fa7bde665762
+      Path: Events\Default Work Unit\GenerativeCardSuits\Card1
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -746,26 +746,6 @@ MonoBehaviour:
       maxDuration: 0
       minDuration: 0
     - name: Card2
-      guid: f1c4f2cfce4b0c4f9ecd3bb11e3ff261
-      id: 4256484203
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: bc617d844702964e9e3475116383ce13
-      - ElementName: GenerativeCardSuits
-        ObjectType: 4
-        guid: 28593f14e9aa074aa5606fa20980a26e
-      - ElementName: Card2
-        ObjectType: 4
-        guid: f1c4f2cfce4b0c4f9ecd3bb11e3ff261
-      Path: Events\Default Work Unit\GenerativeCardSuits\Card2
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Card2
       guid: c4deca9493a1494fad03e4becc94d350
       id: 4256484203
       PathAndIcons:
@@ -782,6 +762,26 @@ MonoBehaviour:
         ObjectType: 4
         guid: c4deca9493a1494fad03e4becc94d350
       Path: Events\Default Work Unit\GenerativeKeys\Card2
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Card2
+      guid: f1c4f2cfce4b0c4f9ecd3bb11e3ff261
+      id: 4256484203
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: bc617d844702964e9e3475116383ce13
+      - ElementName: GenerativeCardSuits
+        ObjectType: 4
+        guid: 28593f14e9aa074aa5606fa20980a26e
+      - ElementName: Card2
+        ObjectType: 4
+        guid: f1c4f2cfce4b0c4f9ecd3bb11e3ff261
+      Path: Events\Default Work Unit\GenerativeCardSuits\Card2
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -1292,26 +1292,6 @@ MonoBehaviour:
       maxDuration: 0
       minDuration: 0
     - name: Card3
-      guid: df8109c6d28aa246be2d41a190f30aa0
-      id: 4256484202
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: bc617d844702964e9e3475116383ce13
-      - ElementName: GenerativeCardSuits
-        ObjectType: 4
-        guid: 28593f14e9aa074aa5606fa20980a26e
-      - ElementName: Card3
-        ObjectType: 4
-        guid: df8109c6d28aa246be2d41a190f30aa0
-      Path: Events\Default Work Unit\GenerativeCardSuits\Card3
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Card3
       guid: 274b8ebafd6e8249bac85a5eb1e0cdc0
       id: 4256484202
       PathAndIcons:
@@ -1328,6 +1308,26 @@ MonoBehaviour:
         ObjectType: 4
         guid: 274b8ebafd6e8249bac85a5eb1e0cdc0
       Path: Events\Default Work Unit\GenerativeKeys\Card3
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Card3
+      guid: df8109c6d28aa246be2d41a190f30aa0
+      id: 4256484202
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: bc617d844702964e9e3475116383ce13
+      - ElementName: GenerativeCardSuits
+        ObjectType: 4
+        guid: 28593f14e9aa074aa5606fa20980a26e
+      - ElementName: Card3
+        ObjectType: 4
+        guid: df8109c6d28aa246be2d41a190f30aa0
+      Path: Events\Default Work Unit\GenerativeCardSuits\Card3
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -2000,6 +2000,29 @@ MonoBehaviour:
         ObjectType: 3
         guid: 0a2e042d23859f4c80bec0901c051ad3
       Path: Events\Default Work Unit\CardEvents\Cups\FiveOfCups
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: FiveOfWands
+      guid: 8289ea00c2e5424f8ed82f62934f79fc
+      id: 3022449515
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: bc617d844702964e9e3475116383ce13
+      - ElementName: CardEvents
+        ObjectType: 4
+        guid: b096310945b4bd4391e804c065b54e38
+      - ElementName: Wands
+        ObjectType: 4
+        guid: 18e910e317c4a04c8c04b0c8086b2110
+      - ElementName: FiveOfWands
+        ObjectType: 3
+        guid: 8289ea00c2e5424f8ed82f62934f79fc
+      Path: Events\Default Work Unit\CardEvents\Wands\FiveOfWands
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -3397,7 +3420,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 46c6d260267ae44a8030202cff271f3f
     GuidInternal: 
-    m_lastTime: -8585518855556433957
+    m_lastTime: -8585515483817823728
     List:
     - name: Card1Group
       guid: 637394fcc359c3459dcde70b789220f5
@@ -4760,6 +4783,22 @@ MonoBehaviour:
         - ElementName: FiveOfCups
           ObjectType: 8
           guid: d0dc40ad7e296349a3beb12aad7395ee
+      - name: FiveOfWands
+        guid: 74d88016489d794aa754d2a700119186
+        id: 3022449515
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 46c6d260267ae44a8030202cff271f3f
+        - ElementName: DuringReading
+          ObjectType: 9
+          guid: e159ce0e1e70de4f97d5abf8e953a03d
+        - ElementName: FiveOfWands
+          ObjectType: 8
+          guid: 74d88016489d794aa754d2a700119186
       - name: FourOfSwords
         guid: 9ae8da05a278c94fabf5509339f1b589
         id: 112666488
@@ -5815,7 +5854,7 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8585799860922854706
     List: []
-  ExpandedFileSystemItemIds: 0200000003000000050000000600000007000000090000001000000011000000370000004f0000006b000000810000008f000000950000009c0000009d0000009f000000b3000000b8000000bd000000
+  ExpandedFileSystemItemIds: 0200000003000000050000000600000007000000090000000e0000000f0000001100000036000000370000004e0000004f0000006b0000006e000000810000008f000000950000009c0000009d0000009f000000b3000000b8000000bd000000
   ExpandedWaapiItemIds: 0500000006000000090000000a0000008f000000950000009c0000009d0000009f000000b3000000b8000000bd000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1

@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="1661994096" Language="SFX" Hash="2045788824">
+		<SoundBank Id="1661994096" Language="SFX" Hash="1471553812">
 			<ObjectPath>\SoundBanks\Default Work Unit\Soundbank</ObjectPath>
 			<ShortName>Soundbank</ShortName>
 			<Path>Soundbank.bnk</Path>
@@ -550,6 +550,12 @@
 						<ActionSetStateEntry Id="1900785500" Name="AfterReadingBed" ObjectPath="\States\Default Work Unit\DuringReading\AfterReadingBed"/>
 					</ActionSetState>
 				</Event>
+				<Event Id="3022449515" Name="FiveOfWands" ObjectPath="\Events\Default Work Unit\CardEvents\Wands\FiveOfWands" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionSetState>
+						<ActionSetStateEntry Id="1900785500" Name="AfterReadingBed" ObjectPath="\States\Default Work Unit\DuringReading\AfterReadingBed"/>
+						<ActionSetStateEntry Id="3022449515" Name="FiveOfWands" ObjectPath="\States\Default Work Unit\DuringReading\FiveOfWands"/>
+					</ActionSetState>
+				</Event>
 				<Event Id="112666488" Name="FourOfSwords" ObjectPath="\Events\Default Work Unit\CardEvents\Swords\FourOfSwords" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
 					<ActionSetState>
 						<ActionSetStateEntry Id="112666488" Name="FourOfSwords" ObjectPath="\States\Default Work Unit\DuringReading\FourOfSwords"/>
@@ -881,6 +887,10 @@
 						<File Id="457937205" Language="SFX">
 							<ShortName>TheStar.wav</ShortName>
 							<Path>SFX\TheStar_9EDFC787.wem</Path>
+						</File>
+						<File Id="460855816" Language="SFX">
+							<ShortName>FiveOfWands.wav</ShortName>
+							<Path>SFX\FiveOfWands_9EDFC787.wem</Path>
 						</File>
 						<File Id="473595532" Language="SFX">
 							<ShortName>Viola_Phrase2_Group12.wav</ShortName>
@@ -1293,6 +1303,10 @@
 						<File Id="457937205" Language="SFX">
 							<ShortName>TheStar.wav</ShortName>
 							<Path>SFX\TheStar_9EDFC787.wem</Path>
+						</File>
+						<File Id="460855816" Language="SFX">
+							<ShortName>FiveOfWands.wav</ShortName>
+							<Path>SFX\FiveOfWands_9EDFC787.wem</Path>
 						</File>
 						<File Id="473595532" Language="SFX">
 							<ShortName>Viola_Phrase2_Group12.wav</ShortName>
@@ -1727,6 +1741,11 @@
 								<SwitchContainer SwitchValue="{841EA8A2-C9CB-4487-9964-83662CAEE12F}">
 									<Media>
 										<File Id="644631396"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{1680D874-9D48-4A79-A754-D2A700119186}">
+									<Media>
+										<File Id="460855816"/>
 									</Media>
 								</SwitchContainer>
 							</Children>
@@ -2212,6 +2231,7 @@
 						<State Id="1900785500" Name="AfterReadingBed" ObjectPath="\States\Default Work Unit\DuringReading\AfterReadingBed"/>
 						<State Id="3258053151" Name="TheHangedMan" ObjectPath="\States\Default Work Unit\DuringReading\TheHangedMan"/>
 						<State Id="3661391600" Name="SevenOfWands" ObjectPath="\States\Default Work Unit\DuringReading\SevenOfWands"/>
+						<State Id="3022449515" Name="FiveOfWands" ObjectPath="\States\Default Work Unit\DuringReading\FiveOfWands"/>
 					</States>
 				</StateGroup>
 				<StateGroup Id="1008270286" Name="Strength" ObjectPath="\States\Default Work Unit\DuringReading\Strength">
@@ -2389,6 +2409,9 @@
 					<States/>
 				</StateGroup>
 				<StateGroup Id="2994974291" Name="Card3Group13" ObjectPath="\States\Default Work Unit\GenerativeCardGroups\Card3Group\Card3Group13">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="3022449515" Name="FiveOfWands" ObjectPath="\States\Default Work Unit\DuringReading\FiveOfWands">
 					<States/>
 				</StateGroup>
 				<StateGroup Id="3069944916" Name="Card2MajorArcana" ObjectPath="\States\Default Work Unit\GenerativeCardSuits\Card2Suit\Card2MajorArcana">
