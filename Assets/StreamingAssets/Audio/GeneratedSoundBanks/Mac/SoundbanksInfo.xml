@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="1661994096" Language="SFX" Hash="1471553812">
+		<SoundBank Id="1661994096" Language="SFX" Hash="3411723168">
 			<ObjectPath>\SoundBanks\Default Work Unit\Soundbank</ObjectPath>
 			<ShortName>Soundbank</ShortName>
 			<Path>Soundbank.bnk</Path>
@@ -29,6 +29,26 @@
 				<Event Id="802427635" Name="AccompanimentMajorArcana" ObjectPath="\Events\Default Work Unit\GenerativeAccompaniment\AccompanimentMajorArcana" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
 					<ActionSetState>
 						<ActionSetStateEntry Id="798166914" Name="MajorArcana" ObjectPath="\States\Default Work Unit\GenerativeAccompanment\MajorArcana"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="2253610385" Name="AccompanimentNull" ObjectPath="\Events\Default Work Unit\GenerativeAccompaniment\AccompanimentNull" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionSetState>
+						<ActionSetStateEntry Id="784127654" Name="Null" ObjectPath="\States\Default Work Unit\GenerativeAccompanment\Null"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="2401993111" Name="AccompanimentPentacles" ObjectPath="\Events\Default Work Unit\GenerativeAccompaniment\AccompanimentPentacles" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionSetState>
+						<ActionSetStateEntry Id="495557850" Name="Pentacles" ObjectPath="\States\Default Work Unit\GenerativeAccompanment\Pentacles"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="820727340" Name="AccompanimentSwords" ObjectPath="\Events\Default Work Unit\GenerativeAccompaniment\AccompanimentSwords" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionSetState>
+						<ActionSetStateEntry Id="361241855" Name="Swords" ObjectPath="\States\Default Work Unit\GenerativeAccompanment\Swords"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="816211659" Name="AccompanimentWands" ObjectPath="\Events\Default Work Unit\GenerativeAccompaniment\AccompanimentWands" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionSetState>
+						<ActionSetStateEntry Id="2202738146" Name="Wands" ObjectPath="\States\Default Work Unit\GenerativeAccompanment\Wands"/>
 					</ActionSetState>
 				</Event>
 				<Event Id="2478979318" Name="AceOfCups" ObjectPath="\Events\Default Work Unit\CardEvents\Cups\AceOfCups" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
@@ -579,6 +599,12 @@
 						<ActionSetStateEntry Id="1900785500" Name="AfterReadingBed" ObjectPath="\States\Default Work Unit\DuringReading\AfterReadingBed"/>
 					</ActionSetState>
 				</Event>
+				<Event Id="3530681053" Name="KingOfSwords" ObjectPath="\Events\Default Work Unit\CardEvents\Swords\KingOfSwords" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionSetState>
+						<ActionSetStateEntry Id="1900785500" Name="AfterReadingBed" ObjectPath="\States\Default Work Unit\DuringReading\AfterReadingBed"/>
+						<ActionSetStateEntry Id="3530681053" Name="KingOfSwords" ObjectPath="\States\Default Work Unit\DuringReading\KingOfSwords"/>
+					</ActionSetState>
+				</Event>
 				<Event Id="3161908922" Name="Main" ObjectPath="\Events\Default Work Unit\GenerativePart\Main" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
 					<ActionSetState>
 						<ActionSetStateEntry Id="3161908922" Name="Main" ObjectPath="\States\Default Work Unit\GenerativePart\Main"/>
@@ -712,6 +738,12 @@
 						<ActionSetStateEntry Id="1963057671" Name="NineOfPentacles" ObjectPath="\States\Default Work Unit\DuringReading\NineOfPentacles"/>
 					</ActionSetState>
 				</Event>
+				<Event Id="3394600732" Name="NineOfSwords" ObjectPath="\Events\Default Work Unit\CardEvents\Swords\NineOfSwords" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionSetState>
+						<ActionSetStateEntry Id="1900785500" Name="AfterReadingBed" ObjectPath="\States\Default Work Unit\DuringReading\AfterReadingBed"/>
+						<ActionSetStateEntry Id="3394600732" Name="NineOfSwords" ObjectPath="\States\Default Work Unit\DuringReading\NineOfSwords"/>
+					</ActionSetState>
+				</Event>
 				<Event Id="784127654" Name="Null" ObjectPath="\Events\Default Work Unit\GenerativeStates\Bass\Null" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
 					<ActionSetState>
 						<ActionSetStateEntry Id="784127654" Name="Null" ObjectPath="\States\Default Work Unit\GenerativeAccompanment\Null"/>
@@ -736,6 +768,14 @@
 							<ShortName>WandsKalimba_Phrase3_Group8.wav</ShortName>
 							<Path>SFX\WandsKalimba_Phrase3_Group8_9EDFC787.wem</Path>
 						</File>
+						<File Id="18063816" Language="SFX">
+							<ShortName>GenerativePentacles_Part2_Minor.wav</ShortName>
+							<Path>SFX\GenerativePentacles_Part2_Minor_9EDFC787.wem</Path>
+						</File>
+						<File Id="31266562" Language="SFX">
+							<ShortName>GenerativeMajorArcana_Part3_Minor.wav</ShortName>
+							<Path>SFX\GenerativeMajorArcana_Part3_Minor_9EDFC787.wem</Path>
+						</File>
 						<File Id="31391632" Language="SFX">
 							<ShortName>TenOfSwords.wav</ShortName>
 							<Path>SFX\TenOfSwords_9EDFC787.wem</Path>
@@ -752,6 +792,10 @@
 							<ShortName>DT_MidPiano.wav</ShortName>
 							<Path>SFX\DT_MidPiano_9EDFC787.wem</Path>
 						</File>
+						<File Id="67502600" Language="SFX">
+							<ShortName>GenerativeMajorArcana_Part3_Major1.wav</ShortName>
+							<Path>SFX\GenerativeMajorArcana_Part3_Major1_9EDFC787.wem</Path>
+						</File>
 						<File Id="71147250" Language="SFX">
 							<ShortName>Viola_Phrase2_Group8.wav</ShortName>
 							<Path>SFX\Viola_Phrase2_Group8_9EDFC787.wem</Path>
@@ -764,9 +808,17 @@
 							<ShortName>WheelOfFortune_roughmix.wav</ShortName>
 							<Path>SFX\WheelOfFortune_roughmix_9EDFC787.wem</Path>
 						</File>
+						<File Id="107998518" Language="SFX">
+							<ShortName>GenerativeWands_Part1_Major1.wav</ShortName>
+							<Path>SFX\GenerativeWands_Part1_Major1_9EDFC787.wem</Path>
+						</File>
 						<File Id="121065905" Language="SFX">
 							<ShortName>MajorArcanaHarp_Phrase1_Group9.wav</ShortName>
 							<Path>SFX\MajorArcanaHarp_Phrase1_Group9_9EDFC787.wem</Path>
+						</File>
+						<File Id="126786397" Language="SFX">
+							<ShortName>Viola_Phrase1_Group6.wav</ShortName>
+							<Path>SFX\Viola_Phrase1_Group6_9EDFC787.wem</Path>
 						</File>
 						<File Id="129425396" Language="SFX">
 							<ShortName>Viola_Phrase3_Group2.wav</ShortName>
@@ -779,6 +831,10 @@
 						<File Id="136069082" Language="SFX">
 							<ShortName>Viola_Phrase2_Group11.wav</ShortName>
 							<Path>SFX\Viola_Phrase2_Group11_9EDFC787.wem</Path>
+						</File>
+						<File Id="152546415" Language="SFX">
+							<ShortName>GenerativePentacles_Part3_Dorian.wav</ShortName>
+							<Path>SFX\GenerativePentacles_Part3_Dorian_9EDFC787.wem</Path>
 						</File>
 						<File Id="156388177" Language="SFX">
 							<ShortName>GenerativeCups_Part3_Major1.wav</ShortName>
@@ -800,6 +856,10 @@
 							<ShortName>Strength.wav</ShortName>
 							<Path>SFX\Strength_9EDFC787.wem</Path>
 						</File>
+						<File Id="198385087" Language="SFX">
+							<ShortName>GenerativeWands_Part2_Major1.wav</ShortName>
+							<Path>SFX\GenerativeWands_Part2_Major1_9EDFC787.wem</Path>
+						</File>
 						<File Id="200057738" Language="SFX">
 							<ShortName>GenerativeCups_Part3_Minor.wav</ShortName>
 							<Path>SFX\GenerativeCups_Part3_Minor_9EDFC787.wem</Path>
@@ -808,9 +868,17 @@
 							<ShortName>GenerativeCups_Part1_Minor.wav</ShortName>
 							<Path>SFX\GenerativeCups_Part1_Minor_9EDFC787.wem</Path>
 						</File>
+						<File Id="212159877" Language="SFX">
+							<ShortName>GenerativeWands_Part3_Major2.wav</ShortName>
+							<Path>SFX\GenerativeWands_Part3_Major2_9EDFC787.wem</Path>
+						</File>
 						<File Id="218271841" Language="SFX">
 							<ShortName>TheFool.wav</ShortName>
 							<Path>SFX\TheFool_9EDFC787.wem</Path>
+						</File>
+						<File Id="220452914" Language="SFX">
+							<ShortName>Viola_Phrase3_Group6.wav</ShortName>
+							<Path>SFX\Viola_Phrase3_Group6_9EDFC787.wem</Path>
 						</File>
 						<File Id="222634654" Language="SFX">
 							<ShortName>FourOfSwords.wav</ShortName>
@@ -819,6 +887,14 @@
 						<File Id="228812739" Language="SFX">
 							<ShortName>DT_LowSynthPad.wav</ShortName>
 							<Path>SFX\DT_LowSynthPad_9EDFC787.wem</Path>
+						</File>
+						<File Id="229522667" Language="SFX">
+							<ShortName>GenerativeMajorArcana_Part1_Dorian.wav</ShortName>
+							<Path>SFX\GenerativeMajorArcana_Part1_Dorian_9EDFC787.wem</Path>
+						</File>
+						<File Id="230706927" Language="SFX">
+							<ShortName>GenerativeSwords_Part3_Minor.wav</ShortName>
+							<Path>SFX\GenerativeSwords_Part3_Minor_9EDFC787.wem</Path>
 						</File>
 						<File Id="233626674" Language="SFX">
 							<ShortName>DT_LowPiano.wav</ShortName>
@@ -836,9 +912,21 @@
 							<ShortName>SwordsWurli_Phrase1_Group8.wav</ShortName>
 							<Path>SFX\SwordsWurli_Phrase1_Group8_9EDFC787.wem</Path>
 						</File>
+						<File Id="270591954" Language="SFX">
+							<ShortName>GenerativePentacles_Part1_Minor.wav</ShortName>
+							<Path>SFX\GenerativePentacles_Part1_Minor_9EDFC787.wem</Path>
+						</File>
+						<File Id="272987903" Language="SFX">
+							<ShortName>NineOfSwords.wav</ShortName>
+							<Path>SFX\NineOfSwords_9EDFC787.wem</Path>
+						</File>
 						<File Id="274876220" Language="SFX">
 							<ShortName>Viola_Phrase3_Group8.wav</ShortName>
 							<Path>SFX\Viola_Phrase3_Group8_9EDFC787.wem</Path>
+						</File>
+						<File Id="276073546" Language="SFX">
+							<ShortName>ThreeOfCups.wav</ShortName>
+							<Path>SFX\ThreeOfCups_9EDFC787.wem</Path>
 						</File>
 						<File Id="279666286" Language="SFX">
 							<ShortName>DT_LowHarp.wav</ShortName>
@@ -852,6 +940,22 @@
 							<ShortName>GenerativeCups_Part2_Minor.wav</ShortName>
 							<Path>SFX\GenerativeCups_Part2_Minor_9EDFC787.wem</Path>
 						</File>
+						<File Id="282583232" Language="SFX">
+							<ShortName>GenerativePentacles_Part3_Minor.wav</ShortName>
+							<Path>SFX\GenerativePentacles_Part3_Minor_9EDFC787.wem</Path>
+						</File>
+						<File Id="282808218" Language="SFX">
+							<ShortName>GenerativeSwords_Part3_Dorian.wav</ShortName>
+							<Path>SFX\GenerativeSwords_Part3_Dorian_9EDFC787.wem</Path>
+						</File>
+						<File Id="290284714" Language="SFX">
+							<ShortName>GenerativeSwords_Part1_Dorian.wav</ShortName>
+							<Path>SFX\GenerativeSwords_Part1_Dorian_9EDFC787.wem</Path>
+						</File>
+						<File Id="294140689" Language="SFX">
+							<ShortName>GenerativeMajorArcana_Part1_Major1.wav</ShortName>
+							<Path>SFX\GenerativeMajorArcana_Part1_Major1_9EDFC787.wem</Path>
+						</File>
 						<File Id="294194485" Language="SFX">
 							<ShortName>GenerativeCups_Part3_Major2.wav</ShortName>
 							<Path>SFX\GenerativeCups_Part3_Major2_9EDFC787.wem</Path>
@@ -859,6 +963,10 @@
 						<File Id="296588914" Language="SFX">
 							<ShortName>PentaclesDulcimer_Phrase3_Group9.wav</ShortName>
 							<Path>SFX\PentaclesDulcimer_Phrase3_Group9_9EDFC787.wem</Path>
+						</File>
+						<File Id="307227647" Language="SFX">
+							<ShortName>GenerativeWands_Part3_Major1.wav</ShortName>
+							<Path>SFX\GenerativeWands_Part3_Major1_9EDFC787.wem</Path>
 						</File>
 						<File Id="324473811" Language="SFX">
 							<ShortName>TheEmpress.wav</ShortName>
@@ -868,9 +976,37 @@
 							<ShortName>DT_LowCelloBow.wav</ShortName>
 							<Path>SFX\DT_LowCelloBow_9EDFC787.wem</Path>
 						</File>
+						<File Id="329137962" Language="SFX">
+							<ShortName>GenerativeSwords_Part2_Minor.wav</ShortName>
+							<Path>SFX\GenerativeSwords_Part2_Minor_9EDFC787.wem</Path>
+						</File>
 						<File Id="329431951" Language="SFX">
 							<ShortName>TenOfCups.wav</ShortName>
 							<Path>SFX\TenOfCups_9EDFC787.wem</Path>
+						</File>
+						<File Id="338895552" Language="SFX">
+							<ShortName>GenerativeMajorArcana_Intro.wav</ShortName>
+							<Path>SFX\GenerativeMajorArcana_Intro_9EDFC787.wem</Path>
+						</File>
+						<File Id="346536830" Language="SFX">
+							<ShortName>GenerativePentacles_Part2_Major2.wav</ShortName>
+							<Path>SFX\GenerativePentacles_Part2_Major2_9EDFC787.wem</Path>
+						</File>
+						<File Id="367926471" Language="SFX">
+							<ShortName>Viola_Phrase2_Group6.wav</ShortName>
+							<Path>SFX\Viola_Phrase2_Group6_9EDFC787.wem</Path>
+						</File>
+						<File Id="369813794" Language="SFX">
+							<ShortName>GenerativeSwords_Part2_Dorian.wav</ShortName>
+							<Path>SFX\GenerativeSwords_Part2_Dorian_9EDFC787.wem</Path>
+						</File>
+						<File Id="381298610" Language="SFX">
+							<ShortName>GenerativeMajorArcana_Part3_Major2.wav</ShortName>
+							<Path>SFX\GenerativeMajorArcana_Part3_Major2_9EDFC787.wem</Path>
+						</File>
+						<File Id="383751382" Language="SFX">
+							<ShortName>GenerativePentacles_Part3_Major2.wav</ShortName>
+							<Path>SFX\GenerativePentacles_Part3_Major2_9EDFC787.wem</Path>
 						</File>
 						<File Id="384376340" Language="SFX">
 							<ShortName>GenerativeCups_Part1_Dorian.wav</ShortName>
@@ -879,6 +1015,10 @@
 						<File Id="414632439" Language="SFX">
 							<ShortName>TheHighPriestess.wav</ShortName>
 							<Path>SFX\TheHighPriestess_9EDFC787.wem</Path>
+						</File>
+						<File Id="415664266" Language="SFX">
+							<ShortName>GenerativeWands_Part2_Minor.wav</ShortName>
+							<Path>SFX\GenerativeWands_Part2_Minor_9EDFC787.wem</Path>
 						</File>
 						<File Id="421490229" Language="SFX">
 							<ShortName>DT_LowBassoon.wav</ShortName>
@@ -892,6 +1032,10 @@
 							<ShortName>FiveOfWands.wav</ShortName>
 							<Path>SFX\FiveOfWands_9EDFC787.wem</Path>
 						</File>
+						<File Id="461794263" Language="SFX">
+							<ShortName>GenerativeSwords_Part3_Major1.wav</ShortName>
+							<Path>SFX\GenerativeSwords_Part3_Major1_9EDFC787.wem</Path>
+						</File>
 						<File Id="473595532" Language="SFX">
 							<ShortName>Viola_Phrase2_Group12.wav</ShortName>
 							<Path>SFX\Viola_Phrase2_Group12_9EDFC787.wem</Path>
@@ -900,17 +1044,33 @@
 							<ShortName>MajorArcanaHarp_Phrase2_Group9.wav</ShortName>
 							<Path>SFX\MajorArcanaHarp_Phrase2_Group9_9EDFC787.wem</Path>
 						</File>
+						<File Id="482282294" Language="SFX">
+							<ShortName>TheHermit.wav</ShortName>
+							<Path>SFX\TheHermit_9EDFC787.wem</Path>
+						</File>
 						<File Id="493584090" Language="SFX">
 							<ShortName>TheMagician.wav</ShortName>
 							<Path>SFX\TheMagician_9EDFC787.wem</Path>
+						</File>
+						<File Id="500260132" Language="SFX">
+							<ShortName>GenerativeMajorArcana_Part2_Major1.wav</ShortName>
+							<Path>SFX\GenerativeMajorArcana_Part2_Major1_9EDFC787.wem</Path>
 						</File>
 						<File Id="500694944" Language="SFX">
 							<ShortName>SevenOfPentacles.wav</ShortName>
 							<Path>SFX\SevenOfPentacles_9EDFC787.wem</Path>
 						</File>
+						<File Id="504172983" Language="SFX">
+							<ShortName>GenerativePentacles_Part1_Major1.wav</ShortName>
+							<Path>SFX\GenerativePentacles_Part1_Major1_9EDFC787.wem</Path>
+						</File>
 						<File Id="504679811" Language="SFX">
 							<ShortName>GenerativeToReadingTransition.wav</ShortName>
 							<Path>SFX\GenerativeToReadingTransition_9EDFC787.wem</Path>
+						</File>
+						<File Id="507766503" Language="SFX">
+							<ShortName>QueenOfWands.wav</ShortName>
+							<Path>SFX\QueenOfWands_9EDFC787.wem</Path>
 						</File>
 						<File Id="516145389" Language="SFX">
 							<ShortName>TheMoon.wav</ShortName>
@@ -928,6 +1088,10 @@
 							<ShortName>KingOfCups.wav</ShortName>
 							<Path>SFX\KingOfCups_9EDFC787.wem</Path>
 						</File>
+						<File Id="586071285" Language="SFX">
+							<ShortName>GenerativeWands_Part2_Dorian.wav</ShortName>
+							<Path>SFX\GenerativeWands_Part2_Dorian_9EDFC787.wem</Path>
+						</File>
 						<File Id="590389761" Language="SFX">
 							<ShortName>CupsPiano_Phrase3_Group11.wav</ShortName>
 							<Path>SFX\CupsPiano_Phrase3_Group11_9EDFC787.wem</Path>
@@ -936,9 +1100,25 @@
 							<ShortName>NineOfPentacles.wav</ShortName>
 							<Path>SFX\NineOfPentacles_9EDFC787.wem</Path>
 						</File>
+						<File Id="599810603" Language="SFX">
+							<ShortName>GenerativeSwords_Part2_Major1.wav</ShortName>
+							<Path>SFX\GenerativeSwords_Part2_Major1_9EDFC787.wem</Path>
+						</File>
+						<File Id="608603622" Language="SFX">
+							<ShortName>GenerativeMajorArcana_Part2_Minor.wav</ShortName>
+							<Path>SFX\GenerativeMajorArcana_Part2_Minor_9EDFC787.wem</Path>
+						</File>
+						<File Id="611353522" Language="SFX">
+							<ShortName>GenerativeMajorArcana_Part1_Major2.wav</ShortName>
+							<Path>SFX\GenerativeMajorArcana_Part1_Major2_9EDFC787.wem</Path>
+						</File>
 						<File Id="616349379" Language="SFX">
 							<ShortName>SevenOfCups.wav</ShortName>
 							<Path>SFX\SevenOfCups_9EDFC787.wem</Path>
+						</File>
+						<File Id="619720160" Language="SFX">
+							<ShortName>GenerativeWands_Part1_Minor.wav</ShortName>
+							<Path>SFX\GenerativeWands_Part1_Minor_9EDFC787.wem</Path>
 						</File>
 						<File Id="620254185" Language="SFX">
 							<ShortName>MakingSongToGenerativeTransition.wav</ShortName>
@@ -948,9 +1128,17 @@
 							<ShortName>PentaclesDulcimer_Phrase1_Group9.wav</ShortName>
 							<Path>SFX\PentaclesDulcimer_Phrase1_Group9_9EDFC787.wem</Path>
 						</File>
+						<File Id="627476462" Language="SFX">
+							<ShortName>GenerativeMajorArcana_Part1_Minor.wav</ShortName>
+							<Path>SFX\GenerativeMajorArcana_Part1_Minor_9EDFC787.wem</Path>
+						</File>
 						<File Id="627831526" Language="SFX">
 							<ShortName>MajorArcanaHarp_Phrase1_Group11.wav</ShortName>
 							<Path>SFX\MajorArcanaHarp_Phrase1_Group11_9EDFC787.wem</Path>
+						</File>
+						<File Id="631819254" Language="SFX">
+							<ShortName>GenerativeWands_Part3_Dorian.wav</ShortName>
+							<Path>SFX\GenerativeWands_Part3_Dorian_9EDFC787.wem</Path>
 						</File>
 						<File Id="635107510" Language="SFX">
 							<ShortName>Viola_Phrase1_Group11.wav</ShortName>
@@ -980,9 +1168,17 @@
 							<ShortName>CupsPiano_Phrase2_Group11.wav</ShortName>
 							<Path>SFX\CupsPiano_Phrase2_Group11_9EDFC787.wem</Path>
 						</File>
+						<File Id="684660360" Language="SFX">
+							<ShortName>GenerativePentacles_Part2_Major1.wav</ShortName>
+							<Path>SFX\GenerativePentacles_Part2_Major1_9EDFC787.wem</Path>
+						</File>
 						<File Id="696998161" Language="SFX">
 							<ShortName>WandsKalimba_Phrase2_Group8.wav</ShortName>
 							<Path>SFX\WandsKalimba_Phrase2_Group8_9EDFC787.wem</Path>
+						</File>
+						<File Id="708443093" Language="SFX">
+							<ShortName>GenerativePentacles_Part2_Dorian.wav</ShortName>
+							<Path>SFX\GenerativePentacles_Part2_Dorian_9EDFC787.wem</Path>
 						</File>
 						<File Id="720383636" Language="SFX">
 							<ShortName>DT_MidPiano2.wav</ShortName>
@@ -1020,9 +1216,17 @@
 							<ShortName>MajorArcanaHarp_Phrase2_Group8.wav</ShortName>
 							<Path>SFX\MajorArcanaHarp_Phrase2_Group8_9EDFC787.wem</Path>
 						</File>
+						<File Id="779457774" Language="SFX">
+							<ShortName>GenerativePentacles_Part3_Major1.wav</ShortName>
+							<Path>SFX\GenerativePentacles_Part3_Major1_9EDFC787.wem</Path>
+						</File>
 						<File Id="781001668" Language="SFX">
 							<ShortName>SwordsWurli_Phrase1_Group9.wav</ShortName>
 							<Path>SFX\SwordsWurli_Phrase1_Group9_9EDFC787.wem</Path>
+						</File>
+						<File Id="783863844" Language="SFX">
+							<ShortName>GenerativeSwords_Part3_Major2.wav</ShortName>
+							<Path>SFX\GenerativeSwords_Part3_Major2_9EDFC787.wem</Path>
 						</File>
 						<File Id="792819868" Language="SFX">
 							<ShortName>Viola_Phrase3_Group9.wav</ShortName>
@@ -1036,6 +1240,10 @@
 							<ShortName>Death.wav</ShortName>
 							<Path>SFX\Death_9EDFC787.wem</Path>
 						</File>
+						<File Id="805431720" Language="SFX">
+							<ShortName>KingOfSwords.wav</ShortName>
+							<Path>SFX\KingOfSwords_9EDFC787.wem</Path>
+						</File>
 						<File Id="807196764" Language="SFX">
 							<ShortName>TwoOfWands.wav</ShortName>
 							<Path>SFX\TwoOfWands_9EDFC787.wem</Path>
@@ -1043,6 +1251,10 @@
 						<File Id="816851278" Language="SFX">
 							<ShortName>DT_HighClarinet.wav</ShortName>
 							<Path>SFX\DT_HighClarinet_9EDFC787.wem</Path>
+						</File>
+						<File Id="824918613" Language="SFX">
+							<ShortName>GenerativeSwords_Part1_Major2.wav</ShortName>
+							<Path>SFX\GenerativeSwords_Part1_Major2_9EDFC787.wem</Path>
 						</File>
 						<File Id="836976950" Language="SFX">
 							<ShortName>DT_HighSpooky.wav</ShortName>
@@ -1063,6 +1275,26 @@
 						<File Id="866630420" Language="SFX">
 							<ShortName>CupsPiano_Phrase3_Group2.wav</ShortName>
 							<Path>SFX\CupsPiano_Phrase3_Group2_9EDFC787.wem</Path>
+						</File>
+						<File Id="867224572" Language="SFX">
+							<ShortName>GenerativeMajorArcana_Part2_Major2.wav</ShortName>
+							<Path>SFX\GenerativeMajorArcana_Part2_Major2_9EDFC787.wem</Path>
+						</File>
+						<File Id="870985945" Language="SFX">
+							<ShortName>GenerativePentacles_Part1_Dorian.wav</ShortName>
+							<Path>SFX\GenerativePentacles_Part1_Dorian_9EDFC787.wem</Path>
+						</File>
+						<File Id="888142988" Language="SFX">
+							<ShortName>GenerativeSwords_Part1_Major1.wav</ShortName>
+							<Path>SFX\GenerativeSwords_Part1_Major1_9EDFC787.wem</Path>
+						</File>
+						<File Id="890303670" Language="SFX">
+							<ShortName>GenerativeMajorArcana_Part3_Dorian.wav</ShortName>
+							<Path>SFX\GenerativeMajorArcana_Part3_Dorian_9EDFC787.wem</Path>
+						</File>
+						<File Id="899113620" Language="SFX">
+							<ShortName>GenerativeWands_Part3_Minor.wav</ShortName>
+							<Path>SFX\GenerativeWands_Part3_Minor_9EDFC787.wem</Path>
 						</File>
 						<File Id="906097638" Language="SFX">
 							<ShortName>MajorArcanaHarp_Phrase2_Group12.wav</ShortName>
@@ -1100,9 +1332,17 @@
 							<ShortName>Viola_Phrase2_Group9.wav</ShortName>
 							<Path>SFX\Viola_Phrase2_Group9_9EDFC787.wem</Path>
 						</File>
+						<File Id="972970452" Language="SFX">
+							<ShortName>GenerativePentacles_Part1_Major2.wav</ShortName>
+							<Path>SFX\GenerativePentacles_Part1_Major2_9EDFC787.wem</Path>
+						</File>
 						<File Id="976564632" Language="SFX">
 							<ShortName>MajorArcanaHarp_Phrase3_Group8.wav</ShortName>
 							<Path>SFX\MajorArcanaHarp_Phrase3_Group8_9EDFC787.wem</Path>
+						</File>
+						<File Id="1001358609" Language="SFX">
+							<ShortName>GenerativeWands_Part1_Dorian.wav</ShortName>
+							<Path>SFX\GenerativeWands_Part1_Dorian_9EDFC787.wem</Path>
 						</File>
 						<File Id="1005469300" Language="SFX">
 							<ShortName>GenerativeCups_Part2_Major1.wav</ShortName>
@@ -1111,6 +1351,10 @@
 						<File Id="1013527528" Language="SFX">
 							<ShortName>KingOfPentacles.wav</ShortName>
 							<Path>SFX\KingOfPentacles_9EDFC787.wem</Path>
+						</File>
+						<File Id="1017520918" Language="SFX">
+							<ShortName>GenerativeSwords_Part2_Major2.wav</ShortName>
+							<Path>SFX\GenerativeSwords_Part2_Major2_9EDFC787.wem</Path>
 						</File>
 						<File Id="1024868010" Language="SFX">
 							<ShortName>GenerativeCups_Part2_Major2.wav</ShortName>
@@ -1124,6 +1368,18 @@
 							<ShortName>MajorArcanaHarp_Phrase3_Group11.wav</ShortName>
 							<Path>SFX\MajorArcanaHarp_Phrase3_Group11_9EDFC787.wem</Path>
 						</File>
+						<File Id="1037353036" Language="SFX">
+							<ShortName>GenerativeMajorArcana_Part2_Dorian.wav</ShortName>
+							<Path>SFX\GenerativeMajorArcana_Part2_Dorian_9EDFC787.wem</Path>
+						</File>
+						<File Id="1039665456" Language="SFX">
+							<ShortName>GenerativeSwords_Part1_Minor.wav</ShortName>
+							<Path>SFX\GenerativeSwords_Part1_Minor_9EDFC787.wem</Path>
+						</File>
+						<File Id="1051404422" Language="SFX">
+							<ShortName>GenerativeWands_Part2_Major2.wav</ShortName>
+							<Path>SFX\GenerativeWands_Part2_Major2_9EDFC787.wem</Path>
+						</File>
 						<File Id="1054585838" Language="SFX">
 							<ShortName>DT_HighFlute.wav</ShortName>
 							<Path>SFX\DT_HighFlute_9EDFC787.wem</Path>
@@ -1135,6 +1391,10 @@
 						<File Id="1070576366" Language="SFX">
 							<ShortName>GenerativeCups_Part2_Dorian.wav</ShortName>
 							<Path>SFX\GenerativeCups_Part2_Dorian_9EDFC787.wem</Path>
+						</File>
+						<File Id="1071148328" Language="SFX">
+							<ShortName>GenerativeWands_Part1_Major2.wav</ShortName>
+							<Path>SFX\GenerativeWands_Part1_Major2_9EDFC787.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -1152,6 +1412,14 @@
 							<ShortName>WandsKalimba_Phrase3_Group8.wav</ShortName>
 							<Path>SFX\WandsKalimba_Phrase3_Group8_9EDFC787.wem</Path>
 						</File>
+						<File Id="18063816" Language="SFX">
+							<ShortName>GenerativePentacles_Part2_Minor.wav</ShortName>
+							<Path>SFX\GenerativePentacles_Part2_Minor_9EDFC787.wem</Path>
+						</File>
+						<File Id="31266562" Language="SFX">
+							<ShortName>GenerativeMajorArcana_Part3_Minor.wav</ShortName>
+							<Path>SFX\GenerativeMajorArcana_Part3_Minor_9EDFC787.wem</Path>
+						</File>
 						<File Id="31391632" Language="SFX">
 							<ShortName>TenOfSwords.wav</ShortName>
 							<Path>SFX\TenOfSwords_9EDFC787.wem</Path>
@@ -1168,6 +1436,10 @@
 							<ShortName>DT_MidPiano.wav</ShortName>
 							<Path>SFX\DT_MidPiano_9EDFC787.wem</Path>
 						</File>
+						<File Id="67502600" Language="SFX">
+							<ShortName>GenerativeMajorArcana_Part3_Major1.wav</ShortName>
+							<Path>SFX\GenerativeMajorArcana_Part3_Major1_9EDFC787.wem</Path>
+						</File>
 						<File Id="71147250" Language="SFX">
 							<ShortName>Viola_Phrase2_Group8.wav</ShortName>
 							<Path>SFX\Viola_Phrase2_Group8_9EDFC787.wem</Path>
@@ -1180,9 +1452,17 @@
 							<ShortName>WheelOfFortune_roughmix.wav</ShortName>
 							<Path>SFX\WheelOfFortune_roughmix_9EDFC787.wem</Path>
 						</File>
+						<File Id="107998518" Language="SFX">
+							<ShortName>GenerativeWands_Part1_Major1.wav</ShortName>
+							<Path>SFX\GenerativeWands_Part1_Major1_9EDFC787.wem</Path>
+						</File>
 						<File Id="121065905" Language="SFX">
 							<ShortName>MajorArcanaHarp_Phrase1_Group9.wav</ShortName>
 							<Path>SFX\MajorArcanaHarp_Phrase1_Group9_9EDFC787.wem</Path>
+						</File>
+						<File Id="126786397" Language="SFX">
+							<ShortName>Viola_Phrase1_Group6.wav</ShortName>
+							<Path>SFX\Viola_Phrase1_Group6_9EDFC787.wem</Path>
 						</File>
 						<File Id="129425396" Language="SFX">
 							<ShortName>Viola_Phrase3_Group2.wav</ShortName>
@@ -1195,6 +1475,10 @@
 						<File Id="136069082" Language="SFX">
 							<ShortName>Viola_Phrase2_Group11.wav</ShortName>
 							<Path>SFX\Viola_Phrase2_Group11_9EDFC787.wem</Path>
+						</File>
+						<File Id="152546415" Language="SFX">
+							<ShortName>GenerativePentacles_Part3_Dorian.wav</ShortName>
+							<Path>SFX\GenerativePentacles_Part3_Dorian_9EDFC787.wem</Path>
 						</File>
 						<File Id="156388177" Language="SFX">
 							<ShortName>GenerativeCups_Part3_Major1.wav</ShortName>
@@ -1216,6 +1500,10 @@
 							<ShortName>Strength.wav</ShortName>
 							<Path>SFX\Strength_9EDFC787.wem</Path>
 						</File>
+						<File Id="198385087" Language="SFX">
+							<ShortName>GenerativeWands_Part2_Major1.wav</ShortName>
+							<Path>SFX\GenerativeWands_Part2_Major1_9EDFC787.wem</Path>
+						</File>
 						<File Id="200057738" Language="SFX">
 							<ShortName>GenerativeCups_Part3_Minor.wav</ShortName>
 							<Path>SFX\GenerativeCups_Part3_Minor_9EDFC787.wem</Path>
@@ -1224,9 +1512,17 @@
 							<ShortName>GenerativeCups_Part1_Minor.wav</ShortName>
 							<Path>SFX\GenerativeCups_Part1_Minor_9EDFC787.wem</Path>
 						</File>
+						<File Id="212159877" Language="SFX">
+							<ShortName>GenerativeWands_Part3_Major2.wav</ShortName>
+							<Path>SFX\GenerativeWands_Part3_Major2_9EDFC787.wem</Path>
+						</File>
 						<File Id="218271841" Language="SFX">
 							<ShortName>TheFool.wav</ShortName>
 							<Path>SFX\TheFool_9EDFC787.wem</Path>
+						</File>
+						<File Id="220452914" Language="SFX">
+							<ShortName>Viola_Phrase3_Group6.wav</ShortName>
+							<Path>SFX\Viola_Phrase3_Group6_9EDFC787.wem</Path>
 						</File>
 						<File Id="222634654" Language="SFX">
 							<ShortName>FourOfSwords.wav</ShortName>
@@ -1235,6 +1531,14 @@
 						<File Id="228812739" Language="SFX">
 							<ShortName>DT_LowSynthPad.wav</ShortName>
 							<Path>SFX\DT_LowSynthPad_9EDFC787.wem</Path>
+						</File>
+						<File Id="229522667" Language="SFX">
+							<ShortName>GenerativeMajorArcana_Part1_Dorian.wav</ShortName>
+							<Path>SFX\GenerativeMajorArcana_Part1_Dorian_9EDFC787.wem</Path>
+						</File>
+						<File Id="230706927" Language="SFX">
+							<ShortName>GenerativeSwords_Part3_Minor.wav</ShortName>
+							<Path>SFX\GenerativeSwords_Part3_Minor_9EDFC787.wem</Path>
 						</File>
 						<File Id="233626674" Language="SFX">
 							<ShortName>DT_LowPiano.wav</ShortName>
@@ -1252,9 +1556,21 @@
 							<ShortName>SwordsWurli_Phrase1_Group8.wav</ShortName>
 							<Path>SFX\SwordsWurli_Phrase1_Group8_9EDFC787.wem</Path>
 						</File>
+						<File Id="270591954" Language="SFX">
+							<ShortName>GenerativePentacles_Part1_Minor.wav</ShortName>
+							<Path>SFX\GenerativePentacles_Part1_Minor_9EDFC787.wem</Path>
+						</File>
+						<File Id="272987903" Language="SFX">
+							<ShortName>NineOfSwords.wav</ShortName>
+							<Path>SFX\NineOfSwords_9EDFC787.wem</Path>
+						</File>
 						<File Id="274876220" Language="SFX">
 							<ShortName>Viola_Phrase3_Group8.wav</ShortName>
 							<Path>SFX\Viola_Phrase3_Group8_9EDFC787.wem</Path>
+						</File>
+						<File Id="276073546" Language="SFX">
+							<ShortName>ThreeOfCups.wav</ShortName>
+							<Path>SFX\ThreeOfCups_9EDFC787.wem</Path>
 						</File>
 						<File Id="279666286" Language="SFX">
 							<ShortName>DT_LowHarp.wav</ShortName>
@@ -1268,6 +1584,22 @@
 							<ShortName>GenerativeCups_Part2_Minor.wav</ShortName>
 							<Path>SFX\GenerativeCups_Part2_Minor_9EDFC787.wem</Path>
 						</File>
+						<File Id="282583232" Language="SFX">
+							<ShortName>GenerativePentacles_Part3_Minor.wav</ShortName>
+							<Path>SFX\GenerativePentacles_Part3_Minor_9EDFC787.wem</Path>
+						</File>
+						<File Id="282808218" Language="SFX">
+							<ShortName>GenerativeSwords_Part3_Dorian.wav</ShortName>
+							<Path>SFX\GenerativeSwords_Part3_Dorian_9EDFC787.wem</Path>
+						</File>
+						<File Id="290284714" Language="SFX">
+							<ShortName>GenerativeSwords_Part1_Dorian.wav</ShortName>
+							<Path>SFX\GenerativeSwords_Part1_Dorian_9EDFC787.wem</Path>
+						</File>
+						<File Id="294140689" Language="SFX">
+							<ShortName>GenerativeMajorArcana_Part1_Major1.wav</ShortName>
+							<Path>SFX\GenerativeMajorArcana_Part1_Major1_9EDFC787.wem</Path>
+						</File>
 						<File Id="294194485" Language="SFX">
 							<ShortName>GenerativeCups_Part3_Major2.wav</ShortName>
 							<Path>SFX\GenerativeCups_Part3_Major2_9EDFC787.wem</Path>
@@ -1275,6 +1607,10 @@
 						<File Id="296588914" Language="SFX">
 							<ShortName>PentaclesDulcimer_Phrase3_Group9.wav</ShortName>
 							<Path>SFX\PentaclesDulcimer_Phrase3_Group9_9EDFC787.wem</Path>
+						</File>
+						<File Id="307227647" Language="SFX">
+							<ShortName>GenerativeWands_Part3_Major1.wav</ShortName>
+							<Path>SFX\GenerativeWands_Part3_Major1_9EDFC787.wem</Path>
 						</File>
 						<File Id="324473811" Language="SFX">
 							<ShortName>TheEmpress.wav</ShortName>
@@ -1284,9 +1620,37 @@
 							<ShortName>DT_LowCelloBow.wav</ShortName>
 							<Path>SFX\DT_LowCelloBow_9EDFC787.wem</Path>
 						</File>
+						<File Id="329137962" Language="SFX">
+							<ShortName>GenerativeSwords_Part2_Minor.wav</ShortName>
+							<Path>SFX\GenerativeSwords_Part2_Minor_9EDFC787.wem</Path>
+						</File>
 						<File Id="329431951" Language="SFX">
 							<ShortName>TenOfCups.wav</ShortName>
 							<Path>SFX\TenOfCups_9EDFC787.wem</Path>
+						</File>
+						<File Id="338895552" Language="SFX">
+							<ShortName>GenerativeMajorArcana_Intro.wav</ShortName>
+							<Path>SFX\GenerativeMajorArcana_Intro_9EDFC787.wem</Path>
+						</File>
+						<File Id="346536830" Language="SFX">
+							<ShortName>GenerativePentacles_Part2_Major2.wav</ShortName>
+							<Path>SFX\GenerativePentacles_Part2_Major2_9EDFC787.wem</Path>
+						</File>
+						<File Id="367926471" Language="SFX">
+							<ShortName>Viola_Phrase2_Group6.wav</ShortName>
+							<Path>SFX\Viola_Phrase2_Group6_9EDFC787.wem</Path>
+						</File>
+						<File Id="369813794" Language="SFX">
+							<ShortName>GenerativeSwords_Part2_Dorian.wav</ShortName>
+							<Path>SFX\GenerativeSwords_Part2_Dorian_9EDFC787.wem</Path>
+						</File>
+						<File Id="381298610" Language="SFX">
+							<ShortName>GenerativeMajorArcana_Part3_Major2.wav</ShortName>
+							<Path>SFX\GenerativeMajorArcana_Part3_Major2_9EDFC787.wem</Path>
+						</File>
+						<File Id="383751382" Language="SFX">
+							<ShortName>GenerativePentacles_Part3_Major2.wav</ShortName>
+							<Path>SFX\GenerativePentacles_Part3_Major2_9EDFC787.wem</Path>
 						</File>
 						<File Id="384376340" Language="SFX">
 							<ShortName>GenerativeCups_Part1_Dorian.wav</ShortName>
@@ -1295,6 +1659,10 @@
 						<File Id="414632439" Language="SFX">
 							<ShortName>TheHighPriestess.wav</ShortName>
 							<Path>SFX\TheHighPriestess_9EDFC787.wem</Path>
+						</File>
+						<File Id="415664266" Language="SFX">
+							<ShortName>GenerativeWands_Part2_Minor.wav</ShortName>
+							<Path>SFX\GenerativeWands_Part2_Minor_9EDFC787.wem</Path>
 						</File>
 						<File Id="421490229" Language="SFX">
 							<ShortName>DT_LowBassoon.wav</ShortName>
@@ -1308,6 +1676,10 @@
 							<ShortName>FiveOfWands.wav</ShortName>
 							<Path>SFX\FiveOfWands_9EDFC787.wem</Path>
 						</File>
+						<File Id="461794263" Language="SFX">
+							<ShortName>GenerativeSwords_Part3_Major1.wav</ShortName>
+							<Path>SFX\GenerativeSwords_Part3_Major1_9EDFC787.wem</Path>
+						</File>
 						<File Id="473595532" Language="SFX">
 							<ShortName>Viola_Phrase2_Group12.wav</ShortName>
 							<Path>SFX\Viola_Phrase2_Group12_9EDFC787.wem</Path>
@@ -1316,17 +1688,33 @@
 							<ShortName>MajorArcanaHarp_Phrase2_Group9.wav</ShortName>
 							<Path>SFX\MajorArcanaHarp_Phrase2_Group9_9EDFC787.wem</Path>
 						</File>
+						<File Id="482282294" Language="SFX">
+							<ShortName>TheHermit.wav</ShortName>
+							<Path>SFX\TheHermit_9EDFC787.wem</Path>
+						</File>
 						<File Id="493584090" Language="SFX">
 							<ShortName>TheMagician.wav</ShortName>
 							<Path>SFX\TheMagician_9EDFC787.wem</Path>
+						</File>
+						<File Id="500260132" Language="SFX">
+							<ShortName>GenerativeMajorArcana_Part2_Major1.wav</ShortName>
+							<Path>SFX\GenerativeMajorArcana_Part2_Major1_9EDFC787.wem</Path>
 						</File>
 						<File Id="500694944" Language="SFX">
 							<ShortName>SevenOfPentacles.wav</ShortName>
 							<Path>SFX\SevenOfPentacles_9EDFC787.wem</Path>
 						</File>
+						<File Id="504172983" Language="SFX">
+							<ShortName>GenerativePentacles_Part1_Major1.wav</ShortName>
+							<Path>SFX\GenerativePentacles_Part1_Major1_9EDFC787.wem</Path>
+						</File>
 						<File Id="504679811" Language="SFX">
 							<ShortName>GenerativeToReadingTransition.wav</ShortName>
 							<Path>SFX\GenerativeToReadingTransition_9EDFC787.wem</Path>
+						</File>
+						<File Id="507766503" Language="SFX">
+							<ShortName>QueenOfWands.wav</ShortName>
+							<Path>SFX\QueenOfWands_9EDFC787.wem</Path>
 						</File>
 						<File Id="516145389" Language="SFX">
 							<ShortName>TheMoon.wav</ShortName>
@@ -1344,6 +1732,10 @@
 							<ShortName>KingOfCups.wav</ShortName>
 							<Path>SFX\KingOfCups_9EDFC787.wem</Path>
 						</File>
+						<File Id="586071285" Language="SFX">
+							<ShortName>GenerativeWands_Part2_Dorian.wav</ShortName>
+							<Path>SFX\GenerativeWands_Part2_Dorian_9EDFC787.wem</Path>
+						</File>
 						<File Id="590389761" Language="SFX">
 							<ShortName>CupsPiano_Phrase3_Group11.wav</ShortName>
 							<Path>SFX\CupsPiano_Phrase3_Group11_9EDFC787.wem</Path>
@@ -1352,9 +1744,25 @@
 							<ShortName>NineOfPentacles.wav</ShortName>
 							<Path>SFX\NineOfPentacles_9EDFC787.wem</Path>
 						</File>
+						<File Id="599810603" Language="SFX">
+							<ShortName>GenerativeSwords_Part2_Major1.wav</ShortName>
+							<Path>SFX\GenerativeSwords_Part2_Major1_9EDFC787.wem</Path>
+						</File>
+						<File Id="608603622" Language="SFX">
+							<ShortName>GenerativeMajorArcana_Part2_Minor.wav</ShortName>
+							<Path>SFX\GenerativeMajorArcana_Part2_Minor_9EDFC787.wem</Path>
+						</File>
+						<File Id="611353522" Language="SFX">
+							<ShortName>GenerativeMajorArcana_Part1_Major2.wav</ShortName>
+							<Path>SFX\GenerativeMajorArcana_Part1_Major2_9EDFC787.wem</Path>
+						</File>
 						<File Id="616349379" Language="SFX">
 							<ShortName>SevenOfCups.wav</ShortName>
 							<Path>SFX\SevenOfCups_9EDFC787.wem</Path>
+						</File>
+						<File Id="619720160" Language="SFX">
+							<ShortName>GenerativeWands_Part1_Minor.wav</ShortName>
+							<Path>SFX\GenerativeWands_Part1_Minor_9EDFC787.wem</Path>
 						</File>
 						<File Id="620254185" Language="SFX">
 							<ShortName>MakingSongToGenerativeTransition.wav</ShortName>
@@ -1364,9 +1772,17 @@
 							<ShortName>PentaclesDulcimer_Phrase1_Group9.wav</ShortName>
 							<Path>SFX\PentaclesDulcimer_Phrase1_Group9_9EDFC787.wem</Path>
 						</File>
+						<File Id="627476462" Language="SFX">
+							<ShortName>GenerativeMajorArcana_Part1_Minor.wav</ShortName>
+							<Path>SFX\GenerativeMajorArcana_Part1_Minor_9EDFC787.wem</Path>
+						</File>
 						<File Id="627831526" Language="SFX">
 							<ShortName>MajorArcanaHarp_Phrase1_Group11.wav</ShortName>
 							<Path>SFX\MajorArcanaHarp_Phrase1_Group11_9EDFC787.wem</Path>
+						</File>
+						<File Id="631819254" Language="SFX">
+							<ShortName>GenerativeWands_Part3_Dorian.wav</ShortName>
+							<Path>SFX\GenerativeWands_Part3_Dorian_9EDFC787.wem</Path>
 						</File>
 						<File Id="635107510" Language="SFX">
 							<ShortName>Viola_Phrase1_Group11.wav</ShortName>
@@ -1396,9 +1812,17 @@
 							<ShortName>CupsPiano_Phrase2_Group11.wav</ShortName>
 							<Path>SFX\CupsPiano_Phrase2_Group11_9EDFC787.wem</Path>
 						</File>
+						<File Id="684660360" Language="SFX">
+							<ShortName>GenerativePentacles_Part2_Major1.wav</ShortName>
+							<Path>SFX\GenerativePentacles_Part2_Major1_9EDFC787.wem</Path>
+						</File>
 						<File Id="696998161" Language="SFX">
 							<ShortName>WandsKalimba_Phrase2_Group8.wav</ShortName>
 							<Path>SFX\WandsKalimba_Phrase2_Group8_9EDFC787.wem</Path>
+						</File>
+						<File Id="708443093" Language="SFX">
+							<ShortName>GenerativePentacles_Part2_Dorian.wav</ShortName>
+							<Path>SFX\GenerativePentacles_Part2_Dorian_9EDFC787.wem</Path>
 						</File>
 						<File Id="720383636" Language="SFX">
 							<ShortName>DT_MidPiano2.wav</ShortName>
@@ -1436,9 +1860,17 @@
 							<ShortName>MajorArcanaHarp_Phrase2_Group8.wav</ShortName>
 							<Path>SFX\MajorArcanaHarp_Phrase2_Group8_9EDFC787.wem</Path>
 						</File>
+						<File Id="779457774" Language="SFX">
+							<ShortName>GenerativePentacles_Part3_Major1.wav</ShortName>
+							<Path>SFX\GenerativePentacles_Part3_Major1_9EDFC787.wem</Path>
+						</File>
 						<File Id="781001668" Language="SFX">
 							<ShortName>SwordsWurli_Phrase1_Group9.wav</ShortName>
 							<Path>SFX\SwordsWurli_Phrase1_Group9_9EDFC787.wem</Path>
+						</File>
+						<File Id="783863844" Language="SFX">
+							<ShortName>GenerativeSwords_Part3_Major2.wav</ShortName>
+							<Path>SFX\GenerativeSwords_Part3_Major2_9EDFC787.wem</Path>
 						</File>
 						<File Id="792819868" Language="SFX">
 							<ShortName>Viola_Phrase3_Group9.wav</ShortName>
@@ -1452,6 +1884,10 @@
 							<ShortName>Death.wav</ShortName>
 							<Path>SFX\Death_9EDFC787.wem</Path>
 						</File>
+						<File Id="805431720" Language="SFX">
+							<ShortName>KingOfSwords.wav</ShortName>
+							<Path>SFX\KingOfSwords_9EDFC787.wem</Path>
+						</File>
 						<File Id="807196764" Language="SFX">
 							<ShortName>TwoOfWands.wav</ShortName>
 							<Path>SFX\TwoOfWands_9EDFC787.wem</Path>
@@ -1459,6 +1895,10 @@
 						<File Id="816851278" Language="SFX">
 							<ShortName>DT_HighClarinet.wav</ShortName>
 							<Path>SFX\DT_HighClarinet_9EDFC787.wem</Path>
+						</File>
+						<File Id="824918613" Language="SFX">
+							<ShortName>GenerativeSwords_Part1_Major2.wav</ShortName>
+							<Path>SFX\GenerativeSwords_Part1_Major2_9EDFC787.wem</Path>
 						</File>
 						<File Id="836976950" Language="SFX">
 							<ShortName>DT_HighSpooky.wav</ShortName>
@@ -1479,6 +1919,26 @@
 						<File Id="866630420" Language="SFX">
 							<ShortName>CupsPiano_Phrase3_Group2.wav</ShortName>
 							<Path>SFX\CupsPiano_Phrase3_Group2_9EDFC787.wem</Path>
+						</File>
+						<File Id="867224572" Language="SFX">
+							<ShortName>GenerativeMajorArcana_Part2_Major2.wav</ShortName>
+							<Path>SFX\GenerativeMajorArcana_Part2_Major2_9EDFC787.wem</Path>
+						</File>
+						<File Id="870985945" Language="SFX">
+							<ShortName>GenerativePentacles_Part1_Dorian.wav</ShortName>
+							<Path>SFX\GenerativePentacles_Part1_Dorian_9EDFC787.wem</Path>
+						</File>
+						<File Id="888142988" Language="SFX">
+							<ShortName>GenerativeSwords_Part1_Major1.wav</ShortName>
+							<Path>SFX\GenerativeSwords_Part1_Major1_9EDFC787.wem</Path>
+						</File>
+						<File Id="890303670" Language="SFX">
+							<ShortName>GenerativeMajorArcana_Part3_Dorian.wav</ShortName>
+							<Path>SFX\GenerativeMajorArcana_Part3_Dorian_9EDFC787.wem</Path>
+						</File>
+						<File Id="899113620" Language="SFX">
+							<ShortName>GenerativeWands_Part3_Minor.wav</ShortName>
+							<Path>SFX\GenerativeWands_Part3_Minor_9EDFC787.wem</Path>
 						</File>
 						<File Id="906097638" Language="SFX">
 							<ShortName>MajorArcanaHarp_Phrase2_Group12.wav</ShortName>
@@ -1516,9 +1976,17 @@
 							<ShortName>Viola_Phrase2_Group9.wav</ShortName>
 							<Path>SFX\Viola_Phrase2_Group9_9EDFC787.wem</Path>
 						</File>
+						<File Id="972970452" Language="SFX">
+							<ShortName>GenerativePentacles_Part1_Major2.wav</ShortName>
+							<Path>SFX\GenerativePentacles_Part1_Major2_9EDFC787.wem</Path>
+						</File>
 						<File Id="976564632" Language="SFX">
 							<ShortName>MajorArcanaHarp_Phrase3_Group8.wav</ShortName>
 							<Path>SFX\MajorArcanaHarp_Phrase3_Group8_9EDFC787.wem</Path>
+						</File>
+						<File Id="1001358609" Language="SFX">
+							<ShortName>GenerativeWands_Part1_Dorian.wav</ShortName>
+							<Path>SFX\GenerativeWands_Part1_Dorian_9EDFC787.wem</Path>
 						</File>
 						<File Id="1005469300" Language="SFX">
 							<ShortName>GenerativeCups_Part2_Major1.wav</ShortName>
@@ -1527,6 +1995,10 @@
 						<File Id="1013527528" Language="SFX">
 							<ShortName>KingOfPentacles.wav</ShortName>
 							<Path>SFX\KingOfPentacles_9EDFC787.wem</Path>
+						</File>
+						<File Id="1017520918" Language="SFX">
+							<ShortName>GenerativeSwords_Part2_Major2.wav</ShortName>
+							<Path>SFX\GenerativeSwords_Part2_Major2_9EDFC787.wem</Path>
 						</File>
 						<File Id="1024868010" Language="SFX">
 							<ShortName>GenerativeCups_Part2_Major2.wav</ShortName>
@@ -1540,6 +2012,18 @@
 							<ShortName>MajorArcanaHarp_Phrase3_Group11.wav</ShortName>
 							<Path>SFX\MajorArcanaHarp_Phrase3_Group11_9EDFC787.wem</Path>
 						</File>
+						<File Id="1037353036" Language="SFX">
+							<ShortName>GenerativeMajorArcana_Part2_Dorian.wav</ShortName>
+							<Path>SFX\GenerativeMajorArcana_Part2_Dorian_9EDFC787.wem</Path>
+						</File>
+						<File Id="1039665456" Language="SFX">
+							<ShortName>GenerativeSwords_Part1_Minor.wav</ShortName>
+							<Path>SFX\GenerativeSwords_Part1_Minor_9EDFC787.wem</Path>
+						</File>
+						<File Id="1051404422" Language="SFX">
+							<ShortName>GenerativeWands_Part2_Major2.wav</ShortName>
+							<Path>SFX\GenerativeWands_Part2_Major2_9EDFC787.wem</Path>
+						</File>
 						<File Id="1054585838" Language="SFX">
 							<ShortName>DT_HighFlute.wav</ShortName>
 							<Path>SFX\DT_HighFlute_9EDFC787.wem</Path>
@@ -1551,6 +2035,10 @@
 						<File Id="1070576366" Language="SFX">
 							<ShortName>GenerativeCups_Part2_Dorian.wav</ShortName>
 							<Path>SFX\GenerativeCups_Part2_Dorian_9EDFC787.wem</Path>
+						</File>
+						<File Id="1071148328" Language="SFX">
+							<ShortName>GenerativeWands_Part1_Major2.wav</ShortName>
+							<Path>SFX\GenerativeWands_Part1_Major2_9EDFC787.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 					<SwitchContainers>
@@ -1748,129 +2236,250 @@
 										<File Id="460855816"/>
 									</Media>
 								</SwitchContainer>
+								<SwitchContainer SwitchValue="{7D0C85F1-F7AE-4DAE-ABAF-6638F6D6566A}">
+									<Media>
+										<File Id="805431720"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{D053D0F9-912D-4456-B975-09DAFB25081D}">
+									<Media>
+										<File Id="276073546"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{29D0A84D-EDEF-49E8-918A-3D7176E9DF6D}">
+									<Media>
+										<File Id="482282294"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{8C743387-2C6C-4389-B2EB-7F6ED5E9B1E5}">
+									<Media>
+										<File Id="507766503"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{C575DA91-1C1A-4D83-BAB0-C30E5B779454}">
+									<Media>
+										<File Id="272987903"/>
+									</Media>
+								</SwitchContainer>
 							</Children>
 						</SwitchContainer>
 						<SwitchContainer SwitchValue="{66090302-C438-448B-8A5E-6D1D40BD8BF4}">
 							<Children>
 								<SwitchContainer SwitchValue="{4371C29D-E79A-440D-8C7F-47A5F7EA84F6}">
-									<Children>
-										<SwitchContainer SwitchValue="{66E19191-1E1E-457E-AE5C-BDD757CD0D87}">
-											<Media>
-												<File Id="12159181"/>
-												<File Id="17730444"/>
-												<File Id="32455599"/>
-												<File Id="46766814"/>
-												<File Id="71147250"/>
-												<File Id="121065905"/>
-												<File Id="129425396"/>
-												<File Id="136069082"/>
-												<File Id="156388177"/>
-												<File Id="191996672"/>
-												<File Id="200057738"/>
-												<File Id="203151517"/>
-												<File Id="236872454"/>
-												<File Id="242181906"/>
-												<File Id="252905170"/>
-												<File Id="274876220"/>
-												<File Id="281964190"/>
-												<File Id="294194485"/>
-												<File Id="296588914"/>
-												<File Id="384376340"/>
-												<File Id="473595532"/>
-												<File Id="479067493"/>
-												<File Id="526823866"/>
-												<File Id="551223743"/>
-												<File Id="590389761"/>
-												<File Id="624044825"/>
-												<File Id="627831526"/>
-												<File Id="635107510"/>
-												<File Id="645141868"/>
-												<File Id="657871922"/>
-												<File Id="684459571"/>
-												<File Id="696998161"/>
-												<File Id="737891992"/>
-												<File Id="769702877"/>
-												<File Id="773563290"/>
-												<File Id="776924037"/>
-												<File Id="781001668"/>
-												<File Id="792819868"/>
-												<File Id="801173061"/>
-												<File Id="842663674"/>
-												<File Id="853373140"/>
-												<File Id="866630420"/>
-												<File Id="906097638"/>
-												<File Id="918100330"/>
-												<File Id="933716518"/>
-												<File Id="933849671"/>
-												<File Id="957206922"/>
-												<File Id="976564632"/>
-												<File Id="1005469300"/>
-												<File Id="1024868010"/>
-												<File Id="1035521087"/>
-												<File Id="1070576366"/>
-											</Media>
-										</SwitchContainer>
-									</Children>
+									<Media>
+										<File Id="12159181"/>
+										<File Id="17730444"/>
+										<File Id="18063816"/>
+										<File Id="31266562"/>
+										<File Id="32455599"/>
+										<File Id="46766814"/>
+										<File Id="67502600"/>
+										<File Id="71147250"/>
+										<File Id="107998518"/>
+										<File Id="121065905"/>
+										<File Id="126786397"/>
+										<File Id="129425396"/>
+										<File Id="136069082"/>
+										<File Id="152546415"/>
+										<File Id="156388177"/>
+										<File Id="191996672"/>
+										<File Id="198385087"/>
+										<File Id="200057738"/>
+										<File Id="203151517"/>
+										<File Id="212159877"/>
+										<File Id="220452914"/>
+										<File Id="229522667"/>
+										<File Id="230706927"/>
+										<File Id="236872454"/>
+										<File Id="242181906"/>
+										<File Id="252905170"/>
+										<File Id="270591954"/>
+										<File Id="274876220"/>
+										<File Id="281964190"/>
+										<File Id="282583232"/>
+										<File Id="282808218"/>
+										<File Id="290284714"/>
+										<File Id="294140689"/>
+										<File Id="294194485"/>
+										<File Id="296588914"/>
+										<File Id="307227647"/>
+										<File Id="329137962"/>
+										<File Id="338895552"/>
+										<File Id="346536830"/>
+										<File Id="367926471"/>
+										<File Id="369813794"/>
+										<File Id="381298610"/>
+										<File Id="383751382"/>
+										<File Id="384376340"/>
+										<File Id="415664266"/>
+										<File Id="461794263"/>
+										<File Id="473595532"/>
+										<File Id="479067493"/>
+										<File Id="500260132"/>
+										<File Id="504172983"/>
+										<File Id="526823866"/>
+										<File Id="551223743"/>
+										<File Id="586071285"/>
+										<File Id="590389761"/>
+										<File Id="599810603"/>
+										<File Id="608603622"/>
+										<File Id="611353522"/>
+										<File Id="619720160"/>
+										<File Id="624044825"/>
+										<File Id="627476462"/>
+										<File Id="627831526"/>
+										<File Id="631819254"/>
+										<File Id="635107510"/>
+										<File Id="645141868"/>
+										<File Id="657871922"/>
+										<File Id="684459571"/>
+										<File Id="684660360"/>
+										<File Id="696998161"/>
+										<File Id="708443093"/>
+										<File Id="737891992"/>
+										<File Id="769702877"/>
+										<File Id="773563290"/>
+										<File Id="776924037"/>
+										<File Id="779457774"/>
+										<File Id="781001668"/>
+										<File Id="783863844"/>
+										<File Id="792819868"/>
+										<File Id="801173061"/>
+										<File Id="824918613"/>
+										<File Id="842663674"/>
+										<File Id="853373140"/>
+										<File Id="866630420"/>
+										<File Id="867224572"/>
+										<File Id="870985945"/>
+										<File Id="888142988"/>
+										<File Id="890303670"/>
+										<File Id="899113620"/>
+										<File Id="906097638"/>
+										<File Id="918100330"/>
+										<File Id="933716518"/>
+										<File Id="933849671"/>
+										<File Id="957206922"/>
+										<File Id="972970452"/>
+										<File Id="976564632"/>
+										<File Id="1001358609"/>
+										<File Id="1005469300"/>
+										<File Id="1017520918"/>
+										<File Id="1024868010"/>
+										<File Id="1035521087"/>
+										<File Id="1037353036"/>
+										<File Id="1039665456"/>
+										<File Id="1051404422"/>
+										<File Id="1070576366"/>
+										<File Id="1071148328"/>
+									</Media>
 								</SwitchContainer>
 								<SwitchContainer SwitchValue="{ECDF6AB9-C7EE-4A21-ADF2-55695B9D8B40}">
-									<Children>
-										<SwitchContainer SwitchValue="{66E19191-1E1E-457E-AE5C-BDD757CD0D87}">
-											<Media>
-												<File Id="12159181"/>
-												<File Id="17730444"/>
-												<File Id="32455599"/>
-												<File Id="46766814"/>
-												<File Id="71147250"/>
-												<File Id="121065905"/>
-												<File Id="129425396"/>
-												<File Id="136069082"/>
-												<File Id="156388177"/>
-												<File Id="191996672"/>
-												<File Id="200057738"/>
-												<File Id="203151517"/>
-												<File Id="236872454"/>
-												<File Id="242181906"/>
-												<File Id="252905170"/>
-												<File Id="274876220"/>
-												<File Id="281964190"/>
-												<File Id="294194485"/>
-												<File Id="296588914"/>
-												<File Id="384376340"/>
-												<File Id="473595532"/>
-												<File Id="479067493"/>
-												<File Id="526823866"/>
-												<File Id="551223743"/>
-												<File Id="590389761"/>
-												<File Id="624044825"/>
-												<File Id="627831526"/>
-												<File Id="635107510"/>
-												<File Id="645141868"/>
-												<File Id="657871922"/>
-												<File Id="684459571"/>
-												<File Id="696998161"/>
-												<File Id="737891992"/>
-												<File Id="769702877"/>
-												<File Id="773563290"/>
-												<File Id="776924037"/>
-												<File Id="781001668"/>
-												<File Id="792819868"/>
-												<File Id="801173061"/>
-												<File Id="842663674"/>
-												<File Id="853373140"/>
-												<File Id="866630420"/>
-												<File Id="906097638"/>
-												<File Id="918100330"/>
-												<File Id="933716518"/>
-												<File Id="933849671"/>
-												<File Id="957206922"/>
-												<File Id="976564632"/>
-												<File Id="1005469300"/>
-												<File Id="1024868010"/>
-												<File Id="1035521087"/>
-												<File Id="1070576366"/>
-											</Media>
-										</SwitchContainer>
-									</Children>
+									<Media>
+										<File Id="12159181"/>
+										<File Id="17730444"/>
+										<File Id="18063816"/>
+										<File Id="31266562"/>
+										<File Id="32455599"/>
+										<File Id="46766814"/>
+										<File Id="67502600"/>
+										<File Id="71147250"/>
+										<File Id="107998518"/>
+										<File Id="121065905"/>
+										<File Id="126786397"/>
+										<File Id="129425396"/>
+										<File Id="136069082"/>
+										<File Id="152546415"/>
+										<File Id="156388177"/>
+										<File Id="191996672"/>
+										<File Id="198385087"/>
+										<File Id="200057738"/>
+										<File Id="203151517"/>
+										<File Id="212159877"/>
+										<File Id="220452914"/>
+										<File Id="229522667"/>
+										<File Id="230706927"/>
+										<File Id="236872454"/>
+										<File Id="242181906"/>
+										<File Id="252905170"/>
+										<File Id="270591954"/>
+										<File Id="274876220"/>
+										<File Id="281964190"/>
+										<File Id="282583232"/>
+										<File Id="282808218"/>
+										<File Id="290284714"/>
+										<File Id="294140689"/>
+										<File Id="294194485"/>
+										<File Id="296588914"/>
+										<File Id="307227647"/>
+										<File Id="329137962"/>
+										<File Id="338895552"/>
+										<File Id="346536830"/>
+										<File Id="367926471"/>
+										<File Id="369813794"/>
+										<File Id="381298610"/>
+										<File Id="383751382"/>
+										<File Id="384376340"/>
+										<File Id="415664266"/>
+										<File Id="461794263"/>
+										<File Id="473595532"/>
+										<File Id="479067493"/>
+										<File Id="500260132"/>
+										<File Id="504172983"/>
+										<File Id="526823866"/>
+										<File Id="551223743"/>
+										<File Id="586071285"/>
+										<File Id="590389761"/>
+										<File Id="599810603"/>
+										<File Id="608603622"/>
+										<File Id="611353522"/>
+										<File Id="619720160"/>
+										<File Id="624044825"/>
+										<File Id="627476462"/>
+										<File Id="627831526"/>
+										<File Id="631819254"/>
+										<File Id="635107510"/>
+										<File Id="645141868"/>
+										<File Id="657871922"/>
+										<File Id="684459571"/>
+										<File Id="684660360"/>
+										<File Id="696998161"/>
+										<File Id="708443093"/>
+										<File Id="737891992"/>
+										<File Id="769702877"/>
+										<File Id="773563290"/>
+										<File Id="776924037"/>
+										<File Id="779457774"/>
+										<File Id="781001668"/>
+										<File Id="783863844"/>
+										<File Id="792819868"/>
+										<File Id="801173061"/>
+										<File Id="824918613"/>
+										<File Id="842663674"/>
+										<File Id="853373140"/>
+										<File Id="866630420"/>
+										<File Id="867224572"/>
+										<File Id="870985945"/>
+										<File Id="888142988"/>
+										<File Id="890303670"/>
+										<File Id="899113620"/>
+										<File Id="906097638"/>
+										<File Id="918100330"/>
+										<File Id="933716518"/>
+										<File Id="933849671"/>
+										<File Id="957206922"/>
+										<File Id="972970452"/>
+										<File Id="976564632"/>
+										<File Id="1001358609"/>
+										<File Id="1005469300"/>
+										<File Id="1017520918"/>
+										<File Id="1024868010"/>
+										<File Id="1035521087"/>
+										<File Id="1037353036"/>
+										<File Id="1039665456"/>
+										<File Id="1051404422"/>
+										<File Id="1070576366"/>
+										<File Id="1071148328"/>
+									</Media>
 								</SwitchContainer>
 							</Children>
 						</SwitchContainer>
@@ -1991,6 +2600,12 @@
 						<ActionSetStateEntry Id="3258053151" Name="TheHangedMan" ObjectPath="\States\Default Work Unit\DuringReading\TheHangedMan"/>
 					</ActionSetState>
 				</Event>
+				<Event Id="1490823267" Name="TheHermit" ObjectPath="\Events\Default Work Unit\CardEvents\Major Arcana\TheHermit" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionSetState>
+						<ActionSetStateEntry Id="1490823267" Name="TheHermit" ObjectPath="\States\Default Work Unit\DuringReading\TheHermit"/>
+						<ActionSetStateEntry Id="1900785500" Name="AfterReadingBed" ObjectPath="\States\Default Work Unit\DuringReading\AfterReadingBed"/>
+					</ActionSetState>
+				</Event>
 				<Event Id="3676275462" Name="TheHighPriestess" ObjectPath="\Events\Default Work Unit\CardEvents\Major Arcana\TheHighPriestess" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
 					<ActionSetState>
 						<ActionSetStateEntry Id="1900785500" Name="AfterReadingBed" ObjectPath="\States\Default Work Unit\DuringReading\AfterReadingBed"/>
@@ -2013,6 +2628,12 @@
 					<ActionSetState>
 						<ActionSetStateEntry Id="1900785500" Name="AfterReadingBed" ObjectPath="\States\Default Work Unit\DuringReading\AfterReadingBed"/>
 						<ActionSetStateEntry Id="2436895318" Name="TheStar" ObjectPath="\States\Default Work Unit\DuringReading\TheStar"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="1101082655" Name="ThreeOfCups" ObjectPath="\Events\Default Work Unit\CardEvents\Cups\ThreeOfCups" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionSetState>
+						<ActionSetStateEntry Id="1101082655" Name="ThreeOfCups" ObjectPath="\States\Default Work Unit\DuringReading\ThreeOfCups"/>
+						<ActionSetStateEntry Id="1900785500" Name="AfterReadingBed" ObjectPath="\States\Default Work Unit\DuringReading\AfterReadingBed"/>
 					</ActionSetState>
 				</Event>
 				<Event Id="1765113981" Name="TwoOfCups" ObjectPath="\Events\Default Work Unit\CardEvents\Cups\TwoOfCups" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
@@ -2232,9 +2853,17 @@
 						<State Id="3258053151" Name="TheHangedMan" ObjectPath="\States\Default Work Unit\DuringReading\TheHangedMan"/>
 						<State Id="3661391600" Name="SevenOfWands" ObjectPath="\States\Default Work Unit\DuringReading\SevenOfWands"/>
 						<State Id="3022449515" Name="FiveOfWands" ObjectPath="\States\Default Work Unit\DuringReading\FiveOfWands"/>
+						<State Id="3530681053" Name="KingOfSwords" ObjectPath="\States\Default Work Unit\DuringReading\KingOfSwords"/>
+						<State Id="1101082655" Name="ThreeOfCups" ObjectPath="\States\Default Work Unit\DuringReading\ThreeOfCups"/>
+						<State Id="1490823267" Name="TheHermit" ObjectPath="\States\Default Work Unit\DuringReading\TheHermit"/>
+						<State Id="1734100207" Name="QueenOfWands" ObjectPath="\States\Default Work Unit\DuringReading\QueenOfWands"/>
+						<State Id="3394600732" Name="NineOfSwords" ObjectPath="\States\Default Work Unit\DuringReading\NineOfSwords"/>
 					</States>
 				</StateGroup>
 				<StateGroup Id="1008270286" Name="Strength" ObjectPath="\States\Default Work Unit\DuringReading\Strength">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="1101082655" Name="ThreeOfCups" ObjectPath="\States\Default Work Unit\DuringReading\ThreeOfCups">
 					<States/>
 				</StateGroup>
 				<StateGroup Id="1213864503" Name="Card1Cups" ObjectPath="\States\Default Work Unit\GenerativeCardSuits\Card1Suit\Card1Cups">
@@ -2244,6 +2873,9 @@
 					<States/>
 				</StateGroup>
 				<StateGroup Id="1462743847" Name="Temperance" ObjectPath="\States\Default Work Unit\DuringReading\Temperance">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="1490823267" Name="TheHermit" ObjectPath="\States\Default Work Unit\DuringReading\TheHermit">
 					<States/>
 				</StateGroup>
 				<StateGroup Id="1632202991" Name="Card3Wands" ObjectPath="\States\Default Work Unit\GenerativeCardSuits\Card3Suit\Card3Wands">
@@ -2441,6 +3073,9 @@
 				<StateGroup Id="3387899019" Name="Card2Group10" ObjectPath="\States\Default Work Unit\GenerativeCardGroups\Card2Group\Card2Group10">
 					<States/>
 				</StateGroup>
+				<StateGroup Id="3394600732" Name="NineOfSwords" ObjectPath="\States\Default Work Unit\DuringReading\NineOfSwords">
+					<States/>
+				</StateGroup>
 				<StateGroup Id="3430716699" Name="Generative" ObjectPath="\States\Default Work Unit\GameStage\Generative">
 					<States/>
 				</StateGroup>
@@ -2448,6 +3083,9 @@
 					<States/>
 				</StateGroup>
 				<StateGroup Id="3499807024" Name="Minor" ObjectPath="\States\Default Work Unit\GenerativeKey1\Minor">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="3530681053" Name="KingOfSwords" ObjectPath="\States\Default Work Unit\DuringReading\KingOfSwords">
 					<States/>
 				</StateGroup>
 				<StateGroup Id="3555933294" Name="EightOfPentacles" ObjectPath="\States\Default Work Unit\DuringReading\EightOfPentacles">

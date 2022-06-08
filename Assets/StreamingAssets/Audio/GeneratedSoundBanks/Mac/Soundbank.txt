@@ -29,6 +29,8 @@ Event	ID	Name			Wwise Object Path	Notes
 	784127654	Null			\Default Work Unit\GenerativeStates\Bass\Null	
 	798166914	MajorArcana			\Default Work Unit\GenerativeStates\Bass\MajorArcana	
 	802427635	AccompanimentMajorArcana			\Default Work Unit\GenerativeAccompaniment\AccompanimentMajorArcana	
+	816211659	AccompanimentWands			\Default Work Unit\GenerativeAccompaniment\AccompanimentWands	
+	820727340	AccompanimentSwords			\Default Work Unit\GenerativeAccompaniment\AccompanimentSwords	
 	848040992	Card3Group1			\Default Work Unit\GenerativeCardGroups\Group1\Card3Group1	
 	848040994	Card3Group3			\Default Work Unit\GenerativeCardGroups\Group3\Card3Group3	
 	848040995	Card3Group2			\Default Work Unit\GenerativeCardGroups\Group2\Card3Group2	
@@ -43,11 +45,13 @@ Event	ID	Name			Wwise Object Path	Notes
 	1008270286	Strength			\Default Work Unit\CardEvents\Major Arcana\Strength	
 	1064961332	Card2Major2			\Default Work Unit\GenerativeKeys\Card2\Card2Major2	
 	1064961335	Card2Major1			\Default Work Unit\GenerativeKeys\Card2\Card2Major1	
+	1101082655	ThreeOfCups			\Default Work Unit\CardEvents\Cups\ThreeOfCups	
 	1213864503	Card1Cups			\Default Work Unit\GenerativeCardSuits\Card1\Card1Cups	
 	1265574636	Card1Major1			\Default Work Unit\GenerativeKeys\Card1\Card1Major1	
 	1265574639	Card1Major2			\Default Work Unit\GenerativeKeys\Card1\Card1Major2	
 	1323396928	Card2Wands			\Default Work Unit\GenerativeCardSuits\Card2\Card2Wands	
 	1462743847	Temperance			\Default Work Unit\CardEvents\Major Arcana\Temperance	
+	1490823267	TheHermit			\Default Work Unit\CardEvents\Major Arcana\TheHermit	
 	1632202991	Card3Wands			\Default Work Unit\GenerativeCardSuits\Card3\Card3Wands	
 	1701015953	State_Reading			\Default Work Unit\State_Reading	
 	1715977140	KingOfPentacles			\Default Work Unit\CardEvents\Pentacles\KingOfPentacles	
@@ -63,6 +67,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2185129511	TenOfSwords			\Default Work Unit\CardEvents\Swords\TenOfSwords	
 	2202738146	Wands			\Default Work Unit\GenerativeStates\Bass\Wands	
 	2252698273	Card2Swords			\Default Work Unit\GenerativeCardSuits\Card2\Card2Swords	
+	2253610385	AccompanimentNull			\Default Work Unit\GenerativeAccompaniment\AccompanimentNull	
 	2297393456	Card2Group8			\Default Work Unit\GenerativeCardGroups\Group8\Card2Group8	
 	2297393457	Card2Group9			\Default Work Unit\GenerativeCardGroups\Group9\Card2Group9	
 	2297393465	Card2Group1			\Default Work Unit\GenerativeCardGroups\Group1\Card2Group1	
@@ -74,6 +79,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2297393471	Card2Group7			\Default Work Unit\GenerativeCardGroups\Group7\Card2Group7	
 	2351915865	Card1MajorArcana			\Default Work Unit\GenerativeCardSuits\Card1\Card1MajorArcana	
 	2358895370	Card2Dorian			\Default Work Unit\GenerativeKeys\Card2\Card2Dorian	
+	2401993111	AccompanimentPentacles			\Default Work Unit\GenerativeAccompaniment\AccompanimentPentacles	
 	2436895318	TheStar			\Default Work Unit\CardEvents\Major Arcana\TheStar	
 	2461612130	TenOfCups			\Default Work Unit\CardEvents\Cups\TenOfCups	
 	2471410009	Card3Major2			\Default Work Unit\GenerativeKeys\Card3\Card3Major2	
@@ -99,7 +105,9 @@ Event	ID	Name			Wwise Object Path	Notes
 	3387899017	Card2Group12			\Default Work Unit\GenerativeCardGroups\Group12\Card2Group12	
 	3387899018	Card2Group11			\Default Work Unit\GenerativeCardGroups\Group11\Card2Group11	
 	3387899019	Card2Group10			\Default Work Unit\GenerativeCardGroups\Group10\Card2Group10	
+	3394600732	NineOfSwords			\Default Work Unit\CardEvents\Swords\NineOfSwords	
 	3436307834	SixOfSwords			\Default Work Unit\CardEvents\Swords\SixOfSwords	
+	3530681053	KingOfSwords			\Default Work Unit\CardEvents\Swords\KingOfSwords	
 	3535269221	State_Generative			\Default Work Unit\State_Generative	
 	3555933294	EightOfPentacles			\Default Work Unit\CardEvents\Pentacles\EightOfPentacles	
 	3649626589	Card1Dorian			\Default Work Unit\GenerativeKeys\Card1\Card1Dorian	
@@ -136,9 +144,12 @@ State	ID	Name	State Group			Notes
 	779278001	Death	DuringReading			
 	884571752	SevenOfCups	DuringReading			
 	1008270286	Strength	DuringReading			
+	1101082655	ThreeOfCups	DuringReading			
 	1462743847	Temperance	DuringReading			
+	1490823267	TheHermit	DuringReading			
 	1715977140	KingOfPentacles	DuringReading			
 	1726594133	TheMagician	DuringReading			
+	1734100207	QueenOfWands	DuringReading			
 	1765113981	TwoOfCups	DuringReading			
 	1770673853	Interlude	DuringReading			
 	1900785500	AfterReadingBed	DuringReading			
@@ -152,7 +163,9 @@ State	ID	Name	State Group			Notes
 	2631758982	TheFool	DuringReading			
 	3022449515	FiveOfWands	DuringReading			
 	3258053151	TheHangedMan	DuringReading			
+	3394600732	NineOfSwords	DuringReading			
 	3436307834	SixOfSwords	DuringReading			
+	3530681053	KingOfSwords	DuringReading			
 	3555933294	EightOfPentacles	DuringReading			
 	3661391600	SevenOfWands	DuringReading			
 	3676275462	TheHighPriestess	DuringReading			
@@ -193,207 +206,344 @@ State	ID	Name	State Group			Notes
 	3909883483	Card3Pentacles	Card3Suit			
 
 Custom State	ID	Name	State Group	Owner		Notes
-	14347078	Card3Wands	Card3Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups3\Major arcana melody		
-	103241857	Card1Pentacles	Card1Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups1\Swords melody		
-	128667997	Card3Swords	Card3Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups3\Major arcana melody		
-	187440715	Card1Wands	Card1Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups1\Major arcana melody		
-	210826742	Card2Wands	Card2Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups2\Major arcana melody		
-	220895088	Card3Wands	Card3Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups3\Swords melody		
-	239900485	Card3MajorArcana	Card3Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups3\Pentacles melody		
-	244159151	Card2Wands	Card2Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups2\Swords melody		
-	256240759	Card1Pentacles	Card1Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups1\Wands melody		
-	279120171	Card3MajorArcana	Card3Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups3\Wands melody		
-	281458907	Card1Cups	Card1Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups1\Major arcana melody		
-	303614210	Card3Cups	Card3Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups3\Swords melody		
-	318673318	Card1Swords	Card1Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups1\Wands melody		
-	330218164	Card2Swords	Card2Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups2\Pentacles melody		
-	345374509	Card1MajorArcana	Card1Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups1\Wands melody		
-	354467611	Card3Wands	Card3Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups3\Pentacles melody		
-	366097780	Card3MajorArcana	Card3Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups3\Cups melody		
-	376455086	Card2Pentacles	Card2Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups2\Wands melody		
-	378663315	Card2Swords	Card2Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups2\Cups melody		
-	384450145	Card2Cups	Card2Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups2\Major arcana melody		
-	442332657	Card2Pentacles	Card2Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups2\Major arcana melody		
-	458840943	Card3Cups	Card3Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups3\Pentacles melody		
-	462137369	Card3Swords	Card3Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups3\Pentacles melody		
-	468235076	Card1Swords	Card1Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups1\Major arcana melody		
-	471882304	Card3Pentacles	Card3Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups3\Swords melody		
-	490809142	Card2MajorArcana	Card2Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups2\Pentacles melody		
-	506369642	Card2Cups	Card2Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups2\Pentacles melody		
-	515339486	Card3Wands	Card3Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups3\Cups melody		
-	530176211	Card2Cups	Card2Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups2\Wands melody		
-	580875533	Card2MajorArcana	Card2Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups2\Cups melody		
-	629854201	Card3MajorArcana	Card3Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups3\Swords melody		
-	644340927	Card2MajorArcana	Card2Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups2\Swords melody		
-	669334180	Card3Cups	Card3Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups3\Major arcana melody		
-	672830160	Card3Cups	Card3Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups3\Wands melody		
-	673758890	Card1Pentacles	Card1Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups1\Cups melody		
-	676315737	Card1Cups	Card1Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups1\Wands melody		
-	686116150	Card3Pentacles	Card3Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups3\Wands melody		
-	695621533	Card3Swords	Card3Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups3\Wands melody		
-	767588537	Card2Swords	Card2Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups2\Wands melody		
-	770355573	Card2Pentacles	Card2Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups2\Swords melody		
-	783086934	Card1MajorArcana	Card1Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups1\Cups melody		
-	792017106	Card2Wands	Card2Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups2\Cups melody		
-	827361167	Card1Swords	Card1Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups1\Cups melody		
-	831386215	Card2Cups	Card2Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups2\Swords melody		
-	842294413	Card3Pentacles	Card3Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups3\Cups melody		
-	843041857	Card1Swords	Card1Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups1\Pentacles melody		
-	844994438	Card2Swords	Card2Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups2\Major arcana melody		
-	850164562	Card1Cups	Card1Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups1\Pentacles melody		
-	852832663	Card1Pentacles	Card1Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups1\Major arcana melody		
-	917573326	Card1Wands	Card1Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups1\Cups melody		
-	926233913	Card1Cups	Card1Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups1\Swords melody		
-	931756572	Card3Swords	Card3Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups3\Cups melody		
-	949981537	Card1MajorArcana	Card1Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups1\Swords melody		
-	957446656	Card2MajorArcana	Card2Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups2\Wands melody		
-	961456822	Card1Wands	Card1Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups1\Pentacles melody		
-	1003550601	Card1Wands	Card1Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups1\Swords melody		
-	1013662961	Card2Pentacles	Card2Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups2\Cups melody		
-	1027496118	Card1MajorArcana	Card1Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups1\Pentacles melody		
-	1035934357	Card2Wands	Card2Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups2\Pentacles melody		
-	1046614270	Card3Pentacles	Card3Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups3\Major arcana melody		
+	4693282	Cups	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\Swords accompaniment		
+	6549583	Swords	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\Major arcana accompaniment		
+	8878700	Null	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\Cups accompaniment		
+	14347078	Card3Wands	Card3Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\Major arcana melody		
+	15858840	Wands	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\Cups accompaniment		
+	23082296	MajorArcana	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\Wands accompaniment		
+	45198365	Wands	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\Pentacles accompaniment		
+	79755964	MajorArcana	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\Pentacles accompaniment		
+	81371214	Wands	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\Cups accompaniment		
+	83727859	Pentacles	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\Wands accompaniment		
+	84854234	Wands	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\Pentacles accompaniment		
+	103241857	Card1Pentacles	Card1Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\Swords melody		
+	128667997	Card3Swords	Card3Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\Major arcana melody		
+	131337224	Wands	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\Major arcana accompaniment		
+	134035434	Cups	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\Major arcana accompaniment		
+	139957995	MajorArcana	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\Null accompaniment		
+	156603992	Swords	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\Null accompaniment		
+	160531466	Pentacles	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\Cups accompaniment		
+	161097807	Cups	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\Swords accompaniment		
+	174579673	Cups	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\Wands accompaniment		
+	187440715	Card1Wands	Card1Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\Major arcana melody		
+	206145256	MajorArcana	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\Cups accompaniment		
+	207745466	MajorArcana	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\Swords accompaniment		
+	210826742	Card2Wands	Card2Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\Major arcana melody		
+	219675879	Cups	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\Swords accompaniment		
+	220895088	Card3Wands	Card3Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\Swords melody		
+	238572520	Pentacles	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\Swords accompaniment		
+	239900485	Card3MajorArcana	Card3Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\Pentacles melody		
+	244159151	Card2Wands	Card2Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\Swords melody		
+	247239590	Pentacles	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\Swords accompaniment		
+	251187800	Pentacles	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\Swords accompaniment		
+	256240759	Card1Pentacles	Card1Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\Wands melody		
+	269286969	Null	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\Major arcana accompaniment		
+	273058209	Swords	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\Major arcana accompaniment		
+	277999415	Swords	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\Pentacles accompaniment		
+	279120171	Card3MajorArcana	Card3Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\Wands melody		
+	281458907	Card1Cups	Card1Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\Major arcana melody		
+	288163665	Null	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\Wands accompaniment		
+	303614210	Card3Cups	Card3Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\Swords melody		
+	306323814	Swords	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\Cups accompaniment		
+	318673318	Card1Swords	Card1Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\Wands melody		
+	327801934	Wands	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\Swords accompaniment		
+	330218164	Card2Swords	Card2Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\Pentacles melody		
+	345374509	Card1MajorArcana	Card1Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\Wands melody		
+	354467611	Card3Wands	Card3Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\Pentacles melody		
+	359204875	Wands	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\Major arcana accompaniment		
+	364350469	Swords	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\Major arcana accompaniment		
+	366097780	Card3MajorArcana	Card3Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\Cups melody		
+	368678312	Null	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\Major arcana accompaniment		
+	376455086	Card2Pentacles	Card2Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\Wands melody		
+	378663315	Card2Swords	Card2Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\Cups melody		
+	383443955	Null	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\Cups accompaniment		
+	384450145	Card2Cups	Card2Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\Major arcana melody		
+	390867105	Swords	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\Pentacles accompaniment		
+	401083157	MajorArcana	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\Cups accompaniment		
+	416409086	Null	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\Pentacles accompaniment		
+	417141169	Cups	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\Major arcana accompaniment		
+	422894832	Wands	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\Cups accompaniment		
+	427247192	Null	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\Cups accompaniment		
+	442332657	Card2Pentacles	Card2Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\Major arcana melody		
+	458840943	Card3Cups	Card3Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\Pentacles melody		
+	462137369	Card3Swords	Card3Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\Pentacles melody		
+	468235076	Card1Swords	Card1Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\Major arcana melody		
+	471882304	Card3Pentacles	Card3Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\Swords melody		
+	490809142	Card2MajorArcana	Card2Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\Pentacles melody		
+	506369642	Card2Cups	Card2Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\Pentacles melody		
+	507115230	Cups	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\Pentacles accompaniment		
+	510779832	Swords	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\Wands accompaniment		
+	515339486	Card3Wands	Card3Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\Cups melody		
+	528429952	Swords	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\Cups accompaniment		
+	530176211	Card2Cups	Card2Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\Wands melody		
+	531055949	Pentacles	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\Null accompaniment		
+	541066142	MajorArcana	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\Pentacles accompaniment		
+	555382627	Pentacles	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\Major arcana accompaniment		
+	567985354	MajorArcana	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\Wands accompaniment		
+	580875533	Card2MajorArcana	Card2Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\Cups melody		
+	614997412	Wands	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\Pentacles accompaniment		
+	629854201	Card3MajorArcana	Card3Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\Swords melody		
+	630465343	MajorArcana	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\Wands accompaniment		
+	630915029	Pentacles	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\Major arcana accompaniment		
+	633269220	Pentacles	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\Cups accompaniment		
+	642692805	MajorArcana	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\Swords accompaniment		
+	644340927	Card2MajorArcana	Card2Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\Swords melody		
+	653919739	Null	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\Pentacles accompaniment		
+	666960628	Null	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\Swords accompaniment		
+	669334180	Card3Cups	Card3Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\Major arcana melody		
+	672830160	Card3Cups	Card3Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\Wands melody		
+	673758890	Card1Pentacles	Card1Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\Cups melody		
+	676315737	Card1Cups	Card1Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\Wands melody		
+	683480404	Cups	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\Wands accompaniment		
+	686116150	Card3Pentacles	Card3Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\Wands melody		
+	695621533	Card3Swords	Card3Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\Wands melody		
+	696890904	Wands	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\Major arcana accompaniment		
+	710068210	Cups	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\Major arcana accompaniment		
+	711997796	Null	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\Wands accompaniment		
+	720386257	Pentacles	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\Cups accompaniment		
+	721945942	Cups	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\Wands accompaniment		
+	737426850	MajorArcana	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\Pentacles accompaniment		
+	741165884	Null	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\Swords accompaniment		
+	745397774	Swords	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\Pentacles accompaniment		
+	757550551	Wands	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\Swords accompaniment		
+	759789535	MajorArcana	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\Cups accompaniment		
+	767588537	Card2Swords	Card2Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\Wands melody		
+	770355573	Card2Pentacles	Card2Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\Swords melody		
+	771516511	Null	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\Wands accompaniment		
+	778296949	Swords	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\Cups accompaniment		
+	783086934	Card1MajorArcana	Card1Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\Cups melody		
+	792017106	Card2Wands	Card2Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\Cups melody		
+	810272809	Null	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\Pentacles accompaniment		
+	822119453	Swords	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\Wands accompaniment		
+	827361167	Card1Swords	Card1Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\Cups melody		
+	831386215	Card2Cups	Card2Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\Swords melody		
+	842294413	Card3Pentacles	Card3Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\Cups melody		
+	843041857	Card1Swords	Card1Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\Pentacles melody		
+	844994438	Card2Swords	Card2Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\Major arcana melody		
+	850164562	Card1Cups	Card1Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\Pentacles melody		
+	852832663	Card1Pentacles	Card1Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\Major arcana melody		
+	895737066	Cups	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\Pentacles accompaniment		
+	917573326	Card1Wands	Card1Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\Cups melody		
+	926233913	Card1Cups	Card1Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\Swords melody		
+	928912172	MajorArcana	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\Swords accompaniment		
+	931756572	Card3Swords	Card3Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\Cups melody		
+	934744462	Swords	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\Wands accompaniment		
+	942489994	Null	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\Swords accompaniment		
+	949981537	Card1MajorArcana	Card1Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\Swords melody		
+	952066566	Cups	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\Null accompaniment		
+	957446656	Card2MajorArcana	Card2Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\Wands melody		
+	961456822	Card1Wands	Card1Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\Pentacles melody		
+	962299868	Wands	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\Swords accompaniment		
+	977659120	Cups	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\Pentacles accompaniment		
+	985835892	Pentacles	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\Wands accompaniment		
+	992160191	Null	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\Major arcana accompaniment		
+	992844028	Wands	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\Null accompaniment		
+	1003550601	Card1Wands	Card1Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\Swords melody		
+	1013662961	Card2Pentacles	Card2Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\Cups melody		
+	1022822334	Pentacles	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\Major arcana accompaniment		
+	1027496118	Card1MajorArcana	Card1Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\Pentacles melody		
+	1035934357	Card2Wands	Card2Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\Pentacles melody		
+	1046614270	Card3Pentacles	Card3Suit	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\Major arcana melody		
+	1063809767	Pentacles	GenerativeAccompanment	\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\Wands accompaniment		
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	3455755	Divinuet_SFX_Branch_9	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\Divinuet_SFX_Branch_9_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Menu Background\ForestNoises\Divinuet_SFX_Branch_9		21846
 	3999719	Divinuet_SFX_Slide_2	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\Divinuet_SFX_Slide_2_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Card Slides\Divinuet_SFX_Slide_2		12494
 	10920006	High	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\DT_HighPizzViolin_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Reading\Interlude\Interlude\High		83327
-	12159181	!Viola melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\Viola_Phrase3_Group11_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups3\!Viola melody		350927
-	17730444	Wands melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\WandsKalimba_Phrase3_Group8_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups3\Wands melody		503112
+	12159181	!Viola melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\Viola_Phrase3_Group11_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\!Viola melody		350927
+	17730444	Wands melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\WandsKalimba_Phrase3_Group8_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\Wands melody		503112
+	18063816	Pentacles accompaniment	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativePentacles_Part2_Minor_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\Pentacles accompaniment		670919
+	31266562	Major arcana accompaniment	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativeMajorArcana_Part3_Minor_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\Major arcana accompaniment		634070
 	31391632	TenOfSwords	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\TenOfSwords_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Reading\Swords\TenOfSwords\TenOfSwords\TenOfSwords		586640
-	32455599	!Viola melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\Viola_Phrase1_Group9_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups1\!Viola melody		279924
+	32455599	!Viola melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\Viola_Phrase1_Group9_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\!Viola melody		279924
 	40834202	Divinuet_SFX_Bird_13	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\Divinuet_SFX_Bird_13_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Menu Background\ForestNoises\Divinuet_SFX_Bird_13		27122
 	44127159	Divinuet_SFX_Bird_2	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\Divinuet_SFX_Bird_2_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Menu Background\ForestNoises\Divinuet_SFX_Bird_2		11983
-	46766814	Wands melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\WandsKalimba_Phrase1_Group8_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups1\Wands melody		503764
+	46766814	Wands melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\WandsKalimba_Phrase1_Group8_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\Wands melody		503764
 	60896860	DT_MidPiano	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\DT_MidPiano_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Reading\Interlude\Interlude_Intro\DT_MidPiano		46651
-	71147250	!Viola melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\Viola_Phrase2_Group8_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups2\!Viola melody		333851
+	67502600	Major arcana accompaniment	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativeMajorArcana_Part3_Major1_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\Major arcana accompaniment		644881
+	71147250	!Viola melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\Viola_Phrase2_Group8_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\!Viola melody		333851
 	80398774	FiveofCups	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\FiveofCups_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Reading\Cups\FiveOfCups\FiveOfCups\FiveofCups		748105
 	99072166	Divinuet_SFX_Slide_5	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\Divinuet_SFX_Slide_5_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Card Slides\Divinuet_SFX_Slide_5		12183
 	102189973	WheelOfFortune_roughmix	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\WheelOfFortune_roughmix_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Reading\Major Arcana\WheelOfFortune\WheelOfFortune_roughmix\WheelOfFortune_roughmix		905869
-	121065905	Major arcana melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\MajorArcanaHarp_Phrase1_Group9_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups1\Major arcana melody		653901
-	129425396	!Viola melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\Viola_Phrase3_Group2_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups3\!Viola melody		342886
+	107998518	Wands accompaniment	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativeWands_Part1_Major1_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\Wands accompaniment		653603
+	121065905	Major arcana melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\MajorArcanaHarp_Phrase1_Group9_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\Major arcana melody		653901
+	126786397	!Viola melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\Viola_Phrase1_Group6_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\!Viola melody		361453
+	129425396	!Viola melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\Viola_Phrase3_Group2_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\!Viola melody		342886
 	132458670	TwoOfCups	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\TwoOfCups_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Reading\Cups\TwoOfCups\TwoOfCups\TwoOfCups		635064
-	136069082	!Viola melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\Viola_Phrase2_Group11_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups2\!Viola melody		303990
+	136069082	!Viola melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\Viola_Phrase2_Group11_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\!Viola melody		303990
 	148910911	Divinuet_SFX_Slide_7	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\Divinuet_SFX_Slide_7_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Card Slides\Divinuet_SFX_Slide_7		11841
 	149975186	Divinuet_SFX_Branch_10	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\Divinuet_SFX_Branch_10_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Menu Background\ForestNoises\Divinuet_SFX_Branch_10		25680
-	156388177	Accompaniment	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativeCups_Part3_Major1_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups3\Accompaniment		651054
+	152546415	Pentacles accompaniment	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativePentacles_Part3_Dorian_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\Pentacles accompaniment		721319
+	156388177	Cups accompaniment	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativeCups_Part3_Major1_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\Cups accompaniment		651054
 	172227923	High	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\DT_HighViolinLegato_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Reading\Interlude\Interlude\High		91419
 	181571115	High	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\DT_HighDulcimer_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Reading\Interlude\Interlude\High		78767
 	183601610	Divinuet_SFX_Branch_6	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\Divinuet_SFX_Branch_6_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Menu Background\ForestNoises\Divinuet_SFX_Branch_6		38149
-	191996672	Major arcana melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\MajorArcanaHarp_Phrase3_Group9_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups3\Major arcana melody		527257
+	191996672	Major arcana melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\MajorArcanaHarp_Phrase3_Group9_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\Major arcana melody		527257
 	197093322	Strength	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\Strength_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Reading\Major Arcana\Strength\Strength\Strength		891106
-	200057738	Accompaniment	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativeCups_Part3_Minor_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups3\Accompaniment		631028
-	203151517	Accompaniment	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativeCups_Part1_Minor_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups1\Accompaniment		628214
+	198385087	Wands accompaniment	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativeWands_Part2_Major1_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\Wands accompaniment		661025
+	200057738	Cups accompaniment	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativeCups_Part3_Minor_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\Cups accompaniment		631028
+	203151517	Cups accompaniment	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativeCups_Part1_Minor_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\Cups accompaniment		628214
+	212159877	Wands accompaniment	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativeWands_Part3_Major2_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\Wands accompaniment		637998
 	217290175	Divinuet_SFX_Slide_6	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\Divinuet_SFX_Slide_6_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Card Slides\Divinuet_SFX_Slide_6		10724
 	218271841	TheFool	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\TheFool_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Reading\Major Arcana\TheFool\TheFool\TheFool		636263
+	220452914	!Viola melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\Viola_Phrase3_Group6_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\!Viola melody		307010
 	222634654	FourOfSwords	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\FourOfSwords_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Reading\Swords\FourOfSwords\FourOfSwords\FourOfSwords		756870
 	226263175	Divinuet_SFX_Slide_9	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\Divinuet_SFX_Slide_9_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Card Slides\Divinuet_SFX_Slide_9		8078
 	228812739	Low	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\DT_LowSynthPad_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Reading\Interlude\Interlude\Low		83569
 	229381900	Divinuet_SFX_Branch_4	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\Divinuet_SFX_Branch_4_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Menu Background\ForestNoises\Divinuet_SFX_Branch_4		11929
+	229522667	Major arcana accompaniment	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativeMajorArcana_Part1_Dorian_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\Major arcana accompaniment		647058
+	230706927	Swords accompaniment	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativeSwords_Part3_Minor_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\Swords accompaniment		638410
 	231280185	Divinuet_SFX_Bird_16	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\Divinuet_SFX_Bird_16_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Menu Background\ForestNoises\Divinuet_SFX_Bird_16		35518
 	233626674	Low	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\DT_LowPiano_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Reading\Interlude\Interlude\Low		46511
-	236872454	Cups melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\CupsPiano_Phrase1_Group11_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups1\Cups melody		569375
-	242181906	Swords melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\SwordsWurli_Phrase2_Group8_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups2\Swords melody		512492
-	252905170	Swords melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\SwordsWurli_Phrase1_Group8_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups1\Swords melody		508201
-	274876220	!Viola melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\Viola_Phrase3_Group8_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups3\!Viola melody		354000
+	236872454	Cups melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\CupsPiano_Phrase1_Group11_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\Cups melody		569375
+	242181906	Swords melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\SwordsWurli_Phrase2_Group8_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\Swords melody		512492
+	252905170	Swords melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\SwordsWurli_Phrase1_Group8_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\Swords melody		508201
+	270591954	Pentacles accompaniment	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativePentacles_Part1_Minor_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\Pentacles accompaniment		672228
+	272987903	NineOfSwords	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\NineOfSwords_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Reading\Swords\NineOfSwords\NineOfSwords\NineOfSwords		755444
+	274876220	!Viola melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\Viola_Phrase3_Group8_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\!Viola melody		354000
+	276073546	ThreeOfCups	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\ThreeOfCups_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Reading\Cups\ThreeOfCups\ThreeOfCups\ThreeOfCups		767854
 	279666286	Low	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\DT_LowHarp_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Reading\Interlude\Interlude\Low		102040
 	281105246	ReadingToMakingSongTransition	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\ReadingToMakingSongTransition_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Reading\Interlude\ReadingToMakingSongTransition\ReadingToMakingSongTransition		144212
-	281964190	Accompaniment	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativeCups_Part2_Minor_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups2\Accompaniment		625128
-	294194485	Accompaniment	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativeCups_Part3_Major2_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups3\Accompaniment		648476
-	296588914	Pentacles melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\PentaclesDulcimer_Phrase3_Group9_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups3\Pentacles melody		570954
+	281964190	Cups accompaniment	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativeCups_Part2_Minor_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\Cups accompaniment		625128
+	282583232	Pentacles accompaniment	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativePentacles_Part3_Minor_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\Pentacles accompaniment		717975
+	282808218	Swords accompaniment	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativeSwords_Part3_Dorian_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\Swords accompaniment		640032
+	290284714	Swords accompaniment	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativeSwords_Part1_Dorian_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\Swords accompaniment		650232
+	294140689	Major arcana accompaniment	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativeMajorArcana_Part1_Major1_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\Major arcana accompaniment		656025
+	294194485	Cups accompaniment	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativeCups_Part3_Major2_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\Cups accompaniment		648476
+	296588914	Pentacles melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\PentaclesDulcimer_Phrase3_Group9_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\Pentacles melody		570954
 	301099300	Divinuet_SFX_Bird_9	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\Divinuet_SFX_Bird_9_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Menu Background\ForestNoises\Divinuet_SFX_Bird_9		16797
+	307227647	Wands accompaniment	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativeWands_Part3_Major1_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\Wands accompaniment		653552
 	308468879	Divinuet_SFX_Bird_6	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\Divinuet_SFX_Bird_6_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Menu Background\ForestNoises\Divinuet_SFX_Bird_6		7916
 	324473811	TheEmpress	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\TheEmpress_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Reading\Major Arcana\TheEmpress\TheEmpress\TheEmpress		739618
 	324892969	Low	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\DT_LowCelloBow_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Reading\Interlude\Interlude\Low		76830
+	329137962	Swords accompaniment	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativeSwords_Part2_Minor_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\Swords accompaniment		628614
 	329431951	TenOfCups	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\TenOfCups_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Reading\Cups\TenOfCups\TenOfCups\TenOfCups		798275
 	333399970	Divinuet_SFX_Bird_8	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\Divinuet_SFX_Bird_8_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Menu Background\ForestNoises\Divinuet_SFX_Bird_8		22927
 	334411286	Divinuet_SFX_Slide_8	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\Divinuet_SFX_Slide_8_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Card Slides\Divinuet_SFX_Slide_8		11232
+	338895552	GenerativeCups_Intro	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativeMajorArcana_Intro_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Intro\GenerativeCups_Intro		232210
+	346536830	Pentacles accompaniment	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativePentacles_Part2_Major2_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\Pentacles accompaniment		674409
 	355083421	Divinuet_SFX_Branch_2	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\Divinuet_SFX_Branch_2_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Menu Background\ForestNoises\Divinuet_SFX_Branch_2		23320
+	367926471	!Viola melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\Viola_Phrase2_Group6_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\!Viola melody		311954
+	369813794	Swords accompaniment	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativeSwords_Part2_Dorian_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\Swords accompaniment		626672
 	370058100	Divinuet_SFX_Bird_15	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\Divinuet_SFX_Bird_15_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Menu Background\ForestNoises\Divinuet_SFX_Bird_15		32366
-	384376340	Accompaniment	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativeCups_Part1_Dorian_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups1\Accompaniment		626529
+	381298610	Major arcana accompaniment	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativeMajorArcana_Part3_Major2_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\Major arcana accompaniment		626344
+	383751382	Pentacles accompaniment	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativePentacles_Part3_Major2_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\Pentacles accompaniment		722952
+	384376340	Cups accompaniment	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativeCups_Part1_Dorian_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\Cups accompaniment		626529
 	414632439	TheHighPriestess	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\TheHighPriestess_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Reading\Major Arcana\TheHighPriestess\TheHighPriestess\TheHighPriestess		645166
+	415664266	Wands accompaniment	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativeWands_Part2_Minor_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\Wands accompaniment		662081
 	421490229	Low	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\DT_LowBassoon_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Reading\Interlude\Interlude\Low		81926
 	457937205	TheStar	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\TheStar_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Reading\Major Arcana\TheStar\TheStar\TheStar		757739
-	460855816	FiveOfWands	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\FiveOfWands_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Reading\Wands\FiveOfWands\FiveOfWands\FiveOfWands		749671
+	460855816	FiveOfWands	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\FiveOfWands_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Reading\Wands\FiveOfWands\FiveOfWands\FiveOfWands		744699
 	461416098	Divinuet_SFX_Bird_10	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\Divinuet_SFX_Bird_10_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Menu Background\ForestNoises\Divinuet_SFX_Bird_10		20770
+	461794263	Swords accompaniment	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativeSwords_Part3_Major1_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\Swords accompaniment		639175
 	467472294	Divinuet_SFX_Bird_5	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\Divinuet_SFX_Bird_5_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Menu Background\ForestNoises\Divinuet_SFX_Bird_5		5772
-	473595532	!Viola melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\Viola_Phrase2_Group12_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups2\!Viola melody		282893
+	473595532	!Viola melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\Viola_Phrase2_Group12_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\!Viola melody		282893
 	475690800	Divinuet_SFX_Bird_12	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\Divinuet_SFX_Bird_12_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Menu Background\ForestNoises\Divinuet_SFX_Bird_12		47784
-	479067493	Major arcana melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\MajorArcanaHarp_Phrase2_Group9_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups2\Major arcana melody		651947
+	479067493	Major arcana melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\MajorArcanaHarp_Phrase2_Group9_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\Major arcana melody		651947
+	482282294	TheHermit	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\TheHermit_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Reading\Major Arcana\TheHermit\TheHermit\TheHermit		668433
 	489036931	Divinuet_SFX_Bird_1	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\Divinuet_SFX_Bird_1_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Menu Background\ForestNoises\Divinuet_SFX_Bird_1		7025
 	493584090	TheMagician	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\TheMagician_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Reading\Major Arcana\TheMagician\TheMagician\TheMagician		595933
+	500260132	Major arcana accompaniment	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativeMajorArcana_Part2_Major1_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\Major arcana accompaniment		661607
 	500694944	SevenOfPentacles	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\SevenOfPentacles_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Reading\Pentacles\SevenOfPentacles\SevenOfPentacles\SevenOfPentacles		741710
+	504172983	Pentacles accompaniment	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativePentacles_Part1_Major1_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\Pentacles accompaniment		672903
 	504679811	GenerativeToReadingTransition	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativeToReadingTransition_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Reading\GenerativeToReadingTransition\GenerativeToReadingTransition		143177
+	507766503	QueenOfWands	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\QueenOfWands_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Reading\Wands\QueenOfWands\QueenOfWands\QueenOfWands		873638
 	510243111	Divinuet_SFX_Branch_3	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\Divinuet_SFX_Branch_3_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Menu Background\ForestNoises\Divinuet_SFX_Branch_3		14755
 	516145389	TheMoon	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\TheMoon_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Reading\Major Arcana\TheMoon\TheMoon\TheMoon		695921
-	526823866	Accompaniment	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativeCups_Part1_Major2_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups1\Accompaniment		631407
+	526823866	Cups accompaniment	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativeCups_Part1_Major2_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\Cups accompaniment		631407
 	544869689	Divinuet_SFX_Branch_8	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\Divinuet_SFX_Branch_8_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Menu Background\ForestNoises\Divinuet_SFX_Branch_8		21416
-	551223743	!Viola melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\Viola_Phrase1_Group8_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups1\!Viola melody		348475
+	551223743	!Viola melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\Viola_Phrase1_Group8_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\!Viola melody		348475
 	576684077	KingOfCups	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\KingOfCups_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Reading\Cups\KingOfCups\KingOfCups\KingOfCups		656382
-	590389761	Cups melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\CupsPiano_Phrase3_Group11_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups3\Cups melody		589566
+	586071285	Wands accompaniment	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativeWands_Part2_Dorian_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\Wands accompaniment		652400
+	590389761	Cups melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\CupsPiano_Phrase3_Group11_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\Cups melody		589566
 	590887813	NineOfPentacles	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\NineOfPentacles_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Reading\Pentacles\NineOfPentacles\NineOfPentacles\NineOfPentacles		920860
+	599810603	Swords accompaniment	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativeSwords_Part2_Major1_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\Swords accompaniment		633046
 	600408592	Divinuet_SFX_Slide_10	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\Divinuet_SFX_Slide_10_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Card Slides\Divinuet_SFX_Slide_10		10116
+	608603622	Major arcana accompaniment	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativeMajorArcana_Part2_Minor_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\Major arcana accompaniment		647890
 	610984443	Divinuet_SFX_Branch_7	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\Divinuet_SFX_Branch_7_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Menu Background\ForestNoises\Divinuet_SFX_Branch_7		27051
+	611353522	Major arcana accompaniment	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativeMajorArcana_Part1_Major2_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\Major arcana accompaniment		645976
 	616349379	SevenOfCups	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\SevenOfCups_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Reading\Cups\SevenOfCups\SevenOfCups\SevenOfCups		784503
+	619720160	Wands accompaniment	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativeWands_Part1_Minor_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\Wands accompaniment		645686
 	620254185	MakingSongToGenerativeTransition	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\MakingSongToGenerativeTransition_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\MakingSong\MakingSongToGenerativeTransition\MakingSongToGenerativeTransition		136236
-	624044825	Pentacles melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\PentaclesDulcimer_Phrase1_Group9_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups1\Pentacles melody		622295
-	627831526	Major arcana melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\MajorArcanaHarp_Phrase1_Group11_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups1\Major arcana melody		667450
+	624044825	Pentacles melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\PentaclesDulcimer_Phrase1_Group9_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\Pentacles melody		622295
+	627476462	Major arcana accompaniment	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativeMajorArcana_Part1_Minor_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\Major arcana accompaniment		643787
+	627831526	Major arcana melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\MajorArcanaHarp_Phrase1_Group11_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\Major arcana melody		667450
+	631819254	Wands accompaniment	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativeWands_Part3_Dorian_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\Wands accompaniment		646738
 	634844833	Divinuet_SFX_Slide_3	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\Divinuet_SFX_Slide_3_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Card Slides\Divinuet_SFX_Slide_3		12799
-	635107510	!Viola melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\Viola_Phrase1_Group11_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups1\!Viola melody		321659
+	635107510	!Viola melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\Viola_Phrase1_Group11_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\!Viola melody		321659
 	644631396	SevenofWands	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\SevenofWands_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Reading\Wands\SevenOfWands\SevenofWands\SevenofWands		797251
-	645141868	Major arcana melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\MajorArcanaHarp_Phrase2_Group1_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups2\Major arcana melody		723823
+	645141868	Major arcana melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\MajorArcanaHarp_Phrase2_Group1_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\Major arcana melody		723823
 	656301869	Temperance	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\Temperance_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Reading\Major Arcana\Temperance\Temperance\Temperance		749740
-	657871922	!Viola melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\Viola_Phrase2_Group1_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups2\!Viola melody		274882
+	657871922	!Viola melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\Viola_Phrase2_Group1_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\!Viola melody		274882
 	660746157	AfterReadingBed	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\AfterReadingBed_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Reading\AfterReadingBed\AfterReadingBed\AfterReadingBed		6100587
 	663437979	Divinuet_SFX_Bird_11	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\Divinuet_SFX_Bird_11_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Menu Background\ForestNoises\Divinuet_SFX_Bird_11		19072
-	684459571	Cups melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\CupsPiano_Phrase2_Group11_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups2\Cups melody		612269
-	696998161	Wands melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\WandsKalimba_Phrase2_Group8_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups2\Wands melody		524883
+	684459571	Cups melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\CupsPiano_Phrase2_Group11_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\Cups melody		612269
+	684660360	Pentacles accompaniment	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativePentacles_Part2_Major1_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\Pentacles accompaniment		671943
+	696998161	Wands melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\WandsKalimba_Phrase2_Group8_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\Wands melody		524883
+	708443093	Pentacles accompaniment	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativePentacles_Part2_Dorian_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\Pentacles accompaniment		676255
 	720383636	Middle	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\DT_MidPiano2_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Reading\Interlude\Interlude\Middle		47507
 	727053384	High	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\DT_HighPipePiano_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Reading\Interlude\Interlude\High		99445
-	737891992	Swords melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\SwordsWurli_Phrase3_Group9_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups3\Swords melody		452720
+	737891992	Swords melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\SwordsWurli_Phrase3_Group9_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\Swords melody		452720
 	739936188	SevenOfSwords	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\SevenOfSwords_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Reading\Swords\SevenOfSwords\SevenOfSwords\SevenOfSwords		835851
 	740794188	Divinuet_SFX_Branch_5	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\Divinuet_SFX_Branch_5_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Menu Background\ForestNoises\Divinuet_SFX_Branch_5		19563
 	753175904	Divinuet_SFX_Bird_7	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\Divinuet_SFX_Bird_7_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Menu Background\ForestNoises\Divinuet_SFX_Bird_7		15838
 	754057084	Low	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\DT_LowPianoHeaven_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Reading\Interlude\Interlude\Low		92464
 	762437592	Divinuet_SFX_Branch_11	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\Divinuet_SFX_Branch_11_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Menu Background\ForestNoises\Divinuet_SFX_Branch_11		21190
 	763796510	MakingSong2	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\MakingSong2_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\MakingSong\MakingSong2\MakingSong2		950671
-	769702877	Swords melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\SwordsWurli_Phrase3_Group8_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups3\Swords melody		456485
-	773563290	Swords melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\SwordsWurli_Phrase2_Group9_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups2\Swords melody		506281
-	776924037	Major arcana melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\MajorArcanaHarp_Phrase2_Group8_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups2\Major arcana melody		782350
-	781001668	Swords melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\SwordsWurli_Phrase1_Group9_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups1\Swords melody		506720
-	792819868	!Viola melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\Viola_Phrase3_Group9_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups3\!Viola melody		308294
-	801173061	Major arcana melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\MajorArcanaHarp_Phrase1_Group8_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups1\Major arcana melody		795621
+	769702877	Swords melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\SwordsWurli_Phrase3_Group8_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\Swords melody		456485
+	773563290	Swords melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\SwordsWurli_Phrase2_Group9_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\Swords melody		506281
+	776924037	Major arcana melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\MajorArcanaHarp_Phrase2_Group8_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\Major arcana melody		782350
+	779457774	Pentacles accompaniment	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativePentacles_Part3_Major1_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\Pentacles accompaniment		724825
+	781001668	Swords melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\SwordsWurli_Phrase1_Group9_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\Swords melody		506720
+	783863844	Swords accompaniment	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativeSwords_Part3_Major2_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\Swords accompaniment		641085
+	792819868	!Viola melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\Viola_Phrase3_Group9_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\!Viola melody		308294
+	801173061	Major arcana melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\MajorArcanaHarp_Phrase1_Group8_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\Major arcana melody		795621
 	805419185	Death	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\Death_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Reading\Major Arcana\Death\Death\Death		584226
+	805431720	KingOfSwords	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\KingOfSwords_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Reading\Swords\KingOfSwords\KingOfSwords\KingOfSwords		790258
 	807196764	TwoOfWands	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\TwoOfWands_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Reading\Wands\TwoOfWands\TwoOfWands\TwoOfWands		776287
 	816851278	High	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\DT_HighClarinet_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Reading\Interlude\Interlude\High		77871
+	824918613	Swords accompaniment	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativeSwords_Part1_Major2_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\Swords accompaniment		644314
 	836976950	High	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\DT_HighSpooky_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Reading\Interlude\Interlude\High		73755
-	842663674	Accompaniment	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativeCups_Part1_Major1_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups1\Accompaniment		637028
-	853373140	Pentacles melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\PentaclesDulcimer_Phrase2_Group9_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups2\Pentacles melody		628651
+	842663674	Cups accompaniment	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativeCups_Part1_Major1_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\Cups accompaniment		637028
+	853373140	Pentacles melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\PentaclesDulcimer_Phrase2_Group9_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\Pentacles melody		628651
 	854675070	SixOfPentacles	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\SixOfPentacles_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Reading\Pentacles\SixOfPentacles\SixOfPentacles\SixOfPentacles		816443
 	859052039	Divinuet_SFX_Bird_3	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\Divinuet_SFX_Bird_3_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Menu Background\ForestNoises\Divinuet_SFX_Bird_3		5513
 	862185292	Divinuet_SFX_Slide_4	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\Divinuet_SFX_Slide_4_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Card Slides\Divinuet_SFX_Slide_4		12394
-	866630420	Cups melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\CupsPiano_Phrase3_Group2_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups3\Cups melody		560994
-	906097638	Major arcana melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\MajorArcanaHarp_Phrase2_Group12_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups2\Major arcana melody		679127
+	866630420	Cups melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\CupsPiano_Phrase3_Group2_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\Cups melody		560994
+	867224572	Major arcana accompaniment	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativeMajorArcana_Part2_Major2_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\Major arcana accompaniment		648806
+	870985945	Pentacles accompaniment	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativePentacles_Part1_Dorian_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\Pentacles accompaniment		668033
+	888142988	Swords accompaniment	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativeSwords_Part1_Major1_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\Swords accompaniment		647178
+	890303670	Major arcana accompaniment	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativeMajorArcana_Part3_Dorian_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\Major arcana accompaniment		634210
+	899113620	Wands accompaniment	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativeWands_Part3_Minor_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\Wands accompaniment		643080
+	906097638	Major arcana melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\MajorArcanaHarp_Phrase2_Group12_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\Major arcana melody		679127
 	909769382	MakingSong1	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\MakingSong1_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\MakingSong\MakingSong1\MakingSong1		950671
 	916533496	Low	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\DT_LowBassClarinet_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Reading\Interlude\Interlude\Low		89968
-	918100330	GenerativeCups_Intro	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativeCups_Intro_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups0Intro\GenerativeCups_Intro		187163
+	918100330	GenerativeCups_Intro	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativeCups_Intro_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Intro\GenerativeCups_Intro		187163
 	919870225	AceOfCups	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\AceOfCups_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Reading\Cups\AceOfCups\AceOfCups\AceOfCups		835522
 	927714190	TheHangedMan	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\TheHangedMan_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Reading\Major Arcana\TheHangedMan\TheHangedMan\TheHangedMan		793671
-	933716518	Accompaniment	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativeCups_Part3_Dorian_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups3\Accompaniment		634438
-	933849671	Major arcana melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\MajorArcanaHarp_Phrase2_Group11_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups2\Major arcana melody		704780
-	957206922	!Viola melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\Viola_Phrase2_Group9_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups2\!Viola melody		362077
-	976564632	Major arcana melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\MajorArcanaHarp_Phrase3_Group8_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups3\Major arcana melody		722930
+	933716518	Cups accompaniment	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativeCups_Part3_Dorian_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\Cups accompaniment		634438
+	933849671	Major arcana melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\MajorArcanaHarp_Phrase2_Group11_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\Major arcana melody		704780
+	957206922	!Viola melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\Viola_Phrase2_Group9_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\!Viola melody		362077
+	972970452	Pentacles accompaniment	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativePentacles_Part1_Major2_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\Pentacles accompaniment		672923
+	976564632	Major arcana melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\MajorArcanaHarp_Phrase3_Group8_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\Major arcana melody		722930
 	989684067	Divinuet_AMB_Forest_1	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\Divinuet_AMB_Forest_1_9EDFC787.wem		\Actor-Mixer Hierarchy\Default Work Unit\Menu Background\Ambience\Divinuet_AMB_Forest_1		4567660
-	1005469300	Accompaniment	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativeCups_Part2_Major1_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups2\Accompaniment		630034
+	1001358609	Wands accompaniment	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativeWands_Part1_Dorian_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\Wands accompaniment		660434
+	1005469300	Cups accompaniment	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativeCups_Part2_Major1_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\Cups accompaniment		630034
 	1013527528	KingOfPentacles	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\KingOfPentacles_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Reading\Pentacles\KingOfPentacles\KingOfPentacles\KingOfPentacles		960775
-	1024868010	Accompaniment	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativeCups_Part2_Major2_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups2\Accompaniment		636692
+	1017520918	Swords accompaniment	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativeSwords_Part2_Major2_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\Swords accompaniment		642756
+	1024868010	Cups accompaniment	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativeCups_Part2_Major2_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\Cups accompaniment		636692
 	1029646848	EightOfPentacles	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\ThreeOfPentacles_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Reading\Pentacles\EightOfPentacles\EightOfPentacles\EightOfPentacles		794920
 	1034214283	Divinuet_SFX_Bird_14	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\Divinuet_SFX_Bird_14_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Menu Background\ForestNoises\Divinuet_SFX_Bird_14		48384
-	1035521087	Major arcana melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\MajorArcanaHarp_Phrase3_Group11_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups3\Major arcana melody		638645
+	1035521087	Major arcana melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\MajorArcanaHarp_Phrase3_Group11_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card3\Major arcana melody		638645
+	1037353036	Major arcana accompaniment	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativeMajorArcana_Part2_Dorian_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\Major arcana accompaniment		652541
+	1039665456	Swords accompaniment	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativeSwords_Part1_Minor_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\Swords accompaniment		649209
 	1040825332	Divinuet_SFX_Slide_1	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\Divinuet_SFX_Slide_1_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Card Slides\Divinuet_SFX_Slide_1		10368
 	1041828197	Divinuet_SFX_Bird_4	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\Divinuet_SFX_Bird_4_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Menu Background\ForestNoises\Divinuet_SFX_Bird_4		9210
+	1051404422	Wands accompaniment	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativeWands_Part2_Major2_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\Wands accompaniment		651796
 	1054585838	High	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\DT_HighFlute_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Reading\Interlude\Interlude\High		78859
 	1067456449	Divinuet_SFX_Branch_1	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\Divinuet_SFX_Branch_1_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Menu Background\ForestNoises\Divinuet_SFX_Branch_1		13877
 	1068886985	SixOfSwords	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\SixOfSwords_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Reading\Swords\SixOfSwords\SixOfSwords\SixOfSwords		658647
-	1070576366	Accompaniment	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativeCups_Part2_Dorian_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Cups\Cups2\Accompaniment		628618
+	1070576366	Cups accompaniment	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativeCups_Part2_Dorian_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\Cups accompaniment		628618
+	1071148328	Wands accompaniment	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativeWands_Part1_Major2_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\Wands accompaniment		641580
 

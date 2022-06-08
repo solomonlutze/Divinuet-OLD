@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 316b02227919fc49a4528be3c11e0f41
     GuidInternal: 
-    m_lastTime: -8585515483416069050
+    m_lastTime: -8585468795664031218
     List:
     - name: Soundbank
       guid: 8d5e51ee7b34f042a6bee5955537fe07
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: bc617d844702964e9e3475116383ce13
     GuidInternal: 
-    m_lastTime: -8585515483416238846
+    m_lastTime: -8585475911898581618
     List:
     - name: AccompanimentCups
       guid: 3e9aa257f8dcda44ab5bc5d1fd033e9f
@@ -133,6 +133,86 @@ MonoBehaviour:
         ObjectType: 3
         guid: efed386d1143014bb3da835b9c29818c
       Path: Events\Default Work Unit\GenerativeAccompaniment\AccompanimentMajorArcana
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: AccompanimentNull
+      guid: 1b98135e35f21b4693374c009c55ccd7
+      id: 2253610385
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: bc617d844702964e9e3475116383ce13
+      - ElementName: GenerativeAccompaniment
+        ObjectType: 4
+        guid: 15448e73a4997f4f8940c1fce70ecea9
+      - ElementName: AccompanimentNull
+        ObjectType: 3
+        guid: 1b98135e35f21b4693374c009c55ccd7
+      Path: Events\Default Work Unit\GenerativeAccompaniment\AccompanimentNull
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: AccompanimentPentacles
+      guid: 8ae5f7b1f1e5a248a633ff3dd8ced5e5
+      id: 2401993111
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: bc617d844702964e9e3475116383ce13
+      - ElementName: GenerativeAccompaniment
+        ObjectType: 4
+        guid: 15448e73a4997f4f8940c1fce70ecea9
+      - ElementName: AccompanimentPentacles
+        ObjectType: 3
+        guid: 8ae5f7b1f1e5a248a633ff3dd8ced5e5
+      Path: Events\Default Work Unit\GenerativeAccompaniment\AccompanimentPentacles
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: AccompanimentSwords
+      guid: e07c45465f18374f9432fc3e8c9b8522
+      id: 820727340
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: bc617d844702964e9e3475116383ce13
+      - ElementName: GenerativeAccompaniment
+        ObjectType: 4
+        guid: 15448e73a4997f4f8940c1fce70ecea9
+      - ElementName: AccompanimentSwords
+        ObjectType: 3
+        guid: e07c45465f18374f9432fc3e8c9b8522
+      Path: Events\Default Work Unit\GenerativeAccompaniment\AccompanimentSwords
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: AccompanimentWands
+      guid: c2453bb116147e4dacdc1fad986c7f18
+      id: 816211659
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: bc617d844702964e9e3475116383ce13
+      - ElementName: GenerativeAccompaniment
+        ObjectType: 4
+        guid: 15448e73a4997f4f8940c1fce70ecea9
+      - ElementName: AccompanimentWands
+        ObjectType: 3
+        guid: c2453bb116147e4dacdc1fad986c7f18
+      Path: Events\Default Work Unit\GenerativeAccompaniment\AccompanimentWands
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -1292,26 +1372,6 @@ MonoBehaviour:
       maxDuration: 0
       minDuration: 0
     - name: Card3
-      guid: 274b8ebafd6e8249bac85a5eb1e0cdc0
-      id: 4256484202
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: bc617d844702964e9e3475116383ce13
-      - ElementName: GenerativeKeys
-        ObjectType: 4
-        guid: 98e48b21f1625147b8a796b13abd3b53
-      - ElementName: Card3
-        ObjectType: 4
-        guid: 274b8ebafd6e8249bac85a5eb1e0cdc0
-      Path: Events\Default Work Unit\GenerativeKeys\Card3
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Card3
       guid: df8109c6d28aa246be2d41a190f30aa0
       id: 4256484202
       PathAndIcons:
@@ -1328,6 +1388,26 @@ MonoBehaviour:
         ObjectType: 4
         guid: df8109c6d28aa246be2d41a190f30aa0
       Path: Events\Default Work Unit\GenerativeCardSuits\Card3
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Card3
+      guid: 274b8ebafd6e8249bac85a5eb1e0cdc0
+      id: 4256484202
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: bc617d844702964e9e3475116383ce13
+      - ElementName: GenerativeKeys
+        ObjectType: 4
+        guid: 98e48b21f1625147b8a796b13abd3b53
+      - ElementName: Card3
+        ObjectType: 4
+        guid: 274b8ebafd6e8249bac85a5eb1e0cdc0
+      Path: Events\Default Work Unit\GenerativeKeys\Card3
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -2477,6 +2557,29 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: KingOfSwords
+      guid: 1178dac7b4e4c5419847adca63402780
+      id: 3530681053
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: bc617d844702964e9e3475116383ce13
+      - ElementName: CardEvents
+        ObjectType: 4
+        guid: b096310945b4bd4391e804c065b54e38
+      - ElementName: Swords
+        ObjectType: 4
+        guid: da81536e6c60f743a6d382fe22d7b869
+      - ElementName: KingOfSwords
+        ObjectType: 3
+        guid: 1178dac7b4e4c5419847adca63402780
+      Path: Events\Default Work Unit\CardEvents\Swords\KingOfSwords
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: Main
       guid: c97319cf81f0fb46bd534203c312f9f1
       id: 3161908922
@@ -2600,6 +2703,29 @@ MonoBehaviour:
         ObjectType: 3
         guid: 18d1f7489fe75441a343a49de1c19cf1
       Path: Events\Default Work Unit\CardEvents\Pentacles\NineOfPentacles
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: NineOfSwords
+      guid: acd65829e49e6d49981f1758a4d43d45
+      id: 3394600732
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: bc617d844702964e9e3475116383ce13
+      - ElementName: CardEvents
+        ObjectType: 4
+        guid: b096310945b4bd4391e804c065b54e38
+      - ElementName: Swords
+        ObjectType: 4
+        guid: da81536e6c60f743a6d382fe22d7b869
+      - ElementName: NineOfSwords
+        ObjectType: 3
+        guid: acd65829e49e6d49981f1758a4d43d45
+      Path: Events\Default Work Unit\CardEvents\Swords\NineOfSwords
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -3170,6 +3296,29 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
+    - name: TheHermit
+      guid: 43495a2550952948bfeaeba6b230f864
+      id: 1490823267
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: bc617d844702964e9e3475116383ce13
+      - ElementName: CardEvents
+        ObjectType: 4
+        guid: b096310945b4bd4391e804c065b54e38
+      - ElementName: Major Arcana
+        ObjectType: 4
+        guid: a2e9e99eca116444b7330e5afd69dafe
+      - ElementName: TheHermit
+        ObjectType: 3
+        guid: 43495a2550952948bfeaeba6b230f864
+      Path: Events\Default Work Unit\CardEvents\Major Arcana\TheHermit
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
     - name: TheHighPriestess
       guid: 29e6c4daf05c644f92e33f69a9afb076
       id: 3676275462
@@ -3259,6 +3408,29 @@ MonoBehaviour:
         ObjectType: 3
         guid: 0b666d4abdb67543b62ba86be9c2b8b8
       Path: Events\Default Work Unit\CardEvents\Major Arcana\TheStar
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: ThreeOfCups
+      guid: 575d948dc3497b4387a0c97dec83cffd
+      id: 1101082655
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: bc617d844702964e9e3475116383ce13
+      - ElementName: CardEvents
+        ObjectType: 4
+        guid: b096310945b4bd4391e804c065b54e38
+      - ElementName: Cups
+        ObjectType: 4
+        guid: 89fa276ee9fc2c4bb193e58a0ee62f2b
+      - ElementName: ThreeOfCups
+        ObjectType: 3
+        guid: 575d948dc3497b4387a0c97dec83cffd
+      Path: Events\Default Work Unit\CardEvents\Cups\ThreeOfCups
       maxAttenuation: 0
       maxDuration: 0
       minDuration: 0
@@ -3420,7 +3592,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 46c6d260267ae44a8030202cff271f3f
     GuidInternal: 
-    m_lastTime: -8585515483817823728
+    m_lastTime: -8585479247810061339
     List:
     - name: Card1Group
       guid: 637394fcc359c3459dcde70b789220f5
@@ -4863,6 +5035,22 @@ MonoBehaviour:
         - ElementName: KingOfPentacles
           ObjectType: 8
           guid: 1ef4cdcbbcfb1d459cd4625c9c118dc7
+      - name: KingOfSwords
+        guid: f1850c7daef7ae4dabaf6638f6d6566a
+        id: 3530681053
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 46c6d260267ae44a8030202cff271f3f
+        - ElementName: DuringReading
+          ObjectType: 9
+          guid: e159ce0e1e70de4f97d5abf8e953a03d
+        - ElementName: KingOfSwords
+          ObjectType: 8
+          guid: f1850c7daef7ae4dabaf6638f6d6566a
       - name: NineOfPentacles
         guid: 9d9d772323c6864693cd4d43debaae2a
         id: 1963057671
@@ -4879,6 +5067,22 @@ MonoBehaviour:
         - ElementName: NineOfPentacles
           ObjectType: 8
           guid: 9d9d772323c6864693cd4d43debaae2a
+      - name: NineOfSwords
+        guid: 91da75c51a1c834dbab0c30e5b779454
+        id: 3394600732
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 46c6d260267ae44a8030202cff271f3f
+        - ElementName: DuringReading
+          ObjectType: 9
+          guid: e159ce0e1e70de4f97d5abf8e953a03d
+        - ElementName: NineOfSwords
+          ObjectType: 8
+          guid: 91da75c51a1c834dbab0c30e5b779454
       - name: None
         guid: 56ee51727ab2554a91e9730e5ca558bd
         id: 748895195
@@ -4895,6 +5099,22 @@ MonoBehaviour:
         - ElementName: None
           ObjectType: 8
           guid: 56ee51727ab2554a91e9730e5ca558bd
+      - name: QueenOfWands
+        guid: 8733748c6c2c8943b2eb7f6ed5e9b1e5
+        id: 1734100207
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 46c6d260267ae44a8030202cff271f3f
+        - ElementName: DuringReading
+          ObjectType: 9
+          guid: e159ce0e1e70de4f97d5abf8e953a03d
+        - ElementName: QueenOfWands
+          ObjectType: 8
+          guid: 8733748c6c2c8943b2eb7f6ed5e9b1e5
       - name: SevenOfCups
         guid: 6687d1071fda7340a619d039a87c6e5b
         id: 884571752
@@ -5103,6 +5323,22 @@ MonoBehaviour:
         - ElementName: TheHangedMan
           ObjectType: 8
           guid: 68d4345828f46d4b8eeccc021ba93fc6
+      - name: TheHermit
+        guid: 4da8d029efede849918a3d7176e9df6d
+        id: 1490823267
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 46c6d260267ae44a8030202cff271f3f
+        - ElementName: DuringReading
+          ObjectType: 9
+          guid: e159ce0e1e70de4f97d5abf8e953a03d
+        - ElementName: TheHermit
+          ObjectType: 8
+          guid: 4da8d029efede849918a3d7176e9df6d
       - name: TheHighPriestess
         guid: 6603a89bb773a24a811bc495f23e2d1b
         id: 3676275462
@@ -5167,6 +5403,22 @@ MonoBehaviour:
         - ElementName: TheStar
           ObjectType: 8
           guid: 59b19101083d1843b2b56f6e27270fa4
+      - name: ThreeOfCups
+        guid: f9d053d02d915644b97509dafb25081d
+        id: 1101082655
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 46c6d260267ae44a8030202cff271f3f
+        - ElementName: DuringReading
+          ObjectType: 9
+          guid: e159ce0e1e70de4f97d5abf8e953a03d
+        - ElementName: ThreeOfCups
+          ObjectType: 8
+          guid: f9d053d02d915644b97509dafb25081d
       - name: TwoOfCups
         guid: 9b9e8cd0073a4e4da7433d06314a1d83
         id: 1765113981

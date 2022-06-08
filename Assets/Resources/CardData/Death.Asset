@@ -23,7 +23,11 @@ MonoBehaviour:
     something you\u2019ve gotten used to before you can move forward and find something
     even better.^ It may be painful, but it\u2019s in your best interest in the long
     run."
-  cardShortDescription: 
+  cardShortDescription: 'ending
+
+    transition
+
+    letting go'
   readingMusicEvent:
     idInternal: 0
     valueGuidInternal: 
@@ -45,9 +49,9 @@ MonoBehaviour:
   clipDuration: 45
   thematicGroup: 1
   cardAndGroupClips:
+  - {fileID: 32900000, guid: d5b9ae3a068d2c843b78e4814276de72, type: 3}
   - {fileID: 0}
+  - {fileID: 32900000, guid: d5b9ae3a068d2c843b78e4814276de72, type: 3}
   - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 32900000, guid: d5b9ae3a068d2c843b78e4814276de72, type: 3}
   - {fileID: 0}
