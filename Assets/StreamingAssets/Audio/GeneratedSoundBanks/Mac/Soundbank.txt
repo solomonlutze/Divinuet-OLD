@@ -10,6 +10,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	249775224	MenuAmbienceStop			\Default Work Unit\SFXEvents\MenuAmbienceStop	
 	361241855	Swords			\Default Work Unit\GenerativeStates\Bass\Swords	
 	368896769	SkipReadingMusic			\Default Work Unit\DEBUG\SkipReadingMusic	
+	376576603	AceOfSwords			\Default Work Unit\CardEvents\Swords\AceOfSwords	
 	452547817	Stop_All			\Default Work Unit\Stop_All	
 	495557850	Pentacles			\Default Work Unit\GenerativeStates\Bass\Pentacles	
 	587937073	SevenOfSwords			\Default Work Unit\CardEvents\Swords\SevenOfSwords	
@@ -53,6 +54,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	1462743847	Temperance			\Default Work Unit\CardEvents\Major Arcana\Temperance	
 	1490823267	TheHermit			\Default Work Unit\CardEvents\Major Arcana\TheHermit	
 	1632202991	Card3Wands			\Default Work Unit\GenerativeCardSuits\Card3\Card3Wands	
+	1650692475	EightOfSwords			\Default Work Unit\CardEvents\Swords\EightOfSwords	
 	1701015953	State_Reading			\Default Work Unit\State_Reading	
 	1715977140	KingOfPentacles			\Default Work Unit\CardEvents\Pentacles\KingOfPentacles	
 	1726594133	TheMagician			\Default Work Unit\CardEvents\Major Arcana\TheMagician	
@@ -138,6 +140,7 @@ State	ID	Name	State Group			Notes
 	28325139	TwoOfWands	DuringReading			
 	87267876	KingOfCups	DuringReading			
 	112666488	FourOfSwords	DuringReading			
+	376576603	AceOfSwords	DuringReading			
 	587937073	SevenOfSwords	DuringReading			
 	679328597	FiveOfCups	DuringReading			
 	748895195	None	DuringReading			
@@ -147,6 +150,7 @@ State	ID	Name	State Group			Notes
 	1101082655	ThreeOfCups	DuringReading			
 	1462743847	Temperance	DuringReading			
 	1490823267	TheHermit	DuringReading			
+	1650692475	EightOfSwords	DuringReading			
 	1715977140	KingOfPentacles	DuringReading			
 	1726594133	TheMagician	DuringReading			
 	1734100207	QueenOfWands	DuringReading			
@@ -449,10 +453,12 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	504172983	Pentacles accompaniment	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativePentacles_Part1_Major1_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\Pentacles accompaniment		672903
 	504679811	GenerativeToReadingTransition	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativeToReadingTransition_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Reading\GenerativeToReadingTransition\GenerativeToReadingTransition		143177
 	507766503	QueenOfWands	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\QueenOfWands_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Reading\Wands\QueenOfWands\QueenOfWands\QueenOfWands		873638
+	509857609	EightOfSwords	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\EightOfSwords_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Reading\Swords\EightOfSwords\EightOfSwords\EightOfSwords		698233
 	510243111	Divinuet_SFX_Branch_3	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\Divinuet_SFX_Branch_3_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Menu Background\ForestNoises\Divinuet_SFX_Branch_3		14755
 	516145389	TheMoon	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\TheMoon_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Reading\Major Arcana\TheMoon\TheMoon\TheMoon		695921
 	526823866	Cups accompaniment	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativeCups_Part1_Major2_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\Cups accompaniment		631407
 	544869689	Divinuet_SFX_Branch_8	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\Divinuet_SFX_Branch_8_3F75BDB9.wem		\Actor-Mixer Hierarchy\Default Work Unit\Menu Background\ForestNoises\Divinuet_SFX_Branch_8		21416
+	550906683	AceOfSwords	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\AceOfSwords_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Reading\Swords\AceOfSwords\AceOfSwords\AceOfSwords		738392
 	551223743	!Viola melody	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\Viola_Phrase1_Group8_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card1\!Viola melody		348475
 	576684077	KingOfCups	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\KingOfCups_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Reading\Cups\KingOfCups\KingOfCups\KingOfCups		656382
 	586071285	Wands accompaniment	C:\Users\megan\WwiseProjects\Divinuet\.cache\Mac\SFX\GenerativeWands_Part2_Dorian_9EDFC787.wem		\Interactive Music Hierarchy\Default Work Unit\MainMusic\Generative\Generative_Main\Card2\Wands accompaniment		652400

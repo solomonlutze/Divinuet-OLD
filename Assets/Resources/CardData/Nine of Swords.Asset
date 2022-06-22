@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe8883c4e804a4aedb12a21c5434e4d7, type: 3}
+  m_Name: Nine of Swords
+  m_EditorClassIdentifier: 
+  cardName: Nine of Swords
+  order: 3
+  suit: 2
+  cardPicture: {fileID: 2800000, guid: f48dea382b3f1d1478e57a2218a071e5, type: 3}
+  cardPicture2x: {fileID: 21300000, guid: f48dea382b3f1d1478e57a2218a071e5, type: 3}
+  cardLongDescription: 'Nine of Swords: emotional distress, trauma, mental anguish'
+  cardShortDescription: 'emotional distress
+
+    trauma
+
+    mental anguish'
+  readingMusicEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 84ad77e204cb5ed4cb34da79ab69ea57,
+      type: 2}
+  cardKeyArray:
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: a006d9066b8ad1041bbfc75beec29115,
+      type: 2}
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 24b9fceb5cdd3cb4585749c7c9f19cd7,
+      type: 2}
+  - idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 4538619b0cb3c6742b22506fa5b2cffc,
+      type: 2}
+  clipDuration: 50
+  thematicGroup: 12
+  cardAndGroupClips:
+  - {fileID: 0}
+  - {fileID: 32900000, guid: 6d61a0844214abc47b8640763c4cdc3d, type: 3}
+  - {fileID: 0}
+  - {fileID: 32900000, guid: ab4daaec07b454f4a9447e9285cc9f6a, type: 3}
+  - {fileID: 0}
+  - {fileID: 32900000, guid: 4a7b585cc40a1464aa2a3badf4537a16, type: 3}

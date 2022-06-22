@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks\Default Work Unit
     guid: 316b02227919fc49a4528be3c11e0f41
     GuidInternal: 
-    m_lastTime: -8585468795664031218
+    m_lastTime: -8585461843691301238
     List:
     - name: Soundbank
       guid: 8d5e51ee7b34f042a6bee5955537fe07
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events\Default Work Unit
     guid: bc617d844702964e9e3475116383ce13
     GuidInternal: 
-    m_lastTime: -8585475911898581618
+    m_lastTime: -8585461843691151342
     List:
     - name: AccompanimentCups
       guid: 3e9aa257f8dcda44ab5bc5d1fd033e9f
@@ -114,8 +114,8 @@ MonoBehaviour:
         guid: 3e9aa257f8dcda44ab5bc5d1fd033e9f
       Path: Events\Default Work Unit\GenerativeAccompaniment\AccompanimentCups
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: AccompanimentMajorArcana
       guid: efed386d1143014bb3da835b9c29818c
       id: 802427635
@@ -134,8 +134,8 @@ MonoBehaviour:
         guid: efed386d1143014bb3da835b9c29818c
       Path: Events\Default Work Unit\GenerativeAccompaniment\AccompanimentMajorArcana
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: AccompanimentNull
       guid: 1b98135e35f21b4693374c009c55ccd7
       id: 2253610385
@@ -154,8 +154,8 @@ MonoBehaviour:
         guid: 1b98135e35f21b4693374c009c55ccd7
       Path: Events\Default Work Unit\GenerativeAccompaniment\AccompanimentNull
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: AccompanimentPentacles
       guid: 8ae5f7b1f1e5a248a633ff3dd8ced5e5
       id: 2401993111
@@ -174,8 +174,8 @@ MonoBehaviour:
         guid: 8ae5f7b1f1e5a248a633ff3dd8ced5e5
       Path: Events\Default Work Unit\GenerativeAccompaniment\AccompanimentPentacles
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: AccompanimentSwords
       guid: e07c45465f18374f9432fc3e8c9b8522
       id: 820727340
@@ -194,8 +194,8 @@ MonoBehaviour:
         guid: e07c45465f18374f9432fc3e8c9b8522
       Path: Events\Default Work Unit\GenerativeAccompaniment\AccompanimentSwords
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: AccompanimentWands
       guid: c2453bb116147e4dacdc1fad986c7f18
       id: 816211659
@@ -214,8 +214,8 @@ MonoBehaviour:
         guid: c2453bb116147e4dacdc1fad986c7f18
       Path: Events\Default Work Unit\GenerativeAccompaniment\AccompanimentWands
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: AceOfCups
       guid: ecb099b89aab174885b82101efbf50cb
       id: 2478979318
@@ -237,8 +237,31 @@ MonoBehaviour:
         guid: ecb099b89aab174885b82101efbf50cb
       Path: Events\Default Work Unit\CardEvents\Cups\AceOfCups
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: AceOfSwords
+      guid: 030b44dc7db5a8409ff663ca3bd63366
+      id: 376576603
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: bc617d844702964e9e3475116383ce13
+      - ElementName: CardEvents
+        ObjectType: 4
+        guid: b096310945b4bd4391e804c065b54e38
+      - ElementName: Swords
+        ObjectType: 4
+        guid: da81536e6c60f743a6d382fe22d7b869
+      - ElementName: AceOfSwords
+        ObjectType: 3
+        guid: 030b44dc7db5a8409ff663ca3bd63366
+      Path: Events\Default Work Unit\CardEvents\Swords\AceOfSwords
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: AfterReadingAmbienceStart
       guid: 4fa451433a760c4da2baf651157a42d9
       id: 2058034069
@@ -280,26 +303,6 @@ MonoBehaviour:
       maxDuration: -1
       minDuration: -1
     - name: Card1
-      guid: 3b499bba8442254c8b7a0094deaa354d
-      id: 4256484200
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: bc617d844702964e9e3475116383ce13
-      - ElementName: GenerativeKeys
-        ObjectType: 4
-        guid: 98e48b21f1625147b8a796b13abd3b53
-      - ElementName: Card1
-        ObjectType: 4
-        guid: 3b499bba8442254c8b7a0094deaa354d
-      Path: Events\Default Work Unit\GenerativeKeys\Card1
-      maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
-    - name: Card1
       guid: 9729ddca4af296458b38fa7bde665762
       id: 4256484200
       PathAndIcons:
@@ -316,6 +319,26 @@ MonoBehaviour:
         ObjectType: 4
         guid: 9729ddca4af296458b38fa7bde665762
       Path: Events\Default Work Unit\GenerativeCardSuits\Card1
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Card1
+      guid: 3b499bba8442254c8b7a0094deaa354d
+      id: 4256484200
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: bc617d844702964e9e3475116383ce13
+      - ElementName: GenerativeKeys
+        ObjectType: 4
+        guid: 98e48b21f1625147b8a796b13abd3b53
+      - ElementName: Card1
+        ObjectType: 4
+        guid: 3b499bba8442254c8b7a0094deaa354d
+      Path: Events\Default Work Unit\GenerativeKeys\Card1
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -340,8 +363,8 @@ MonoBehaviour:
         guid: 9fd8dcc6f01ff84c8bfac8d040fc9c56
       Path: Events\Default Work Unit\GenerativeCardSuits\Card1\Card1Cups
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Card1Dorian
       guid: 9aa8ca4344e79042ba5d4ace7dba7763
       id: 3649626589
@@ -363,8 +386,8 @@ MonoBehaviour:
         guid: 9aa8ca4344e79042ba5d4ace7dba7763
       Path: Events\Default Work Unit\GenerativeKeys\Card1\Card1Dorian
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Card1Group1
       guid: 01338f31ba216346b40f9cccbda97272
       id: 701895722
@@ -386,8 +409,8 @@ MonoBehaviour:
         guid: 01338f31ba216346b40f9cccbda97272
       Path: Events\Default Work Unit\GenerativeCardGroups\Group1\Card1Group1
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Card1Group10
       guid: 5b7fed7784ad8549a379de43c09882d7
       id: 100777518
@@ -409,8 +432,8 @@ MonoBehaviour:
         guid: 5b7fed7784ad8549a379de43c09882d7
       Path: Events\Default Work Unit\GenerativeCardGroups\Group10\Card1Group10
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Card1Group11
       guid: aae566bec965a144a45ea48f60441c85
       id: 100777519
@@ -432,8 +455,8 @@ MonoBehaviour:
         guid: aae566bec965a144a45ea48f60441c85
       Path: Events\Default Work Unit\GenerativeCardGroups\Group11\Card1Group11
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Card1Group12
       guid: 5351b902f9245c409d6b0169b48df688
       id: 100777516
@@ -455,8 +478,8 @@ MonoBehaviour:
         guid: 5351b902f9245c409d6b0169b48df688
       Path: Events\Default Work Unit\GenerativeCardGroups\Group12\Card1Group12
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Card1Group13
       guid: ae90e6059acf864486d8582df605f503
       id: 100777517
@@ -478,8 +501,8 @@ MonoBehaviour:
         guid: ae90e6059acf864486d8582df605f503
       Path: Events\Default Work Unit\GenerativeCardGroups\Group13\Card1Group13
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Card1Group2
       guid: 4c9707def236ec4895b9e8f24e3bd18f
       id: 701895721
@@ -501,8 +524,8 @@ MonoBehaviour:
         guid: 4c9707def236ec4895b9e8f24e3bd18f
       Path: Events\Default Work Unit\GenerativeCardGroups\Group2\Card1Group2
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Card1Group3
       guid: 890dd5ec3e4b104a85d53a7c7691a920
       id: 701895720
@@ -524,8 +547,8 @@ MonoBehaviour:
         guid: 890dd5ec3e4b104a85d53a7c7691a920
       Path: Events\Default Work Unit\GenerativeCardGroups\Group3\Card1Group3
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Card1Group4
       guid: 2ca1c432aa4a9f439f80f507342a03bb
       id: 701895727
@@ -547,8 +570,8 @@ MonoBehaviour:
         guid: 2ca1c432aa4a9f439f80f507342a03bb
       Path: Events\Default Work Unit\GenerativeCardGroups\Group4\Card1Group4
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Card1Group5
       guid: e905910d1c4a5d4eb1bb66cc990e9443
       id: 701895726
@@ -570,8 +593,8 @@ MonoBehaviour:
         guid: e905910d1c4a5d4eb1bb66cc990e9443
       Path: Events\Default Work Unit\GenerativeCardGroups\Group5\Card1Group5
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Card1Group6
       guid: 072c35ce91c5d2489584336ed0ec3c48
       id: 701895725
@@ -593,8 +616,8 @@ MonoBehaviour:
         guid: 072c35ce91c5d2489584336ed0ec3c48
       Path: Events\Default Work Unit\GenerativeCardGroups\Group6\Card1Group6
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Card1Group7
       guid: e748516b0ba1dc42bc15fd7346442d85
       id: 701895724
@@ -616,8 +639,8 @@ MonoBehaviour:
         guid: e748516b0ba1dc42bc15fd7346442d85
       Path: Events\Default Work Unit\GenerativeCardGroups\Group7\Card1Group7
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Card1Group8
       guid: 524a29f1acf7f54985bea685bbdbb561
       id: 701895715
@@ -639,8 +662,8 @@ MonoBehaviour:
         guid: 524a29f1acf7f54985bea685bbdbb561
       Path: Events\Default Work Unit\GenerativeCardGroups\Group8\Card1Group8
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Card1Group9
       guid: eaf89a5f5c8fc64d9b27dabf781f6ef3
       id: 701895714
@@ -662,8 +685,8 @@ MonoBehaviour:
         guid: eaf89a5f5c8fc64d9b27dabf781f6ef3
       Path: Events\Default Work Unit\GenerativeCardGroups\Group9\Card1Group9
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Card1Major1
       guid: e9f9c45533f68a43925b4eae44bbd110
       id: 1265574636
@@ -685,8 +708,8 @@ MonoBehaviour:
         guid: e9f9c45533f68a43925b4eae44bbd110
       Path: Events\Default Work Unit\GenerativeKeys\Card1\Card1Major1
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Card1Major2
       guid: aa73641b70f9b744a6aa5e3c6a86c5e0
       id: 1265574639
@@ -708,8 +731,8 @@ MonoBehaviour:
         guid: aa73641b70f9b744a6aa5e3c6a86c5e0
       Path: Events\Default Work Unit\GenerativeKeys\Card1\Card1Major2
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Card1MajorArcana
       guid: a19a53e284a62c4497280e3a26ab64a8
       id: 2351915865
@@ -731,8 +754,8 @@ MonoBehaviour:
         guid: a19a53e284a62c4497280e3a26ab64a8
       Path: Events\Default Work Unit\GenerativeCardSuits\Card1\Card1MajorArcana
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Card1Minor
       guid: 11e8b6f19b7ae3448925dd9e647906cc
       id: 3939640691
@@ -754,8 +777,8 @@ MonoBehaviour:
         guid: 11e8b6f19b7ae3448925dd9e647906cc
       Path: Events\Default Work Unit\GenerativeKeys\Card1\Card1Minor
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Card1Pentacles
       guid: 0550d5d5f6924c46a9c6ae41e7e4e86d
       id: 741549657
@@ -777,8 +800,8 @@ MonoBehaviour:
         guid: 0550d5d5f6924c46a9c6ae41e7e4e86d
       Path: Events\Default Work Unit\GenerativeCardSuits\Card1\Card1Pentacles
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Card1Swords
       guid: a016b43fa69b0c419ab3192e19f06e24
       id: 905849762
@@ -800,8 +823,8 @@ MonoBehaviour:
         guid: a016b43fa69b0c419ab3192e19f06e24
       Path: Events\Default Work Unit\GenerativeCardSuits\Card1\Card1Swords
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Card1Wands
       guid: 163a9ba42acee84c821cf3132c6bf1b9
       id: 3713380301
@@ -823,8 +846,8 @@ MonoBehaviour:
         guid: 163a9ba42acee84c821cf3132c6bf1b9
       Path: Events\Default Work Unit\GenerativeCardSuits\Card1\Card1Wands
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Card2
       guid: c4deca9493a1494fad03e4becc94d350
       id: 4256484203
@@ -886,8 +909,8 @@ MonoBehaviour:
         guid: 8f01a6090e32f94193498871da990d48
       Path: Events\Default Work Unit\GenerativeCardSuits\Card2\Card2Cups
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Card2Dorian
       guid: f3c748c0fc1d094bbc1d51222e98ac0c
       id: 2358895370
@@ -909,8 +932,8 @@ MonoBehaviour:
         guid: f3c748c0fc1d094bbc1d51222e98ac0c
       Path: Events\Default Work Unit\GenerativeKeys\Card2\Card2Dorian
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Card2Group1
       guid: 7fc1f88faf57e342a103489f437d97db
       id: 2297393465
@@ -932,8 +955,8 @@ MonoBehaviour:
         guid: 7fc1f88faf57e342a103489f437d97db
       Path: Events\Default Work Unit\GenerativeCardGroups\Group1\Card2Group1
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Card2Group10
       guid: 280516f719981144a50cdc8b9058d0e4
       id: 3387899019
@@ -955,8 +978,8 @@ MonoBehaviour:
         guid: 280516f719981144a50cdc8b9058d0e4
       Path: Events\Default Work Unit\GenerativeCardGroups\Group10\Card2Group10
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Card2Group11
       guid: dedc445f7cde4b42b34e13c106b86908
       id: 3387899018
@@ -978,8 +1001,8 @@ MonoBehaviour:
         guid: dedc445f7cde4b42b34e13c106b86908
       Path: Events\Default Work Unit\GenerativeCardGroups\Group11\Card2Group11
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Card2Group12
       guid: 40246c7616f6f44881b9929dca79f78d
       id: 3387899017
@@ -1001,8 +1024,8 @@ MonoBehaviour:
         guid: 40246c7616f6f44881b9929dca79f78d
       Path: Events\Default Work Unit\GenerativeCardGroups\Group12\Card2Group12
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Card2Group13
       guid: 3ca5b269820aff4ebb3f7ec643acc790
       id: 3387899016
@@ -1024,8 +1047,8 @@ MonoBehaviour:
         guid: 3ca5b269820aff4ebb3f7ec643acc790
       Path: Events\Default Work Unit\GenerativeCardGroups\Group13\Card2Group13
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Card2Group2
       guid: e97b115c20f7c84d8d1c6177693d3840
       id: 2297393466
@@ -1047,8 +1070,8 @@ MonoBehaviour:
         guid: e97b115c20f7c84d8d1c6177693d3840
       Path: Events\Default Work Unit\GenerativeCardGroups\Group2\Card2Group2
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Card2Group3
       guid: 0642fa43f25b00449310c5c6a3cd5860
       id: 2297393467
@@ -1070,8 +1093,8 @@ MonoBehaviour:
         guid: 0642fa43f25b00449310c5c6a3cd5860
       Path: Events\Default Work Unit\GenerativeCardGroups\Group3\Card2Group3
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Card2Group4
       guid: b089b237c9cf6f418d78e3a186bb6216
       id: 2297393468
@@ -1093,8 +1116,8 @@ MonoBehaviour:
         guid: b089b237c9cf6f418d78e3a186bb6216
       Path: Events\Default Work Unit\GenerativeCardGroups\Group4\Card2Group4
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Card2Group5
       guid: c05a1efc7d72c843a081408bd8aac3c5
       id: 2297393469
@@ -1116,8 +1139,8 @@ MonoBehaviour:
         guid: c05a1efc7d72c843a081408bd8aac3c5
       Path: Events\Default Work Unit\GenerativeCardGroups\Group5\Card2Group5
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Card2Group6
       guid: ab545b2a939cb34fabae3a6c04ab0920
       id: 2297393470
@@ -1139,8 +1162,8 @@ MonoBehaviour:
         guid: ab545b2a939cb34fabae3a6c04ab0920
       Path: Events\Default Work Unit\GenerativeCardGroups\Group6\Card2Group6
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Card2Group7
       guid: 956ef7b488ab134b9a7b70b0e2372d0b
       id: 2297393471
@@ -1162,8 +1185,8 @@ MonoBehaviour:
         guid: 956ef7b488ab134b9a7b70b0e2372d0b
       Path: Events\Default Work Unit\GenerativeCardGroups\Group7\Card2Group7
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Card2Group8
       guid: 1e68d8b81827e3439de76015da81e693
       id: 2297393456
@@ -1185,8 +1208,8 @@ MonoBehaviour:
         guid: 1e68d8b81827e3439de76015da81e693
       Path: Events\Default Work Unit\GenerativeCardGroups\Group8\Card2Group8
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Card2Group9
       guid: f4b560da7997414180e8babfd9a54f7e
       id: 2297393457
@@ -1208,8 +1231,8 @@ MonoBehaviour:
         guid: f4b560da7997414180e8babfd9a54f7e
       Path: Events\Default Work Unit\GenerativeCardGroups\Group9\Card2Group9
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Card2Major1
       guid: dc111c79b20733419a7065fd36d55859
       id: 1064961335
@@ -1231,8 +1254,8 @@ MonoBehaviour:
         guid: dc111c79b20733419a7065fd36d55859
       Path: Events\Default Work Unit\GenerativeKeys\Card2\Card2Major1
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Card2Major2
       guid: 3e344b241b8a94438649253fe33ca68d
       id: 1064961332
@@ -1254,8 +1277,8 @@ MonoBehaviour:
         guid: 3e344b241b8a94438649253fe33ca68d
       Path: Events\Default Work Unit\GenerativeKeys\Card2\Card2Major2
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Card2MajorArcana
       guid: 0f30eb3062d34645b2c16c63e896796f
       id: 3069944916
@@ -1277,8 +1300,8 @@ MonoBehaviour:
         guid: 0f30eb3062d34645b2c16c63e896796f
       Path: Events\Default Work Unit\GenerativeCardSuits\Card2\Card2MajorArcana
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Card2Minor
       guid: cea895538c29e44b88d2571028efa071
       id: 1821600798
@@ -1300,8 +1323,8 @@ MonoBehaviour:
         guid: cea895538c29e44b88d2571028efa071
       Path: Events\Default Work Unit\GenerativeKeys\Card2\Card2Minor
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Card2Pentacles
       guid: 05315764335c28468c488a7314582025
       id: 231901376
@@ -1323,8 +1346,8 @@ MonoBehaviour:
         guid: 05315764335c28468c488a7314582025
       Path: Events\Default Work Unit\GenerativeCardSuits\Card2\Card2Pentacles
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Card2Swords
       guid: f629337dd62a484183fb7d992e32718a
       id: 2252698273
@@ -1346,8 +1369,8 @@ MonoBehaviour:
         guid: f629337dd62a484183fb7d992e32718a
       Path: Events\Default Work Unit\GenerativeCardSuits\Card2\Card2Swords
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Card2Wands
       guid: cdf47fa9e9fb5b47ab39ebd734959bdb
       id: 1323396928
@@ -1369,8 +1392,8 @@ MonoBehaviour:
         guid: cdf47fa9e9fb5b47ab39ebd734959bdb
       Path: Events\Default Work Unit\GenerativeCardSuits\Card2\Card2Wands
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Card3
       guid: df8109c6d28aa246be2d41a190f30aa0
       id: 4256484202
@@ -1432,8 +1455,8 @@ MonoBehaviour:
         guid: f2700d8ea7d35748ad730963f0a123f0
       Path: Events\Default Work Unit\GenerativeCardSuits\Card3\Card3Cups
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Card3Dorian
       guid: 48226ef7f534fa449a6a2254780d3ed2
       id: 3108369491
@@ -1455,8 +1478,8 @@ MonoBehaviour:
         guid: 48226ef7f534fa449a6a2254780d3ed2
       Path: Events\Default Work Unit\GenerativeKeys\Card3\Card3Dorian
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Card3Group1
       guid: 0825f463e4378649839b607e15d06d9f
       id: 848040992
@@ -1478,8 +1501,8 @@ MonoBehaviour:
         guid: 0825f463e4378649839b607e15d06d9f
       Path: Events\Default Work Unit\GenerativeCardGroups\Group1\Card3Group1
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Card3Group10
       guid: 4947c3bae289c4408507036471451419
       id: 2994974288
@@ -1501,8 +1524,8 @@ MonoBehaviour:
         guid: 4947c3bae289c4408507036471451419
       Path: Events\Default Work Unit\GenerativeCardGroups\Group10\Card3Group10
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Card3Group11
       guid: bf351c813d5de44cb55896ba964a44b7
       id: 2994974289
@@ -1524,8 +1547,8 @@ MonoBehaviour:
         guid: bf351c813d5de44cb55896ba964a44b7
       Path: Events\Default Work Unit\GenerativeCardGroups\Group11\Card3Group11
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Card3Group12
       guid: 7edde9e120ce5a4f8ada227a92409545
       id: 2994974290
@@ -1547,8 +1570,8 @@ MonoBehaviour:
         guid: 7edde9e120ce5a4f8ada227a92409545
       Path: Events\Default Work Unit\GenerativeCardGroups\Group12\Card3Group12
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Card3Group13
       guid: d91de0e022a2ed45a38310164863b3c4
       id: 2994974291
@@ -1570,8 +1593,8 @@ MonoBehaviour:
         guid: d91de0e022a2ed45a38310164863b3c4
       Path: Events\Default Work Unit\GenerativeCardGroups\Group13\Card3Group13
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Card3Group2
       guid: d4ed0fcfe2ce2f4588c8154489d3b60c
       id: 848040995
@@ -1593,8 +1616,8 @@ MonoBehaviour:
         guid: d4ed0fcfe2ce2f4588c8154489d3b60c
       Path: Events\Default Work Unit\GenerativeCardGroups\Group2\Card3Group2
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Card3Group3
       guid: fb370f19c12e964ba9f0ec788d3e9770
       id: 848040994
@@ -1616,8 +1639,8 @@ MonoBehaviour:
         guid: fb370f19c12e964ba9f0ec788d3e9770
       Path: Events\Default Work Unit\GenerativeCardGroups\Group3\Card3Group3
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Card3Group4
       guid: 14d8920f049fe34e9ca5e7264feaf31f
       id: 848040997
@@ -1639,8 +1662,8 @@ MonoBehaviour:
         guid: 14d8920f049fe34e9ca5e7264feaf31f
       Path: Events\Default Work Unit\GenerativeCardGroups\Group4\Card3Group4
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Card3Group5
       guid: 9f538dac2ea71d4590a8ecddf7755491
       id: 848040996
@@ -1662,8 +1685,8 @@ MonoBehaviour:
         guid: 9f538dac2ea71d4590a8ecddf7755491
       Path: Events\Default Work Unit\GenerativeCardGroups\Group5\Card3Group5
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Card3Group6
       guid: 0cf23fe95603964fa812d0ff8f2ade30
       id: 848040999
@@ -1685,8 +1708,8 @@ MonoBehaviour:
         guid: 0cf23fe95603964fa812d0ff8f2ade30
       Path: Events\Default Work Unit\GenerativeCardGroups\Group6\Card3Group6
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Card3Group7
       guid: 72fe531847e05044a88e3e2944dfb790
       id: 848040998
@@ -1708,8 +1731,8 @@ MonoBehaviour:
         guid: 72fe531847e05044a88e3e2944dfb790
       Path: Events\Default Work Unit\GenerativeCardGroups\Group7\Card3Group7
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Card3Group8
       guid: 8bda7f1d13e96e4fadca7df61930c3aa
       id: 848041001
@@ -1731,8 +1754,8 @@ MonoBehaviour:
         guid: 8bda7f1d13e96e4fadca7df61930c3aa
       Path: Events\Default Work Unit\GenerativeCardGroups\Group8\Card3Group8
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Card3Group9
       guid: 84415ed824b39c488e73e399b4c9c3da
       id: 848041000
@@ -1754,8 +1777,8 @@ MonoBehaviour:
         guid: 84415ed824b39c488e73e399b4c9c3da
       Path: Events\Default Work Unit\GenerativeCardGroups\Group9\Card3Group9
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Card3Major1
       guid: f68492872a41d24692f8db36b02db37f
       id: 2471410010
@@ -1777,8 +1800,8 @@ MonoBehaviour:
         guid: f68492872a41d24692f8db36b02db37f
       Path: Events\Default Work Unit\GenerativeKeys\Card3\Card3Major1
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Card3Major2
       guid: 2daf8ea4479670479795ab86fcfdab63
       id: 2471410009
@@ -1800,8 +1823,8 @@ MonoBehaviour:
         guid: 2daf8ea4479670479795ab86fcfdab63
       Path: Events\Default Work Unit\GenerativeKeys\Card3\Card3Major2
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Card3MajorArcana
       guid: 571d8fe6558a3843ac33e5688ff67ebd
       id: 2809334151
@@ -1823,8 +1846,8 @@ MonoBehaviour:
         guid: 571d8fe6558a3843ac33e5688ff67ebd
       Path: Events\Default Work Unit\GenerativeCardSuits\Card3\Card3MajorArcana
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Card3Minor
       guid: 0197f1710f7a8b498a2968fe3698bb0c
       id: 3072025101
@@ -1846,8 +1869,8 @@ MonoBehaviour:
         guid: 0197f1710f7a8b498a2968fe3698bb0c
       Path: Events\Default Work Unit\GenerativeKeys\Card3\Card3Minor
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Card3Pentacles
       guid: 566bf3b2f74b944a8bff50a2c18a2487
       id: 3909883483
@@ -1869,8 +1892,8 @@ MonoBehaviour:
         guid: 566bf3b2f74b944a8bff50a2c18a2487
       Path: Events\Default Work Unit\GenerativeCardSuits\Card3\Card3Pentacles
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Card3Swords
       guid: cc1dc61ddeeea54fb9a624f82a37290f
       id: 3113582184
@@ -1892,8 +1915,8 @@ MonoBehaviour:
         guid: cc1dc61ddeeea54fb9a624f82a37290f
       Path: Events\Default Work Unit\GenerativeCardSuits\Card3\Card3Swords
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Card3Wands
       guid: 5403368ccaea1748b0b1523b01256e21
       id: 1632202991
@@ -1915,8 +1938,8 @@ MonoBehaviour:
         guid: 5403368ccaea1748b0b1523b01256e21
       Path: Events\Default Work Unit\GenerativeCardSuits\Card3\Card3Wands
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: CardEvents
       guid: b096310945b4bd4391e804c065b54e38
       id: 1286857504
@@ -1952,8 +1975,8 @@ MonoBehaviour:
         guid: d9a05c558c42184597a2209fcb6a446d
       Path: Events\Default Work Unit\SFXEvents\CardSlide
       maxAttenuation: 0
-      maxDuration: 0.930333
-      minDuration: 0.593776
+      maxDuration: -1
+      minDuration: -1
     - name: Cups
       guid: 07065a3d498c9c42a6b5a3e0c6845097
       id: 3817145194
@@ -1975,8 +1998,8 @@ MonoBehaviour:
         guid: 07065a3d498c9c42a6b5a3e0c6845097
       Path: Events\Default Work Unit\GenerativeStates\Bass\Cups
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Cups
       guid: 89fa276ee9fc2c4bb193e58a0ee62f2b
       id: 3817145194
@@ -2018,8 +2041,8 @@ MonoBehaviour:
         guid: 4e7e59514a8fa14dbcceff9fd3042933
       Path: Events\Default Work Unit\CardEvents\Major Arcana\Death
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: DEBUG
       guid: adc3818bc6012c428abb16dde0856262
       id: 1031089514
@@ -2058,8 +2081,31 @@ MonoBehaviour:
         guid: 0f9648fe337f154989fa58b38be6e9ab
       Path: Events\Default Work Unit\CardEvents\Pentacles\EightOfPentacles
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: EightOfSwords
+      guid: 2ea3e0dc026f284eb7c8f368531b804c
+      id: 1650692475
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: bc617d844702964e9e3475116383ce13
+      - ElementName: CardEvents
+        ObjectType: 4
+        guid: b096310945b4bd4391e804c065b54e38
+      - ElementName: Swords
+        ObjectType: 4
+        guid: da81536e6c60f743a6d382fe22d7b869
+      - ElementName: EightOfSwords
+        ObjectType: 3
+        guid: 2ea3e0dc026f284eb7c8f368531b804c
+      Path: Events\Default Work Unit\CardEvents\Swords\EightOfSwords
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: FiveOfCups
       guid: 0a2e042d23859f4c80bec0901c051ad3
       id: 679328597
@@ -2081,8 +2127,8 @@ MonoBehaviour:
         guid: 0a2e042d23859f4c80bec0901c051ad3
       Path: Events\Default Work Unit\CardEvents\Cups\FiveOfCups
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: FiveOfWands
       guid: 8289ea00c2e5424f8ed82f62934f79fc
       id: 3022449515
@@ -2104,8 +2150,8 @@ MonoBehaviour:
         guid: 8289ea00c2e5424f8ed82f62934f79fc
       Path: Events\Default Work Unit\CardEvents\Wands\FiveOfWands
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: FourOfSwords
       guid: 737bc4004aef55429dcf8760cae0a599
       id: 112666488
@@ -2127,8 +2173,8 @@ MonoBehaviour:
         guid: 737bc4004aef55429dcf8760cae0a599
       Path: Events\Default Work Unit\CardEvents\Swords\FourOfSwords
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: GenerativeAccompaniment
       guid: 15448e73a4997f4f8940c1fce70ecea9
       id: 3673895660
@@ -2509,8 +2555,8 @@ MonoBehaviour:
         guid: 56083533fb90874d9c890a28aadeb0e0
       Path: Events\Default Work Unit\ReadingNonCard\Interlude
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: KingOfCups
       guid: f6ecb83f545f964ea2dcffc99e8fefbe
       id: 87267876
@@ -2532,8 +2578,8 @@ MonoBehaviour:
         guid: f6ecb83f545f964ea2dcffc99e8fefbe
       Path: Events\Default Work Unit\CardEvents\Cups\KingOfCups
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: KingOfPentacles
       guid: 822e37382c846e488c562c5b58bd6930
       id: 1715977140
@@ -2555,8 +2601,8 @@ MonoBehaviour:
         guid: 822e37382c846e488c562c5b58bd6930
       Path: Events\Default Work Unit\CardEvents\Pentacles\KingOfPentacles
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: KingOfSwords
       guid: 1178dac7b4e4c5419847adca63402780
       id: 3530681053
@@ -2578,8 +2624,8 @@ MonoBehaviour:
         guid: 1178dac7b4e4c5419847adca63402780
       Path: Events\Default Work Unit\CardEvents\Swords\KingOfSwords
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Main
       guid: c97319cf81f0fb46bd534203c312f9f1
       id: 3161908922
@@ -2598,8 +2644,8 @@ MonoBehaviour:
         guid: c97319cf81f0fb46bd534203c312f9f1
       Path: Events\Default Work Unit\GenerativePart\Main
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Major Arcana
       guid: a2e9e99eca116444b7330e5afd69dafe
       id: 9743802
@@ -2641,8 +2687,8 @@ MonoBehaviour:
         guid: 4c0e99bb238c564aa09bafdd3461f8f4
       Path: Events\Default Work Unit\GenerativeStates\Bass\MajorArcana
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: MenuAmbienceStart
       guid: a6574e7ddce6c942a520c2b32df18cd1
       id: 3653149380
@@ -2681,8 +2727,8 @@ MonoBehaviour:
         guid: 2e29d6f919d6624794e1dd417b2c23ba
       Path: Events\Default Work Unit\SFXEvents\MenuAmbienceStop
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: NineOfPentacles
       guid: 18d1f7489fe75441a343a49de1c19cf1
       id: 1963057671
@@ -2704,8 +2750,8 @@ MonoBehaviour:
         guid: 18d1f7489fe75441a343a49de1c19cf1
       Path: Events\Default Work Unit\CardEvents\Pentacles\NineOfPentacles
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: NineOfSwords
       guid: acd65829e49e6d49981f1758a4d43d45
       id: 3394600732
@@ -2727,8 +2773,8 @@ MonoBehaviour:
         guid: acd65829e49e6d49981f1758a4d43d45
       Path: Events\Default Work Unit\CardEvents\Swords\NineOfSwords
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Null
       guid: da0c662a651c184da146bdffa54c8987
       id: 784127654
@@ -2750,28 +2796,8 @@ MonoBehaviour:
         guid: da0c662a651c184da146bdffa54c8987
       Path: Events\Default Work Unit\GenerativeStates\Bass\Null
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
-    - name: Pentacles
-      guid: 6f1b01cffc19674390830b8827f196bc
-      id: 495557850
-      PathAndIcons:
-      - ElementName: Events
-        ObjectType: 5
-        guid: 00000000000000000000000000000000
-      - ElementName: Default Work Unit
-        ObjectType: 12
-        guid: bc617d844702964e9e3475116383ce13
-      - ElementName: CardEvents
-        ObjectType: 4
-        guid: b096310945b4bd4391e804c065b54e38
-      - ElementName: Pentacles
-        ObjectType: 4
-        guid: 6f1b01cffc19674390830b8827f196bc
-      Path: Events\Default Work Unit\CardEvents\Pentacles
-      maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Pentacles
       guid: 2eb0c9f5be6f2846a780a24ae658f656
       id: 495557850
@@ -2792,6 +2818,26 @@ MonoBehaviour:
         ObjectType: 3
         guid: 2eb0c9f5be6f2846a780a24ae658f656
       Path: Events\Default Work Unit\GenerativeStates\Bass\Pentacles
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Pentacles
+      guid: 6f1b01cffc19674390830b8827f196bc
+      id: 495557850
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: bc617d844702964e9e3475116383ce13
+      - ElementName: CardEvents
+        ObjectType: 4
+        guid: b096310945b4bd4391e804c065b54e38
+      - ElementName: Pentacles
+        ObjectType: 4
+        guid: 6f1b01cffc19674390830b8827f196bc
+      Path: Events\Default Work Unit\CardEvents\Pentacles
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -2870,8 +2916,8 @@ MonoBehaviour:
         guid: bb8d5488ec1ff3439558c2585fcf8921
       Path: Events\Default Work Unit\CardEvents\Cups\SevenOfCups
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: SevenOfPentacles
       guid: 5ab656a73fc8e8438a3db9402e88d878
       id: 4205938704
@@ -2893,8 +2939,8 @@ MonoBehaviour:
         guid: 5ab656a73fc8e8438a3db9402e88d878
       Path: Events\Default Work Unit\CardEvents\Pentacles\SevenOfPentacles
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: SevenOfSwords
       guid: 5471faedc7f1c14bb08d7ac9baaffda8
       id: 587937073
@@ -2916,8 +2962,8 @@ MonoBehaviour:
         guid: 5471faedc7f1c14bb08d7ac9baaffda8
       Path: Events\Default Work Unit\CardEvents\Swords\SevenOfSwords
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: SevenOfWands
       guid: 61f1da401994ce40af5ab2bf19e6c91b
       id: 3661391600
@@ -2939,8 +2985,8 @@ MonoBehaviour:
         guid: 61f1da401994ce40af5ab2bf19e6c91b
       Path: Events\Default Work Unit\CardEvents\Wands\SevenOfWands
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: SFXEvents
       guid: ac80d1710b783e4dbaa645daee19bfb9
       id: 668699621
@@ -2979,8 +3025,8 @@ MonoBehaviour:
         guid: 2f662af09cfe6940bb46e8de6dd65e60
       Path: Events\Default Work Unit\CardEvents\Pentacles\SixOfPentacles
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: SixOfSwords
       guid: b4e07bcda9396e41b4f4d49e7b0592e8
       id: 3436307834
@@ -3002,8 +3048,8 @@ MonoBehaviour:
         guid: b4e07bcda9396e41b4f4d49e7b0592e8
       Path: Events\Default Work Unit\CardEvents\Swords\SixOfSwords
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: SkipReadingMusic
       guid: 8bdc3801c18d1f41ae2773c71a990d1b
       id: 368896769
@@ -3022,8 +3068,8 @@ MonoBehaviour:
         guid: 8bdc3801c18d1f41ae2773c71a990d1b
       Path: Events\Default Work Unit\DEBUG\SkipReadingMusic
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: State_Generative
       guid: a1dbf4af2b041d4e9460b20a2f08d328
       id: 3535269221
@@ -3039,8 +3085,8 @@ MonoBehaviour:
         guid: a1dbf4af2b041d4e9460b20a2f08d328
       Path: Events\Default Work Unit\State_Generative
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: State_MakingSong
       guid: 567e8ca9502e13439542d5b2e61701e2
       id: 1929173219
@@ -3056,8 +3102,8 @@ MonoBehaviour:
         guid: 567e8ca9502e13439542d5b2e61701e2
       Path: Events\Default Work Unit\State_MakingSong
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: State_Reading
       guid: 8ed5f467f84f864cb1bc1ef1c7d50f1f
       id: 1701015953
@@ -3073,8 +3119,8 @@ MonoBehaviour:
         guid: 8ed5f467f84f864cb1bc1ef1c7d50f1f
       Path: Events\Default Work Unit\State_Reading
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Stop_All
       guid: 9a514a384d50ae4ca3b832fcfefc4a97
       id: 452547817
@@ -3090,8 +3136,8 @@ MonoBehaviour:
         guid: 9a514a384d50ae4ca3b832fcfefc4a97
       Path: Events\Default Work Unit\Stop_All
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Strength
       guid: e7537fc0eb5e214ba7660e0a88992aaa
       id: 1008270286
@@ -3113,8 +3159,8 @@ MonoBehaviour:
         guid: e7537fc0eb5e214ba7660e0a88992aaa
       Path: Events\Default Work Unit\CardEvents\Major Arcana\Strength
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Swords
       guid: 2e7f1f3d48666e41bfd03e26f7139f59
       id: 361241855
@@ -3136,8 +3182,8 @@ MonoBehaviour:
         guid: 2e7f1f3d48666e41bfd03e26f7139f59
       Path: Events\Default Work Unit\GenerativeStates\Bass\Swords
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Swords
       guid: da81536e6c60f743a6d382fe22d7b869
       id: 361241855
@@ -3179,8 +3225,8 @@ MonoBehaviour:
         guid: 9aee8a31e1eab3429a7a239007bd74d6
       Path: Events\Default Work Unit\CardEvents\Major Arcana\Temperance
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: TenOfCups
       guid: b909e51de4044d45bcc874765df380de
       id: 2461612130
@@ -3202,8 +3248,8 @@ MonoBehaviour:
         guid: b909e51de4044d45bcc874765df380de
       Path: Events\Default Work Unit\CardEvents\Cups\TenOfCups
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: TenOfSwords
       guid: 9739a37c9655c1498e7ba0477b402cd8
       id: 2185129511
@@ -3225,8 +3271,8 @@ MonoBehaviour:
         guid: 9739a37c9655c1498e7ba0477b402cd8
       Path: Events\Default Work Unit\CardEvents\Swords\TenOfSwords
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: TheEmpress
       guid: 298babd4c6bcc5449d786c7553c64490
       id: 4181689965
@@ -3248,8 +3294,8 @@ MonoBehaviour:
         guid: 298babd4c6bcc5449d786c7553c64490
       Path: Events\Default Work Unit\CardEvents\Major Arcana\TheEmpress
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: TheFool
       guid: 53097a9f43f3634babb5ab5743473d62
       id: 2631758982
@@ -3271,8 +3317,8 @@ MonoBehaviour:
         guid: 53097a9f43f3634babb5ab5743473d62
       Path: Events\Default Work Unit\CardEvents\Major Arcana\TheFool
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: TheHangedMan
       guid: f69b9dbd90691141b619578c0daeef09
       id: 3258053151
@@ -3294,8 +3340,8 @@ MonoBehaviour:
         guid: f69b9dbd90691141b619578c0daeef09
       Path: Events\Default Work Unit\CardEvents\Major Arcana\TheHangedMan
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: TheHermit
       guid: 43495a2550952948bfeaeba6b230f864
       id: 1490823267
@@ -3317,8 +3363,8 @@ MonoBehaviour:
         guid: 43495a2550952948bfeaeba6b230f864
       Path: Events\Default Work Unit\CardEvents\Major Arcana\TheHermit
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: TheHighPriestess
       guid: 29e6c4daf05c644f92e33f69a9afb076
       id: 3676275462
@@ -3340,8 +3386,8 @@ MonoBehaviour:
         guid: 29e6c4daf05c644f92e33f69a9afb076
       Path: Events\Default Work Unit\CardEvents\Major Arcana\TheHighPriestess
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: TheMagician
       guid: 797cd9ed6ce7864f8b5d294634c52758
       id: 1726594133
@@ -3363,8 +3409,8 @@ MonoBehaviour:
         guid: 797cd9ed6ce7864f8b5d294634c52758
       Path: Events\Default Work Unit\CardEvents\Major Arcana\TheMagician
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: TheMoon
       guid: 0fd300d9749a2f4bbcc8a36302bb1e6e
       id: 2075671581
@@ -3386,8 +3432,8 @@ MonoBehaviour:
         guid: 0fd300d9749a2f4bbcc8a36302bb1e6e
       Path: Events\Default Work Unit\CardEvents\Major Arcana\TheMoon
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: TheStar
       guid: 0b666d4abdb67543b62ba86be9c2b8b8
       id: 2436895318
@@ -3409,8 +3455,8 @@ MonoBehaviour:
         guid: 0b666d4abdb67543b62ba86be9c2b8b8
       Path: Events\Default Work Unit\CardEvents\Major Arcana\TheStar
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: ThreeOfCups
       guid: 575d948dc3497b4387a0c97dec83cffd
       id: 1101082655
@@ -3432,8 +3478,8 @@ MonoBehaviour:
         guid: 575d948dc3497b4387a0c97dec83cffd
       Path: Events\Default Work Unit\CardEvents\Cups\ThreeOfCups
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: TwoOfCups
       guid: d9aac2e442ccd44e86293c5bf7c6b906
       id: 1765113981
@@ -3455,8 +3501,8 @@ MonoBehaviour:
         guid: d9aac2e442ccd44e86293c5bf7c6b906
       Path: Events\Default Work Unit\CardEvents\Cups\TwoOfCups
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: TwoOfWands
       guid: cc30f8cef76d2741b69db33a880c232b
       id: 28325139
@@ -3478,8 +3524,8 @@ MonoBehaviour:
         guid: cc30f8cef76d2741b69db33a880c232b
       Path: Events\Default Work Unit\CardEvents\Wands\TwoOfWands
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Vamp
       guid: cf27f7a69a289442a832345e0f1b014f
       id: 3908339577
@@ -3498,8 +3544,8 @@ MonoBehaviour:
         guid: cf27f7a69a289442a832345e0f1b014f
       Path: Events\Default Work Unit\GenerativePart\Vamp
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Wands
       guid: 18e910e317c4a04c8c04b0c8086b2110
       id: 2202738146
@@ -3518,8 +3564,8 @@ MonoBehaviour:
         guid: 18e910e317c4a04c8c04b0c8086b2110
       Path: Events\Default Work Unit\CardEvents\Wands
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Wands
       guid: 29f23a246b31d4459608aa9970f4f992
       id: 2202738146
@@ -3564,8 +3610,8 @@ MonoBehaviour:
         guid: eebd683f6620c044a4e35c20999ff864
       Path: Events\Default Work Unit\CardEvents\Major Arcana\WheelOfFortune
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
   RtpcWwu:
   - PhysicalPath: Game Parameters\Default Work Unit.wwu
     PathAndIcons:
@@ -3592,7 +3638,7 @@ MonoBehaviour:
     ParentPath: States\Default Work Unit
     guid: 46c6d260267ae44a8030202cff271f3f
     GuidInternal: 
-    m_lastTime: -8585479247810061339
+    m_lastTime: -8585461845230506163
     List:
     - name: Card1Group
       guid: 637394fcc359c3459dcde70b789220f5
@@ -4891,6 +4937,22 @@ MonoBehaviour:
         - ElementName: AceOfCups
           ObjectType: 8
           guid: e9aed5963f19e340b497a99128d4132a
+      - name: AceOfSwords
+        guid: ba57d4a922639644a4271324a4314b33
+        id: 376576603
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 46c6d260267ae44a8030202cff271f3f
+        - ElementName: DuringReading
+          ObjectType: 9
+          guid: e159ce0e1e70de4f97d5abf8e953a03d
+        - ElementName: AceOfSwords
+          ObjectType: 8
+          guid: ba57d4a922639644a4271324a4314b33
       - name: AfterReadingBed
         guid: 44a112be15ea5e4e82bb9b15b2d7c663
         id: 1900785500
@@ -4939,6 +5001,22 @@ MonoBehaviour:
         - ElementName: EightOfPentacles
           ObjectType: 8
           guid: 6be34cd926291f4190af978d2121727a
+      - name: EightOfSwords
+        guid: 705907e43f481a4691948463a4a4d93e
+        id: 1650692475
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 46c6d260267ae44a8030202cff271f3f
+        - ElementName: DuringReading
+          ObjectType: 9
+          guid: e159ce0e1e70de4f97d5abf8e953a03d
+        - ElementName: EightOfSwords
+          ObjectType: 8
+          guid: 705907e43f481a4691948463a4a4d93e
       - name: FiveOfCups
         guid: d0dc40ad7e296349a3beb12aad7395ee
         id: 679328597
@@ -6106,7 +6184,7 @@ MonoBehaviour:
     GuidInternal: 
     m_lastTime: -8585799860922854706
     List: []
-  ExpandedFileSystemItemIds: 0200000003000000050000000600000007000000090000000e0000000f0000001100000036000000370000004e0000004f0000006b0000006e000000810000008f000000950000009c0000009d0000009f000000b3000000b8000000bd000000
+  ExpandedFileSystemItemIds: 0200000003000000050000000600000007000000090000000e0000000f00000011000000160000001700000036000000370000003c0000004e0000004f000000550000006b000000810000008f000000950000009c0000009d0000009f000000b3000000b8000000bd000000
   ExpandedWaapiItemIds: 0500000006000000090000000a0000008f000000950000009c0000009d0000009f000000b3000000b8000000bd000000
   AutoSyncSelection: 0
   autoPopulateEnabled: 1

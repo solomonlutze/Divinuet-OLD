@@ -16,7 +16,7 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="1661994096" Language="SFX" Hash="3411723168">
+		<SoundBank Id="1661994096" Language="SFX" Hash="3151719664">
 			<ObjectPath>\SoundBanks\Default Work Unit\Soundbank</ObjectPath>
 			<ShortName>Soundbank</ShortName>
 			<Path>Soundbank.bnk</Path>
@@ -55,6 +55,12 @@
 					<ActionSetState>
 						<ActionSetStateEntry Id="1900785500" Name="AfterReadingBed" ObjectPath="\States\Default Work Unit\DuringReading\AfterReadingBed"/>
 						<ActionSetStateEntry Id="2478979318" Name="AceOfCups" ObjectPath="\States\Default Work Unit\DuringReading\AceOfCups"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="376576603" Name="AceOfSwords" ObjectPath="\Events\Default Work Unit\CardEvents\Swords\AceOfSwords" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionSetState>
+						<ActionSetStateEntry Id="376576603" Name="AceOfSwords" ObjectPath="\States\Default Work Unit\DuringReading\AceOfSwords"/>
+						<ActionSetStateEntry Id="1900785500" Name="AfterReadingBed" ObjectPath="\States\Default Work Unit\DuringReading\AfterReadingBed"/>
 					</ActionSetState>
 				</Event>
 				<Event Id="2058034069" Name="AfterReadingAmbienceStart" ObjectPath="\Events\Default Work Unit\SFXEvents\AfterReadingAmbienceStart" DurationType="Infinite">
@@ -562,6 +568,12 @@
 					<ActionSetState>
 						<ActionSetStateEntry Id="1900785500" Name="AfterReadingBed" ObjectPath="\States\Default Work Unit\DuringReading\AfterReadingBed"/>
 						<ActionSetStateEntry Id="3555933294" Name="EightOfPentacles" ObjectPath="\States\Default Work Unit\DuringReading\EightOfPentacles"/>
+					</ActionSetState>
+				</Event>
+				<Event Id="1650692475" Name="EightOfSwords" ObjectPath="\Events\Default Work Unit\CardEvents\Swords\EightOfSwords" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
+					<ActionSetState>
+						<ActionSetStateEntry Id="1650692475" Name="EightOfSwords" ObjectPath="\States\Default Work Unit\DuringReading\EightOfSwords"/>
+						<ActionSetStateEntry Id="1900785500" Name="AfterReadingBed" ObjectPath="\States\Default Work Unit\DuringReading\AfterReadingBed"/>
 					</ActionSetState>
 				</Event>
 				<Event Id="679328597" Name="FiveOfCups" ObjectPath="\Events\Default Work Unit\CardEvents\Cups\FiveOfCups" MaxAttenuation="0.000000" DurationType="OneShot" DurationMin="0.000000" DurationMax="0.000000">
@@ -1072,6 +1084,10 @@
 							<ShortName>QueenOfWands.wav</ShortName>
 							<Path>SFX\QueenOfWands_9EDFC787.wem</Path>
 						</File>
+						<File Id="509857609" Language="SFX">
+							<ShortName>EightOfSwords.wav</ShortName>
+							<Path>SFX\EightOfSwords_9EDFC787.wem</Path>
+						</File>
 						<File Id="516145389" Language="SFX">
 							<ShortName>TheMoon.wav</ShortName>
 							<Path>SFX\TheMoon_9EDFC787.wem</Path>
@@ -1079,6 +1095,10 @@
 						<File Id="526823866" Language="SFX">
 							<ShortName>GenerativeCups_Part1_Major2.wav</ShortName>
 							<Path>SFX\GenerativeCups_Part1_Major2_9EDFC787.wem</Path>
+						</File>
+						<File Id="550906683" Language="SFX">
+							<ShortName>AceOfSwords.wav</ShortName>
+							<Path>SFX\AceOfSwords_9EDFC787.wem</Path>
 						</File>
 						<File Id="551223743" Language="SFX">
 							<ShortName>Viola_Phrase1_Group8.wav</ShortName>
@@ -1716,6 +1736,10 @@
 							<ShortName>QueenOfWands.wav</ShortName>
 							<Path>SFX\QueenOfWands_9EDFC787.wem</Path>
 						</File>
+						<File Id="509857609" Language="SFX">
+							<ShortName>EightOfSwords.wav</ShortName>
+							<Path>SFX\EightOfSwords_9EDFC787.wem</Path>
+						</File>
 						<File Id="516145389" Language="SFX">
 							<ShortName>TheMoon.wav</ShortName>
 							<Path>SFX\TheMoon_9EDFC787.wem</Path>
@@ -1723,6 +1747,10 @@
 						<File Id="526823866" Language="SFX">
 							<ShortName>GenerativeCups_Part1_Major2.wav</ShortName>
 							<Path>SFX\GenerativeCups_Part1_Major2_9EDFC787.wem</Path>
+						</File>
+						<File Id="550906683" Language="SFX">
+							<ShortName>AceOfSwords.wav</ShortName>
+							<Path>SFX\AceOfSwords_9EDFC787.wem</Path>
 						</File>
 						<File Id="551223743" Language="SFX">
 							<ShortName>Viola_Phrase1_Group8.wav</ShortName>
@@ -2261,6 +2289,16 @@
 										<File Id="272987903"/>
 									</Media>
 								</SwitchContainer>
+								<SwitchContainer SwitchValue="{E4075970-483F-461A-9194-8463A4A4D93E}">
+									<Media>
+										<File Id="509857609"/>
+									</Media>
+								</SwitchContainer>
+								<SwitchContainer SwitchValue="{A9D457BA-6322-4496-A427-1324A4314B33}">
+									<Media>
+										<File Id="550906683"/>
+									</Media>
+								</SwitchContainer>
 							</Children>
 						</SwitchContainer>
 						<SwitchContainer SwitchValue="{66090302-C438-448B-8A5E-6D1D40BD8BF4}">
@@ -2729,6 +2767,9 @@
 				<StateGroup Id="361241855" Name="Swords" ObjectPath="\States\Default Work Unit\GenerativeAccompanment\Swords">
 					<States/>
 				</StateGroup>
+				<StateGroup Id="376576603" Name="AceOfSwords" ObjectPath="\States\Default Work Unit\DuringReading\AceOfSwords">
+					<States/>
+				</StateGroup>
 				<StateGroup Id="410658637" Name="MakingSong" ObjectPath="\States\Default Work Unit\GameStage\MakingSong">
 					<States/>
 				</StateGroup>
@@ -2858,6 +2899,8 @@
 						<State Id="1490823267" Name="TheHermit" ObjectPath="\States\Default Work Unit\DuringReading\TheHermit"/>
 						<State Id="1734100207" Name="QueenOfWands" ObjectPath="\States\Default Work Unit\DuringReading\QueenOfWands"/>
 						<State Id="3394600732" Name="NineOfSwords" ObjectPath="\States\Default Work Unit\DuringReading\NineOfSwords"/>
+						<State Id="1650692475" Name="EightOfSwords" ObjectPath="\States\Default Work Unit\DuringReading\EightOfSwords"/>
+						<State Id="376576603" Name="AceOfSwords" ObjectPath="\States\Default Work Unit\DuringReading\AceOfSwords"/>
 					</States>
 				</StateGroup>
 				<StateGroup Id="1008270286" Name="Strength" ObjectPath="\States\Default Work Unit\DuringReading\Strength">
@@ -2879,6 +2922,9 @@
 					<States/>
 				</StateGroup>
 				<StateGroup Id="1632202991" Name="Card3Wands" ObjectPath="\States\Default Work Unit\GenerativeCardSuits\Card3Suit\Card3Wands">
+					<States/>
+				</StateGroup>
+				<StateGroup Id="1650692475" Name="EightOfSwords" ObjectPath="\States\Default Work Unit\DuringReading\EightOfSwords">
 					<States/>
 				</StateGroup>
 				<StateGroup Id="1715977140" Name="KingOfPentacles" ObjectPath="\States\Default Work Unit\DuringReading\KingOfPentacles">
