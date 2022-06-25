@@ -1,17 +1,3 @@
-%YAML 1.1
-%TAG !u! tag:unity3d.com,2011:
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab9f6784711a8344086daef86527f8c9, type: 3}
-  m_Name: D4AB8B29-BCC6-44C5-9D78-6C7553C64490
-  m_EditorClassIdentifier: 
-  objectName: TheEmpress
-  id: 4181689965
-  guid: D4AB8B29-BCC6-44C5-9D78-6C7553C64490
+version https://git-lfs.github.com/spec/v1
+oid sha256:6613429dcbd694a606dff0b9e6a5b89e34993525f0fe391a09f638be967d95ca
+size 512

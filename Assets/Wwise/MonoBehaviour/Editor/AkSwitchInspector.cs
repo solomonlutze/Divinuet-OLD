@@ -1,24 +1,3 @@
-﻿#if UNITY_EDITOR
-//////////////////////////////////////////////////////////////////////
-//
-// Copyright (c) 2014 Audiokinetic Inc. / All Rights Reserved
-//
-//////////////////////////////////////////////////////////////////////
-
-[UnityEditor.CanEditMultipleObjects]
-[UnityEditor.CustomEditor(typeof(AkSwitch))]
-public class AkSwitchInspector : AkBaseInspector
-{
-	private readonly AkUnityEventHandlerInspector m_UnityEventHandlerInspector = new AkUnityEventHandlerInspector();
-
-	private void OnEnable()
-	{
-		m_UnityEventHandlerInspector.Init(serializedObject);
-	}
-
-	public override void OnChildInspectorGUI()
-	{
-		m_UnityEventHandlerInspector.OnGUI();
-	}
-}
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:6dda881ca1a3f32f822e19d69ea9da219b22533366d131f2ee9dfab2a759e63a
+size 689

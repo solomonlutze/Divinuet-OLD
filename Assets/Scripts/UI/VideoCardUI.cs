@@ -1,31 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using UnityEngine.UI;
-using TMPro;
-
-public class VideoCardUI : BaseUICanvas
-{
-  public LayoutElement cardDefinitionText;
-  public TextMeshProUGUI cardTitleText;
-  public TextMeshProUGUI cardDescriptionShortText;
-  private GenerativeUI generativeUI;
-
-  public void Start()
-  {
-  }
-
-
-  public void SetTextFromCardData(TarotCardData cardData)
-  {
-    cardTitleText.text = cardData.name;
-    cardDescriptionShortText.text = cardData.cardShortDescription;
-  }
-
-  public void Reset()
-  {
-    // textCanvasGroup.alpha = 0;
-    // text.maxVisibleCharacters = 0;\
-    // ReadingUtils.HideAllCharacters(text);
-  }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:9fad9e9015e370a46fafc09088fde17e1505d72831bf28c5c032ba08f0c4b31e
+size 710

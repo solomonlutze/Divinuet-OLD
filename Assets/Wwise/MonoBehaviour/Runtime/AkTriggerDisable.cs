@@ -1,17 +1,3 @@
-#if ! (UNITY_DASHBOARD_WIDGET || UNITY_WEBPLAYER || UNITY_WII || UNITY_WIIU || UNITY_NACL || UNITY_FLASH || UNITY_BLACKBERRY) // Disable under unsupported platforms.
-//////////////////////////////////////////////////////////////////////
-//
-// Copyright (c) 2014 Audiokinetic Inc. / All Rights Reserved
-//
-//////////////////////////////////////////////////////////////////////
-
-public class AkTriggerDisable : AkTriggerBase
-{
-	private void OnDisable()
-	{
-		if (triggerDelegate != null)
-			triggerDelegate(null);
-	}
-}
-
-#endif // #if ! (UNITY_DASHBOARD_WIDGET || UNITY_WEBPLAYER || UNITY_WII || UNITY_WIIU || UNITY_NACL || UNITY_FLASH || UNITY_BLACKBERRY) // Disable under unsupported platforms.
+version https://git-lfs.github.com/spec/v1
+oid sha256:37d69dbf5b1f374c903bd3ddf7d7a5adad59c4adf17607b8d0618e0ebc013d54
+size 708

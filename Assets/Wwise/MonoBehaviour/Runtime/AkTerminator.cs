@@ -1,12 +1,3 @@
-#if ! (UNITY_DASHBOARD_WIDGET || UNITY_WEBPLAYER || UNITY_WII || UNITY_WIIU || UNITY_NACL || UNITY_FLASH || UNITY_BLACKBERRY) // Disable under unsupported platforms.
-//////////////////////////////////////////////////////////////////////
-//
-// Copyright (c) 2012 Audiokinetic Inc. / All Rights Reserved
-//
-//////////////////////////////////////////////////////////////////////
-
-[UnityEngine.DisallowMultipleComponent]
-public class AkTerminator : UnityEngine.MonoBehaviour
-{
-}
-#endif // #if ! (UNITY_DASHBOARD_WIDGET || UNITY_WEBPLAYER || UNITY_WII || UNITY_WIIU || UNITY_NACL || UNITY_FLASH || UNITY_BLACKBERRY) // Disable under unsupported platforms.
+version https://git-lfs.github.com/spec/v1
+oid sha256:f6d3695a8492ac97d3cb6710bbc5e785d8f16606781f678e0a31ab392d9589a6
+size 661

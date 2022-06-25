@@ -1,17 +1,3 @@
-#if ! (UNITY_DASHBOARD_WIDGET || UNITY_WEBPLAYER || UNITY_WII || UNITY_WIIU || UNITY_NACL || UNITY_FLASH || UNITY_BLACKBERRY) // Disable under unsupported platforms.
-//////////////////////////////////////////////////////////////////////
-//
-// Copyright (c) 2014 Audiokinetic Inc. / All Rights Reserved
-//
-//////////////////////////////////////////////////////////////////////
-
-// *** THIS FILE IS KEPT FOR THE MIGRATION SYSTEM, DO NOT USE THIS CLASS !!! ***
-
-
-// DEPRECATED
-public class AkGameObjPosOffsetData : UnityEngine.ScriptableObject
-{
-	public UnityEngine.Vector3 positionOffset;
-}
-
-#endif // #if ! (UNITY_DASHBOARD_WIDGET || UNITY_WEBPLAYER || UNITY_WII || UNITY_WIIU || UNITY_NACL || UNITY_FLASH || UNITY_BLACKBERRY) // Disable under unsupported platforms.
+version https://git-lfs.github.com/spec/v1
+oid sha256:9252f28f9e8c1b5a9a0000e06d15ab0bc6960ec8a4d1e33a4552d7561eba7e7e
+size 781

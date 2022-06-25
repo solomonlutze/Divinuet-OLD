@@ -1,22 +1,3 @@
-fileFormatVersion: 2
-guid: acd6be8d291911d4a918633347f8ebd8
-TrueTypeFontImporter:
-  externalObjects: {}
-  serializedVersion: 4
-  fontSize: 16
-  forceTextureCase: -2
-  characterSpacing: 0
-  characterPadding: 1
-  includeFontData: 1
-  fontName: EB Garamond
-  fontNames:
-  - EB Garamond
-  fallbackFontReferences: []
-  customCharacters: 
-  fontRenderingMode: 0
-  ascentCalculationMode: 1
-  useLegacyBoundsCalculation: 0
-  shouldRoundAdvanceValue: 1
-  userData: 
-  assetBundleName: 
-  assetBundleVariant: 
+version https://git-lfs.github.com/spec/v1
+oid sha256:92f6eba2a0bfc6b74db14cdbd8d6a9c28fa766752a70c5c535e16c28492cb717
+size 500

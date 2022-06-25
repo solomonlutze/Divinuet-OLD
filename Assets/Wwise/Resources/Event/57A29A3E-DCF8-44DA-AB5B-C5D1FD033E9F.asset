@@ -1,17 +1,3 @@
-%YAML 1.1
-%TAG !u! tag:unity3d.com,2011:
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab9f6784711a8344086daef86527f8c9, type: 3}
-  m_Name: 57A29A3E-DCF8-44DA-AB5B-C5D1FD033E9F
-  m_EditorClassIdentifier: 
-  objectName: AccompanimentCups
-  id: 3691358005
-  guid: 57A29A3E-DCF8-44DA-AB5B-C5D1FD033E9F
+version https://git-lfs.github.com/spec/v1
+oid sha256:9632bd298b9f7578d5ae4716d5f3f455281b7210ba332db33b322267ff35aa8e
+size 519

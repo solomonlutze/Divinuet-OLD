@@ -1,17 +1,3 @@
-%YAML 1.1
-%TAG !u! tag:unity3d.com,2011:
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab9f6784711a8344086daef86527f8c9, type: 3}
-  m_Name: 555CA0D9-428C-4518-97A2-209FCB6A446D
-  m_EditorClassIdentifier: 
-  objectName: CardSlide
-  id: 4145272430
-  guid: 555CA0D9-428C-4518-97A2-209FCB6A446D
+version https://git-lfs.github.com/spec/v1
+oid sha256:dcc50273d1cea8553c59c224b977e2dbd0f5556704265ee624fcc608fe8b07bd
+size 511

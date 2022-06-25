@@ -1,8 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
-<PluginInfo Project="Divinuet" Platform="Windows" BasePlatform="Windows">
-	<Plugins>
-		<Plugin Name="Wwise Peak Limiter" ID="7208963" DLL="AkPeakLimiter" StaticLib="AkPeakLimiterFX"/>
-		<Plugin Name="System" ID="11403271"/>
-		<Plugin Name="No Output" ID="11862023"/>
-	</Plugins>
-</PluginInfo>
+version https://git-lfs.github.com/spec/v1
+oid sha256:d60013a5608356c94dba4ed272cb1063efa56fe6800ba25d5c06bed8d47beb42
+size 332

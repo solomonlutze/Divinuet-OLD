@@ -1,17 +1,3 @@
-%YAML 1.1
-%TAG !u! tag:unity3d.com,2011:
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab9f6784711a8344086daef86527f8c9, type: 3}
-  m_Name: 2958D6AC-9EE4-496D-981F-1758A4D43D45
-  m_EditorClassIdentifier: 
-  objectName: NineOfSwords
-  id: 3394600732
-  guid: 2958D6AC-9EE4-496D-981F-1758A4D43D45
+version https://git-lfs.github.com/spec/v1
+oid sha256:e7a59235f93ad99b7740fdbcd576301b0d20f2c7b7a78861aa5bd0accb085a30
+size 514

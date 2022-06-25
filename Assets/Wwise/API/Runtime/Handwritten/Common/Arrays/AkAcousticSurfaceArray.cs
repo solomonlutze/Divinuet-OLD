@@ -1,34 +1,3 @@
-#if ! (UNITY_DASHBOARD_WIDGET || UNITY_WEBPLAYER || UNITY_WII || UNITY_WIIU || UNITY_NACL || UNITY_FLASH || UNITY_BLACKBERRY) // Disable under unsupported platforms.
-//////////////////////////////////////////////////////////////////////
-//
-// Copyright (c) 2012 Audiokinetic Inc. / All Rights Reserved
-//
-//////////////////////////////////////////////////////////////////////
-
-public class AkAcousticSurfaceArray : AkBaseArray<AkAcousticSurface>
-{
-	public AkAcousticSurfaceArray(int count) : base(count)
-	{
-	}
-
-	protected override int StructureSize
-	{
-		get { return AkSoundEnginePINVOKE.CSharp_AkAcousticSurface_GetSizeOf(); }
-	}
-
-	protected override void DefaultConstructAtIntPtr(System.IntPtr address)
-	{
-		AkSoundEnginePINVOKE.CSharp_AkAcousticSurface_Clear(address);
-	}
-
-	protected override AkAcousticSurface CreateNewReferenceFromIntPtr(System.IntPtr address)
-	{
-		return new AkAcousticSurface(address, false);
-	}
-
-	protected override void CloneIntoReferenceFromIntPtr(System.IntPtr address, AkAcousticSurface other)
-	{
-		AkSoundEnginePINVOKE.CSharp_AkAcousticSurface_Clone(address, AkAcousticSurface.getCPtr(other));
-	}
-}
-#endif // #if ! (UNITY_DASHBOARD_WIDGET || UNITY_WEBPLAYER || UNITY_WII || UNITY_WIIU || UNITY_NACL || UNITY_FLASH || UNITY_BLACKBERRY) // Disable under unsupported platforms.
+version https://git-lfs.github.com/spec/v1
+oid sha256:0ba40e7aeb6589d2d3f9dc14d67586354480b09a4c77b7be0190053ef921bf30
+size 1337

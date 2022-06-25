@@ -1,17 +1,3 @@
-%YAML 1.1
-%TAG !u! tag:unity3d.com,2011:
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab9f6784711a8344086daef86527f8c9, type: 3}
-  m_Name: 5F9AF8EA-8F5C-4DC6-9B27-DABF781F6EF3
-  m_EditorClassIdentifier: 
-  objectName: Card1Group9
-  id: 701895714
-  guid: 5F9AF8EA-8F5C-4DC6-9B27-DABF781F6EF3
+version https://git-lfs.github.com/spec/v1
+oid sha256:aee9b6a09ce40d59cf7831690b2f235a2761f710e7c336d6096073853d6b0eab
+size 512

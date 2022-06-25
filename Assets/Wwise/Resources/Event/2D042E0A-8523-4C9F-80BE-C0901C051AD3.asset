@@ -1,17 +1,3 @@
-%YAML 1.1
-%TAG !u! tag:unity3d.com,2011:
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab9f6784711a8344086daef86527f8c9, type: 3}
-  m_Name: 2D042E0A-8523-4C9F-80BE-C0901C051AD3
-  m_EditorClassIdentifier: 
-  objectName: FiveOfCups
-  id: 679328597
-  guid: 2D042E0A-8523-4C9F-80BE-C0901C051AD3
+version https://git-lfs.github.com/spec/v1
+oid sha256:d7d3fabe424dd0ad45d2d86d0d852c2f75a159c3589977e39f5febd2fef83c7e
+size 511

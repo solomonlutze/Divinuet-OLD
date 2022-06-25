@@ -1,15 +1,3 @@
-# Unity Wwise Timeline
-
-This package adds support for using Wwise Event and RTPC in the Unity Timeline.
-
-## Usage
-
-See [Unity Wwise Timeline Documentation](https://www.audiokinetic.com/library/edge/?source=Unity&id=unity_timeline.html) for more information about how to use the package.
-
-## Requirements
-
-* Unity.Timeline >= 1.1.0
-
-## Legal
-
-Copyright © 2020 Audiokinetic Inc. All rights reserved.
+version https://git-lfs.github.com/spec/v1
+oid sha256:c2ead22388d07091098ba79d55911f0ed8b76ee086d4c297093e1cbc272c5c15
+size 414

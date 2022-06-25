@@ -1,17 +1,3 @@
-%YAML 1.1
-%TAG !u! tag:unity3d.com,2011:
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab9f6784711a8344086daef86527f8c9, type: 3}
-  m_Name: EDD97C79-E76C-4F86-8B5D-294634C52758
-  m_EditorClassIdentifier: 
-  objectName: TheMagician
-  id: 1726594133
-  guid: EDD97C79-E76C-4F86-8B5D-294634C52758
+version https://git-lfs.github.com/spec/v1
+oid sha256:de0a22f74876efb77721e0f1c59d12d73829044b06a2c075352b4d5f29d7eadd
+size 513

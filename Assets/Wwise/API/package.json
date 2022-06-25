@@ -1,21 +1,3 @@
-{
-    "name": "com.audiokinetic.wwise.api",
-    "version": "2020.1.0",
-    "displayName": "Wwise Unity API",
-    "description": "Low-level API for Wwise integration in Unity",
-    "unity": "2018.4",
-    "unityRelease": "17f1",
-    "dependencies": {},
-    "keywords": [
-        "Wwise",
-        "wwise",
-        "audiokinetic",
-        "ak",
-        "Audiokinetic"
-    ],
-    "author": {
-        "name": "Audokinetic Inc.",
-        "email": "info@audiokinetic.com",
-        "url": "https://www.audiokinetic.com"
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:e1d598efdf54ca87581e6a1d3a6e4dc2c36e2a189098a86940fd784be7c36620
+size 538

@@ -1,14 +1,3 @@
-﻿public partial class AkSoundEngine
-{
-#if UNITY_EDITOR_WIN || (UNITY_STANDALONE_WIN && !UNITY_EDITOR) || UNITY_WSA
-	/// <summary>
-	///     Converts "AkOSChar*" C-strings to C# strings.
-	/// </summary>
-	/// <param name="ptr">"AkOSChar*" memory pointer passed to C# as an IntPtr.</param>
-	/// <returns>Converted string.</returns>
-	public static string StringFromIntPtrOSString(System.IntPtr ptr)
-	{
-		return StringFromIntPtrWString(ptr);
-	}
-#endif
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:bb655828d1a98c8a77e9da5e69593c311088860ed3f605c70382c984d6a63633
+size 464

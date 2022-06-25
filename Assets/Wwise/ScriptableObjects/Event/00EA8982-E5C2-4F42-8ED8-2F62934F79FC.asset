@@ -1,17 +1,3 @@
-%YAML 1.1
-%TAG !u! tag:unity3d.com,2011:
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab9f6784711a8344086daef86527f8c9, type: 3}
-  m_Name: 00EA8982-E5C2-4F42-8ED8-2F62934F79FC
-  m_EditorClassIdentifier: 
-  objectName: FiveOfWands
-  id: 3022449515
-  guid: 00EA8982-E5C2-4F42-8ED8-2F62934F79FC
+version https://git-lfs.github.com/spec/v1
+oid sha256:7b183f9827a15eca2a62d10b7e5a69766d701d94e409c50573c629b9349c3e1d
+size 513

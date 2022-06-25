@@ -1,29 +1,3 @@
-#if ! (UNITY_DASHBOARD_WIDGET || UNITY_WEBPLAYER || UNITY_WII || UNITY_WIIU || UNITY_NACL || UNITY_FLASH || UNITY_BLACKBERRY) // Disable under unsupported platforms.
-
-namespace AK.Wwise
-{
-	[System.Serializable]
-	///@brief This type can be used to post triggers to the sound engine.
-	public class Trigger : BaseType
-	{
-		public WwiseTriggerReference WwiseObjectReference;
-
-		public override WwiseObjectReference ObjectReference
-		{
-			get { return WwiseObjectReference; }
-			set { WwiseObjectReference = value as WwiseTriggerReference; }
-		}
-
-		public override WwiseObjectType WwiseObjectType { get { return WwiseObjectType.Trigger; } }
-
-		public void Post(UnityEngine.GameObject gameObject)
-		{
-			if (IsValid())
-			{
-				var result = AkSoundEngine.PostTrigger(Id, gameObject);
-				Verify(result);
-			}
-		}
-	}
-}
-#endif // #if ! (UNITY_DASHBOARD_WIDGET || UNITY_WEBPLAYER || UNITY_WII || UNITY_WIIU || UNITY_NACL || UNITY_FLASH || UNITY_BLACKBERRY) // Disable under unsupported platforms.
+version https://git-lfs.github.com/spec/v1
+oid sha256:c71b38df575b43c6140ca8e529da5ee752090a0870792903de8c1d22932722e0
+size 1015

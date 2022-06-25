@@ -1,30 +1,3 @@
-﻿#if UNITY_EDITOR
-//////////////////////////////////////////////////////////////////////
-//
-// Copyright (c) 2017 Audiokinetic Inc. / All Rights Reserved
-//
-//////////////////////////////////////////////////////////////////////
-
-[UnityEditor.CanEditMultipleObjects]
-[UnityEditor.CustomEditor(typeof(AkAudioListener))]
-public class AkAudioListenerInspector : UnityEditor.Editor
-{
-	private UnityEditor.SerializedProperty m_isDefaultListener;
-
-	private void OnEnable()
-	{
-		m_isDefaultListener = serializedObject.FindProperty("isDefaultListener");
-	}
-
-	public override void OnInspectorGUI()
-	{
-		using (new UnityEditor.EditorGUILayout.VerticalScope("box"))
-		{
-			UnityEditor.EditorGUI.BeginChangeCheck();
-			UnityEditor.EditorGUILayout.PropertyField(m_isDefaultListener);
-			if (UnityEditor.EditorGUI.EndChangeCheck())
-				serializedObject.ApplyModifiedProperties();
-		}
-	}
-}
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:ce0a6c080d9606f808c6f2937e5569a90866639de3ed6b874fb6576a445a098b
+size 911

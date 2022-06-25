@@ -1,28 +1,3 @@
-{
-    "name": "AK.Wwise.Unity.API.WwiseTypes",
-    "references": [
-        "AK.Wwise.Unity.API",
-        "Unity.Addressables",
-        "AK.Wwise.Unity.Addressables"
-    ],
-    "includePlatforms": [],
-    "excludePlatforms": [],
-    "allowUnsafeCode": false,
-    "overrideReferences": false,
-    "precompiledReferences": [],
-    "autoReferenced": true,
-    "defineConstraints": [],
-    "versionDefines": [
-        {
-            "name": "com.unity.addressables",
-            "expression": "1.8",
-            "define": "UNITY_ADDRESSABLES"
-        },
-        {
-            "name": "com.audiokinetic.wwise.addressables",
-            "expression": "1.0.0",
-            "define": "AK_WWISE_ADDRESSABLES"
-        }
-    ],
-    "noEngineReferences": false
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:4b4f5236ec247c6b3a41b3b7373d0fdae92f7fe0fb9ac1001da248b38e00f62a
+size 775

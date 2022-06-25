@@ -1,34 +1,3 @@
-#if !(UNITY_DASHBOARD_WIDGET || UNITY_WEBPLAYER || UNITY_WII || UNITY_WIIU || UNITY_NACL || UNITY_FLASH || UNITY_BLACKBERRY) // Disable under unsupported platforms.
-//////////////////////////////////////////////////////////////////////
-//
-// Copyright (c) 2019 Audiokinetic Inc. / All Rights Reserved
-//
-//////////////////////////////////////////////////////////////////////
-
-public class AkObstructionOcclusionValuesArray : AkBaseArray<AkObstructionOcclusionValues>
-{
-	public AkObstructionOcclusionValuesArray(int count) : base(count)
-	{
-	}
-
-	protected override int StructureSize
-	{
-		get { return AkSoundEnginePINVOKE.CSharp_AkObstructionOcclusionValues_GetSizeOf(); }
-	}
-
-	protected override void DefaultConstructAtIntPtr(System.IntPtr address)
-	{
-		AkSoundEnginePINVOKE.CSharp_AkObstructionOcclusionValues_Clear(address);
-	}
-
-	protected override AkObstructionOcclusionValues CreateNewReferenceFromIntPtr(System.IntPtr address)
-	{
-		return new AkObstructionOcclusionValues(address, false);
-	}
-
-	protected override void CloneIntoReferenceFromIntPtr(System.IntPtr address, AkObstructionOcclusionValues other)
-	{
-		AkSoundEnginePINVOKE.CSharp_AkObstructionOcclusionValues_Clone(address, AkObstructionOcclusionValues.getCPtr(other));
-	}
-}
-#endif // #if ! (UNITY_DASHBOARD_WIDGET || UNITY_WEBPLAYER || UNITY_WII || UNITY_WIIU || UNITY_NACL || UNITY_FLASH || UNITY_BLACKBERRY) // Disable under unsupported platforms.
+version https://git-lfs.github.com/spec/v1
+oid sha256:bca46448206b3cae54b055954c5073999249748d77168c9e3fb5a6e708fc6e40
+size 1446

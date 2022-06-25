@@ -1,22 +1,3 @@
-
-using System.Linq;
-using UnityEngine;
-
-// Singleton class used to store game-wide info
-
-public class GameMaster : Singleton<GameMaster>
-{
-    TarotCardData[] _cardsData;
-    public TarotCardData[] cardsData
-    {
-        get
-        {
-            if (_cardsData == null)
-            {
-                _cardsData = Resources.LoadAll("CardData", typeof(TarotCardData)).Cast<TarotCardData>().ToArray();
-                System.Array.Sort(_cardsData, delegate (TarotCardData t1, TarotCardData t2) { return (t1.order - t2.order); });
-            }
-            return _cardsData;
-        }
-    }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:337730e5348d45c3f08f2e0dd6e5a97a2f5094c00c97e1b5f1ae1263c7d2dbef
+size 612

@@ -1,17 +1,3 @@
-%YAML 1.1
-%TAG !u! tag:unity3d.com,2011:
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ab9f6784711a8344086daef86527f8c9, type: 3}
-  m_Name: 6D38EDEF-4311-4B01-B3DA-835B9C29818C
-  m_EditorClassIdentifier: 
-  objectName: AccompanimentMajorArcana
-  id: 802427635
-  guid: 6D38EDEF-4311-4B01-B3DA-835B9C29818C
+version https://git-lfs.github.com/spec/v1
+oid sha256:df4b9bb7162bf74cec2e18f801b783d5fae7f12a4bb6d2d22b522d509426fd44
+size 525

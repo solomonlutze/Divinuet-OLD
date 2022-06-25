@@ -1,28 +1,3 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-
-public class Buttons : MonoBehaviour
-{
-
-  public GameObject anotherReading;
-  // Start is called before the first frame update
-  void Start()
-  {
-
-  }
-
-  // Update is called once per frame
-  void Update()
-  {
-
-    if (GameRunner.enableButton == false)
-    {
-      // anotherReading.SetActive(false);
-    }
-    if (GameRunner.enableButton == true)
-    {
-      // anotherReading.SetActive(true);
-    }
-  }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:e36a2b7a1876db35aedd0abf73a7412554ac63b9d5cb67a8c59cc1725c508903
+size 517

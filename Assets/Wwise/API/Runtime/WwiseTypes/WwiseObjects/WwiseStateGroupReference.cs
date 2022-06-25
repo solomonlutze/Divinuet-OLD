@@ -1,11 +1,3 @@
-//////////////////////////////////////////////////////////////////////
-//
-// Copyright (c) 2018 Audiokinetic Inc. / All Rights Reserved
-//
-//////////////////////////////////////////////////////////////////////
-
-/// @brief Represents Wwise state groups as Unity assets.
-public class WwiseStateGroupReference : WwiseObjectReference
-{
-	public override WwiseObjectType WwiseObjectType { get { return WwiseObjectType.StateGroup; } }
-}
+version https://git-lfs.github.com/spec/v1
+oid sha256:b91814b93186ea32fb367432ba86850debdce4e3ff106ce86d98f69a826ac8c9
+size 441

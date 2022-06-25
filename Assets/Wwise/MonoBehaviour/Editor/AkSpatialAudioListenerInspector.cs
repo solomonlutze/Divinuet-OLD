@@ -1,18 +1,3 @@
-﻿#if UNITY_EDITOR
-//////////////////////////////////////////////////////////////////////
-//
-// Copyright (c) 2017 Audiokinetic Inc. / All Rights Reserved
-//
-//////////////////////////////////////////////////////////////////////
-
-[UnityEditor.CustomEditor(typeof(AkSpatialAudioListener))]
-public class AkSpatialAudioListenerInspector : UnityEditor.Editor
-{
-	public override void OnInspectorGUI()
-	{
-		UnityEditor.EditorGUILayout.HelpBox(
-			"The current version of Spatial Audio only supports one listener. Make sure to only have one AkSpatialAudioListener active at a time.",
-			UnityEditor.MessageType.Info);
-	}
-}
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:084dfff2e7a08bccfa8005ea7b7dd57143258082f44358d798c683943784167a
+size 640

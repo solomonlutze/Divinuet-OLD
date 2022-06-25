@@ -1,13 +1,3 @@
-﻿#if UNITY_EDITOR
-[UnityEditor.InitializeOnLoad]
-public class AkWindowsPluginActivator
-{
-	static AkWindowsPluginActivator()
-	{
-		AkPluginActivator.BuildTargetToPlatformName.Add(UnityEditor.BuildTarget.StandaloneWindows, "Windows");
-		AkPluginActivator.BuildTargetToPlatformName.Add(UnityEditor.BuildTarget.StandaloneWindows64, "Windows");
-		AkBuildPreprocessor.BuildTargetToPlatformName.Add(UnityEditor.BuildTarget.StandaloneWindows, "Windows");
-		AkBuildPreprocessor.BuildTargetToPlatformName.Add(UnityEditor.BuildTarget.StandaloneWindows64, "Windows");
-	}
-}
-#endif
+version https://git-lfs.github.com/spec/v1
+oid sha256:e60df258c2135ea64f1f33a39885403b7c29ad344dfec07c1473402fbf4d5b6e
+size 580

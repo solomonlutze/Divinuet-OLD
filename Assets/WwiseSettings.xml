@@ -1,17 +1,3 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<WwiseSettings xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <CopySoundBanksAsPreBuildStep>true</CopySoundBanksAsPreBuildStep>
-  <GenerateSoundBanksAsPreBuildStep>false</GenerateSoundBanksAsPreBuildStep>
-  <SoundbankPath>Audio/GeneratedSoundBanks</SoundbankPath>
-  <CreatedPicker>true</CreatedPicker>
-  <CreateWwiseGlobal>true</CreateWwiseGlobal>
-  <CreateWwiseListener>true</CreateWwiseListener>
-  <ShowMissingRigidBodyWarning>true</ShowMissingRigidBodyWarning>
-  <ShowSpatialAudioWarningMsg>true</ShowSpatialAudioWarningMsg>
-  <WwiseInstallationPathMac />
-  <WwiseInstallationPathWindows>C:\Program Files (x86)\Audiokinetic\Wwise 2021.1.2.7629</WwiseInstallationPathWindows>
-  <WwiseProjectPath>../../../../WwiseProjects/Divinuet/Divinuet.wproj</WwiseProjectPath>
-  <UseWaapi>true</UseWaapi>
-  <WaapiPort>8080</WaapiPort>
-  <WaapiIP>127.0.0.1</WaapiIP>
-</WwiseSettings>
+version https://git-lfs.github.com/spec/v1
+oid sha256:f33934a3eb604a551cfc498e20ab010308c86d083ce735a3e43037687ec1fc00
+size 985
