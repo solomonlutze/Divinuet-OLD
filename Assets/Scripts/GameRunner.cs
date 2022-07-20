@@ -433,7 +433,7 @@ public class GameRunner : MonoBehaviour
           }
           StartCoroutine(generativeUI.ShowMeaningText(cardMeanings[currentGenerativeCard]));
         }
-          generativeSection++;
+        generativeSection++;
       }
       else if (generativeSection >= 11)
       {
@@ -786,6 +786,15 @@ public class GameRunner : MonoBehaviour
     StartGame();
   }
 
+  public void SetCardMeaningTexts(string[] spread)
+  {
+    Debug.Log("spread length " + spread.Length);
+    Debug.Log("spread[0] " + spread[0]);
+    card1InputField.GetComponentInParent<InputField>().text = spread[0];
+    Debug.Log("input text " + card1InputField.GetComponent<Text>().text);
+    card2InputField.GetComponentInParent<InputField>().text = spread[1];
+    card3InputField.GetComponentInParent<InputField>().text = spread[2];
+  }
   public void SpreadConfirm()
   {
     cardMeanings = new string[] {
